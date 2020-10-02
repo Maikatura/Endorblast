@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "BIXMFhCeS4wGIld4gwBppTACBxJtrVDzZY8dnl46f72OMwpcRNm5ya049oVpCn88JO3u+7dohn95NZcufHXaHQ==",
+  "success": true,
+  "projectFilePath": "D:\\Github\\GamerEngineNet\\GameServer\\GamerEngine.Net Server\\Nez.Portable\\Nez.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Zyro\\.nuget\\packages\\monogame.framework.portable\\3.7.1.189\\monogame.framework.portable.3.7.1.189.nupkg.sha512",
+    "C:\\Users\\Zyro\\.nuget\\packages\\system.drawing.common\\4.6.0\\system.drawing.common.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}
