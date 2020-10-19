@@ -15,7 +15,7 @@ Here is the discord link: https://discord.gg/5U5uaft
 - [ ] Map Builder
 
 #### Networking (Client)
-
+- [ ] Fix login for client
 
 #### Server Database Handler
 - [ ] Database Login/Register

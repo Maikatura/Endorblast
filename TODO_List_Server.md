@@ -11,6 +11,7 @@ Here is the discord link: https://discord.gg/5U5uaft
 - [ ] Server Authoritative Movement
 
 #### Server Database Handler
+- [ ] Setup Auth for login and transfer that to game server to validate
 - [ ] Database Login/Register
 - [ ] Database Loading in data
 
