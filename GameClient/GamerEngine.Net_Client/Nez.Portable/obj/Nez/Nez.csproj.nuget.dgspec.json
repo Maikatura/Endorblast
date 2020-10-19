@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Github\\GamerEngineNet\\GameClient\\GamerEngine.Net_Client\\Nez.Portable\\Nez.csproj": {}
+    "D:\\Github\\GamerEngineNetRepo\\GameClient\\GamerEngine.Net_Client\\Nez.Portable\\Nez.csproj": {}
   },
   "projects": {
-    "D:\\Github\\GamerEngineNet\\GameClient\\GamerEngine.Net_Client\\Nez.Portable\\Nez.csproj": {
+    "D:\\Github\\GamerEngineNetRepo\\GameClient\\GamerEngine.Net_Client\\Nez.Portable\\Nez.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\GamerEngineNet\\GameClient\\GamerEngine.Net_Client\\Nez.Portable\\Nez.csproj",
+        "projectUniqueName": "D:\\Github\\GamerEngineNetRepo\\GameClient\\GamerEngine.Net_Client\\Nez.Portable\\Nez.csproj",
         "projectName": "Nez",
-        "projectPath": "D:\\Github\\GamerEngineNet\\GameClient\\GamerEngine.Net_Client\\Nez.Portable\\Nez.csproj",
+        "projectPath": "D:\\Github\\GamerEngineNetRepo\\GameClient\\GamerEngine.Net_Client\\Nez.Portable\\Nez.csproj",
         "packagesPath": "C:\\Users\\Zyro\\.nuget\\packages\\",
-        "outputPath": "D:\\Github\\GamerEngineNet\\GameClient\\GamerEngine.Net_Client\\Nez.Portable\\obj\\Nez\\",
+        "outputPath": "D:\\Github\\GamerEngineNetRepo\\GameClient\\GamerEngine.Net_Client\\Nez.Portable\\obj\\Nez\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

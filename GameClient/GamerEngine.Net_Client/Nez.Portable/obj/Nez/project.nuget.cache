@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+4601BwgwIWq7nRm5x6BwIIw9FwOWuOlzG9KbpxqRUS34H3LCQZsdST+UNKn7/qR9WJRgjGKA70PQ/qzbGwesw==",
+  "dgSpecHash": "g6iuXrrQcpR6zC4UKWYIizc9BxXbudOs7uEYl6sAsiG5EkobvJdTwI9nbA1q0JiRF2RX55BcBGVmbKMWDi8n7w==",
   "success": true,
-  "projectFilePath": "D:\\Github\\GamerEngineNet\\GameClient\\GamerEngine.Net_Client\\Nez.Portable\\Nez.csproj",
+  "projectFilePath": "D:\\Github\\GamerEngineNetRepo\\GameClient\\GamerEngine.Net_Client\\Nez.Portable\\Nez.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Zyro\\.nuget\\packages\\monogame.framework.portable\\3.7.1.189\\monogame.framework.portable.3.7.1.189.nupkg.sha512",
     "C:\\Users\\Zyro\\.nuget\\packages\\system.drawing.common\\4.6.0\\system.drawing.common.4.6.0.nupkg.sha512"
