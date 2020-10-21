@@ -26,9 +26,9 @@ I will try to help you if you need help to make some things work. But I will not
 ### Client Libraries used:
 [Monogame](https://www.monogame.net/)\
 [Nez](https://github.com/prime31/Nez)\
-[KaymakNetwork](http://kaymakgames.com/forum/index.php?thread/2-kaymakgames-kaymaknetwork/)
+[Lidgren](https://github.com/lidgren/lidgren-network-gen3/)
 
 ### Server Libraries used:
 [Monogame](https://www.monogame.net/)\
 [Nez](https://github.com/prime31/Nez)\
-[KaymakNetwork](http://kaymakgames.com/forum/index.php?thread/2-kaymakgames-kaymaknetwork/)
+[Lidgren](https://github.com/lidgren/lidgren-network-gen3/)
