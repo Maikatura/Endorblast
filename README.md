@@ -28,4 +28,3 @@ https://discord.gg/5U5uaft
 
 ## Current state (Can be outdated)
 ![](https://i.imgur.com/Kv9HOO1.gif)
-![](https://i.imgur.com/CUjOQ3r.gif)
