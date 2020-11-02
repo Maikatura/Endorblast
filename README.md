@@ -7,7 +7,8 @@ Program will not compile since its missing every sprite\
 You need to remake all sprites and add them to the project
 
 ## License
-You are allowed to use the game engine :)\
+You are allowed to use the game engine but give credit :)\
+I am allowed to change the licnese at anytime you need to be updated on what is relevant.\
 Copying over our sprites to this source is not allowed!\
 ***Make your own sprites!***
 
