@@ -1,5 +1,6 @@
 # GamerEngineNet
-GamerEngine but in C# and made with Monogame
+Endorblast Source Code!
+
 
 ## Setup
 I dont give assistance with setting it up.
