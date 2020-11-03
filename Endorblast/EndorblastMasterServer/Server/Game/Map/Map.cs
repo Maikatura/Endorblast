@@ -1,4 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
+using Nez;
+using Nez.Tiled;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +27,12 @@ namespace EndorblastServer.Server.Game.Map
 
         public Vector2 EntrancePos;
 
+        public TmxMap tiledMap;
+        public TmxLayer ground;
+        public TmxObject testSpawn;
+
+
+
         public Map()
         {
 
@@ -35,6 +43,8 @@ namespace EndorblastServer.Server.Game.Map
             this.lobbyId = lobbyId;
         }
 
+
+        
         
 
         public void Setup(int width, int height)

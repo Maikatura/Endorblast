@@ -1,9 +1,9 @@
-﻿using Endorblast.Game.Network.Commands;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Endorblast.Lib;
 
 namespace Endorblast
 {
@@ -20,13 +20,10 @@ namespace Endorblast
         {
             map = new Map();
 
-            WorldDataCommand.Event += WorldDataCommand_Event;
+            
         }
 
-        private void WorldDataCommand_Event(object sender, WorldDataEvent e)
-        {
-
-        }
+        
 
         public void LoadMap(MapType type)
         {

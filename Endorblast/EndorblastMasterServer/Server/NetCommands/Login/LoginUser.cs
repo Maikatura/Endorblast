@@ -6,6 +6,7 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using Endorblast.Lib.Enums;
 
 namespace EndorblastServer.Server.NetCommands
 {
@@ -50,7 +51,10 @@ namespace EndorblastServer.Server.NetCommands
             {
                 NetOutgoingMessage outmsg = ServerManager.Instance.CreateAccountMessage();
                 outmsg.Write((byte)AccountPacket.LoginState);
+
+
                 outmsg.Write(loginStatus);
+                outmsg.Write(username);
 
                 int id = Database.LoadCharacterData(username);
                 List<DatabaseCharacter> chars = Database.LoadCharacters(id);

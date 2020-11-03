@@ -52,23 +52,34 @@
     <Compile Include="Network\ServerManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Server\GameManager.cs" />
     <Compile Include="Server\Game\CharacterManager.cs" />
     <Compile Include="Server\Game\EnemyManager.cs" />
+    <Compile Include="Server\Game\Entities\Inputs.cs" />
+    <Compile Include="Server\Game\PlayerStats.cs" />
+    <Compile Include="Server\NetCommands\Character\CharacterChatCommand.cs" />
+    <Compile Include="Server\NetCommands\Character\CharacterDamageCommand.cs" />
+    <Compile Include="Server\NetCommands\Character\CharacterDataCommand.cs" />
+    <Compile Include="Server\NetCommands\Character\CharacterInputCommand.cs" />
     <Compile Include="Server\Game\Entities\SvCharacter.cs" />
     <Compile Include="Server\Game\Map\Map.cs" />
     <Compile Include="Server\Game\Map\MapManager.cs" />
     <Compile Include="Server\Game\LobbyManager.cs" />
     <Compile Include="Server\Game\Lobby.cs" />
     <Compile Include="Server\NetCommands\Character\CharacterListCommand.cs" />
-    <Compile Include="Server\Game\LibCharacter.cs" />
+    <Compile Include="Server\Game\StaticCharacter.cs" />
+    <Compile Include="Server\NetCommands\Character\CharacterSkillCastCommand.cs" />
     <Compile Include="Server\NetCommands\Database.cs" />
     <Compile Include="Server\NetCommands\DatabaseCharacter.cs" />
     <Compile Include="Server\NetCommands\Login\LoginUser.cs" />
     <Compile Include="Server\NetCommands\NetCommand.cs" />
     <Compile Include="Server\Game\PlayerManager.cs" />
+    <Compile Include="Server\NetCommands\World\EnemyWorldSpawnCommand.cs" />
     <Compile Include="Server\NetCommands\World\WorldCharacterChangeMapCommand.cs" />
     <Compile Include="Server\NetCommands\World\WorldCharacterEnterCommand.cs" />
+    <Compile Include="Server\NetCommands\World\WorldCharacterExitCommand.cs" />
     <Compile Include="Server\NetCommands\World\WorldDataCommand.cs" />
+    <Compile Include="Server\NetCommands\World\WorldPositionCommand.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="BCrypt.Net-Next, Version=4.0.0.0, Culture=neutral, PublicKeyToken=1e11be04b6288443, processorArchitecture=MSIL">
@@ -189,6 +200,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Endorblast.Lib\Endorblast.Lib.csproj">
+      <Project>{405eaca6-2730-4cde-8435-a1fcc879e714}</Project>
+      <Name>Endorblast.Lib</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Nez.Portable\Nez.csproj">
       <Project>{85029bd9-0d0c-447f-968b-1815e61d25c8}</Project>
       <Name>Nez</Name>

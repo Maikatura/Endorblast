@@ -132,7 +132,7 @@ namespace Nez
 		}
 
 
-		public Core(int width = 1280, int height = 720, bool isFullScreen = false, string windowTitle = "Nez", string contentDirectory = "Content")
+		public Core(int width = 1280, int height = 720, bool isFullScreen = false, string windowTitle = "Endorblast", string contentDirectory = "Content")
 		{
 #if DEBUG
 			_windowTitle = windowTitle;
@@ -368,7 +368,7 @@ namespace Nez
 			if (_frameCounterElapsedTime >= TimeSpan.FromSeconds(1))
 			{
 				var totalMemory = (GC.GetTotalMemory(false) / 1048576f).ToString("F");
-				Window.Title = string.Format("{0} {1} fps - {2} MB", _windowTitle, _frameCounter, totalMemory);
+				//Window.Title = string.Format("{0} {1} fps - {2} MB", _windowTitle, _frameCounter, totalMemory);
 				_frameCounter = 0;
 				_frameCounterElapsedTime -= TimeSpan.FromSeconds(1);
 			}

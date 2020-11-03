@@ -1,5 +1,6 @@
 ﻿using System;
 
+
 namespace Endorblast
 {
     /// <summary>
@@ -7,14 +8,12 @@ namespace Endorblast
     /// </summary>
     public static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
+
+		[STAThread]
         static void Main()
         {
-            using (var game = new Game1())
+			using (var game = new Game1())
                 game.Run();
         }
-    }
+	}
 }

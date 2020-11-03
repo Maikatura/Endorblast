@@ -12,9 +12,9 @@ namespace EndorblastServer
     class WorldCharacterChangeMapEvent
     {
         public MapType mapType;
-        public SvCharacter character;
+        public BasePlayer character;
 
-        WorldCharacterChangeMapEvent(MapType mapType, SvCharacter character)
+        WorldCharacterChangeMapEvent(MapType mapType, BasePlayer character)
         {
             this.mapType = mapType;
             this.character = character;

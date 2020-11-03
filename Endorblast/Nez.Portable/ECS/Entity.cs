@@ -84,10 +84,15 @@ namespace Nez
 		bool _enabled = true;
 		internal int _updateOrder = 0;
 
+		
+
 		#endregion
 
 
 		#region Transform passthroughs
+
+
+		
 
 		public Transform Parent
 		{

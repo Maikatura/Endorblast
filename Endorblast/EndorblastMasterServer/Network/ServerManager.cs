@@ -10,6 +10,9 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Diagnostics;
+using Endorblast.Lib.Enums;
+using Endorblast.Lib.Network;
+
 
 namespace EndorblastServer
 {
@@ -40,6 +43,12 @@ namespace EndorblastServer
 
             server.RegisterReceivedCallback(NetworkLoop, context);
             server.Start();
+
+            Console.WriteLine($"######################");
+            Console.WriteLine($"#  Server Started    #");
+            Console.WriteLine($"#  Port: {c.Port}        #");
+            Console.WriteLine($"#                    #");
+            Console.WriteLine($"######################");
         }
 
         public NetOutgoingMessage CreateMessage => server.CreateMessage();
@@ -88,11 +97,15 @@ namespace EndorblastServer
                         switch (message.SenderConnection.Status)
                         {
                             case NetConnectionStatus.Connected:
-
-                                Console.WriteLine("King");
-
+                                
+                                
                                 break;
-
+                            case NetConnectionStatus.Disconnecting:
+                                
+                                break;
+                            case NetConnectionStatus.Disconnected:
+                                CharacterManager.Instance.RemovePlayer(message.SenderConnection);
+                                break;
                         }
                         break;
 
@@ -101,7 +114,6 @@ namespace EndorblastServer
                         // (only received when compiled in DEBUG mode)
                         Console.WriteLine(message.ReadString());
                         break;
-
                     /* .. */
                     default:
                         Console.WriteLine("unhandled message with type: " + message.MessageType);
@@ -120,11 +132,35 @@ namespace EndorblastServer
                     AccountSwitch(message);
                     break;
                 case PacketType.Character:
-                    Console.WriteLine("King");
+                    CharacterSwitch(message);
+                    break;
+
+                case PacketType.World:
+                    WorldSwitch(message);
                     break;
                 default:
 
                     Console.WriteLine("Someone on the server sending a packet that doesnt exist");
+                    break;
+            }
+        }
+
+        void WorldSwitch(NetIncomingMessage message)
+        {
+            WorldPacket packet = (WorldPacket)message.ReadByte();
+
+            switch (packet)
+            {
+                case WorldPacket.Data:
+                    break;
+                case WorldPacket.CharacterEnter:
+                    
+                    new WorldCharacterEnterCommand().Read(message);
+                    break;
+                case WorldPacket.CharacterExit:
+                    break;
+                default:
+                    Console.WriteLine("Cool");
                     break;
             }
         }
@@ -136,7 +172,6 @@ namespace EndorblastServer
             switch (packet)
             {
                 case AccountPacket.LoginState:
-                    
                     Console.WriteLine("State! 2");
                     break;
                 case AccountPacket.LoginMePlz:
@@ -148,6 +183,27 @@ namespace EndorblastServer
             }
         }
 
-        
+
+        void CharacterSwitch(NetIncomingMessage message)
+        {
+            CharacterPacket packet = (CharacterPacket)message.ReadByte();
+
+            switch (packet)
+            {
+                case CharacterPacket.SkillCast:
+                    new Server.NetCommands.CharacterSkillCastCommand().Read(message);
+                    break;
+                case CharacterPacket.Data:
+                    new Server.NetCommands.CharacterDataCommand().Read(message);
+
+                    break;
+                case CharacterPacket.List:
+
+                    break;
+                default:
+                    break;
+            }
+        }
+
     }
 }

@@ -59,8 +59,9 @@ namespace Endorblast
 
     public enum WorldPacket
     {
+        Data,
         CharacterEnter,
-        CharacterLeft,
+        CharacterExit,
     }
 
     public enum CharacterDataType
@@ -70,10 +71,6 @@ namespace Endorblast
     }
 
 
-    public enum SkillType
-    {
-        Basic,
-        Dash,
-    }
+    
 
 }

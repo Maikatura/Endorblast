@@ -6,6 +6,8 @@ using Nez.Sprites;
 using Nez.Textures;
 using Nez.Tiled;
 using System;
+using Endorblast.Lib;
+using Endorblast.Lib.GUI;
 
 namespace Endorblast
 {
@@ -18,16 +20,20 @@ namespace Endorblast
         Scene.SceneResolutionPolicy policy;
         public static NetworkManager network;
         public GameManager manager;
+        
 
         public Game1() : base()
         {
             IsFixedTimeStep = true;
+            
             PauseOnFocusLost = false;
-            //DebugRenderEnabled = true;
+            DebugRenderEnabled = false;
             policy = Scene.SceneResolutionPolicy.NoBorderPixelPerfect;
             Scene.SetDefaultDesignResolution(1280, 720, policy);
 
             manager = new GameManager();
+            Console.ForegroundColor = System.ConsoleColor.DarkYellow;
+            
         }
 
         /// <summary>
@@ -39,26 +45,31 @@ namespace Endorblast
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-            NetworkManager.NewInstance();
+            
+            DiscordRpc.NewInstance();
 
 
             //NetworkSend.SendHello("Hello world(server)!");
             base.Initialize();
 
-
-            ContentLoader.Init();
+            NetworkManager.NewInstance();
+            
+            DiscordRpc.Instance.Init();
+            Endorblast.Lib.ContentLoader.Init(Core.Content);
             GameState.SetGameState(CurrentGameState.MainMenu);
 
-            //LoginUI.InitJoin();
+            //LoginUI.InitJoin(Core.Scene);
             //InventoryUI.InitInventory();
 
+            
 
         }
 
 
         protected override void EndRun()
         {
-            
+            NetworkManager.Instance.client.Disconnect("Bye");
+            NetworkManager.Instance.client.Shutdown("Bye");
         }
         
 

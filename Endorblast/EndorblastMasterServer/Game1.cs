@@ -1,9 +1,8 @@
-﻿using EndorblastServer;
+﻿using EndorblastServer.Server.Game.Map;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
 using Nez;
-using System.Diagnostics;
+using System;
+
 
 namespace EndorblastServer
 {
@@ -17,6 +16,9 @@ namespace EndorblastServer
         public Game1()
         {
             PauseOnFocusLost = false;
+            DebugRenderEnabled = true;
+            IsFixedTimeStep = true;
+            
         }
 
         /// <summary>
@@ -27,10 +29,17 @@ namespace EndorblastServer
         /// </summary>
         protected override void Initialize()
         {
-            
+            Console.ForegroundColor = System.ConsoleColor.DarkYellow;
             // TODO: Add your initialization logic here
             ServerManager.NewInstance();
+            MapManager.NewInstance();
             base.Initialize();
+
+            Endorblast.Lib.ContentLoader.Init(Core.Content);
+            Core.Scene = Scene.CreateWithDefaultRenderer(Color.CornflowerBlue);
+
+            MapManager.Instance.GenerateMap(1, MapType.Town);
+
         }
 
         

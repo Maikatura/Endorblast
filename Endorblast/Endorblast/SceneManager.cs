@@ -23,7 +23,7 @@ namespace Endorblast
         public static void InitGameMap()
         {
 
-            map = TiledMapsContent.gameTiledmap;
+            map = Endorblast.Lib.TiledMapsContent.gameTiledmap;
             var objectLayers = map.GetObjectGroup("PlayerSpawns");
 
             for (int i = 0; i < objectLayers.Objects.Count; i++)
@@ -48,7 +48,7 @@ namespace Endorblast
 
         public static void LoadLoginBG()
         {
-            var tiledMap = TiledMapsContent.mainMenuTiledmap;
+            var tiledMap = Endorblast.Lib.TiledMapsContent.mainMenuTiledmap;
             var tiledEntity = Core.Scene.CreateEntity("tiled-map");
             var tiledMapComponent = tiledEntity.AddComponent(new TiledMapRenderer(tiledMap));
         }

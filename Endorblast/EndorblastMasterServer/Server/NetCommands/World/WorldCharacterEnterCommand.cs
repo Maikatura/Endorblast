@@ -1,50 +1,79 @@
-﻿using Lidgren.Network;
+﻿using EndorblastServer.Network;
+using Lidgren.Network;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Endorblast.Lib.Enums;
+using Endorblast.Lib;
+
 
 namespace EndorblastServer.Server.NetCommands
 {
     public class WorldCharacterEnterCommand : NetCommand
     {
 
-        public override void Read(NetIncomingMessage msg, LibCharacter chara)
+        public void Read(NetIncomingMessage msg)
         {
-            //var chname = msg.ReadString();
+            string username = msg.ReadString();
+            bool isLoggedIn = msg.ReadBoolean();
 
-            //var acc = AccountManager.Instance.GetAccount(msg.SenderConnection.ToString());
+            if (isLoggedIn)
+            {
+                var chara = new Endorblast.Lib.BasePlayer(username, msg.SenderConnection);
+                CharacterManager.Instance.AddPlayer(chara);
 
-            //chara = Database.Character.GetCharacter(chname).Result;
-            //chara.AccountName = acc.AccountName;
-            //chara.Connection = msg.SenderConnection;
-            //acc.CurrentCharacterName = chara.Name;
 
-            //var sp = chara.ToSvCharacter();
-
-            //CharacterManager.Instance.AddPlayer(sp);
-            //chara.WorldID = sp.WorldID;
-
-            //new CharacterListCommand().Send(msg, char.WorldID);
-
-            //EnemyListCommand().Send(msg);
+                new WorldCharacterEnterCommand().Send(chara.ToStaticCharacter());
+            }
+            else
+            {
+                Console.WriteLine($"### WARNING - - {msg.SenderConnection} Tried to login with out being logged in!");
+            }
 
         }
 
-        public void Send(LibCharacter ch)
+        public void Send(Endorblast.Lib.StaticCharacter ch)
         {
-            var list = CharacterManager.Instance.GetConnections(ch.Name);
-            if (list.Count == 0)
-                return;
+            foreach (var item in CharacterManager.Instance.Characters)
+            {
+                if (item.connection != ch.connection)
+                {
+                    var outmsg = CreateMessage(item.ToStaticCharacter());
+                    ServerManager.Instance.Server.SendMessage(outmsg, ch.connection, NetDeliveryMethod.ReliableOrdered);
+                }
+            }
 
-            var outmsg = ServerManager.Instance.Server.CreateMessage();
+            foreach (var item in CharacterManager.Instance.Characters)
+            {
+                var outmsg = CreateMessage(ch);
+                ServerManager.Instance.Server.SendMessage(outmsg, item.connection, NetDeliveryMethod.ReliableOrdered);
+            }
 
-            outmsg.Write((byte)WorldPacket.CharacterEnder);
-            outmsg.WriteAllProperties(ch);
+            foreach (var item in EnemyManager.Instance.Enemies)
+            {
+                var outmsg = ServerManager.Instance.CreateWorldMessage();
+                outmsg.Write((byte)WorldPacket.EnemySpawn);
+                outmsg.WriteAllProperties(item.ToStaticEnemy());
 
-            ServerManager.Instance.Server.SendMessage(outmsg, list, NetDeliveryMethod.ReliableOrdered, 0);
-            Console.WriteLine("WorldChracterEnderCommand - Sent " + ch.Name);
+                ServerManager.Instance.Server.SendMessage(outmsg, ch.connection, NetDeliveryMethod.ReliableOrdered);
+            }
+
+            //outmsg.WriteAllProperties(ch);
+
+            Console.WriteLine("WorldChracterEnderCommand - Sent " + ch.AccountName);
+        }
+
+        NetOutgoingMessage CreateMessage(Endorblast.Lib.StaticCharacter ch)
+        {
+            var outmsg = ServerManager.Instance.CreateWorldMessage();
+            outmsg.Write((byte)WorldPacket.CharacterEnter);
+            outmsg.Write(ch.Name);
+            outmsg.Write(ch.PosX);
+            outmsg.Write(ch.PosY);
+
+            return outmsg;
         }
     }
 }

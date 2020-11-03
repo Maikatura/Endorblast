@@ -52,7 +52,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Icon.ico</ApplicationIcon>
+    <ApplicationIcon>gameIcon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>app.manifest</ApplicationManifest>
@@ -66,75 +66,29 @@
   <ItemGroup>
     <Compile Include="ClientSettings.cs" />
     <Compile Include="ClothID.cs" />
-    <Compile Include="ContentLoader.cs" />
-    <Compile Include="ContentManager.cs" />
     <Compile Include="Game1.cs" />
-    <Compile Include="GameManager.cs" />
-    <Compile Include="Game\CharacterManager.cs" />
-    <Compile Include="Game\EnemyManager.cs" />
-    <Compile Include="Game\Entity\BasePlayer.cs" />
-    <Compile Include="Game\Entity\Enemy.cs" />
-    <Compile Include="Game\Entity\LibCharacter.cs" />
-    <Compile Include="Game\Entity\MainPlayer.cs" />
     <Compile Include="Game\EnumsData.cs" />
-    <Compile Include="Game\Events\UpdatePlayerListEvent.cs" />
     <Compile Include="Game\MapSttuff\Map.cs" />
     <Compile Include="Game\MapSttuff\MapManager.cs" />
-    <Compile Include="Game\Network\Commands\CharacterComs\CharacterDataCommand.cs" />
-    <Compile Include="Game\Network\Commands\CharacterComs\CharacterListCommand.cs" />
-    <Compile Include="Game\Network\Commands\CharacterComs\CharacterSkillCastCommand.cs" />
-    <Compile Include="Game\Network\Commands\DatabaseCharacter.cs" />
-    <Compile Include="Game\Network\Commands\EnemyComs\EnemyDataCommand.cs" />
-    <Compile Include="Game\Network\Commands\EnemyComs\EnemyListCommand.cs" />
-    <Compile Include="Game\Network\Commands\Login\LoginStateCommand.cs" />
-    <Compile Include="Game\Network\Commands\Login\LoginUserCommand.cs" />
-    <Compile Include="Game\Network\Commands\NetCommand.cs" />
-    <Compile Include="Game\Network\Commands\WorldComs\WorldCharacterEneterCommand.cs" />
-    <Compile Include="Game\Network\Commands\WorldComs\WorldDataCommand.cs" />
-    <Compile Include="Game\Network\Database.cs" />
-    <Compile Include="Game\PlayerManager.cs" />
-    <Compile Include="Game\Skills\BasicSkill.cs" />
-    <Compile Include="Game\Skills\DashSkill.cs" />
-    <Compile Include="Game\Items\Currency.cs" />
-    <Compile Include="Game\Items\Equippable.cs" />
-    <Compile Include="Game\Items\Item.cs" />
-    <Compile Include="Game\Items\Misc.cs" />
-    <Compile Include="Game\Items\SkillItem.cs" />
-    <Compile Include="Game\Items\Usable.cs" />
     <Compile Include="Game\Player\Clothes\MaidOutfit.cs" />
     <Compile Include="Game\Player\Clothes\NakedOutfit.cs" />
     <Compile Include="Game\Player\Hair\HairNormal.cs" />
     <Compile Include="Game\Player\Hair\HairObject.cs" />
-    <Compile Include="Game\Skills\Skill.cs" />
-    <Compile Include="Game\Stuff\Effect2D.cs" />
     <Compile Include="Game\Timer.cs" />
-    <Compile Include="GameState.cs" />
     <Compile Include="Game\Player\ClothObject.cs" />
-    <Compile Include="Game\Player\KeyboardInput.cs" />
-    <Compile Include="Game\Player\PlayerAnimations.cs" />
-    <Compile Include="Game\Player\PlayerMovement.cs" />
-    <Compile Include="GUI\ActionBar.cs" />
-    <Compile Include="HairID.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="GUI\CharacterSelectionUI.cs" />
-    <Compile Include="GUI\Slot.cs" />
-    <Compile Include="GUI\LoginUI.cs" />
-    <Compile Include="Network\ByteBuffer.cs" />
-    <Compile Include="Network\NetworkConfig.cs" />
-    <Compile Include="Game\Network\NetworkManager.cs" />
-    <Compile Include="Network\NetworkReceive.cs" />
-    <Compile Include="Network\NetworkSend.cs" />
-    <Compile Include="Game\Player\Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SceneManager.cs" />
-    <Compile Include="GUI\InventoryUI.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="DiscordRPC, Version=1.0.150.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscordRichPresence.1.0.150\lib\net35\DiscordRPC.dll</HintPath>
+    </Reference>
     <Reference Include="Lidgren.Network, Version=3.7.1.189, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\DLLs\Lidgren.Network.dll</HintPath>
@@ -142,6 +96,9 @@
     <Reference Include="MonoGame.Framework, Version=3.7.1.189, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files (x86)\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -161,175 +118,13 @@
     <EmbeddedResource Include="Icon.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Content\Effects\Blur.fxb">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <Content Include="Content\Content.mgcb">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Icons\Currency\Currency.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Icons\Currency\CurrencyPremium.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\NezDefaultBMFont.xnb">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\player.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Player\Base\Chara_BasicAttack.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Player\Base\Chara_Idle.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Player\Base\Chara_Running.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Player\Clothes\Maid\Maid_Body.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Player\Clothes\Maid\Maid_Body_Running.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Player\Clothes\Maid\Maid_Headband.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Player\Clothes\Maid\Maid_Headband_Running.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Player\Clothes\Maid\Maid_Stockings_Running.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Player\Clothes\Maid\Maid_Stockings.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Player\Hair\Chara_Idle_BackHair_V1.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Player\Hair\Chara_Idle_FrontHair_V1.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Player\Hair\Chara_Running_BackHair_v1.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Player\Hair\Chara_Running_FrontHair_v1.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Player\nothing.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Tilesets\GameArea\Tileset.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Tilesets\MainMenu\Tileset.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\UI\Login\UI_Login2.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <None Include="Content\Nez\Effects\Bevels.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Nez\Effects\BloomCombine.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Nez\Effects\BloomExtract.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Nez\Effects\Crosshatch.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Nez\Effects\DeferredLighting.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Nez\Effects\DeferredSprite.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Nez\Effects\Dissolve.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Nez\Effects\Dots.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Nez\Effects\ForwardLighting.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Nez\Effects\GaussianBlur.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Nez\Effects\Grayscale.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Nez\Effects\HeatDistortion.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Nez\Effects\Invert.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Nez\Effects\Letterbox.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Nez\Effects\MultiTexture.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Nez\Effects\MultiTextureOverlay.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Nez\Effects\Noise.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Nez\Effects\PaletteCycler.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Nez\Effects\PixelGlitch.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Nez\Effects\PolygonLight.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Nez\Effects\Reflection.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Nez\Effects\Scanlines.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Nez\Effects\Sepia.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Nez\Effects\SpriteAlphaTest.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Nez\Effects\SpriteBlinkEffect.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Nez\Effects\SpriteEffect.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Nez\Effects\SpriteLightMultiply.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Nez\Effects\SpriteLines.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Nez\Effects\StencilLight.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Nez\Effects\Twist.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Nez\Effects\Vignette.mgfxo">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <Content Include="gameIcon.ico" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <MonoGameContentReference Include="Content\Content.mgcb" />
     <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x86\SDL2.dll">
       <Link>x86\SDL2.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -370,42 +165,27 @@
       <Link>libopenal.1.dylib</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.dll.config">
+    <None Include="C:\Program Files (x86)\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.dll.config">
       <Link>MonoGame.Framework.dll.config</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="app.config" />
     <None Include="app.manifest" />
-    <Content Include="Content\Tilesets\MainMenu\MainMenu.tmx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Tilesets\GameArea\GameStart.tmx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\player.png" />
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="..\Endorblast.Lib\Endorblast.Lib.csproj">
+      <Project>{405eaca6-2730-4cde-8435-a1fcc879e714}</Project>
+      <Name>Endorblast.Lib</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Nez.Portable\Nez.csproj">
       <Project>{85029bd9-0d0c-447f-968b-1815e61d25c8}</Project>
       <Name>Nez</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Tilesets\MainMenu\Tileset.tsx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="GUI\Inventory\" />
+    <Folder Include="Content\" />
     <Folder Include="Scenes\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Content\Tilesets\GameArea\Tileset.tsx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.1">
@@ -418,6 +198,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />

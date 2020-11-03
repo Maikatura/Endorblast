@@ -28,7 +28,7 @@ namespace EndorblastServer
 
         public MapManager mapManager;
 
-        public List<SvCharacter> characters = new List<SvCharacter>();
+        public List<BasePlayer> characters = new List<BasePlayer>();
 
         public List<NetConnection> Connections()
         {
@@ -56,26 +56,26 @@ namespace EndorblastServer
             _lobbyId += 1 % 123456;
         }
 
-        public Sessions(params SvCharacter[] chars) : this()
+        public Sessions(params BasePlayer[] chars) : this()
         {
-            mapManager = new MapManager();
+            //mapManager = new MapManager();
             MapType mapType;
 
             if (type == LobbyType.Town)
             {
                 mapType = MapType.Town;
-                mapManager.GenerateMap(lobbyId, mapType);
+                //mapManager.GenerateMap(lobbyId, mapType);
             }
             else
             {
                 mapType = MapType.Snowlands;
-                mapManager.GenerateMap(lobbyId, mapType);
+                //mapManager.GenerateMap(lobbyId, mapType);
             }
 
             for (int i = 0; i < chars.Length; i++)
             {
                 var c = chars[i];
-                WorldDataCommand.Send(c.connection, mapType, mapManager.map.Width, mapManager.map.Height);
+                //WorldDataCommand.Send(c.connection, mapType, mapManager.map.Width, mapManager.map.Height);
                 AddPlayer(c);
             }
         }
@@ -87,7 +87,7 @@ namespace EndorblastServer
             inited = true;
         }
 
-        public virtual void AddPlayer(SvCharacter character)
+        public virtual void AddPlayer(BasePlayer character)
         {
             //CharacterListCommand.Send(character.connection, character.WorldID, characters);
             characters.Add(character);
@@ -131,7 +131,7 @@ namespace EndorblastServer
         float lifeTime = 3f;
         public bool IsAlive => lifeTime > 0f;
 
-        public WorldLobby(params SvCharacter[] chars) : base(chars)
+        public WorldLobby(params BasePlayer[] chars) : base(chars)
         {
             type = LobbyType.World;
 
@@ -148,7 +148,7 @@ namespace EndorblastServer
             base.Init();
         }
 
-        public override void AddPlayer(SvCharacter character)
+        public override void AddPlayer(BasePlayer character)
         {
             //if (eManager == null)
             //    eManager = new EnemyManager(lobbyId);

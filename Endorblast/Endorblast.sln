@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Endorblast", "Endorblast\En
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EndorblastServer", "EndorblastMasterServer\EndorblastServer.csproj", "{79036685-2971-4D1A-B479-2B116AB959B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Endorblast.Lib", "Endorblast.Lib\Endorblast.Lib.csproj", "{405EACA6-2730-4CDE-8435-A1FCC879E714}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{79036685-2971-4D1A-B479-2B116AB959B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79036685-2971-4D1A-B479-2B116AB959B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79036685-2971-4D1A-B479-2B116AB959B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{405EACA6-2730-4CDE-8435-A1FCC879E714}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{405EACA6-2730-4CDE-8435-A1FCC879E714}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{405EACA6-2730-4CDE-8435-A1FCC879E714}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{405EACA6-2730-4CDE-8435-A1FCC879E714}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

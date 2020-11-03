@@ -4,13 +4,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Endorblast.Lib.Enums;
 
 namespace EndorblastServer.Server.NetCommands
 {
     class CharacterListCommand : NetCommand
     {
 
-        public override void Read(NetIncomingMessage msg, LibCharacter chara)
+        public void Read(NetIncomingMessage msg, StaticCharacter chara)
         {
 
         }
@@ -34,7 +35,7 @@ namespace EndorblastServer.Server.NetCommands
 
             for (int i = 0; i < count; i++)
             {
-                var lc = charList[i].ToLibCharacter();
+                var lc = charList[i].ToStaticCharacter();
                 outmsg.WriteAllProperties(lc);
             }
 

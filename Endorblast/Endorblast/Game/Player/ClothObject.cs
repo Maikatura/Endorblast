@@ -1,11 +1,7 @@
 ﻿using Nez;
 using Nez.Sprites;
 using Nez.Textures;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Endorblast.Lib;
 
 namespace Endorblast
 {

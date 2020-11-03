@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "4yudKoDNbV6zaHOWSkOsHCj9vfU0QWFxU/Ujaf+IPgVAV3AsdGm0MKlg2AcNj+EjLxrqrVHHNorvDRic9VulhQ==",
+  "dgSpecHash": "M+bmKuUbJFLWcrUmlNn6mzooTSIrm5Nnj06eVyqBrCdFPNrHJHqF9RuRFNYk5eOrKA91q+Zg8W/NyQj7usvO6A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\GamerEngineNet\\Endorblast\\Nez.Portable\\Nez.csproj",
+  "projectFilePath": "D:\\Github\\AnimeEngine2D\\Endorblast\\Nez.Portable\\Nez.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\simon.igelstrom\\.nuget\\packages\\monogame.framework.portable\\3.7.1.189\\monogame.framework.portable.3.7.1.189.nupkg.sha512",
-    "C:\\Users\\simon.igelstrom\\.nuget\\packages\\system.drawing.common\\4.6.0\\system.drawing.common.4.6.0.nupkg.sha512"
+    "C:\\Users\\Zyro\\.nuget\\packages\\monogame.framework.portable\\3.7.1.189\\monogame.framework.portable.3.7.1.189.nupkg.sha512",
+    "C:\\Users\\Zyro\\.nuget\\packages\\system.drawing.common\\4.6.0\\system.drawing.common.4.6.0.nupkg.sha512"
   ],
   "logs": []
 }

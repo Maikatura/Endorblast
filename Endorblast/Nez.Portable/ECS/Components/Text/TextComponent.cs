@@ -57,13 +57,14 @@ namespace Nez
 		protected IFont _font;
 		protected string _text;
 		Vector2 _size;
+		Vector2 _scale;
 
 
-		public TextComponent() : this(Graphics.Instance.BitmapFont, "", Vector2.Zero, Color.White)
+		public TextComponent() : this(Graphics.Instance.BitmapFont, "", Vector2.Zero, Color.White, new Vector2(1,1))
 		{
 		}
 
-		public TextComponent(IFont font, string text, Vector2 localOffset, Color color)
+		public TextComponent(IFont font, string text, Vector2 localOffset, Color color, Vector2 scale)
 		{
 			_font = font;
 			_text = text;
@@ -71,6 +72,7 @@ namespace Nez
 			Color = color;
 			_horizontalAlign = HorizontalAlign.Left;
 			_verticalAlign = VerticalAlign.Top;
+			_scale = scale;
 
 			UpdateSize();
 		}
@@ -84,6 +86,35 @@ namespace Nez
 			UpdateSize();
 
 			return this;
+		}
+
+		public TextComponent SetScale(float x, float y)
+		{
+			_scale = new Vector2(x, y);
+
+			return this;
+		}
+
+		public TextComponent SetScale(Vector2 scale)
+		{
+			_scale = scale;
+
+			return this;
+		}
+
+		public Vector2 GetScale()
+		{
+			return _scale;
+		}
+
+		public float GetScaleX()
+		{
+			return _scale.X;
+		}
+
+		public float GetScaleY()
+		{
+			return _scale.Y;
 		}
 
 		public TextComponent SetText(string text)
@@ -120,6 +151,8 @@ namespace Nez
 			UpdateCentering();
 		}
 
+		
+
 		void UpdateCentering()
 		{
 			var oldOrigin = _origin;
@@ -144,7 +177,7 @@ namespace Nez
 		public override void Render(Batcher batcher, Camera camera)
 		{
 			batcher.DrawString(_font, _text, Entity.Transform.Position + _localOffset, Color,
-				Entity.Transform.Rotation, Origin, Entity.Transform.Scale, SpriteEffects, LayerDepth);
+				Entity.Transform.Rotation, Origin, _scale, SpriteEffects, LayerDepth);
 		}
 	}
 }

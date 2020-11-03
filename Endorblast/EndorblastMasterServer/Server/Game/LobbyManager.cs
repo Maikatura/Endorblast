@@ -12,18 +12,18 @@ namespace EndorblastServer
 {
     class LobbyManager
     {
-        static LobbyManager instance = new LobbyManager();
-        public static LobbyManager Instance => instance;
+        //static LobbyManager instance = new LobbyManager();
+        //public static LobbyManager Instance => instance;
 
         public List<WorldLobby> worldLobbies;
         public Sessions townLobby;
 
-        public List<LibCharacter> CharacterQueue = new List<LibCharacter>();
+        public List<StaticCharacter> CharacterQueue = new List<StaticCharacter>();
 
         public LobbyManager()
         {
-            townLobby = new TownLobby();
-            worldLobbies = new List<WorldLobby>();
+            //townLobby = new TownLobby();
+            //worldLobbies = new List<WorldLobby>();
             Console.WriteLine("Town lobby created");
 
             WorldCharacterChangeMapCommand.Event += WorldCharacterChangeMapCommand_Event;
@@ -74,7 +74,7 @@ namespace EndorblastServer
             return lobby;
         }
 
-        public Sessions CreateLobby(params SvCharacter[] characters)
+        public Sessions CreateLobby(params BasePlayer[] characters)
         {
             var lobby = new WorldLobby(characters);
             worldLobbies.Add(lobby);
