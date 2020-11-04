@@ -1,6 +1,10 @@
 ![](https://i.imgur.com/NT1sq6f.png)
 
-### [Support Me on Patreon](https://www.patreon.com/zyrolul)
+<h3 align="center">Useful Links<h3>
+<div align="center">
+    <a href="https://www.patreon.com/zyrolul"><img src="https://i.imgur.com/PzFGAH5.png" width="40" /></a>
+    <a href="https://discord.gg/5U5uaft"><img src="https://i.imgur.com/fyF4Yic.png" width="40" /></a>
+</div>
 
 ## Setup
 I dont give assistance with setting it up.\
@@ -18,10 +22,11 @@ Join the discord if you wanna play our game!\
 https://discord.gg/5U5uaft
 
 
+
 ## Libraries
 [Monogame](https://www.monogame.net/)\
 [Nez](https://github.com/prime31/Nez)\
-[Lidgren](https://github.com/lidgren/lidgren-network-gen3/)
+[Lidgren](https://github.com/lidgren/lidgren-network-gen3/)\
 
 
 ## Current state (Can be outdated)
