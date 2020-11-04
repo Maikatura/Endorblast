@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "MSSp/R0jGZcy/iHeEh2JUTVfmmUDjQfO6r9uR41KmStORWQIfyo1DQU5yh8IzkzbYJ3cYCDNe1BAP8lei/s0qg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Zyro\\source\\repos\\EndorblastCore\\Game & Server\\EndorblastCore.Lib\\EndorblastCore.Lib.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Zyro\\.nuget\\packages\\discordrichpresence\\1.0.150\\discordrichpresence.1.0.150.nupkg.sha512",
+    "C:\\Users\\Zyro\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
+    "C:\\Users\\Zyro\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\Zyro\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\Zyro\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\Zyro\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.security.accesscontrol\\4.5.0\\system.security.accesscontrol.4.5.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

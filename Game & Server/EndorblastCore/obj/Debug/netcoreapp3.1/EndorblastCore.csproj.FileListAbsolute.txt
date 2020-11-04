@@ -1,0 +1,148 @@
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\bin\Debug\netcoreapp3.1\EndorblastCore.deps.json
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\bin\Debug\netcoreapp3.1\EndorblastCore.dll
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\bin\Debug\netcoreapp3.1\EndorblastCore.pdb
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\bin\Debug\netcoreapp3.1\Nez.dll
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\bin\Debug\netcoreapp3.1\Nez.pdb
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\obj\Debug\netcoreapp3.1\EndorblastCore.csprojAssemblyReference.cache
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\obj\Debug\netcoreapp3.1\EndorblastCore.csproj.CoreCompileInputs.cache
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\obj\Debug\netcoreapp3.1\EndorblastCore.AssemblyInfoInputs.cache
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\obj\Debug\netcoreapp3.1\EndorblastCore.AssemblyInfo.cs
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\obj\Debug\netcoreapp3.1\EndorblastCore.csproj.CopyComplete
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\obj\Debug\netcoreapp3.1\EndorblastCore.dll
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\obj\Debug\netcoreapp3.1\EndorblastCore.pdb
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\bin\Debug\netcoreapp3.1\EndorblastCore.exe
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\bin\Debug\netcoreapp3.1\EndorblastCore.runtimeconfig.json
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\bin\Debug\netcoreapp3.1\EndorblastCore.runtimeconfig.dev.json
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\bin\Debug\netcoreapp3.1\MonoGame.Framework.dll
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libSDL2-2.0.so.0
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libopenal.so.1
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\bin\Debug\netcoreapp3.1\runtimes\osx\native\libSDL2-2.0.0.dylib
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\bin\Debug\netcoreapp3.1\runtimes\osx\native\libopenal.1.dylib
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\SDL2.dll
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\soft_oal.dll
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\SDL2.dll
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\soft_oal.dll
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\obj\Debug\netcoreapp3.1\EndorblastCore.genruntimeconfig.cache
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\obj\Debug\netcoreapp3.1\EndorblastCore.csprojAssemblyReference.cache
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\obj\Debug\netcoreapp3.1\EndorblastCore.csproj.CoreCompileInputs.cache
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\obj\Debug\netcoreapp3.1\EndorblastCore.AssemblyInfoInputs.cache
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\obj\Debug\netcoreapp3.1\EndorblastCore.AssemblyInfo.cs
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\obj\Debug\netcoreapp3.1\EndorblastCore.dll
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\obj\Debug\netcoreapp3.1\EndorblastCore.pdb
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Effects\Fire\Fire1.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Effects\Fire\Fire2.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Effects\Fire\FirePole1.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Enemies\Testing\Enemy1_Damage.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Enviorment\Backgrounds\Forest\cloud.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Enviorment\Backgrounds\Forest\mountain2.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Enviorment\Backgrounds\Forest\pine1.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Enviorment\Backgrounds\Forest\pine2.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Enviorment\Backgrounds\Forest\sky.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Enviorment\Backgrounds\Forest\sky_cloud.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Icons\Currency\Currency.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Icons\Currency\CurrencyPremium.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\Bevels.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\BloomCombine.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\BloomExtract.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\Crosshatch.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\DeferredLighting.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\DeferredSprite.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\Dissolve.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\Dots.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\ForwardLighting.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\GaussianBlur.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\Grayscale.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\HeatDistortion.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\Invert.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\Letterbox.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\MultiTexture.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\MultiTextureOverlay.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\Noise.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\PaletteCycler.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\PixelGlitch.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\PolygonLight.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\Reflection.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\Scanlines.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\Sepia.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\SpriteAlphaTest.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\SpriteBlinkEffect.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\SpriteEffect.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\SpriteLightMultiply.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\SpriteLines.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\StencilLight.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\Twist.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Nez\Effects\Vignette.mgfxo
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Player\Base\Chara_BasicAttack.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Player\Base\Chara_Idle.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Player\Base\Chara_Running.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Player\Clothes\Maid\Maid_Body.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Player\Clothes\Maid\Maid_Body_Running.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Player\Clothes\Maid\Maid_Headband.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Player\Clothes\Maid\Maid_Headband_Running.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Player\Clothes\Maid\Maid_Stockings.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Player\Clothes\Maid\Maid_Stockings_Running.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Player\Hair\Chara_Idle_BackHair_V1.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Player\Hair\Chara_Idle_FrontHair_V1.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Player\Hair\Chara_Running_BackHair_v1.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Player\Hair\Chara_Running_FrontHair_v1.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Player\Hair\Pink\Chara_Idle_BackHair_V1.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Player\Hair\Pink\Chara_Idle_FrontHair_V1.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Player\Hair\Pink\Chara_Running_BackHair_v1.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Player\Hair\Pink\Chara_Running_FrontHair_v1.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Player\nothing.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\README.txt
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Tilesets\GameArea\Bush1.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Tilesets\GameArea\Bush2.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Tilesets\GameArea\Enviorment.tsx
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Tilesets\GameArea\Enviorment2.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Tilesets\GameArea\Enviorment2.tsx
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Tilesets\GameArea\GameStart.tmx
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Tilesets\GameArea\House1.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Tilesets\GameArea\IndoorObjects.tsx
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Tilesets\GameArea\obj_indoors.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Tilesets\GameArea\SmallBush1.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Tilesets\GameArea\SmallBush2.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Tilesets\GameArea\Tileset.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Tilesets\GameArea\Tileset.tsx
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Tilesets\GameArea\Tree1.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Tilesets\GameArea\Tree2.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Tilesets\MainMenu\MainMenu.tmx
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Tilesets\MainMenu\Tileset.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Tilesets\MainMenu\Tileset.tsx
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\UI\Login\UI_Login2.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\EndorblastCore.exe
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\Enemies\Testing\Enemy1.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Content\player.png
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\EndorblastCore.deps.json
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\EndorblastCore.runtimeconfig.json
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\EndorblastCore.runtimeconfig.dev.json
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\EndorblastCore.dll
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\EndorblastCore.pdb
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\DiscordRPC.dll
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\MonoGame.Framework.dll
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libSDL2-2.0.so.0
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libopenal.so.1
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\runtimes\osx\native\libSDL2-2.0.0.dylib
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\runtimes\osx\native\libopenal.1.dylib
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\SDL2.dll
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\soft_oal.dll
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\SDL2.dll
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\soft_oal.dll
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\EndorblastCore.Lib.dll
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Lidgren.Network.dll
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Nez.dll
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\EndorblastCore.Lib.pdb
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\bin\Debug\netcoreapp3.1\Nez.pdb
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\obj\Debug\netcoreapp3.1\EndorblastCore.csproj.CopyComplete
+C:\Users\Zyro\source\repos\EndorblastCore\Game & Server\EndorblastCore\obj\Debug\netcoreapp3.1\EndorblastCore.genruntimeconfig.cache

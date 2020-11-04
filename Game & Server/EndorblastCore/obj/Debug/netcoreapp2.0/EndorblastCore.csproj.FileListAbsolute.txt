@@ -1,0 +1,15 @@
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\bin\Debug\netcoreapp2.0\EndorblastCore.deps.json
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\bin\Debug\netcoreapp2.0\EndorblastCore.runtimeconfig.json
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\bin\Debug\netcoreapp2.0\EndorblastCore.runtimeconfig.dev.json
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\bin\Debug\netcoreapp2.0\EndorblastCore.dll
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\bin\Debug\netcoreapp2.0\EndorblastCore.pdb
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\bin\Debug\netcoreapp2.0\Nez.dll
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\bin\Debug\netcoreapp2.0\Nez.pdb
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\obj\Debug\netcoreapp2.0\EndorblastCore.csprojAssemblyReference.cache
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\obj\Debug\netcoreapp2.0\EndorblastCore.csproj.CoreCompileInputs.cache
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\obj\Debug\netcoreapp2.0\EndorblastCore.AssemblyInfoInputs.cache
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\obj\Debug\netcoreapp2.0\EndorblastCore.AssemblyInfo.cs
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\obj\Debug\netcoreapp2.0\EndorblastCore.csproj.CopyComplete
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\obj\Debug\netcoreapp2.0\EndorblastCore.dll
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\obj\Debug\netcoreapp2.0\EndorblastCore.pdb
+C:\Users\Zyro\source\repos\EndorblastCore\EndorblastCore\obj\Debug\netcoreapp2.0\EndorblastCore.genruntimeconfig.cache
