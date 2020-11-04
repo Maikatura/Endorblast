@@ -6,11 +6,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Xna.Framework;
 
 namespace Endorblast.Lib.Game.Network
 {
+    public class PositionBuffer
+    {
+        public float x;
+        public float y;
+        public float velX;
+    }
+
     class CharacterSendInputCommand
     {
+        
 
         public void Read(NetIncomingMessage msg)
         {
@@ -18,37 +27,29 @@ namespace Endorblast.Lib.Game.Network
                 return;
 
             int worldID = msg.ReadInt32();
+            PlayerMoveState state = (PlayerMoveState)msg.ReadByte();
+            //float time = msg.ReadFloat();
 
-            var input = new KeyboardInput();
-
-            input.MoveLeft = msg.ReadBoolean();
-            input.MoveRight = msg.ReadBoolean();
-            input.isSprinting = msg.ReadBoolean();
-            input.isJumping = msg.ReadBoolean();
-
+            //Console.WriteLine(time);
+            //Console.WriteLine(DateTime.Now.Ticks);
+            
             var ch = CharacterManager.Instance.GetConnection(worldID);
 
             if (ch == null)
                 return;
 
-            ch.GetComponent<KeyboardInput>().SetInputs(input);
-            
+            ch.moveState = state;
         }
 
 
-        public void Send(KeyboardInput input)
+        public void Send(PlayerMoveState state, long time)
         {
             NetOutgoingMessage outmsg = NetworkManager.Instance.CreateCharacterMessage();
             outmsg.Write((byte)CharacterPacket.Data);
             outmsg.Write((byte)CharacterDataType.Position);
 
-            
-
-            outmsg.Write(input.MoveLeft);
-            outmsg.Write(input.MoveRight);
-            outmsg.Write(input.isSprinting);
-            outmsg.Write(input.isJumping);
-
+            outmsg.Write((byte)state);
+            outmsg.Write(time);
 
             NetworkManager.Instance.client.SendMessage(outmsg, NetDeliveryMethod.ReliableOrdered);
         }

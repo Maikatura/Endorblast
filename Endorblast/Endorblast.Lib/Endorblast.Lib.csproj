@@ -106,6 +106,7 @@
     <Compile Include="Game\SceneManager.cs" />
     <Compile Include="Game\Skills\BasicSkill.cs" />
     <Compile Include="Game\Skills\DashSkill.cs" />
+    <Compile Include="Game\Skills\JumpSkill.cs" />
     <Compile Include="Game\Skills\Skill.cs" />
     <Compile Include="Game\Enums\NetworkState.cs" />
     <Compile Include="Game\Network\Commands\CharacterComs\CharacterDataCommand.cs" />

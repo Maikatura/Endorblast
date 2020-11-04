@@ -90,7 +90,7 @@ namespace Endorblast
                 return;
             }
 
-            p.Position = new Vector2(e.x, e.y);
+            p.Transform.Position = new Vector2(e.x, e.y);
         }
 
     }

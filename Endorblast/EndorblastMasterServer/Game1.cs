@@ -1,5 +1,7 @@
-﻿using EndorblastServer.Server.Game.Map;
+﻿using Endorblast.Lib;
+using EndorblastServer.Server.Game.Map;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using Nez;
 using System;
 
@@ -12,12 +14,14 @@ namespace EndorblastServer
     public class Game1 : Core
     {
         ServerManager network;
-        
+
         public Game1()
         {
             PauseOnFocusLost = false;
             DebugRenderEnabled = true;
             IsFixedTimeStep = true;
+            ClientSettings.isClient = false;
+            
             
         }
 

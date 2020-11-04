@@ -14,7 +14,7 @@ using Nez.Tiled;
 using Endorblast.Lib.Enums;
 using Endorblast.Lib.Network;
 using Endorblast.Lib.Game.Player;
-
+using Endorblast.Lib.Game.Network;
 
 namespace Endorblast.Lib
 {
@@ -29,7 +29,7 @@ namespace Endorblast.Lib
             Transform.Position.Y == OldPosition.Y;
 
         float SendPositionTimer;
-        float activityTimer;
+        float activityTimer = 0;
         Vector2 mouseInput;
 
         FollowCamera camera;
@@ -56,9 +56,11 @@ namespace Endorblast.Lib
             parallax = Entity.AddComponent(new ParallaxBackground(new List<ParallaxBGSprite>()
             {
                 new ParallaxBGSprite("/Enviorment/Backgrounds/Forest/cloud.png", 0.1f),
-                new ParallaxBGSprite("/Enviorment/Backgrounds/Forest/mountain2.png", 0.5f)
+                new ParallaxBGSprite("/Enviorment/Backgrounds/Forest/mountain2.png", 0.5f),
+                new ParallaxBGSprite("/Enviorment/Backgrounds/Forest/sky.png", 0.9f)
             }));
 
+            isMainPlayer = true;
         }
 
 
@@ -67,8 +69,14 @@ namespace Endorblast.Lib
         {
             base.Update();
 
-
-
+            SendPositionTimer += Time.DeltaTime;
+            if (SendPositionTimer > 0.1f)
+            {
+                new CharacterSendInputCommand().Send(moveState, DateTime.Now.Ticks);
+                SendPositionTimer = 0;
+            }
+               
+            
 
             if (Input.IsKeyDown(Keys.D1))
             {
@@ -78,6 +86,17 @@ namespace Endorblast.Lib
 
                 DoSkill(SkillType.Dash, this, rotation);
                 new CharacterSkillCastCommand().Send(SkillType.Dash, rotation);
+            }
+
+            
+
+            if (Input.IsKeyDown(Keys.Space) && collisionState.Below){
+                mouseInput = Input.MousePosition;
+                var dir = Vector2.Normalize(Input.MousePosition);
+                var rotation = Mathf.Degrees((float)Math.Atan2(dir.Y, dir.X) + (float)(Math.PI * 0.5f));
+
+                DoSkill(SkillType.Jump, this, rotation);
+                new CharacterSkillCastCommand().Send(SkillType.Jump, rotation);
             }
 
             if (Mouse.GetState().LeftButton == ButtonState.Pressed)
@@ -91,15 +110,17 @@ namespace Endorblast.Lib
             }
 
 
-            SendPositionTimer += Time.DeltaTime;
+            
 
             camera.Camera.Transform.Position = this.Entity.Transform.Position;
             //parallax.bgObject.Transform.Position = this.Entity.Transform.Position;
 
             activityTimer += Time.DeltaTime;
-            if (activityTimer > 3)
+            if (activityTimer > 1)
             {
-                //CharacterActivityCommand().Send();
+                
+                
+                
                 activityTimer = 0;
             }
 

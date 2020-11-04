@@ -68,3 +68,4 @@ C:\Users\simon.igelstrom\Documents\GitHub\AnimeEngine2D\Endorblast\Nez.Portable\
 C:\Users\simon.igelstrom\Documents\GitHub\AnimeEngine2D\Endorblast\Nez.Portable\obj\Nez\Debug\Nez.dll
 C:\Users\simon.igelstrom\Documents\GitHub\AnimeEngine2D\Endorblast\Nez.Portable\obj\Nez\Debug\Nez.pdb
 D:\Github\AnimeEngine2D\Endorblast\Nez.Portable\obj\Nez\Debug\Nez.csprojAssemblyReference.cache
+C:\Users\simon.igelstrom\Documents\GitHub\AnimeEngine2D\Endorblast\Nez.Portable\obj\Nez\Debug\Nez.csprojAssemblyReference.cache

@@ -1,7 +1,10 @@
 ﻿using Endorblast;
 using Endorblast.Lib;
 using Endorblast.Lib.Enums;
+using Endorblast.Lib.Game.Network;
 using Lidgren.Network;
+using Microsoft.Xna.Framework;
+using MySql.Data.MySqlClient.Memcached;
 using Nez;
 using Org.BouncyCastle.Bcpg;
 using Renci.SshNet.Security;
@@ -20,38 +23,30 @@ namespace EndorblastServer.Server.NetCommands
 
         public void Read(NetIncomingMessage msg)
         {
-            var input = new KeyboardInput();
-
-            input.MoveLeft = msg.ReadBoolean();
-            input.MoveRight = msg.ReadBoolean();
-            input.isSprinting = msg.ReadBoolean();
-            input.isJumping = msg.ReadBoolean();
+            PlayerMoveState state = (PlayerMoveState)msg.ReadByte();
+            long time = msg.ReadInt64();
+            Console.WriteLine(time);
+            Console.WriteLine(DateTime.Now.Ticks);
 
             var player = CharacterManager.Instance.GetConnection(msg.SenderConnection);
 
             if (player == null)
                 return;
 
-
-            if (!player.GetComponent<KeyboardInput>().OldPosIsPos)
-            {
-                player.GetComponent<KeyboardInput>().SetInputs(input);
-                Send(input, player.WorldID);
-            }
+            player.moveState = state;
+            
+            if (!player.OldPosIsPos)
+                Send(state, player.WorldID);
         }
 
-        public void Send(KeyboardInput input, int WorldID)
+        public void Send(PlayerMoveState state, int WorldID)
         {
             var outmsg = ServerManager.Instance.CreateCharacterMessage();
             outmsg.Write((byte)CharacterPacket.Data);
             outmsg.Write((byte)CharacterDataType.Position);
-
             outmsg.Write(WorldID);
 
-            outmsg.Write(input.MoveLeft);
-            outmsg.Write(input.MoveRight);
-            outmsg.Write(input.isSprinting);
-            outmsg.Write(input.isJumping);
+            outmsg.Write((byte)state);
 
             ServerManager.Instance.Server.SendToAll(outmsg, NetDeliveryMethod.ReliableOrdered);
         }

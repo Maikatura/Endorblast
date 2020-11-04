@@ -64,7 +64,6 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="ClientSettings.cs" />
     <Compile Include="ClothID.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="Game\EnumsData.cs" />

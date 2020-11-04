@@ -28,6 +28,8 @@ namespace Endorblast.Lib
         public bool isServer = true;
         public bool isJumping = false;
 
+
+
         Vector2 OldPosition;
 
         public bool OldPosIsPos =>
@@ -54,6 +56,8 @@ namespace Endorblast.Lib
 
         public void Update()
         {
+
+
 
             if (isClient)
             {
@@ -95,33 +99,31 @@ namespace Endorblast.Lib
                     isJumping = false;
                 }
 
-                if (!OldPosIsPos)
-                {
-                    SendInputToServer(this);
-                }
+                
                 
 
+                
                 OldPosition = Transform.Position;
             }
 
-            
+
         }
 
-        private void SendInputToServer(KeyboardInput input)
-        {
-            new CharacterSendInputCommand().Send(input);
-        }
+        
 
         public void SetInputs(KeyboardInput inputs)
         {
-            if (!isClient)
+            if (!isClient || isServer)
             {
                 this.MoveLeft = inputs.MoveLeft;
                 this.MoveRight = inputs.MoveRight;
                 this.isSprinting = inputs.isSprinting;
                 this.isJumping = inputs.isJumping;
             }
+            
+            
         }
 
     }
 }
+

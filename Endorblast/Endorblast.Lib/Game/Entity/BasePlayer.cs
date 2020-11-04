@@ -14,12 +14,23 @@ using Lidgren.Network;
 using Endorblast.Lib.Network;
 using Endorblast.Lib.Enums;
 using Endorblast.Lib.Game.Network;
+using static Endorblast.Lib.Game.Network.CharacterSendInputCommand;
 
 namespace Endorblast.Lib
 {
+    public enum PlayerMoveState
+    {
+        None,
+        MoveLeft,
+        MoveRight
+    }
+
+
     public class BasePlayer : Component, IUpdatable
     {
 
+
+        public PlayerMoveState moveState = PlayerMoveState.None;
 
         public float moveSpeed = 100;
         public float defaultSpeed = 100;
@@ -28,10 +39,12 @@ namespace Endorblast.Lib
         public float jumpHeight = 16 * 7;
 
         public string Name;
-        public Vector2 Position;
+
         public Vector2 OldPosition;
         public int WorldID;
         public string CharacterName;
+
+        public bool isMainPlayer = false;
 
         public Vector2 latestDirection;
         public Vector2 direction;
@@ -49,6 +62,10 @@ namespace Endorblast.Lib
         public TiledMapMover mover;
         public TiledMapMover.CollisionState collisionState = new TiledMapMover.CollisionState();
         public BoxCollider boxCollider;
+        public List<PositionBuffer> bufferPos = new List<PositionBuffer>();
+        public float lastTimeDiff;
+        public float elapsedTime;
+
         public Vector2 velocity;
         Vector2 mouseInput;
 
@@ -56,7 +73,7 @@ namespace Endorblast.Lib
 
         bool IsMoving => Key.MoveLeft || Key.MoveRight;
 
-        bool OldPosIsPos =>
+        public bool OldPosIsPos =>
             Transform.Position.X == OldPosition.X &&
             Transform.Position.Y == OldPosition.Y;
 
@@ -104,62 +121,66 @@ namespace Endorblast.Lib
         void KeyInput()
         {
 
-            if (!Key.MoveLeft && !Key.MoveRight)
-            {
-                velocity.X = 0;
-                animations.AnimationHandler(PlayerState.Idle, currentDirection);
-            }
 
-            if (Key.MoveLeft)
+            if (isMainPlayer)
             {
-                velocity.X = -moveSpeed;
-                currentDirection = true;
-                animations.AnimationHandler(PlayerState.Running, currentDirection);
-            }
-
-            if (Key.MoveRight)
-            {
-                velocity.X = moveSpeed;
-                currentDirection = false;
-                animations.AnimationHandler(PlayerState.Running, currentDirection);
-            }
-
-            if (Key.MoveRight && Key.MoveLeft)
-            {
-                velocity.X = 0;
-                animations.AnimationHandler(PlayerState.Idle, currentDirection);
-            }
-
-            if (IsMoving)
-            {
-                // LOL
-            }
-
-            if (!OldPosIsPos)
-            {
-                if (SendPositionTimer > 0.015)
+                if (IsMoving)
                 {
+                    if (Key.MoveLeft)
+                    {
+                        moveState = PlayerMoveState.MoveRight;
+                    }
 
-                    SendPositionTimer = 2;
+                    if (Key.MoveRight)
+                    {
+                        moveState = PlayerMoveState.MoveLeft;
+                    }
+                }
+                else
+                {
+                    moveState = PlayerMoveState.None;
+                }
+
+                if (!OldPosIsPos)
+                {
+                    if (SendPositionTimer > 0.015)
+                    {
+                        SendPositionTimer = 0;
+                    }
                 }
             }
+
+
+
 
             latestDirection = velocity;
             OldPosition = Transform.Position;
 
 
+            if (moveState == PlayerMoveState.MoveLeft)
+            {
+                velocity.X = moveSpeed;
+                currentDirection = false;
+                animations.AnimationHandler(PlayerState.Running, currentDirection);
+            }
+            else if (moveState == PlayerMoveState.MoveRight)
+            {
+                velocity.X = -moveSpeed;
+                currentDirection = true;
+                animations.AnimationHandler(PlayerState.Running, currentDirection);
+            }
+            else if (moveState == PlayerMoveState.None)
+            {
+                velocity.X = 0;
+                animations.AnimationHandler(PlayerState.Idle, currentDirection);
+            }
 
 
         }
 
         public void Movement()
         {
-            if (collisionState.Below && Key.isJumping)
-            {
-                Key.isJumping = false;
-                velocity.Y = -Mathf.Sqrt(2 * jumpHeight * gravity);
-            }
-
+         
             velocity.Y += gravity * Time.DeltaTime;
 
             mover.Move(velocity * Time.DeltaTime, boxCollider, collisionState);
@@ -173,6 +194,7 @@ namespace Endorblast.Lib
             {
                 velocity.Y = 0;
             }
+
         }
 
         public void MoveCharacter(Vector2 velocity)

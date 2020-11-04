@@ -62,6 +62,17 @@ namespace EndorblastServer
             return list;
         }
 
+        public List<Endorblast.Lib.BasePlayer> GetPlayers()
+        {
+            var list = new List<Endorblast.Lib.BasePlayer>();
+
+            foreach (var p in Characters)
+                list.Add(p);
+
+
+            return list;
+        }
+
         public void AddPlayer(Endorblast.Lib.BasePlayer player)
         {
             player.WorldID = CurrentWorldID;

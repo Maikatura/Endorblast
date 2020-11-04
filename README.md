@@ -17,11 +17,11 @@ Copying over our sprites to this source is not allowed!\
 Join the discord if you wanna play our game!\
 https://discord.gg/5U5uaft
 
+
 ## Libraries
 [Monogame](https://www.monogame.net/)\
 [Nez](https://github.com/prime31/Nez)\
 [Lidgren](https://github.com/lidgren/lidgren-network-gen3/)\
-[Endorblast.Lib](https://github.com/zyrolul/endorblast)
 
 
 ## Current state (Can be outdated)

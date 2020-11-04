@@ -57,9 +57,8 @@ namespace Endorblast.Lib.Game.Player
             {
 
 
-                item.spriteObject.Transform.Position += deltaMovment * item.parallexSpeed;
+                item.spriteObject.Transform.Position += new Vector2(deltaMovment.X * item.parallexSpeed,0);
 
-                Console.WriteLine(item.parallexSpeed);
 
                 //Console.WriteLine(Math.Abs(myPlayer.Position.X - item.Transform.Position.X) >= textureUnitX);
 
@@ -67,7 +66,7 @@ namespace Endorblast.Lib.Game.Player
                 {
                     float offsetX = (Core.Scene.Camera.Position.X - item.spriteObject.Transform.Position.X) % item.textureUnitX;
 
-                    item.spriteObject.Transform.Position = new Vector2(Mathf.Round(Core.Scene.Camera.Position.X + offsetX), Mathf.Round(Core.Scene.Camera.Position.Y));
+                    item.spriteObject.Transform.Position = new Vector2(Mathf.Round(Core.Scene.Camera.Position.X + offsetX), Mathf.Round(item.spriteObject.Transform.Position.Y));
                 }
             }
 

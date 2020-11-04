@@ -8,7 +8,9 @@ namespace Endorblast.Lib.Enums
 {
     public enum SkillType
     {
+        Jump,
         Basic,
         Dash,
+
     }
 }
