@@ -1,9 +1,9 @@
 ![](https://i.imgur.com/NT1sq6f.png)
 
-<h3 align="center">Useful Links<h3>
+<h2 align="center">Useful Links<h2>
 <div align="center">
-    <a href="https://www.patreon.com/zyrolul"><img src="https://i.imgur.com/PzFGAH5.png" width="40" /></a>
-    <a href="https://discord.gg/5U5uaft"><img src="https://i.imgur.com/fyF4Yic.png" width="40" /></a>
+    <a href="https://www.patreon.com/zyrolul"><img src="https://i.imgur.com/PzFGAH5.png" width="50" /></a>
+    <a href="https://discord.gg/5U5uaft"><img src="https://i.imgur.com/fyF4Yic.png" width="50" /></a>
 </div>
 
 ## Setup
