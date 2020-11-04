@@ -1,6 +1,6 @@
 ![](https://i.imgur.com/NT1sq6f.png)
 
-<h2 align="center">Useful Links<h2>
+<h3 align="center">Useful Links<h3>
 <div align="center">
     <a href="https://www.patreon.com/zyrolul"><img src="https://i.imgur.com/PzFGAH5.png" width="50" /></a>
     <a href="https://discord.gg/5U5uaft"><img src="https://i.imgur.com/fyF4Yic.png" width="50" /></a>
