@@ -25,10 +25,6 @@ https://discord.gg/5U5uaft
 [Monogame](https://www.monogame.net/)\
 [Nez](https://github.com/prime31/Nez)\
 [Lidgren](https://github.com/lidgren/lidgren-network-gen3/)
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 
 ## Current state (Can be outdated)
 ![](https://i.imgur.com/CUjOQ3r.gif)
