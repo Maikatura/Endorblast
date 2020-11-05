@@ -11,6 +11,9 @@ I dont give assistance with setting it up.\
 Program will not compile since its missing every sprite\
 You need to remake all sprites and add them to the project
 
+## Features
+I don't know what I feel like adding :P
+
 ## License
 You are allowed to use the game engine but give credit :)\
 I am allowed to change the license at anytime you need to be updated on what is relevant.\
