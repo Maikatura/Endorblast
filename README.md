@@ -13,8 +13,9 @@ You need to remake all sprites and add them to the project
 
 ## License
 You are allowed to use the game engine but give credit :)\
-I am allowed to change the licnese at anytime you need to be updated on what is relevant.\
-Copying over our sprites to this source is not allowed!\
+I am allowed to change the license at anytime you need to be updated on what is relevant.\
+Copying over our sprites to this source is not allowed! and will get you in trouble.
+
 ***Make your own sprites!***
 
 ## Discord
