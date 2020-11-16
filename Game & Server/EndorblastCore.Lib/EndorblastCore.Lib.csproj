@@ -19,6 +19,7 @@
     <None Remove="Content\Enviorment\Backgrounds\Forest\sky_cloud.png" />
     <None Remove="Content\Icons\Currency\Currency.png" />
     <None Remove="Content\Icons\Currency\CurrencyPremium.png" />
+    <None Remove="Content\Logos\Splashscreen1.png" />
     <None Remove="Content\Nez\Effects\Bevels.mgfxo" />
     <None Remove="Content\Nez\Effects\BloomCombine.mgfxo" />
     <None Remove="Content\Nez\Effects\BloomExtract.mgfxo" />
@@ -133,6 +134,9 @@
     </Content>
     <Content Include="Content\Icons\Currency\CurrencyPremium.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Logos\Splashscreen1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\Nez\Effects\Bevels.mgfxo">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

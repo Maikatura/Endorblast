@@ -32,7 +32,7 @@ namespace EndorblastCore.Server
             context = new SynchronizationContext();
             var c = new NetPeerConfiguration("endorblast");
             c.Port = 5555;
-            c.MaximumConnections = 10;
+            c.MaximumConnections = 200;
             server = new NetServer(c);
 
             server.RegisterReceivedCallback(NetworkLoop, context);
@@ -184,9 +184,6 @@ namespace EndorblastCore.Server
 
             switch (packet)
             {
-                case CharacterPacket.SkillCast:
-                    new Server.NetCommands.CharacterSkillCastCommand().Read(message);
-                    break;
                 case CharacterPacket.Data:
                     new Server.NetCommands.CharacterDataCommand().Read(message);
 

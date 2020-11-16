@@ -50,12 +50,12 @@ namespace EndorblastCore.Lib.Enums
     public enum CharacterDataType
     {
         OnlineCharacters,
-        Position
+        Position,
+        SkillCast
     }
 
     public enum CharacterPacket
     {
-        SkillCast,
         Data,
         List,
         Chat,

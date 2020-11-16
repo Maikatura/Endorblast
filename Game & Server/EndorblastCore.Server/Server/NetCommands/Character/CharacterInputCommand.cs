@@ -23,6 +23,7 @@ namespace EndorblastCore.Server.NetCommands
         public void Read(NetIncomingMessage msg)
         {
             PlayerMoveState state = (PlayerMoveState)msg.ReadByte();
+            float time = msg.ReadFloat();
 
             var player = CharacterManager.Instance.GetConnection(msg.SenderConnection);
 
@@ -32,20 +33,22 @@ namespace EndorblastCore.Server.NetCommands
             if (player.moveState != state)
             {
                 player.moveState = state;
-                Send(state, player.WorldID);
+                Send(state, player.Transform.Position.X, player.Transform.Position.Y, time, player.WorldID);
             }
         }
 
-        public void Send(PlayerMoveState state, int WorldID)
+        public void Send(PlayerMoveState state, float x, float y, float time, int WorldID)
         {
             var outmsg = ServerManager.Instance.CreateCharacterMessage();
             outmsg.Write((byte)CharacterPacket.Data);
             outmsg.Write((byte)CharacterDataType.Position);
             outmsg.Write(WorldID);
-
             outmsg.Write((byte)state);
+            outmsg.Write(time);
+            outmsg.Write(x);
+            outmsg.Write(y);
 
-            ServerManager.Instance.Server.SendToAll(outmsg, NetDeliveryMethod.ReliableOrdered);
+            ServerManager.Instance.Server.SendToAll(outmsg, NetDeliveryMethod.Unreliable);
         }
 
     }

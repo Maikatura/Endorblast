@@ -47,12 +47,12 @@ namespace EndorblastCore.Lib.Network
             switch (dataType)
             {
                 case CharacterDataType.OnlineCharacters:
-
                     break;
                 case CharacterDataType.Position:
                     new CharacterSendInputCommand().Read(msg);
-
-
+                    break;
+                case CharacterDataType.SkillCast:
+                    new CharacterSkillCastCommand().Read(msg);
                     break;
                 default:
                     Console.WriteLine("THE DATA THAT GOT HERE DOESN'T EXIST!");

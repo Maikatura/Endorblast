@@ -28,13 +28,14 @@ namespace EndorblastCore.Lib
 
         public StaticCharacter() { }
 
-        public StaticCharacter(string name, int posX, int posY, int hp , int mana)
+        public StaticCharacter(string name, int posX, int posY, int hp , int mana, int worldID)
         {
             Name = name;
             PosX = posX;
             PosY = posY;
             Health = hp;
             Mana = mana;
+            WorldID = worldID;
         }
 
         public BasePlayer ToBasePlayer()

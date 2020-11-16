@@ -58,8 +58,10 @@ namespace EndorblastCore.Lib.Network
 
         public void Send(SkillType type, float rotation)
         {
+
             var msg = NetworkManager.Instance.CreateCharacterMessage();
-            msg.Write((byte)CharacterPacket.SkillCast);
+            msg.Write((byte)CharacterPacket.Data);
+            msg.Write((byte)CharacterDataType.SkillCast);
             msg.Write((byte)type);
             msg.Write(rotation);
 

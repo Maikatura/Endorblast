@@ -27,6 +27,7 @@ namespace EndorblastCore.Server.NetCommands
             if (player == null)
                 return;
 
+
             player.DoSkill(type, player, dir);
             Send(type, player.WorldID, dir);
         }
@@ -35,7 +36,8 @@ namespace EndorblastCore.Server.NetCommands
         public void Send(SkillType type, int pid, float dir)
         {
             NetOutgoingMessage outmsg = ServerManager.Instance.CreateCharacterMessage();
-            outmsg.Write((byte)CharacterPacket.SkillCast);
+            outmsg.Write((byte)CharacterPacket.Data);
+            outmsg.Write((byte)CharacterDataType.SkillCast);
 
             outmsg.Write((byte)type);
             outmsg.Write(pid);

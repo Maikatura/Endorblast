@@ -45,7 +45,9 @@ namespace EndorblastCore.Server.NetCommands
             switch (dataType)
             {
                 case CharacterDataType.OnlineCharacters:
-
+                    break;
+                case CharacterDataType.SkillCast:
+                    new CharacterSkillCastCommand().Read(msg);
                     break;
                 case CharacterDataType.Position:
                     new CharacterInputCommand().Read(msg);

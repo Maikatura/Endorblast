@@ -47,21 +47,13 @@ namespace EndorblastCore.Server.NetCommands
 
             foreach (var item in CharacterManager.Instance.Characters)
             {
-                var outmsg = CreateMessage(ch);
-                ServerManager.Instance.Server.SendMessage(outmsg, item.connection, NetDeliveryMethod.ReliableOrdered);
+                    var outmsg = CreateMessage(ch);
+                    ServerManager.Instance.Server.SendMessage(outmsg, item.connection, NetDeliveryMethod.ReliableOrdered);
             }
 
-            foreach (var item in EnemyManager.Instance.Enemies)
-            {
-                var outmsg = ServerManager.Instance.CreateWorldMessage();
-                outmsg.Write((byte)WorldPacket.EnemySpawn);
-                outmsg.WriteAllProperties(item.ToStaticEnemy());
-
-                ServerManager.Instance.Server.SendMessage(outmsg, ch.connection, NetDeliveryMethod.ReliableOrdered);
-            }
+            
 
             //outmsg.WriteAllProperties(ch);
-
             Console.WriteLine("WorldChracterEnderCommand - Sent " + ch.AccountName);
         }
 
@@ -69,9 +61,11 @@ namespace EndorblastCore.Server.NetCommands
         {
             var outmsg = ServerManager.Instance.CreateWorldMessage();
             outmsg.Write((byte)WorldPacket.CharacterEnter);
+            outmsg.Write(ch.WorldID);
             outmsg.Write(ch.Name);
             outmsg.Write(ch.PosX);
             outmsg.Write(ch.PosY);
+            
 
             return outmsg;
         }

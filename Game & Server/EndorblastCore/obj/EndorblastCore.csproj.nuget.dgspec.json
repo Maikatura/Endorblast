@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Zyro\\source\\repos\\EndorblastCore\\Game & Server\\EndorblastCore\\EndorblastCore.csproj": {}
+    "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\GamerEngineNet\\Game & Server\\EndorblastCore\\EndorblastCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Zyro\\source\\repos\\EndorblastCore\\Game & Server\\EndorblastCore.Lib\\EndorblastCore.Lib.csproj": {
+    "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\GamerEngineNet\\Game & Server\\EndorblastCore.Lib\\EndorblastCore.Lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Zyro\\source\\repos\\EndorblastCore\\Game & Server\\EndorblastCore.Lib\\EndorblastCore.Lib.csproj",
+        "projectUniqueName": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\GamerEngineNet\\Game & Server\\EndorblastCore.Lib\\EndorblastCore.Lib.csproj",
         "projectName": "EndorblastCore.Lib",
-        "projectPath": "C:\\Users\\Zyro\\source\\repos\\EndorblastCore\\Game & Server\\EndorblastCore.Lib\\EndorblastCore.Lib.csproj",
-        "packagesPath": "C:\\Users\\Zyro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Zyro\\source\\repos\\EndorblastCore\\Game & Server\\EndorblastCore.Lib\\obj\\",
+        "projectPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\GamerEngineNet\\Game & Server\\EndorblastCore.Lib\\EndorblastCore.Lib.csproj",
+        "packagesPath": "C:\\Users\\simon.igelstrom\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\GamerEngineNet\\Game & Server\\EndorblastCore.Lib\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Zyro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\simon.igelstrom\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,15 +22,13 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://teamcity.monogame.net/guestAuth/app/nuget/feed/_Root/default/v3/index.json": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.emzi0767.com/api/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Zyro\\source\\repos\\EndorblastCore\\Game & Server\\Nez.Portable\\Nez.csproj": {
-                "projectPath": "C:\\Users\\Zyro\\source\\repos\\EndorblastCore\\Game & Server\\Nez.Portable\\Nez.csproj"
+              "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\GamerEngineNet\\Game & Server\\Nez.Portable\\Nez.csproj": {
+                "projectPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\GamerEngineNet\\Game & Server\\Nez.Portable\\Nez.csproj"
               }
             }
           }
@@ -67,24 +62,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Zyro\\source\\repos\\EndorblastCore\\Game & Server\\EndorblastCore\\EndorblastCore.csproj": {
+    "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\GamerEngineNet\\Game & Server\\EndorblastCore\\EndorblastCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Zyro\\source\\repos\\EndorblastCore\\Game & Server\\EndorblastCore\\EndorblastCore.csproj",
+        "projectUniqueName": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\GamerEngineNet\\Game & Server\\EndorblastCore\\EndorblastCore.csproj",
         "projectName": "EndorblastCore",
-        "projectPath": "C:\\Users\\Zyro\\source\\repos\\EndorblastCore\\Game & Server\\EndorblastCore\\EndorblastCore.csproj",
-        "packagesPath": "C:\\Users\\Zyro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Zyro\\source\\repos\\EndorblastCore\\Game & Server\\EndorblastCore\\obj\\",
+        "projectPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\GamerEngineNet\\Game & Server\\EndorblastCore\\EndorblastCore.csproj",
+        "packagesPath": "C:\\Users\\simon.igelstrom\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\GamerEngineNet\\Game & Server\\EndorblastCore\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Zyro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\simon.igelstrom\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -92,18 +84,16 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://teamcity.monogame.net/guestAuth/app/nuget/feed/_Root/default/v3/index.json": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.emzi0767.com/api/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Zyro\\source\\repos\\EndorblastCore\\Game & Server\\EndorblastCore.Lib\\EndorblastCore.Lib.csproj": {
-                "projectPath": "C:\\Users\\Zyro\\source\\repos\\EndorblastCore\\Game & Server\\EndorblastCore.Lib\\EndorblastCore.Lib.csproj"
+              "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\GamerEngineNet\\Game & Server\\EndorblastCore.Lib\\EndorblastCore.Lib.csproj": {
+                "projectPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\GamerEngineNet\\Game & Server\\EndorblastCore.Lib\\EndorblastCore.Lib.csproj"
               },
-              "C:\\Users\\Zyro\\source\\repos\\EndorblastCore\\Game & Server\\Nez.Portable\\Nez.csproj": {
-                "projectPath": "C:\\Users\\Zyro\\source\\repos\\EndorblastCore\\Game & Server\\Nez.Portable\\Nez.csproj"
+              "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\GamerEngineNet\\Game & Server\\Nez.Portable\\Nez.csproj": {
+                "projectPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\GamerEngineNet\\Game & Server\\Nez.Portable\\Nez.csproj"
               }
             }
           }
@@ -141,24 +131,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Zyro\\source\\repos\\EndorblastCore\\Game & Server\\Nez.Portable\\Nez.csproj": {
+    "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\GamerEngineNet\\Game & Server\\Nez.Portable\\Nez.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Zyro\\source\\repos\\EndorblastCore\\Game & Server\\Nez.Portable\\Nez.csproj",
+        "projectUniqueName": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\GamerEngineNet\\Game & Server\\Nez.Portable\\Nez.csproj",
         "projectName": "Nez",
-        "projectPath": "C:\\Users\\Zyro\\source\\repos\\EndorblastCore\\Game & Server\\Nez.Portable\\Nez.csproj",
-        "packagesPath": "C:\\Users\\Zyro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Zyro\\source\\repos\\EndorblastCore\\Game & Server\\Nez.Portable\\obj\\Nez\\",
+        "projectPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\GamerEngineNet\\Game & Server\\Nez.Portable\\Nez.csproj",
+        "packagesPath": "C:\\Users\\simon.igelstrom\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\GamerEngineNet\\Game & Server\\Nez.Portable\\obj\\Nez\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Zyro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\simon.igelstrom\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -166,9 +153,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://teamcity.monogame.net/guestAuth/app/nuget/feed/_Root/default/v3/index.json": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.emzi0767.com/api/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
@@ -209,7 +194,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

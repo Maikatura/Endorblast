@@ -76,6 +76,7 @@ namespace EndorblastCore.Server
 
         public void AddPlayer(EndorblastCore.Lib.BasePlayer player)
         {
+            
             player.WorldID = CurrentWorldID;
             Characters.Add(GameManager.Instance.AddPlayerToScene(player));
             Console.WriteLine(player.Name + " joined world with ID:" + CurrentWorldID);
@@ -101,8 +102,8 @@ namespace EndorblastCore.Server
             if (ch != null)
             {
                 new WorldCharacterExitCommand().Send(ch.ToStaticCharacter());
-                ch.Entity.Destroy();
                 Characters.Remove(ch);
+                ch.Entity.Destroy();
                 Console.WriteLine("Removed character: " + ch.Name);
             }
             
@@ -115,9 +116,9 @@ namespace EndorblastCore.Server
             if (ch != null)
             {
                 new WorldCharacterExitCommand().Send(ch.ToStaticCharacter());
-                ch.Entity.Destroy();
                 Characters.Remove(ch);
-                Console.WriteLine("Removed character: " + sch.WorldID);
+                ch.Entity.Destroy();
+                Console.WriteLine("Removed character: " + ch.WorldID);
             }
 
             

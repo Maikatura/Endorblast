@@ -1,4 +1,5 @@
-﻿using Nez;
+﻿using EndorblastCore.Lib;
+using Nez;
 using System;
 
 namespace EndorblastCore
@@ -8,11 +9,14 @@ namespace EndorblastCore
         [STAThread]
         static void Main()
         {
+            
             using (var game = new Game1())
-            {
                 game.Run();
-            }
-                
+            
+            
+
+
+            
         }
     }
 }

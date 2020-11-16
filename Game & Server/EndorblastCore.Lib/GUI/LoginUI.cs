@@ -17,7 +17,7 @@ namespace EndorblastCore.Lib.GUI
 
         static TextButton button;
 
-        public static void Init(Scene scene)
+        public static void Init()
         {
             Entity UI = new Entity("LoginMenu");
             canvas = UI.AddComponent(new UICanvas());
@@ -81,7 +81,7 @@ namespace EndorblastCore.Lib.GUI
             table.AddElement(insideBox);
 
 
-            scene.AddEntity(UI);
+            Core.Scene.AddEntity(UI);
         }
 
 

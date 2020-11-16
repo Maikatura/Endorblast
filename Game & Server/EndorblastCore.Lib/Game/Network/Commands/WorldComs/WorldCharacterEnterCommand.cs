@@ -15,6 +15,9 @@ namespace EndorblastCore.Lib.Network
 
         public void Read(NetIncomingMessage msg)
         {
+
+
+            int worldID = msg.ReadInt32();
             string username = msg.ReadString();
 
             float x = msg.ReadFloat();
@@ -23,9 +26,13 @@ namespace EndorblastCore.Lib.Network
             if (NetworkManager.Instance.State == NetworkState.InGame)
             {
                 if (username.ToUpper() == NetworkManager.AccountName.ToUpper())
-                    CharacterManager.Instance.AddPlayer(GameManager.instance.CreateEntity(2, username, true), username, x , y);
+                {
+                    NetworkManager.Instance.WorldID = worldID;
+                    CharacterManager.Instance.AddPlayer(GameManager.instance.CreateEntity(2, username, true), username, x, y, worldID);
+                }
+                    
                 else
-                    CharacterManager.Instance.AddPlayer(GameManager.instance.CreateEntity(2, username, false), username, x, y);
+                    CharacterManager.Instance.AddPlayer(GameManager.instance.CreateEntity(2, username, false), username, x, y, worldID);
 
                 Console.WriteLine("Added player!");
             }

@@ -15,6 +15,8 @@ using EndorblastCore.Lib.Network;
 using EndorblastCore.Lib.Enums;
 using EndorblastCore.Lib.Game.Network;
 using static EndorblastCore.Lib.Game.Network.CharacterSendInputCommand;
+using System.Runtime.InteropServices.ComTypes;
+using Nez.UI;
 
 namespace EndorblastCore.Lib
 {
@@ -25,6 +27,13 @@ namespace EndorblastCore.Lib
         MoveRight
     }
 
+    public class MoveBuffer
+    {
+        public float time;                  // Server Time sent.
+        public float X;                     // Servers X Position of player
+        public float Y;                     // Servers Y Position of player
+        public PlayerMoveState state;       // What state the player should be in.
+    }
 
     public class BasePlayer : Component, IUpdatable
     {
@@ -39,24 +48,27 @@ namespace EndorblastCore.Lib
         public float jumpHeight = 16 * 7;
 
         public int currentLobbyId;
+        public int WorldID;
 
         public string Name;
-
-        public Vector2 OldPosition;
-        public int WorldID;
         public string CharacterName;
 
         public bool isMainPlayer = false;
+        public bool skillButtonUp = true;
+        public bool currentDirection = true;
 
+        public Vector2 OldPosition;
         public Vector2 latestDirection;
         public Vector2 direction;
+        public Vector2 velocity;
+
+
+
 
         public NetConnection connection;
 
         public Skill currentSkill;
-        public bool skillButtonUp = true;
-
-        public bool currentDirection = true;
+        
 
         public KeyboardInput Key;
         public PlayerAnimations animations;
@@ -64,14 +76,17 @@ namespace EndorblastCore.Lib
         public TiledMapMover mover;
         public TiledMapMover.CollisionState collisionState = new TiledMapMover.CollisionState();
         public BoxCollider boxCollider;
-        public List<PositionBuffer> bufferPos = new List<PositionBuffer>();
-        public float lastTimeDiff;
-        public float elapsedTime;
-
-        public Vector2 velocity;
 
 
-        
+
+
+        // Network Prediction Stuff
+        float correctionThreashold = 3f;
+        public List<MoveBuffer> bufferMove = new List<MoveBuffer>();
+        public MoveBuffer currentBuffer;
+
+        public Skill skillBuffer = new Skill();
+
 
         bool IsMoving => Key.MoveLeft || Key.MoveRight;
 
@@ -84,31 +99,33 @@ namespace EndorblastCore.Lib
 
         public virtual void Update()
         {
-
             KeyInput();
+            MovementPrediction();
             Movement();
+            SkillBuffer();
             currentSkill?.Update();
         }
 
         public void DoSkill(SkillType type, BasePlayer player, float rotation)
         {
-            if (currentSkill != null)
+            if (currentSkill == null)
             {
-                if (currentSkill.isExiting)
-                {
-                    currentSkill = null;
-                }
+                currentSkill = new Skill();
+                currentSkill.ExitState();
             }
-            else
+                
+            if (currentSkill.isExiting)
             {
-                if (currentSkill == null)
-                {
-                    currentSkill = Skill.DoSkill(type, player, rotation);
-                }
+                currentSkill = Skill.DoSkill(type, player, rotation);
             }
         }
 
         public override void OnAddedToEntity()
+        {
+            InitComponents();   
+        }
+
+        public virtual void InitComponents()
         {
             Key = this.GetComponent<KeyboardInput>();
             mover = this.GetComponent<TiledMapMover>();
@@ -122,8 +139,6 @@ namespace EndorblastCore.Lib
 
         void KeyInput()
         {
-
-
             if (isMainPlayer)
             {
                 if (IsMoving)
@@ -145,12 +160,9 @@ namespace EndorblastCore.Lib
 
                 if (!OldPosIsPos)
                 {
-                    
+
                 }
             }
-
-
-
 
             latestDirection = velocity;
             OldPosition = Transform.Position;
@@ -173,15 +185,11 @@ namespace EndorblastCore.Lib
                 velocity.X = 0;
                 animations.AnimationHandler(PlayerState.Idle, currentDirection);
             }
-
-
         }
 
         public void Movement()
         {
-         
             velocity.Y += gravity * Time.DeltaTime;
-
             mover.Move(velocity * Time.DeltaTime, boxCollider, collisionState);
 
             if (collisionState.Right || collisionState.Left)
@@ -193,7 +201,6 @@ namespace EndorblastCore.Lib
             {
                 velocity.Y = 0;
             }
-
         }
 
         public void MoveCharacter(Vector2 velocity)
@@ -204,6 +211,43 @@ namespace EndorblastCore.Lib
                 mover.Move(velocity * Time.DeltaTime, boxCollider, collisionState);
         }
 
+
+        // (CLIENT AND SERVER) Basic Rubberbanding for Networking
+        // Teleports player back to right position if its different from server.
+        void MovementPrediction()
+        {
+            if (currentBuffer == null)
+                return;
+
+            MoveBuffer transmittedPacket = bufferMove.Find(x => x.time == currentBuffer.time);
+            if (transmittedPacket == null)
+                return;
+
+
+            if (Vector2.Distance(Transform.Position, new Vector2(currentBuffer.X, currentBuffer.Y)) > correctionThreashold)
+                Transform.Position = new Vector2(currentBuffer.X, currentBuffer.Y);
+
+            moveState = currentBuffer.state;
+
+            bufferMove.RemoveAll(x => x.time <= currentBuffer.time);
+        }
+
+
+        // (SERVER ONLY) Same as Method above. BUT....
+        // Sometimes skills doesn't register on server therefore its need a buffer.
+        void SkillBuffer()
+        {
+            if (currentSkill == null)
+                return;
+
+            if (skillBuffer == null)
+                return;
+
+            if (currentSkill.isExiting)
+            {
+                currentSkill = skillBuffer;
+            }
+        }
 
         public StaticCharacter ToStaticCharacter()
         {

@@ -28,6 +28,7 @@ namespace EndorblastCore.Server.NetCommands
             if (list.Count == 0)
                 return;
 
+           
 
             var outmsg = ServerManager.Instance.CreateWorldMessage();
             outmsg.Write((byte)WorldPacket.CharacterExit);

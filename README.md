@@ -2,7 +2,7 @@
 
 <h3 align="center">Useful Links<h3>
 <div align="center">
-    <a href="https://www.patreon.com/zyrolul"><img src="https://i.imgur.com/PzFGAH5.png" width="50" /></a>
+    <a href="https://www.patreon.com/zyrolul"><img src="https://i.imgur.com/u8HxgfW.png" width="50" /></a>
     <a href="https://discord.gg/5U5uaft"><img src="https://i.imgur.com/fyF4Yic.png" width="50" /></a>
 </div>
 
@@ -10,9 +10,6 @@
 I dont give assistance with setting it up.\
 Program will not compile since its missing every sprite\
 You need to remake all sprites and add them to the project
-
-## Features
-I don't know what I feel like adding :P
 
 ## License
 You are allowed to use the game engine but give credit :)\

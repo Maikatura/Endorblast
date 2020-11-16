@@ -28,7 +28,6 @@ namespace EndorblastCore.Lib
 
         float SendPositionTimer;
         //float activityTimer = 0;
-        Vector2 mouseInput;
 
 
         FollowCamera camera;
@@ -42,15 +41,10 @@ namespace EndorblastCore.Lib
 
         public override void OnAddedToEntity()
         {
-            Key = this.GetComponent<KeyboardInput>();
-            mover = this.GetComponent<TiledMapMover>();
-            boxCollider = this.GetComponent<BoxCollider>();
+            base.InitComponents();
+
             camera = this.GetComponent<FollowCamera>();
             camera.Follow(this.Entity, FollowCamera.CameraStyle.LockOn);
-
-            animations = Entity.AddComponent(new PlayerAnimations());
-            animations.LoadSet(2);
-            animations.LoadHair(1);
 
             parallax = Entity.AddComponent(new ParallaxBackground(new List<ParallaxBGSprite>()
             {
@@ -58,6 +52,8 @@ namespace EndorblastCore.Lib
                 new ParallaxBGSprite("/Enviorment/Backgrounds/Forest/mountain2.png", 0.5f),
                 new ParallaxBGSprite("/Enviorment/Backgrounds/Forest/sky.png", 0.9f)
             }));
+
+            currentSkill = new Skill();
 
             isMainPlayer = true;
         }
@@ -68,28 +64,7 @@ namespace EndorblastCore.Lib
         {
             base.Update();
 
-
-            
-            var dir = Vector2.Normalize(Input.MousePosition);
-            var rotation = Mathf.Degrees((float)Math.Atan2(dir.Y, dir.X) + (float)(Math.PI * 0.5f));
-
-            if (Input.IsKeyDown(Keys.D1))
-            {
-                DoSkill(SkillType.Dash, this, rotation);
-                new CharacterSkillCastCommand().Send(SkillType.Dash, rotation);
-            }
-
-            if (Input.IsKeyDown(Keys.Space) && collisionState.Below)
-            {
-                DoSkill(SkillType.Jump, this, rotation);
-                new CharacterSkillCastCommand().Send(SkillType.Jump, rotation);
-            }
-
-            if (Mouse.GetState().LeftButton == ButtonState.Pressed)
-            {
-                DoSkill(SkillType.Basic, this, rotation);
-                new CharacterSkillCastCommand().Send(SkillType.Basic, rotation);
-            }
+            SkillInputs();
 
             if (Input.IsKeyPressed(Keys.I))
             {
@@ -110,7 +85,7 @@ namespace EndorblastCore.Lib
                 OldMoveState = moveState;
             }
 
-            
+
 
 
 #if DEBUG
@@ -135,8 +110,46 @@ namespace EndorblastCore.Lib
         }
 
 
+        public void MovementPrediction()
+        {
+
+        }
+
+
+        void SkillInputs()
+        {
+            if (currentSkill != null)
+            {
+                if (currentSkill.isExiting)
+                {
+                    var dir = Vector2.Normalize(Input.MousePosition);
+                    var rotation = Mathf.Degrees((float)Math.Atan2(dir.Y, dir.X) + (float)(Math.PI * 0.5f));
+
+                    if (Input.IsKeyDown(Keys.D1))
+                    {
+                        DoSkill(SkillType.Dash, this, rotation);
+                        new CharacterSkillCastCommand().Send(SkillType.Dash, rotation);
+                    }
+
+                    if (Input.IsKeyDown(Keys.Space))
+                    {
+                        DoSkill(SkillType.Jump, this, rotation);
+                        new CharacterSkillCastCommand().Send(SkillType.Jump, rotation);
+                    }
+
+                    if (Mouse.GetState().LeftButton == ButtonState.Pressed)
+                    {
+                        DoSkill(SkillType.Basic, this, rotation);
+                        new CharacterSkillCastCommand().Send(SkillType.Basic, rotation);
+                    }
+                }
+
+
+                
+            }
+        }
 
     }
 
-    
+
 }

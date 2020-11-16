@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using EndorblastCore.Lib;
 using Microsoft.Xna.Framework;
+using Nez.BitmapFonts;
 
 namespace EndorblastCore.Lib
 {
@@ -21,20 +22,25 @@ namespace EndorblastCore.Lib
         public BasePlayer GetConnection(int playerID)
         {
             foreach (var p in Characters)
-                if (p == Characters[playerID])
+                if (p.WorldID == playerID)
+                {
+                    Console.WriteLine(p.WorldID);
                     return p;
+                }
+                    
 
             return null;
         }
 
-        public void AddPlayer(BasePlayer player, string username, float x, float y)
+        public void AddPlayer(BasePlayer player, string username, float x, float y, int worldID)
         {
-            player.WorldID = CurrentWorldID;
+            player.WorldID = worldID;
             player.CharacterName = username;
-            Characters.Add(player);
-            Console.WriteLine(player.Name + " joined wolrd with ID:" + CurrentWorldID);
-            CurrentWorldID++;
             player.Transform.Position = new Vector2(x, y);
+            Characters.Add(player);
+            Console.WriteLine(player.CharacterName + " joined wolrd with ID:" + CurrentWorldID);
+            CurrentWorldID++;
+            
         }
 
         public void RemovePlayer(BasePlayer player)

@@ -34,7 +34,7 @@ namespace EndorblastCore.Server
             // TODO: Add your initialization logic here
             ServerManager.NewInstance();
             MapManager.NewInstance();
-
+            
 
             base.Initialize();
 

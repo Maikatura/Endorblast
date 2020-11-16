@@ -47,11 +47,14 @@ namespace EndorblastCore.Lib.Skills
         {
             player = playerCaster;
 
-            string skillName = GetType().Name;
-            skillName = skillName.Remove(skillName.Length - 5, 5);
-            skillType = (SkillType)Enum.Parse(typeof(SkillType), skillName);
-
-            //isLocal = NetworkManager.WorldID == playerCaster.WorldID ? true : false;
+            if (NetworkManager.Instance != null)
+            {
+                isLocal = NetworkManager.Instance.WorldID == playerCaster.WorldID ? true : false;
+            }
+            else
+            {
+                isLocal = false;
+            }
 
             // Set Sprite Effect!
             //SpriteEffects = playerCaster.SpriteEffects;
@@ -74,7 +77,7 @@ namespace EndorblastCore.Lib.Skills
 
         public virtual void Update()
         {
-
+            ExitState();
         }
 
         public void DoColliderCheck(BasePlayer player)
@@ -91,8 +94,6 @@ namespace EndorblastCore.Lib.Skills
                     collider.GetComponent<Enemy>().TakeDamage(10);
                     Console.WriteLine("Entity: {0}", collider.Entity.Name);
                 }
-                    
-
             }
         }
     }

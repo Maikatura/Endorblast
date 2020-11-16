@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EndorblastCore", "Endorblas
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EndorblastCore.Lib", "EndorblastCore.Lib\EndorblastCore.Lib.csproj", "{7713325A-35D2-485A-B7A4-458BEE9D961E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EndorblastCore.Server", "EndorblastCore.Server\EndorblastCore.Server.csproj", "{754009D0-C518-4749-8AA4-7DCA61436DD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EndorblastCore.Server", "EndorblastCore.Server\EndorblastCore.Server.csproj", "{754009D0-C518-4749-8AA4-7DCA61436DD7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nez", "Nez.Portable\Nez.csproj", "{D554AF28-7ADD-48C6-84B9-1453DA454CD4}"
 EndProject

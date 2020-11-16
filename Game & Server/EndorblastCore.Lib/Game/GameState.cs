@@ -8,6 +8,7 @@ using EndorblastCore.Lib.Enums;
 using EndorblastCore.Lib.GUI;
 using Nez;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
 
 namespace EndorblastCore.Lib
 {
@@ -38,11 +39,10 @@ namespace EndorblastCore.Lib
         public static void SetGameState(CurrentGameState wantedGameState)
         {
 
-            if (activeGameScene == null)
-            {
-                activeGameScene = Scene.CreateWithDefaultRenderer(Color.CornflowerBlue);
-                Core.Scene = activeGameScene;
-            }
+            if (Core.Scene == null)
+                Core.Scene = Scene.CreateWithDefaultRenderer(Color.CornflowerBlue);
+
+            
 
             gameState = wantedGameState;
             LoadGameState(gameState);
@@ -52,6 +52,8 @@ namespace EndorblastCore.Lib
 
         private static void LoadGameState(CurrentGameState gameStateToSet, List<DatabaseCharacter> charaSelect = null)
         {
+
+
             switch (gameStateToSet)
             {
                 case CurrentGameState.MainMenu:
@@ -76,26 +78,17 @@ namespace EndorblastCore.Lib
 
         private static void LoadMainMenu()
         {
-            //NetworkConfig.ChangeServer(ClientSettings.loginPort);
             ReloadScene();
 
-
-
-
-
-
             SceneManager.LoadLoginBG();
-            LoginUI.Init(Core.Scene);
+            LoginUI.Init();
         }
 
         private static void LoadGameState()
         {
-            //NetworkConfig.ChangeServer(ClientSettings.gamePort);
             ReloadScene();
 
-
             SceneManager.InitGameMap();
-
             DiscordRpc.Instance.SetNewStatus($"Character: {NetworkManager.CharacterName}", "World: null");
 
             NetworkManager.Instance.State = NetworkState.InGame;
@@ -106,11 +99,10 @@ namespace EndorblastCore.Lib
 
         public static void LoadCharacterSelect(List<DatabaseCharacter> charaSelect)
         {
-            //NetworkConfig.ChangeServer(ClientSettings.loginPort);
             ReloadScene();
 
             DiscordRpc.Instance.SetNewStatus("Character Selection");
-            CharacterSelectionUI.LoadCharacterUI(Core.Scene, charaSelect);
+            CharacterSelectionUI.LoadCharacterUI(charaSelect);
         }
 
 

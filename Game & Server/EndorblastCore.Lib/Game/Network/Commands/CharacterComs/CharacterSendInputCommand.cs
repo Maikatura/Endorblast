@@ -28,17 +28,25 @@ namespace EndorblastCore.Lib.Game.Network
 
             int worldID = msg.ReadInt32();
             PlayerMoveState state = (PlayerMoveState)msg.ReadByte();
-            //float time = msg.ReadFloat();
+            float time = msg.ReadFloat();
+            float x = msg.ReadFloat();
+            float y = msg.ReadFloat();
 
-            //Console.WriteLine(time);
-            //Console.WriteLine(DateTime.Now.Ticks);
-            
             var ch = CharacterManager.Instance.GetConnection(worldID);
 
             if (ch == null)
                 return;
 
-            ch.moveState = state;
+            var bufferThing = new MoveBuffer()
+            {
+                state = state,
+                time = time,
+                X = x,
+                Y = y
+            };
+
+            ch.currentBuffer = bufferThing;
+            ch.bufferMove.Add(bufferThing);
         }
 
 
@@ -48,8 +56,9 @@ namespace EndorblastCore.Lib.Game.Network
             outmsg.Write((byte)CharacterPacket.Data);
             outmsg.Write((byte)CharacterDataType.Position);
             outmsg.Write((byte)state);
+            outmsg.Write(Time.TotalTime);
 
-            NetworkManager.Instance.client.SendMessage(outmsg, NetDeliveryMethod.ReliableOrdered);
+            NetworkManager.Instance.client.SendMessage(outmsg, NetDeliveryMethod.Unreliable);
         }
 
     }

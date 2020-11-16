@@ -25,7 +25,7 @@ namespace EndorblastCore.Lib.GUI
         //static DatabaseCharacter selectedChara;
 
 
-        public static void LoadCharacterUI(Scene scene, List<DatabaseCharacter> chars)
+        public static void LoadCharacterUI(List<DatabaseCharacter> chars)
         {
             // Setup table right 
             Entity canvasEntity = new Entity("CharaSel-UI");
@@ -78,13 +78,13 @@ namespace EndorblastCore.Lib.GUI
             }
             else
             {
-                LoadCharaID(scene, 0);
+                LoadCharaID(Core.Scene, 0);
 
                 for (int i = 0; i < chars.Count; i++)
                 {
                     TextButton selectButton = new TextButton($"{chars[i].Name}", TextButtonStyle.Create(Color.Black, Color.Gray, Color.DarkGray));
                     selectButton.GetLabel().SetFontScale(2, 2);
-                    selectButton.OnClicked += button => LoadCharaID(scene, i - 1);
+                    selectButton.OnClicked += button => LoadCharaID(Core.Scene, i - 1);
                     charaSelectBar.Add(selectButton).Width(300).Height(40);
                     charaSelectBar.Row();
                     
@@ -96,7 +96,7 @@ namespace EndorblastCore.Lib.GUI
 
             playButton.OnClicked += button => JoinGame(currentSelectedChara);
 
-            scene.AddEntity(canvasEntity);
+            Core.Scene.AddEntity(canvasEntity);
 
         }
 

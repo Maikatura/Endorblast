@@ -21,11 +21,16 @@ namespace EndorblastCore.Lib
 
     public class NetworkManager
     {
-        static NetworkManager instance;
-        public static NetworkManager Instance => instance;
-        public static void NewInstance() 
-        { 
-            instance = new NetworkManager(); 
+        private static NetworkManager instance;
+        public static NetworkManager Instance
+        {
+            get { return instance; }
+            private set { return; }
+        }
+
+        public static void NewInstance()
+        {
+            instance = new NetworkManager();
         }
 
         string HostIP = "127.0.0.1";
@@ -33,7 +38,7 @@ namespace EndorblastCore.Lib
 
         public static string AccountName;
         public static string CharacterName;
-        public static int WorldID;
+        public int WorldID;
 
         public DateTime LoginTime;
         public DateTime LogoutTime;
@@ -71,12 +76,16 @@ namespace EndorblastCore.Lib
             client.Start();
 
 
-            Console.WriteLine("LOL");
+            
             NetOutgoingMessage hailMessage = client.CreateMessage("Yo wassup!");
             client.Connect(HostIP, Port, hailMessage);
         }
 
         public NetOutgoingMessage CreateMessage => client.CreateMessage();
+
+        public bool Enabled => throw new NotImplementedException();
+
+        public int UpdateOrder => throw new NotImplementedException();
 
         public NetOutgoingMessage CreateCharacterMessage() => CCM();
         NetOutgoingMessage CCM()
@@ -105,15 +114,9 @@ namespace EndorblastCore.Lib
 
         private void NetworkLoop(object obj)
         {
-            
-
-
             NetIncomingMessage message;
             while ((message = client.ReadMessage()) != null)
             {
-                
-                
-
                 switch (message.MessageType)
                 {
                     case NetIncomingMessageType.Data:
@@ -147,24 +150,22 @@ namespace EndorblastCore.Lib
                         break;
                 }
             }
-
-            
         }
 
-        public void Login(bool loginBool,string name)
+        public void Login(bool loginBool, string name)
         {
             if (loginBool)
             {
                 //timeoutTimer = 0;
                 isLoggingIn = loginBool;
                 AccountName = name;
-                
+
             }
             else
             {
                 Console.WriteLine("# FAILED - Not a succesful login.");
             }
-            
+
         }
 
         void CharacterSwitch(NetIncomingMessage message)
@@ -173,14 +174,8 @@ namespace EndorblastCore.Lib
 
             switch (packet)
             {
-                case CharacterPacket.SkillCast:
-                    
-                    new CharacterSkillCastCommand().Read(message);
-                    break;
                 case CharacterPacket.Data:
-                    
                     new CharacterDataCommand().Read(message);
-
                     break;
                 case CharacterPacket.List:
 
@@ -220,7 +215,7 @@ namespace EndorblastCore.Lib
             switch (paket)
             {
                 case AccountPacket.LoginState:
-                    
+
                     LoginStateCommand.Read(msg);
                     break;
                 case AccountPacket.LoginMePlz:
@@ -230,5 +225,12 @@ namespace EndorblastCore.Lib
             }
         }
 
+
+
+        public void ShutdownConnection()
+        {
+            client.Shutdown("bye");
+            
+        }
     }
 }
