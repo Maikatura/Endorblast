@@ -1,19 +1,14 @@
 ![](media/Banner.png)
 
-<h3 align="center">Useful Links<h3>
 <div align="center">
-    <a href="https://www.patreon.com/zyrolul"><img src="https://i.imgur.com/u8HxgfW.png" width="50" /></a>
-    <a href="https://discord.gg/5U5uaft"><img src="https://i.imgur.com/fyF4Yic.png" width="50" /></a>
+    <a href="https://www.patreon.com/zyrolul"><img src="media/social/Patreon.png" width="50" /></a>
+    <a href="https://discord.gg/5U5uaft"><img src="media/social/Discord.png" width="50" /></a>
+    <a href="https://github.com/zyrolul"><img src="media/social/Github.png" width="50" /></a>
+    <a href="https://www.youtube.com/channel/UC3RKUJ8nLjrUvR0fZOwQXBw"><img src="media/social/Youtube.png" width="50"/></a>
+    <a href="https://www.twitch.tv/zyrobit"><img src="media/social/Twitch.png" width="50" /></a>
 </div>
 
-<h3 align="center">Info About Endorblast<h3>
-<div align="center">
-<b>Endorblast</b> is a 2D Online Sidescroller.<br>
-<b>Endorblast</b> will always be play to win.<br><br>
-
-<b>Build Status</b>: Error<br>
-</div>
-
+<h3 align="center"><b>Build Status</b>: Error<br><h3>
 
 ## Setup
 I dont give assistance with setting it up.\
