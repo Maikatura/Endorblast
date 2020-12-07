@@ -9,8 +9,11 @@
 <h3 align="center">Info About Endorblast<h3>
 <div align="center">
 <b>Endorblast</b> is a 2D Online Sidescroller.<br>
-<b>Endorblast</b> will always be play to win.
+<b>Endorblast</b> will always be play to win.<br><br>
+
+<b>Build Status</b>: Error<br>
 </div>
+
 
 ## Setup
 I dont give assistance with setting it up.\
