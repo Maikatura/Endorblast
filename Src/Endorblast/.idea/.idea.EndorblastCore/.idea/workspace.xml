@@ -32,7 +32,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f77a6e4-ba13-4e38-b9ea-204d6ad38fcf" name="Default Changelist" comment="" />
+    <list default="true" id="5f77a6e4-ba13-4e38-b9ea-204d6ad38fcf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EndorblastCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EndorblastCore/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastCore.GameServer/Server/CharacterManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.GameServer/Server/CharacterManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastCore.GameServer/Server/Commands/Player/PositionCmd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.GameServer/Server/Commands/Player/PositionCmd.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastCore.GameServer/Server/Map.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.GameServer/Server/Map.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastCore.GameServer/Server/MapManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.GameServer/Server/MapManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../media/Banner.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../media/Banner.png" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,20 +78,20 @@
         <option value="$PROJECT_DIR$/EndorblastCore.Lib/Game/Enums/MasterTypes.cs" />
         <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/Commands/Player/SkillCmd.cs" />
         <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/ServerCharacter.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/CharacterManager.cs" />
         <option value="$PROJECT_DIR$/EndorblastCore.Server/Server/Game/CharacterManager.cs" />
         <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/Commands/MapManager.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/Map.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/Commands/Player/PositionCmd.cs" />
         <option value="$PROJECT_DIR$/EndorblastCore.Lib/Game/Entity/StaticCharacter.cs" />
         <option value="$PROJECT_DIR$/EndorblastCore.Lib/Server/Player/ServerCharacter.cs" />
         <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/GameLogic.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/MapManager.cs" />
         <option value="$PROJECT_DIR$/EndorblastCore.Lib/Game/Enums/ServerType.cs" />
         <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/Commands/Player/PlayerDataCmd.cs" />
         <option value="$PROJECT_DIR$/EndorblastCore.Lib/Game/Network/Commands/WorldComs/WorldCharacterChangeCommand.cs" />
         <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/GameServerScript.cs" />
         <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/Commands/ServerDataCmd.cs" />
+        <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/CharacterManager.cs" />
+        <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/Map.cs" />
+        <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/MapManager.cs" />
+        <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/Commands/Player/PositionCmd.cs" />
       </list>
     </option>
   </component>
@@ -98,10 +106,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Compound.Server And Client">
-    <configuration name="Server And Client" type="CompoundRunConfigurationType">
+  <component name="RunManager" selected="Compound.Client &amp; New Server">
+    <configuration name="Client &amp; New Server" type="CompoundRunConfigurationType">
       <toRun name="EndorblastCore" type="DotNetProject" />
+      <toRun name="EndorblastCore.LoginServer" type="DotNetProject" />
+      <toRun name="EndorblastCore.MasterServer" type="DotNetProject" />
       <toRun name="EndorblastCore.GameServer" type="DotNetProject" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Client &amp; Old Server" type="CompoundRunConfigurationType">
+      <toRun name="EndorblastCore" type="DotNetProject" />
+      <toRun name="EndorblastCore.Server" type="DotNetProject" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="CompoundRunConfigurationType">
@@ -164,9 +179,9 @@
       </method>
     </configuration>
     <configuration name="EndorblastCore.MasterServer" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/EndorblastCore.MasterServer/bin/Debug/netcoreapp3.1/EndorblastCore.MasterServer.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EndorblastCore.MasterServer/bin/Debug/netcoreapp3.1" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
@@ -176,7 +191,7 @@
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="DotNetCore" />
-      <option name="PROJECT_TFM" value="" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v3.1" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -205,7 +220,8 @@
       <item itemvalue=".NET Project.EndorblastCore.MasterServer" />
       <item itemvalue=".NET Project.EndorblastCore.GameServer" />
       <item itemvalue=".NET Project.EndorblastCore.LoginServer" />
-      <item itemvalue="Compound.Server And Client" />
+      <item itemvalue="Compound.Client &amp; Old Server" />
+      <item itemvalue="Compound.Client &amp; New Server" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -225,7 +241,7 @@
       <workItem from="1606828391730" duration="397000" />
       <workItem from="1606829429832" duration="928000" />
       <workItem from="1606924114925" duration="1172000" />
-      <workItem from="1607342149406" duration="5986000" />
+      <workItem from="1607342149406" duration="9855000" />
     </task>
     <task id="LOCAL−00001" summary="Edit some stuff">
       <created>1606827689904</created>
@@ -291,10 +307,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Stated to work on new game server!&#10;&#10;Currently working on a rewrite of the whole system with multiple world support and that doesn't require a monogame window to work!" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="401" y="182" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606924721945">
+    <state x="401" y="182" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607349208837">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="401" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1606924721945" />
+    <state x="401" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1607349208837" />
     <state x="414" y="175" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606811077490" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1606827698281">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -320,10 +336,10 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="645" y="81" width="923" height="1067" key="dock-window-2/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1607345236413" />
-    <state x="603" y="234" width="672" height="705" key="search.everywhere.popup" timestamp="1607348030845">
+    <state x="603" y="234" width="672" height="705" key="search.everywhere.popup" timestamp="1607349480419">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="603" y="234" width="672" height="705" key="search.everywhere.popup/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1607348030845" />
+    <state x="603" y="234" width="672" height="705" key="search.everywhere.popup/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1607349480419" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606830076921" />
   </component>
 </project>

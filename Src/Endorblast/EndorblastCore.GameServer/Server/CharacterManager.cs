@@ -7,9 +7,8 @@ namespace EndorblastCore.GameServer.Server
 {
     public class CharacterManager
     {
-        static CharacterManager instance = new CharacterManager();
-        public static CharacterManager Instance => instance;
         
+
         public int currentPlayerId = 0;
         
         public List<ServerCharacter> Characters = new List<ServerCharacter>();

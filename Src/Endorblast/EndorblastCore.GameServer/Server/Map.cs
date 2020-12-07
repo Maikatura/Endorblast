@@ -8,17 +8,19 @@ namespace EndorblastCore.GameServer.Server
     {
         public int worldId;
         public MapType mapType;
+        public CharacterManager characterManager;
         
-        private List<ServerCharacter> players = new List<ServerCharacter>();
-
+        
         public int Players()
         {
-            return players.Count;
+            return characterManager.Characters.Count;
         }
         
         
         public Map(int worldID, MapType type)
         {
+            characterManager = new CharacterManager();
+            
             worldId = worldID;
             mapType = type;
             

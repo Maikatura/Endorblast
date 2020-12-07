@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
+using EndorblastCore.Lib;
 using EndorblastCore.Lib.Enums;
+using Lidgren.Network;
 
 namespace EndorblastCore.GameServer.Server
 {
@@ -7,7 +9,7 @@ namespace EndorblastCore.GameServer.Server
     {
         
         
-        private static MapManager instance;
+        private static MapManager instance = new MapManager();
         public static MapManager Instance => instance;
         
         
@@ -15,6 +17,14 @@ namespace EndorblastCore.GameServer.Server
         private int worldId = 0;
 
 
+        public MapManager()
+        {
+            if (worlds.Count == 0)
+            {
+                AddWorld(MapType.Town);
+            }
+        }
+        
         public void Update()
         {
             var removeList = new List<Map>();
@@ -47,7 +57,8 @@ namespace EndorblastCore.GameServer.Server
         {
             var map = new Map(worldId, type);
             worlds.Add(map);
-            
+            worldId++;
+
         }
         
         public void RemoveWorld(Map world)
@@ -66,10 +77,27 @@ namespace EndorblastCore.GameServer.Server
              BAN THEM >:)
              
              */
-            
-            
-            
+
         }
+
+
+        public ServerCharacter GetPlayer(NetConnection con)
+        {
+            ServerCharacter player;
+            foreach (var world in worlds)
+            {
+                player = world.characterManager.GetConnection(con);
+
+                if (player != null)
+                    return player;
+            }
+
+            return null;
+
+
+        }
+        // THINKING ABOUT CODE STUFF.....
+
         
     }
 }

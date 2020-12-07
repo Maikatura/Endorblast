@@ -13,7 +13,7 @@ namespace EndorblastCore.GameServer.Server.Commands.Player
             float y = inc.ReadFloat();
             PlayerMoveState state = (PlayerMoveState)inc.ReadByte();
 
-            var player = CharacterManager.Instance.GetConnection(inc.SenderConnection);
+            var player = MapManager.Instance.GetPlayer(inc.SenderConnection);
 
             if (player == null)
                 return;
@@ -25,9 +25,7 @@ namespace EndorblastCore.GameServer.Server.Commands.Player
 
         public void Send(int worldId, float x, float y, PlayerMoveState state)
         {
-            
-            
-            
+            Console.WriteLine("Not working yet!");
         }
         
         
