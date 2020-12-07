@@ -1,0 +1,1236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Zyro\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Zyro\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_EndorblastCore.-2009494288.00" t="ExcludeRecursive" />
+    <e p="D:\GitHub\AnimeEngine2D\Src\Endorblast" t="IncludeFlat">
+      <e p="EndorblastCore" t="IncludeRecursive">
+        <e p="app.manifest" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Content" t="Include">
+          <e p="Content.mgcb" t="Include" />
+          <e p="obj" t="Include">
+            <e p="DesktopGL" t="Include">
+              <e p="Content" t="Include">
+                <e p=".mgstats" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="EndorblastCore.csproj" t="IncludeRecursive" />
+        <e p="Game1.cs" t="Include" />
+        <e p="Icon.bmp" t="Include" />
+        <e p="Icon.ico" t="Include" />
+        <e p="Microsoft.Xna.Framework.Content.ContentTypeReader" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="EndorblastCore.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Splashscreen.cs" t="Include" />
+      </e>
+      <e p="EndorblastCore.GameServer" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="EndorblastCore.GameServer.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="EndorblastCore.GameServer.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Server" t="Include">
+          <e p="CharacterManager.cs" t="Include" />
+          <e p="Commands" t="Include">
+            <e p="Player" t="Include">
+              <e p="PlayerDataCmd.cs" t="Include" />
+              <e p="PositionCmd.cs" t="Include" />
+              <e p="SkillCmd.cs" t="Include" />
+            </e>
+            <e p="ServerDataCmd.cs" t="Include" />
+            <e p="World" t="Include">
+              <e p="WorldChangeCmd.cs" t="Include" />
+              <e p="WorldDataCmd.cs" t="Include" />
+              <e p="WorldEnterCmd.cs" t="Include" />
+              <e p="WorldExitCmd.cs" t="Include" />
+            </e>
+          </e>
+          <e p="GameLogic.cs" t="Include" />
+          <e p="GameServerScript.cs" t="Include" />
+          <e p="GameTime.cs" t="Include" />
+          <e p="Map.cs" t="Include" />
+          <e p="MapManager.cs" t="Include" />
+        </e>
+        <e p="ServerSettings.cs" t="Include" />
+      </e>
+      <e p="EndorblastCore.Lib" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Class1.cs" t="Include" />
+        <e p="Content" t="Include">
+          <e p="Content.mgcb" t="Include" />
+          <e p="Effects" t="Include">
+            <e p="Fire" t="Include">
+              <e p="Fire1.png" t="Include" />
+              <e p="Fire2.png" t="Include" />
+              <e p="FirePole1.png" t="Include" />
+              <e p="King.ppd" t="Include" />
+              <e p="result3.gif" t="Include" />
+            </e>
+            <e p="Portal" t="Include">
+              <e p="Portal1.png" t="Include" />
+            </e>
+            <e p="Test" t="Include">
+              <e p="Fire Pole.ase" t="Include" />
+            </e>
+            <e p="transitions" t="Include">
+              <e p="Squares.fx" t="Include" />
+              <e p="TextureWipe.fx" t="Include" />
+              <e p="Wind.fx" t="Include" />
+            </e>
+          </e>
+          <e p="Enemies" t="Include">
+            <e p="Testing" t="Include">
+              <e p="Enemy1.aseprite" t="Include" />
+              <e p="Enemy1.png" t="Include" />
+              <e p="Enemy1_Damage.png" t="Include" />
+            </e>
+          </e>
+          <e p="Enviorment" t="Include">
+            <e p="Backgrounds" t="Include">
+              <e p="Forest" t="Include">
+                <e p="cloud.png" t="Include" />
+                <e p="mountain2.png" t="Include" />
+                <e p="pine1.png" t="Include" />
+                <e p="pine2.png" t="Include" />
+                <e p="sky.png" t="Include" />
+                <e p="sky_cloud.png" t="Include" />
+              </e>
+            </e>
+            <e p="Portals" t="Include">
+              <e p="Portal1.png" t="Include" />
+            </e>
+          </e>
+          <e p="Icons" t="Include">
+            <e p="Currency" t="Include">
+              <e p="Currency.png" t="Include" />
+              <e p="CurrencyPremium.png" t="Include" />
+            </e>
+          </e>
+          <e p="Itch" t="Include">
+            <e p="BannerThingProfile.ase" t="Include" />
+            <e p="BannerThingProfile.png" t="Include" />
+            <e p="BG.aseprite" t="Include" />
+            <e p="Thing.aseprite" t="Include" />
+          </e>
+          <e p="Logos" t="Include">
+            <e p="Splashscreen1.png" t="Include" />
+          </e>
+          <e p="Nez" t="Include">
+            <e p="Effects" t="Include">
+              <e p="Bevels.mgfxo" t="Include" />
+              <e p="BloomCombine.mgfxo" t="Include" />
+              <e p="BloomExtract.mgfxo" t="Include" />
+              <e p="Blur.fxb" t="Include" />
+              <e p="Crosshatch.mgfxo" t="Include" />
+              <e p="DeferredLighting.mgfxo" t="Include" />
+              <e p="DeferredSprite.mgfxo" t="Include" />
+              <e p="Dissolve.mgfxo" t="Include" />
+              <e p="Dots.mgfxo" t="Include" />
+              <e p="Effects" t="Include">
+                <e p="Bevels.mgfxo" t="Include" />
+                <e p="BloomCombine.mgfxo" t="Include" />
+                <e p="BloomExtract.mgfxo" t="Include" />
+                <e p="Crosshatch.mgfxo" t="Include" />
+                <e p="DeferredLighting.mgfxo" t="Include" />
+                <e p="DeferredSprite.mgfxo" t="Include" />
+                <e p="Dissolve.mgfxo" t="Include" />
+                <e p="Dots.mgfxo" t="Include" />
+                <e p="ForwardLighting.mgfxo" t="Include" />
+                <e p="GaussianBlur.mgfxo" t="Include" />
+                <e p="Grayscale.mgfxo" t="Include" />
+                <e p="HeatDistortion.mgfxo" t="Include" />
+                <e p="Invert.mgfxo" t="Include" />
+                <e p="Letterbox.mgfxo" t="Include" />
+                <e p="MultiTexture.mgfxo" t="Include" />
+                <e p="MultiTextureOverlay.mgfxo" t="Include" />
+                <e p="Noise.mgfxo" t="Include" />
+                <e p="PaletteCycler.mgfxo" t="Include" />
+                <e p="PixelGlitch.mgfxo" t="Include" />
+                <e p="PolygonLight.mgfxo" t="Include" />
+                <e p="Reflection.mgfxo" t="Include" />
+                <e p="Scanlines.mgfxo" t="Include" />
+                <e p="Sepia.mgfxo" t="Include" />
+                <e p="SpriteAlphaTest.mgfxo" t="Include" />
+                <e p="SpriteBlinkEffect.mgfxo" t="Include" />
+                <e p="SpriteEffect.mgfxo" t="Include" />
+                <e p="SpriteLightMultiply.mgfxo" t="Include" />
+                <e p="SpriteLines.mgfxo" t="Include" />
+                <e p="StencilLight.mgfxo" t="Include" />
+                <e p="transitions" t="Include">
+                  <e p="Squares.mgfxo" t="Include" />
+                  <e p="TextureWipe.mgfxo" t="Include" />
+                  <e p="Wind.mgfxo" t="Include" />
+                </e>
+                <e p="Twist.mgfxo" t="Include" />
+                <e p="Vignette.mgfxo" t="Include" />
+              </e>
+              <e p="ForwardLighting.mgfxo" t="Include" />
+              <e p="GaussianBlur.mgfxo" t="Include" />
+              <e p="Grayscale.mgfxo" t="Include" />
+              <e p="HeatDistortion.mgfxo" t="Include" />
+              <e p="Invert.mgfxo" t="Include" />
+              <e p="Letterbox.mgfxo" t="Include" />
+              <e p="MultiTexture.mgfxo" t="Include" />
+              <e p="MultiTextureOverlay.mgfxo" t="Include" />
+              <e p="Noise.mgfxo" t="Include" />
+              <e p="PaletteCycler.mgfxo" t="Include" />
+              <e p="PixelGlitch.mgfxo" t="Include" />
+              <e p="PolygonLight.mgfxo" t="Include" />
+              <e p="Reflection.mgfxo" t="Include" />
+              <e p="Scanlines.mgfxo" t="Include" />
+              <e p="Sepia.mgfxo" t="Include" />
+              <e p="SpriteAlphaTest.mgfxo" t="Include" />
+              <e p="SpriteBlinkEffect.mgfxo" t="Include" />
+              <e p="SpriteEffect.mgfxo" t="Include" />
+              <e p="SpriteLightMultiply.mgfxo" t="Include" />
+              <e p="SpriteLines.mgfxo" t="Include" />
+              <e p="StencilLight.mgfxo" t="Include" />
+              <e p="transitions" t="Include">
+                <e p="Squares.mgfxo" t="Include" />
+                <e p="TextureWipe.mgfxo" t="Include" />
+                <e p="Wind.mgfxo" t="Include" />
+              </e>
+              <e p="Twist.mgfxo" t="Include" />
+              <e p="Vignette.mgfxo" t="Include" />
+            </e>
+          </e>
+          <e p="NezDefaultBMFont.xnb" t="Include" />
+          <e p="Player" t="Include">
+            <e p="Base" t="Include">
+              <e p="Chara_BasicAttack.png" t="Include" />
+              <e p="Chara_Idle.png" t="Include" />
+              <e p="Chara_Running.png" t="Include" />
+            </e>
+            <e p="Clothes" t="Include">
+              <e p="Maid" t="Include">
+                <e p="Maid_Body.png" t="Include" />
+                <e p="Maid_Body_Running.png" t="Include" />
+                <e p="Maid_Headband.png" t="Include" />
+                <e p="Maid_Headband_Running.png" t="Include" />
+                <e p="Maid_Stockings.png" t="Include" />
+                <e p="Maid_Stockings_Running.png" t="Include" />
+              </e>
+            </e>
+            <e p="Hair" t="Include">
+              <e p="Chara_Idle_BackHair_V1.png" t="Include" />
+              <e p="Chara_Idle_FrontHair_V1.png" t="Include" />
+              <e p="Chara_Running_BackHair_v1.png" t="Include" />
+              <e p="Chara_Running_FrontHair_v1.png" t="Include" />
+              <e p="Pink" t="Include">
+                <e p="Chara_Idle_BackHair_V1.png" t="Include" />
+                <e p="Chara_Idle_FrontHair_V1.png" t="Include" />
+                <e p="Chara_Running_BackHair_v1.png" t="Include" />
+                <e p="Chara_Running_FrontHair_v1.png" t="Include" />
+              </e>
+            </e>
+            <e p="nothing.png" t="Include" />
+          </e>
+          <e p="player.png" t="Include" />
+          <e p="README.txt" t="Include" />
+          <e p="Src" t="Include">
+            <e p="Effects" t="Include">
+              <e p="Rain.ppd" t="Include" />
+            </e>
+          </e>
+          <e p="Tilesets" t="Include">
+            <e p="GameArea" t="Include">
+              <e p="Bush1.png" t="Include" />
+              <e p="Bush2.png" t="Include" />
+              <e p="Enviorment.png" t="Include" />
+              <e p="Enviorment.tsx" t="Include" />
+              <e p="Enviorment2.png" t="Include" />
+              <e p="Enviorment2.tsx" t="Include" />
+              <e p="EnviormentTest.png" t="Include" />
+              <e p="GameStart.tmx" t="Include" />
+              <e p="Grass1.aseprite" t="Include" />
+              <e p="GrassAndBushes.aseprite" t="Include" />
+              <e p="House1.png" t="Include" />
+              <e p="IndoorObjects.tsx" t="Include" />
+              <e p="obj_indoors.png" t="Include" />
+              <e p="SmallBush1.png" t="Include" />
+              <e p="SmallBush2.png" t="Include" />
+              <e p="Snowlands.tmx" t="Include" />
+              <e p="Tileset.png" t="Include" />
+              <e p="Tileset.tsx" t="Include" />
+              <e p="Tree1.png" t="Include" />
+              <e p="Tree2.png" t="Include" />
+            </e>
+            <e p="MainMenu" t="Include">
+              <e p="MainMenu.tmx" t="Include" />
+              <e p="Tileset.png" t="Include" />
+              <e p="Tileset.tsx" t="Include" />
+            </e>
+            <e p="README BEFORE CHANGING HERE.txt" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="Creation" t="Include">
+              <e p="ArrowButtonLeft.png" t="Include" />
+              <e p="ArrowButtonRight.png" t="Include" />
+              <e p="Skrivbord.aseprite" t="Include" />
+              <e p="Skrivbord.png" t="Include" />
+            </e>
+            <e p="Login" t="Include">
+              <e p="UI_Inventory.png" t="Include" />
+              <e p="UI_Login2.png" t="Include" />
+              <e p="UI_Panel.png" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="ContentLoader.cs" t="Include" />
+        <e p="ContentPath.cs" t="Include" />
+        <e p="Data" t="Include">
+          <e p="Skills.json" t="Include" />
+        </e>
+        <e p="EndorblastCore.Lib.csproj" t="IncludeRecursive" />
+        <e p="Game" t="Include">
+          <e p="CharacterManager.cs" t="Include" />
+          <e p="ClientSettings.cs" t="Include" />
+          <e p="Components" t="Include">
+            <e p="PortalScript.cs" t="Include" />
+          </e>
+          <e p="Discord" t="Include">
+            <e p="DiscordRpc.cs" t="Include" />
+          </e>
+          <e p="Enemies" t="Include">
+            <e p="Skeleton.cs" t="Include" />
+          </e>
+          <e p="EnemyManager.cs" t="Include" />
+          <e p="Entity" t="Include">
+            <e p="BasePlayer.cs" t="Include" />
+            <e p="Enemy.cs" t="Include" />
+            <e p="MainPlayer.cs" t="Include" />
+            <e p="StaticCharacter.cs" t="Include" />
+            <e p="StaticEnemy.cs" t="Include" />
+          </e>
+          <e p="Enums" t="Include">
+            <e p="AccountType.cs" t="Include" />
+            <e p="CharacterPacket.cs" t="Include" />
+            <e p="NetworkState.cs" t="Include" />
+            <e p="Packets.cs" t="Include" />
+            <e p="ServerType.cs" t="Include" />
+            <e p="SkillTypes.cs" t="Include" />
+          </e>
+          <e p="Events" t="Include">
+            <e p="UpdatePlayerListEvent.cs" t="Include" />
+          </e>
+          <e p="GameObjects" t="Include">
+            <e p="Enviorment" t="Include">
+              <e p="FirePole.cs" t="Include" />
+              <e p="Portal.cs" t="Include" />
+            </e>
+          </e>
+          <e p="GameState.cs" t="Include" />
+          <e p="Items" t="Include">
+            <e p="Currency.cs" t="Include" />
+            <e p="Equippable.cs" t="Include" />
+            <e p="Item.cs" t="Include" />
+            <e p="Misc.cs" t="Include" />
+            <e p="SkillItem.cs" t="Include" />
+            <e p="Usable.cs" t="Include" />
+          </e>
+          <e p="Network" t="Include">
+            <e p="Commands" t="Include">
+              <e p="CharacterComs" t="Include">
+                <e p="CharacterDataCommand.cs" t="Include" />
+                <e p="CharacterListCommand.cs" t="Include" />
+                <e p="CharacterSendInputCommand.cs" t="Include" />
+                <e p="CharacterSkillCastCommand.cs" t="Include" />
+              </e>
+              <e p="DatabaseCharacter.cs" t="Include" />
+              <e p="EnemyComs" t="Include">
+                <e p="EnemyDataCommand.cs" t="Include" />
+                <e p="EnemyListCommand.cs" t="Include" />
+                <e p="EnemySpawnCommand.cs" t="Include" />
+              </e>
+              <e p="Login" t="Include">
+                <e p="LoginStateCommand.cs" t="Include" />
+                <e p="LoginUserCommand.cs" t="Include" />
+              </e>
+              <e p="NetCommand.cs" t="Include" />
+              <e p="UtilsComs" t="Include">
+                <e p="SendPingCommand.cs" t="Include" />
+              </e>
+              <e p="WorldComs" t="Include">
+                <e p="WorldCharacterChangeCommand.cs" t="Include" />
+                <e p="WorldCharacterEnterCommand.cs" t="Include" />
+                <e p="WorldCharacterExitCommand.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Database.cs" t="Include" />
+            <e p="NetworkManager.cs" t="Include" />
+          </e>
+          <e p="Player" t="Include">
+            <e p="Clothes" t="Include">
+              <e p="MaidOutfit.cs" t="Include" />
+              <e p="NakedOutfit.cs" t="Include" />
+            </e>
+            <e p="ClothID.cs" t="Include" />
+            <e p="ClothObject.cs" t="Include" />
+            <e p="Enemy.cs" t="Include" />
+            <e p="GameManager.cs" t="Include" />
+            <e p="Hair" t="Include">
+              <e p="HairNormal.cs" t="Include" />
+              <e p="HairObject.cs" t="Include" />
+            </e>
+            <e p="HairID.cs" t="Include" />
+            <e p="KeyboardInput.cs" t="Include" />
+            <e p="ParallaxBackground.cs" t="Include" />
+            <e p="Player.cs" t="Include" />
+            <e p="PlayerAnimations.cs" t="Include" />
+            <e p="PlayerMovement.cs" t="Include" />
+          </e>
+          <e p="PlayerManager.cs" t="Include" />
+          <e p="RenderLayers.cs" t="Include" />
+          <e p="SceneManager.cs" t="Include" />
+          <e p="Skills" t="Include">
+            <e p="BasicSkill.cs" t="Include" />
+            <e p="DashSkill.cs" t="Include" />
+            <e p="HeavyAttackSkill.cs" t="Include" />
+            <e p="JumpSkill.cs" t="Include" />
+            <e p="PunchSkill.cs" t="Include" />
+            <e p="Skill.cs" t="Include" />
+          </e>
+          <e p="Utils" t="Include">
+            <e p="AttackLabel.cs" t="Include" />
+            <e p="Skills" t="Include">
+              <e p="SkillButton.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="GUI" t="Include">
+          <e p="ActionBar.cs" t="Include" />
+          <e p="CharacterCreationUI.cs" t="Include" />
+          <e p="CharacterSelectionUI.cs" t="Include" />
+          <e p="GearUI.cs" t="Include" />
+          <e p="InventoryUI.cs" t="Include" />
+          <e p="LoginUI.cs" t="Include" />
+          <e p="Slot.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="EndorblastCore.Lib.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scenes" t="Include">
+          <e p="BaseScene.cs" t="Include" />
+          <e p="CharacterCreateScene.cs" t="Include" />
+          <e p="CharaSelectScene.cs" t="Include" />
+          <e p="DemoScene.cs" t="Include" />
+          <e p="LoginScene.cs" t="Include" />
+          <e p="SnowlandsScene.cs" t="Include" />
+          <e p="SplashScreenScene.cs" t="Include" />
+          <e p="TownScene.cs" t="Include" />
+        </e>
+        <e p="Server" t="Include">
+          <e p="Player" t="Include">
+            <e p="ServerCharacter.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="EndorblastCore.LoginServer" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="EndorblastCore.LoginServer.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="EndorblastCore.LoginServer.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+      </e>
+      <e p="EndorblastCore.MasterServer" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="DataCmd" t="Include">
+          <e p="ConnectionDataCmd.cs" t="Include" />
+        </e>
+        <e p="EndorblastCore.MasterServer.csproj" t="IncludeRecursive" />
+        <e p="MasterServerScript.cs" t="Include" />
+        <e p="MasterServerSettings.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="EndorblastCore.MasterServer.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+      </e>
+      <e p="EndorblastCore.Server" t="IncludeRecursive">
+        <e p="app.manifest" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Content" t="Include">
+          <e p="Content.mgcb" t="Include" />
+          <e p="obj" t="Include">
+            <e p="DesktopGL" t="Include">
+              <e p="Content" t="Include">
+                <e p=".mgstats" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="EndorblastCore.Server.csproj" t="IncludeRecursive" />
+        <e p="Game1.cs" t="Include" />
+        <e p="Icon.bmp" t="Include" />
+        <e p="Icon.ico" t="Include" />
+        <e p="Microsoft.Xna.Framework.Content.ContentTypeReader" t="Include" />
+        <e p="Network" t="Include">
+          <e p="EnumsData.cs" t="Include" />
+          <e p="ServerManager.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="EndorblastCore.Server.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Server" t="Include">
+          <e p="Game" t="Include">
+            <e p="CharacterManager.cs" t="Include" />
+            <e p="EnemyManager.cs" t="Include" />
+            <e p="Entities" t="Include">
+              <e p="Inputs.cs" t="Include" />
+            </e>
+            <e p="Lobby.cs" t="Include" />
+            <e p="LobbyManager.cs" t="Include" />
+            <e p="Map" t="Include">
+              <e p="Map.cs" t="Include" />
+              <e p="MapManager.cs" t="Include" />
+            </e>
+            <e p="PlayerManager.cs" t="Include" />
+            <e p="PlayerStats.cs" t="Include" />
+            <e p="StaticCharacter.cs" t="Include" />
+          </e>
+          <e p="GameManager.cs" t="Include" />
+          <e p="NetCommands" t="Include">
+            <e p="Character" t="Include">
+              <e p="CharacterChatCommand.cs" t="Include" />
+              <e p="CharacterDamageCommand.cs" t="Include" />
+              <e p="CharacterDataCommand.cs" t="Include" />
+              <e p="CharacterInputCommand.cs" t="Include" />
+              <e p="CharacterListCommand.cs" t="Include" />
+              <e p="CharacterSkillCastCommand.cs" t="Include" />
+            </e>
+            <e p="Database.cs" t="Include" />
+            <e p="enemy" t="Include" />
+            <e p="Login" t="Include">
+              <e p="LoginUser.cs" t="Include" />
+            </e>
+            <e p="NetCommand.cs" t="Include" />
+            <e p="World" t="Include">
+              <e p="EnemyWorldSpawnCommand.cs" t="Include" />
+              <e p="WorldCharacterChangeMapCommand.cs" t="Include" />
+              <e p="WorldCharacterEnterCommand.cs" t="Include" />
+              <e p="WorldCharacterExitCommand.cs" t="Include" />
+              <e p="WorldDataCommand.cs" t="Include" />
+              <e p="WorldPositionCommand.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="EndorblastCore.sln" t="IncludeFlat" />
+      <e p="Nez.Portable" t="IncludeRecursive">
+        <e p="AI" t="Include">
+          <e p="BehaviorTree" t="Include">
+            <e p="Actions" t="Include">
+              <e p="BehaviorTreeReference.cs" t="Include" />
+              <e p="ExecuteAction.cs" t="Include" />
+              <e p="LogAction.cs" t="Include" />
+              <e p="WaitAction.cs" t="Include" />
+            </e>
+            <e p="Behavior.cs" t="Include" />
+            <e p="BehaviorTree.cs" t="Include" />
+            <e p="BehaviorTreeBuilder.cs" t="Include" />
+            <e p="Composites" t="Include">
+              <e p="AbortTypes.cs" t="Include" />
+              <e p="Composite.cs" t="Include" />
+              <e p="Parallel.cs" t="Include" />
+              <e p="ParallelSelector.cs" t="Include" />
+              <e p="RandomSelector.cs" t="Include" />
+              <e p="RandomSequence.cs" t="Include" />
+              <e p="Selector.cs" t="Include" />
+              <e p="Sequence.cs" t="Include" />
+            </e>
+            <e p="Conditionals" t="Include">
+              <e p="ExecuteActionConditional.cs" t="Include" />
+              <e p="IConditional.cs" t="Include" />
+              <e p="RandomProbability.cs" t="Include" />
+            </e>
+            <e p="Decorators" t="Include">
+              <e p="AlwaysFail.cs" t="Include" />
+              <e p="AlwaysSucceed.cs" t="Include" />
+              <e p="ConditionalDecorator.cs" t="Include" />
+              <e p="Decorator.cs" t="Include" />
+              <e p="Inverter.cs" t="Include" />
+              <e p="Repeater.cs" t="Include" />
+              <e p="UntilFail.cs" t="Include" />
+              <e p="UntilSuccess.cs" t="Include" />
+            </e>
+            <e p="TaskStatus.cs" t="Include" />
+          </e>
+          <e p="FSM" t="Include">
+            <e p="SimpleStateMachine.cs" t="Include" />
+            <e p="State.cs" t="Include" />
+            <e p="StateMachine.cs" t="Include" />
+          </e>
+          <e p="GOAP" t="Include">
+            <e p="Action.cs" t="Include" />
+            <e p="ActionPlanner.cs" t="Include" />
+            <e p="ActionT.cs" t="Include" />
+            <e p="Agent.cs" t="Include" />
+            <e p="AStar.cs" t="Include" />
+            <e p="AStarStorage.cs" t="Include" />
+            <e p="WorldState.cs" t="Include" />
+          </e>
+          <e p="Pathfinding" t="Include">
+            <e p="AStar" t="Include">
+              <e p="AstarGridGraph.cs" t="Include" />
+              <e p="AStarPathfinder.cs" t="Include" />
+              <e p="IAstarGraph.cs" t="Include" />
+            </e>
+            <e p="BreadthFirst" t="Include">
+              <e p="BreadthFirstPathfinder.cs" t="Include" />
+              <e p="IUnweightedGraph.cs" t="Include" />
+              <e p="UnweightedGraph.cs" t="Include" />
+              <e p="UnweightedGridGraph.cs" t="Include" />
+            </e>
+            <e p="Dijkstra" t="Include">
+              <e p="IWeightedGraph.cs" t="Include" />
+              <e p="WeightedGridGraph.cs" t="Include" />
+              <e p="WeightedPathfinder.cs" t="Include" />
+            </e>
+          </e>
+          <e p="UtilityAI" t="Include">
+            <e p="Actions" t="Include">
+              <e p="ActionExecutor.cs" t="Include" />
+              <e p="ActionWithOptions.cs" t="Include" />
+              <e p="CompositeAction.cs" t="Include" />
+              <e p="IAction.cs" t="Include" />
+              <e p="IActionOptionAppraisal.cs" t="Include" />
+              <e p="LogAction.cs" t="Include" />
+              <e p="ReasonerAction.cs" t="Include" />
+            </e>
+            <e p="Considerations" t="Include">
+              <e p="AllOrNothingConsideration.cs" t="Include" />
+              <e p="Appraisals" t="Include">
+                <e p="ActionAppraisal.cs" t="Include" />
+                <e p="IAppraisal.cs" t="Include" />
+              </e>
+              <e p="FixedScoreConsideration.cs" t="Include" />
+              <e p="IConsideration.cs" t="Include" />
+              <e p="SumOfChildrenConsideration.cs" t="Include" />
+              <e p="ThresholdConsideration.cs" t="Include" />
+            </e>
+            <e p="Reasoners" t="Include">
+              <e p="FirstScoreReasoner.cs" t="Include" />
+              <e p="HighestScoreReasoner.cs" t="Include" />
+              <e p="Reasoner.cs" t="Include" />
+            </e>
+            <e p="UtilityAI.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Assets" t="Include">
+          <e p="BitmapFonts" t="Include">
+            <e p="BatcherBitmapFontExt.cs" t="Include" />
+            <e p="BitmapFont.cs" t="Include" />
+            <e p="BitmapFont.Drawing.cs" t="Include" />
+            <e p="BitmapFont.Loading.cs" t="Include" />
+            <e p="BitmapFontEnumerator.cs" t="Include" />
+            <e p="BitmapFontLoader.cs" t="Include" />
+            <e p="BitmapFontReader.cs" t="Include" />
+            <e p="BitmapFontRegion.cs" t="Include" />
+            <e p="BMFontConverter.cs" t="Include" />
+            <e p="Character.cs" t="Include" />
+            <e p="Kerning.cs" t="Include" />
+            <e p="Padding.cs" t="Include" />
+            <e p="Page.cs" t="Include" />
+          </e>
+          <e p="Loaders" t="Include">
+            <e p="ParticleEmitterConfigLoader.cs" t="Include" />
+          </e>
+          <e p="NezContentManager.cs" t="Include" />
+          <e p="SpriteAtlases" t="Include">
+            <e p="Loader" t="Include">
+              <e p="SpriteAtlasData.cs" t="Include" />
+              <e p="SpriteAtlasLoader.cs" t="Include" />
+            </e>
+            <e p="SpriteAnimation.cs" t="Include" />
+            <e p="SpriteAtlas.cs" t="Include" />
+          </e>
+          <e p="Tiled" t="Include">
+            <e p="README.md" t="Include" />
+            <e p="Runtime" t="Include">
+              <e p="Layer.Runtime.cs" t="Include" />
+              <e p="Map.Runtime.cs" t="Include" />
+              <e p="TiledMapLoader.cs" t="Include" />
+              <e p="TiledRendering.cs" t="Include" />
+            </e>
+            <e p="TiledTypes" t="Include">
+              <e p="Group.cs" t="Include" />
+              <e p="ImageLayer.cs" t="Include" />
+              <e p="ITmxLayer.cs" t="Include" />
+              <e p="Layer.cs" t="Include" />
+              <e p="Map.cs" t="Include" />
+              <e p="ObjectGroup.cs" t="Include" />
+              <e p="TiledCore.cs" t="Include" />
+              <e p="Tileset.cs" t="Include" />
+              <e p="TilesetTile.cs" t="Include" />
+              <e p="TmxLayerTileExt.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Content" t="Include">
+          <e p="Nez" t="Include">
+            <e p="Effects" t="Include">
+              <e p="DeferredLighting.mgfxo" t="Include" />
+              <e p="DeferredSprite.mgfxo" t="Include" />
+              <e p="transitions" t="Include">
+                <e p="Squares.mgfxo" t="Include" />
+                <e p="TextureWipe.mgfxo" t="Include" />
+                <e p="Wind.mgfxo" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="NezDefaultBMFont.xnb" t="Include" />
+        </e>
+        <e p="Core.cs" t="Include" />
+        <e p="CoreEvents.cs" t="Include" />
+        <e p="Debug" t="Include">
+          <e p="Console" t="Include">
+            <e p="DebugConsole.cs" t="Include" />
+            <e p="DefaultCommands.cs" t="Include" />
+          </e>
+          <e p="Debug.cs" t="Include" />
+          <e p="Debug.Draw.cs" t="Include" />
+          <e p="DebugDefaults.cs" t="Include" />
+          <e p="DebugDrawItem.cs" t="Include" />
+          <e p="Insist.cs" t="Include" />
+          <e p="Inspector" t="Include">
+            <e p="Attributes.cs" t="Include" />
+            <e p="InspectorList.cs" t="Include" />
+            <e p="Inspectors" t="Include">
+              <e p="BoolInspector.cs" t="Include" />
+              <e p="ColorInspector.cs" t="Include" />
+              <e p="EffectInspector.cs" t="Include" />
+              <e p="EnumInspector.cs" t="Include" />
+              <e p="FloatInspector.cs" t="Include" />
+              <e p="Inspector.cs" t="Include" />
+              <e p="IntInspector.cs" t="Include" />
+              <e p="MethodInspector.cs" t="Include" />
+              <e p="StringInspector.cs" t="Include" />
+              <e p="StructInspector.cs" t="Include" />
+              <e p="Vector2Inspector.cs" t="Include" />
+            </e>
+            <e p="RuntimeInspector.cs" t="Include" />
+          </e>
+        </e>
+        <e p="ECS" t="Include">
+          <e p="Camera.cs" t="Include" />
+          <e p="Component.cs" t="Include" />
+          <e p="Components" t="Include">
+            <e p="CameraShake.cs" t="Include" />
+            <e p="ColorCycler.cs" t="Include" />
+            <e p="FollowCamera.cs" t="Include" />
+            <e p="IUpdatable.cs" t="Include" />
+            <e p="Physics" t="Include">
+              <e p="ArcadeRigidbody.cs" t="Include" />
+              <e p="Colliders" t="Include">
+                <e p="BoxCollider.cs" t="Include" />
+                <e p="CircleCollider.cs" t="Include" />
+                <e p="Collider.cs" t="Include" />
+                <e p="PolygonCollider.cs" t="Include" />
+              </e>
+              <e p="ITriggerListener.cs" t="Include" />
+              <e p="Mover.cs" t="Include" />
+              <e p="ProjectileMover.cs" t="Include" />
+              <e p="TiledMapMover.cs" t="Include" />
+            </e>
+            <e p="Renderables" t="Include">
+              <e p="3D" t="Include">
+                <e p="Cube3D.cs" t="Include" />
+                <e p="GeometricPrimitive3D.cs" t="Include" />
+                <e p="Model3D.cs" t="Include" />
+                <e p="Renderable3D.cs" t="Include" />
+                <e p="Sphere3D.cs" t="Include" />
+                <e p="Torus3D.cs" t="Include" />
+                <e p="VertexPositionColorNormal.cs" t="Include" />
+              </e>
+              <e p="IRenderable.cs" t="Include" />
+              <e p="LineRenderer.cs" t="Include" />
+              <e p="Mesh.cs" t="Include" />
+              <e p="Particles" t="Include">
+                <e p="Particle.cs" t="Include" />
+                <e p="ParticleCollisionConfig.cs" t="Include" />
+                <e p="ParticleEmitter.cs" t="Include" />
+                <e p="ParticleEmitterConfig.cs" t="Include" />
+                <e p="ParticleEmitterType.cs" t="Include" />
+              </e>
+              <e p="PolygonLight" t="Include">
+                <e p="EndPoint.cs" t="Include" />
+                <e p="PolyLight.cs" t="Include" />
+                <e p="PolySpotLight.cs" t="Include" />
+                <e p="Segment.cs" t="Include" />
+                <e p="VisibilityComputer.cs" t="Include" />
+              </e>
+              <e p="PolygonMesh.cs" t="Include" />
+              <e p="RenderableComponent.cs" t="Include" />
+              <e p="SpringGrid.cs" t="Include" />
+              <e p="Sprites" t="Include">
+                <e p="NineSliceSpriteRenderer.cs" t="Include" />
+                <e p="PrototypeSpriteRenderer.cs" t="Include" />
+                <e p="ScrollingSpriteRenderer.cs" t="Include" />
+                <e p="SpriteAnimator.cs" t="Include" />
+                <e p="SpriteMime.cs" t="Include" />
+                <e p="SpriteOutlineRenderer.cs" t="Include" />
+                <e p="SpriteRenderer.cs" t="Include" />
+                <e p="SpriteTrail.cs" t="Include" />
+                <e p="TiledSpriteRenderer.cs" t="Include" />
+              </e>
+              <e p="StencilLight.cs" t="Include" />
+              <e p="TiledMapRenderer.cs" t="Include" />
+              <e p="TrailRibbon.cs" t="Include" />
+              <e p="UICanvas.cs" t="Include" />
+              <e p="WaterReflectionPlane.cs" t="Include" />
+            </e>
+            <e p="Text" t="Include">
+              <e p="FramesPerSecondCounter.cs" t="Include" />
+              <e p="MarkupText.cs" t="Include" />
+              <e p="TextComponent.cs" t="Include" />
+              <e p="TextRun.cs" t="Include" />
+              <e p="TextRunComponent.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Entity.cs" t="Include" />
+          <e p="InternalUtils" t="Include">
+            <e p="ComponentList.cs" t="Include" />
+            <e p="EntityList.cs" t="Include" />
+            <e p="RenderableComponentList.cs" t="Include" />
+          </e>
+          <e p="Scene.cs" t="Include" />
+          <e p="SceneComponent.cs" t="Include" />
+          <e p="ScreenSpaceCamera.cs" t="Include" />
+          <e p="Transform.cs" t="Include" />
+        </e>
+        <e p="Graphics" t="Include">
+          <e p="Batcher" t="Include">
+            <e p="Batcher.cs" t="Include" />
+            <e p="BatcherDrawingExt.cs" t="Include" />
+            <e p="GraphicsResource.cs" t="Include" />
+          </e>
+          <e p="DeferredLighting" t="Include">
+            <e p="DeferredLightingRenderer.cs" t="Include" />
+            <e p="DeferredSpriteMaterial.cs" t="Include" />
+            <e p="Effects" t="Include">
+              <e p="DeferredLightEffect.cs" t="Include" />
+              <e p="DeferredSpriteEffect.cs" t="Include" />
+            </e>
+            <e p="Geometry" t="Include">
+              <e p="PolygonMesh.cs" t="Include" />
+              <e p="QuadMesh.cs" t="Include" />
+            </e>
+            <e p="Lights" t="Include">
+              <e p="AreaLight.cs" t="Include" />
+              <e p="DeferredLight.cs" t="Include" />
+              <e p="DirLight.cs" t="Include" />
+              <e p="PointLight.cs" t="Include" />
+              <e p="SpotLight.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Effects" t="Include">
+            <e p="CrosshatchEffect.cs" t="Include" />
+            <e p="DissolveEffect.cs" t="Include" />
+            <e p="DotsEffect.cs" t="Include" />
+            <e p="EffectResource.cs" t="Include" />
+            <e p="GaussianBlurEffect.cs" t="Include" />
+            <e p="GrayscaleEffect.cs" t="Include" />
+            <e p="NoiseEffect.cs" t="Include" />
+            <e p="PaletteCyclerEffect.cs" t="Include" />
+            <e p="PolygonLightEffect.cs" t="Include" />
+            <e p="ReflectionEffect.cs" t="Include" />
+            <e p="ScanlinesEffect.cs" t="Include" />
+            <e p="SepiaEffect.cs" t="Include" />
+            <e p="SpriteAlphaTestEffect.cs" t="Include" />
+            <e p="SpriteBlinkEffect.cs" t="Include" />
+            <e p="SpriteEffect.cs" t="Include" />
+            <e p="SpriteLinesEffect.cs" t="Include" />
+            <e p="StencilLightEffect.cs" t="Include" />
+            <e p="TwistEffect.cs" t="Include" />
+            <e p="WaterReflectionEffect.cs" t="Include" />
+          </e>
+          <e p="Graphics.cs" t="Include" />
+          <e p="Material.cs" t="Include" />
+          <e p="Materials" t="Include">
+            <e p="PaletteCyclerMaterial.cs" t="Include" />
+          </e>
+          <e p="PostProcessing" t="Include">
+            <e p="IFinalRenderDelegate.cs" t="Include" />
+            <e p="PostProcessor.cs" t="Include" />
+            <e p="PostProcessors" t="Include">
+              <e p="BloomPostProcessor.cs" t="Include" />
+              <e p="BloomSettings.cs" t="Include" />
+              <e p="CinematicLetterboxPostProcessor.cs" t="Include" />
+              <e p="GaussianBlurPostProcessor.cs" t="Include" />
+              <e p="HeatDistortionPostProcessor.cs" t="Include" />
+              <e p="PixelBloomPostProcessor.cs" t="Include" />
+              <e p="PixelGlitchPostProcessor.cs" t="Include" />
+              <e p="PixelMosaicRenderDelegate.cs" t="Include" />
+              <e p="PolyLightPostProcessor.cs" t="Include" />
+              <e p="ScanlinesPostProcessor.cs" t="Include" />
+              <e p="SpriteLightPostProcessor.cs" t="Include" />
+              <e p="VignettePostProcessor.cs" t="Include" />
+            </e>
+            <e p="PostProcessorT.cs" t="Include" />
+          </e>
+          <e p="PrimitiveBatch.cs" t="Include" />
+          <e p="Renderers" t="Include">
+            <e p="DefaultRenderer.cs" t="Include" />
+            <e p="Reflections" t="Include">
+              <e p="ReflectionMaterial.cs" t="Include" />
+              <e p="ReflectionRenderer.cs" t="Include" />
+              <e p="WaterReflectionMaterial.cs" t="Include" />
+            </e>
+            <e p="Renderer.cs" t="Include" />
+            <e p="RenderLayerExcludeRenderer.cs" t="Include" />
+            <e p="RenderLayerRenderer.cs" t="Include" />
+            <e p="ScreenSpaceRenderer.cs" t="Include" />
+            <e p="StencilLightRenderer.cs" t="Include" />
+          </e>
+          <e p="ScissorStack.cs" t="Include" />
+          <e p="SVG" t="Include">
+            <e p="Shapes" t="Include">
+              <e p="Paths" t="Include">
+                <e p="FauxGraphicsPath.cs" t="Include" />
+                <e p="ISvgPathBuilder.cs" t="Include" />
+                <e p="SvgPath.cs" t="Include" />
+                <e p="SvgPathParser.cs" t="Include" />
+                <e p="SvgPathSegments.cs" t="Include" />
+                <e p="SvgReflectionPathBuilder.cs" t="Include" />
+              </e>
+              <e p="SvgCircle.cs" t="Include" />
+              <e p="SvgEllipse.cs" t="Include" />
+              <e p="SvgImage.cs" t="Include" />
+              <e p="SvgLine.cs" t="Include" />
+              <e p="SvgPolygon.cs" t="Include" />
+              <e p="SvgPolyline.cs" t="Include" />
+              <e p="SvgRectangle.cs" t="Include" />
+            </e>
+            <e p="SvgDebugComponent.cs" t="Include" />
+            <e p="SvgDocument.cs" t="Include" />
+            <e p="SvgElement.cs" t="Include" />
+            <e p="SvgGroup.cs" t="Include" />
+            <e p="Transforms" t="Include">
+              <e p="SvgMatrix.cs" t="Include" />
+              <e p="SvgRotate.cs" t="Include" />
+              <e p="SvgScale.cs" t="Include" />
+              <e p="SvgShear.cs" t="Include" />
+              <e p="SvgSkew.cs" t="Include" />
+              <e p="SvgTransform.cs" t="Include" />
+              <e p="SvgTransformConverter.cs" t="Include" />
+              <e p="SvgTranslate.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Textures" t="Include">
+            <e p="GaussianBlur.cs" t="Include" />
+            <e p="NinePatchSprite.cs" t="Include" />
+            <e p="RenderTarget.cs" t="Include" />
+            <e p="RenderTexture.cs" t="Include" />
+            <e p="Sprite.cs" t="Include" />
+            <e p="TextureUtils.cs" t="Include" />
+          </e>
+          <e p="transitions" t="Include">
+            <e p="CrossFadeTransition.cs" t="Include" />
+            <e p="FadeTransition.cs" t="Include" />
+            <e p="ImageMaskTransition.cs" t="Include" />
+            <e p="SceneTransition.cs" t="Include" />
+            <e p="SquaresTransition.cs" t="Include" />
+            <e p="TextureWipeTransition.cs" t="Include" />
+            <e p="TransformTransition.cs" t="Include" />
+            <e p="WindTransition.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Input" t="Include">
+          <e p="Clipboard.cs" t="Include" />
+          <e p="GamePadData.cs" t="Include" />
+          <e p="IClipboard.cs" t="Include" />
+          <e p="Input.cs" t="Include" />
+          <e p="InputUtils.cs" t="Include" />
+          <e p="TouchInput.cs" t="Include" />
+          <e p="Virtual" t="Include">
+            <e p="VirtualAxis.cs" t="Include" />
+            <e p="VirtualButton.cs" t="Include" />
+            <e p="VirtualInput.cs" t="Include" />
+            <e p="VirtualIntegerAxis.cs" t="Include" />
+            <e p="VirtualJoystick.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Math" t="Include">
+          <e p="Axis.cs" t="Include" />
+          <e p="Bezier.cs" t="Include" />
+          <e p="BezierSpline.cs" t="Include" />
+          <e p="CenterSprite.cs" t="Include" />
+          <e p="Flags.cs" t="Include" />
+          <e p="Mathf.cs" t="Include" />
+          <e p="Matrix2D.cs" t="Include" />
+          <e p="Random.cs" t="Include" />
+          <e p="RectangleF.cs" t="Include" />
+          <e p="SubpixelFloat.cs" t="Include" />
+          <e p="SubpixelVector2.cs" t="Include" />
+        </e>
+        <e p="Nez.Monogame.Standard.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Nez" t="Include">
+            <e p="Debug" t="Include">
+              <e p="Nez.assets.cache" t="Include" />
+              <e p="Nez.csproj.CopyComplete" t="Include" />
+              <e p="Nez.csproj.CoreCompileInputs.cache" t="Include" />
+              <e p="Nez.csproj.FileListAbsolute.txt" t="Include" />
+              <e p="Nez.csprojAssemblyReference.cache" t="Include" />
+              <e p="Nez.dll" t="Include" />
+              <e p="Nez.pdb" t="Include" />
+            </e>
+            <e p="Nez.csproj.nuget.dgspec.json" t="Include" />
+            <e p="Nez.csproj.nuget.g.props" t="Include" />
+            <e p="Nez.csproj.nuget.g.targets" t="Include" />
+            <e p="project.assets.json" t="Include" />
+            <e p="project.nuget.cache" t="Include" />
+            <e p="Release" t="Include">
+              <e p="Nez.assets.cache" t="Include" />
+            </e>
+          </e>
+          <e p="Nez.FNA" t="Include">
+            <e p="Debug" t="Include">
+              <e p="Nez.FNA.csprojAssemblyReference.cache" t="Include" />
+            </e>
+          </e>
+          <e p="Nez.Monogame.Standard" t="Include">
+            <e p="Debug" t="Include">
+              <e p="netstandard2.0" t="Include">
+                <e p="Nez.Monogame.Standard.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Physics" t="Include">
+          <e p="ColliderTriggerHelper.cs" t="Include" />
+          <e p="Collisions.cs" t="Include" />
+          <e p="Physics.cs" t="Include" />
+          <e p="Ray2D.cs" t="Include" />
+          <e p="RaycastHit.cs" t="Include" />
+          <e p="Shapes" t="Include">
+            <e p="Box.cs" t="Include" />
+            <e p="Circle.cs" t="Include" />
+            <e p="CollisionResult.cs" t="Include" />
+            <e p="Polygon.cs" t="Include" />
+            <e p="RealtimeCollisions.cs" t="Include" />
+            <e p="Shape.cs" t="Include" />
+            <e p="ShapeCollisions" t="Include">
+              <e p="ShapeCollisionsBox.cs" t="Include" />
+              <e p="ShapeCollisionsCircle.cs" t="Include" />
+              <e p="ShapeCollisionsLine.cs" t="Include" />
+              <e p="ShapeCollisionsPoint.cs" t="Include" />
+              <e p="ShapeCollisionsPolygon.cs" t="Include" />
+            </e>
+          </e>
+          <e p="SpatialHash.cs" t="Include" />
+          <e p="Verlet" t="Include">
+            <e p="Composites" t="Include">
+              <e p="Ball.cs" t="Include" />
+              <e p="Box.cs" t="Include" />
+              <e p="Cloth.cs" t="Include" />
+              <e p="Composite.cs" t="Include" />
+              <e p="LineSegments.cs" t="Include" />
+              <e p="Ragdoll.cs" t="Include" />
+              <e p="Tire.cs" t="Include" />
+              <e p="Tree.cs" t="Include" />
+            </e>
+            <e p="Constraints" t="Include">
+              <e p="AngleConstraint.cs" t="Include" />
+              <e p="Constraint.cs" t="Include" />
+              <e p="DistanceConstraint.cs" t="Include" />
+            </e>
+            <e p="Particle.cs" t="Include" />
+            <e p="VerletWorld.cs" t="Include" />
+          </e>
+        </e>
+        <e p="UI" t="Include">
+          <e p="Base" t="Include">
+            <e p="Align.cs" t="Include" />
+            <e p="Cell.cs" t="Include" />
+            <e p="DebugRectangleF.cs" t="Include" />
+            <e p="Direction.cs" t="Include" />
+            <e p="Element.cs" t="Include" />
+            <e p="Group.cs" t="Include" />
+            <e p="ICullable.cs" t="Include" />
+            <e p="IGamepadFocusable.cs" t="Include" />
+            <e p="IInputListener.cs" t="Include" />
+            <e p="IKeyboardListener.cs" t="Include" />
+            <e p="ILayout.cs" t="Include" />
+            <e p="Scaling.cs" t="Include" />
+            <e p="Touchable.cs" t="Include" />
+            <e p="Value.cs" t="Include" />
+          </e>
+          <e p="Containers" t="Include">
+            <e p="Container.cs" t="Include" />
+            <e p="HorizontalGroup.cs" t="Include" />
+            <e p="ScrollPane.cs" t="Include" />
+            <e p="SplitPane.cs" t="Include" />
+            <e p="Stack.cs" t="Include" />
+            <e p="Table.cs" t="Include" />
+            <e p="TabPane.cs" t="Include" />
+            <e p="Tree.cs" t="Include" />
+            <e p="VerticalGroup.cs" t="Include" />
+          </e>
+          <e p="Drawable" t="Include">
+            <e p="IDrawable.cs" t="Include" />
+            <e p="NinePatchDrawable.cs" t="Include" />
+            <e p="PrimitiveDrawable.cs" t="Include" />
+            <e p="SpriteDrawable.cs" t="Include" />
+            <e p="TiledDrawable.cs" t="Include" />
+          </e>
+          <e p="IMGUI.cs" t="Include" />
+          <e p="Skin.cs" t="Include" />
+          <e p="Stage.cs" t="Include" />
+          <e p="Utils" t="Include">
+            <e p="ArraySelection.cs" t="Include" />
+            <e p="Selection.cs" t="Include" />
+            <e p="TooltipManager.cs" t="Include" />
+          </e>
+          <e p="Widgets" t="Include">
+            <e p="Button.cs" t="Include" />
+            <e p="ButtonGroup.cs" t="Include" />
+            <e p="CheckBox.cs" t="Include" />
+            <e p="Dialog.cs" t="Include" />
+            <e p="IconButton.cs" t="Include" />
+            <e p="Image.cs" t="Include" />
+            <e p="ImageButton.cs" t="Include" />
+            <e p="ImageTextButton.cs" t="Include" />
+            <e p="Label.cs" t="Include" />
+            <e p="ListBox.cs" t="Include" />
+            <e p="NumberField.cs" t="Include" />
+            <e p="ProgressBar.cs" t="Include" />
+            <e p="SelectBox.cs" t="Include" />
+            <e p="SelectBoxList.cs" t="Include" />
+            <e p="Slider.cs" t="Include" />
+            <e p="TextButton.cs" t="Include" />
+            <e p="TextField.cs" t="Include" />
+            <e p="TextTooltip.cs" t="Include" />
+            <e p="Tooltip.cs" t="Include" />
+            <e p="Window.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Utils" t="Include">
+          <e p="Analysis" t="Include">
+            <e p="Layout.cs" t="Include" />
+            <e p="TimeRuler.cs" t="Include" />
+          </e>
+          <e p="Audio" t="Include">
+            <e p="AudioSource.cs" t="Include" />
+          </e>
+          <e p="Collections" t="Include">
+            <e p="Deque.cs" t="Include" />
+            <e p="FastList.cs" t="Include" />
+            <e p="IPriorityQueue.cs" t="Include" />
+            <e p="ListPool.cs" t="Include" />
+            <e p="Pair.cs" t="Include" />
+            <e p="Pool.cs" t="Include" />
+            <e p="PriorityQueue.cs" t="Include" />
+            <e p="PriorityQueueNode.cs" t="Include" />
+            <e p="SimplePriorityQueue.cs" t="Include" />
+          </e>
+          <e p="Coroutines" t="Include">
+            <e p="Coroutine.cs" t="Include" />
+            <e p="CoroutineManager.cs" t="Include" />
+          </e>
+          <e p="Emitter.cs" t="Include" />
+          <e p="Enums.cs" t="Include" />
+          <e p="Extensions" t="Include">
+            <e p="ArrayExt.cs" t="Include" />
+            <e p="ColorExt.cs" t="Include" />
+            <e p="ComponentExt.cs" t="Include" />
+            <e p="EdgeExt.cs" t="Include" />
+            <e p="EntityExt.cs" t="Include" />
+            <e p="FloatExt.cs" t="Include" />
+            <e p="GameServiceContainerExt.cs" t="Include" />
+            <e p="GestureSampleExt.cs" t="Include" />
+            <e p="IEnumerableExt.cs" t="Include" />
+            <e p="KeysExt.cs" t="Include" />
+            <e p="ListExt.cs" t="Include" />
+            <e p="MemberInfoExt.cs" t="Include" />
+            <e p="ObjectExt.cs" t="Include" />
+            <e p="RectangleExt.cs" t="Include" />
+            <e p="SoundEffectInstanceExt.cs" t="Include" />
+            <e p="SpriteBatchExt.cs" t="Include" />
+            <e p="TouchLocationExt.cs" t="Include" />
+            <e p="Vector2Ext.cs" t="Include" />
+            <e p="Vector3Ext.cs" t="Include" />
+          </e>
+          <e p="Fonts" t="Include">
+            <e p="BatcherIFontExt.cs" t="Include" />
+            <e p="BatcherSpriteFontExt.cs" t="Include" />
+            <e p="FontCharacterSource.cs" t="Include" />
+            <e p="IFont.cs" t="Include" />
+            <e p="NezSpriteFont.cs" t="Include" />
+          </e>
+          <e p="GlobalManager.cs" t="Include" />
+          <e p="MonoGameCompat.cs" t="Include" />
+          <e p="ReflectionUtils.cs" t="Include" />
+          <e p="Screen.cs" t="Include" />
+          <e p="Storage.cs" t="Include" />
+          <e p="Time.cs" t="Include" />
+          <e p="Timers" t="Include">
+            <e p="ITimer.cs" t="Include" />
+            <e p="Timer.cs" t="Include" />
+            <e p="TimerManager.cs" t="Include" />
+          </e>
+          <e p="Triangulator.cs" t="Include" />
+          <e p="Tweens" t="Include">
+            <e p="AbstractTweenable.cs" t="Include" />
+            <e p="Easing" t="Include">
+              <e p="EaseType.cs" t="Include" />
+              <e p="Easing.cs" t="Include" />
+              <e p="Lerps.cs" t="Include" />
+            </e>
+            <e p="Interfaces" t="Include">
+              <e p="ITween.cs" t="Include" />
+              <e p="ITweenable.cs" t="Include" />
+              <e p="ITweenControl.cs" t="Include" />
+              <e p="ITweenTarget.cs" t="Include" />
+            </e>
+            <e p="PropertyTweens.cs" t="Include" />
+            <e p="RenderableColorTween.cs" t="Include" />
+            <e p="TransformSpringTween.cs" t="Include" />
+            <e p="TransformVector2Tween.cs" t="Include" />
+            <e p="Tween.cs" t="Include" />
+            <e p="TweenExt.cs" t="Include" />
+            <e p="TweenManager.cs" t="Include" />
+            <e p="Tweens.cs" t="Include" />
+          </e>
+          <e p="Utils.cs" t="Include" />
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
