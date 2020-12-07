@@ -1,5 +1,13 @@
 ![](media/FAQBanner.png)
 
+<div align="center">
+    <a href="https://www.patreon.com/zyrolul"><img src="media/social/Patreon.png" width="50" /></a>
+    <a href="https://discord.gg/5U5uaft"><img src="media/social/Discord.png" width="50" /></a>
+    <a href="https://github.com/zyrolul"><img src="media/social/Github.png" width="50" /></a>
+    <a href="https://www.youtube.com/channel/UC3RKUJ8nLjrUvR0fZOwQXBw"><img src="media/social/Youtube.png" width="50"/></a>
+    <a href="https://www.twitch.tv/zyrobit"><img src="media/social/Twitch.png" width="50" /></a>
+</div>
+
 ### **Q: Why is this code public?**
 **A:** Not many project that I see on github that is a server that is a basic server that is just a server to monogame. Therefore I made one! :)
 
@@ -9,7 +17,7 @@
 
 
 ### **Q: Can I use this code?**
-**A:** Sure I don't see why not.... Just follow the license I have for it! Can be found in `license.txt`. All link at bottom of this page!
+**A:** Sure I don't see why not.... Just follow the license I have for it! Can be found in `license.txt`.
 
 
 ### **Q: How do I set it up?**
@@ -21,7 +29,7 @@
 
 
 ### **Q: Can I use the server part and not the client?**
-**A:** Yes, But follow `license.txt` all link at bottom of this page!
+**A:** Yes, But follow `license.txt`.
 
 
 ### **Q: Can I use the client part and not the server?**
