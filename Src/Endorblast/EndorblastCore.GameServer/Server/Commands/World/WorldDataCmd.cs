@@ -17,6 +17,9 @@ namespace EndorblastCore.GameServer.Server.Commands
                case WorldPacket.WorldEnter:
                    new WorldEnterCommand().Receive(inc);
                    break;
+               case WorldPacket.WorldExit:
+                   new WorldExitCmd().Receive(inc);
+                   break;
                default:
                    Console.WriteLine("### ERROR : World Type doesn't exits!");
                    break;

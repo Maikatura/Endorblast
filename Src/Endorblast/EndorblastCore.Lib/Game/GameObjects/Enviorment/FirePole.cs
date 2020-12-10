@@ -24,7 +24,7 @@ namespace EndorblastCore.Lib.GameObjects
             sani.LocalOffset = new Microsoft.Xna.Framework.Vector2(0, 0);
             sani.RenderLayer = RenderLayers.OtherPlayersLayer;
 
-            var sprites = ContentLoader.LoadSprites("/Effects/Fire/FirePole1.png", 100, 100);
+            var sprites = ContentLoader.LoadSprites($"{ContentPath.Instance.goPath}/Fire/Fire1.png", 100, 100);
             sprites = CenterSprite.BottomOrigin(sprites);
 
             

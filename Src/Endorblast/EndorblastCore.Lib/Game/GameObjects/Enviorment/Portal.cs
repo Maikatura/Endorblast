@@ -8,8 +8,6 @@ namespace EndorblastCore.Lib.GameObjects
 {
     public class Portal : Entity
     {
-        private string spritePath = "/Enviorment/Portals/Portal1.png";
-        
         private int portalWorldId;
 
         private PortalScript portalScript;
@@ -31,7 +29,7 @@ namespace EndorblastCore.Lib.GameObjects
             
             
             var spriteRenderer = this.AddComponent(new SpriteRenderer());
-            spriteRenderer.SetSprite(ContentLoader.LoadSprite((spritePath)));
+            spriteRenderer.SetSprite(ContentLoader.LoadSprite($"{ContentPath.Instance.goPath}/Portal/Portal1.png"));
             spriteRenderer.SetRenderLayer(RenderLayers.ObjectLayer);
 
             

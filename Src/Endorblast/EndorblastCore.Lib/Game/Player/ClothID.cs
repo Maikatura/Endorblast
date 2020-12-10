@@ -13,11 +13,12 @@ namespace EndorblastCore.Lib
     {
         public static Dictionary<int, ClothObject> clothes = new Dictionary<int, ClothObject>();
 
+        
 
         public static bool Init()
         {
-            clothes.Add(1, new NakedOutfit());
-            clothes.Add(2, new MaidOutfit());
+            clothes.Add(1, new NakedOutfit(1));
+            clothes.Add(2, new MaidOutfit(2));
 
             return true;
 

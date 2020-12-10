@@ -28,7 +28,7 @@ namespace EndorblastCore.Lib.GUI
             gearUI.SetFillParent(true);
 
 
-            Sprite panelSprite = ContentLoader.LoadSprite(ContentPath.Instance.uiInventory);
+            Sprite panelSprite = ContentLoader.LoadSprite(ContentPath.Instance.ui_Inventory);
             Image panelImage = new Image(panelSprite);
 
             

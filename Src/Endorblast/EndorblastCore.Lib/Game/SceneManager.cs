@@ -77,10 +77,10 @@ namespace EndorblastCore.Lib
             switch (type)
             {
                 case MapType.Snowlands:
-                    path = "/Tilesets/GameArea/Snowlands.tmx";
+                    path = "/Sprites/Tilesets/GameArea/Snowlands.tmx";
                     break;
                 case MapType.Town:
-                    path = "/Tilesets/GameArea/GameStart.tmx";
+                    path = "/Sprites/Tilesets/GameArea/GameStart.tmx";
                     break;
                 default:
                     Console.WriteLine("### ERROR : Map type not found");

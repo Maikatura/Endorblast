@@ -36,7 +36,6 @@ namespace EndorblastCore.Server
             ServerManager.NewInstance();
             MapManager.NewInstance();
 
-
             base.Initialize();
 
             

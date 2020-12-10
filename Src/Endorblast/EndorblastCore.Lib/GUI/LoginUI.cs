@@ -29,7 +29,7 @@ namespace EndorblastCore.Lib.GUI
             table.SetFillParent(true);
             insideBox.SetFillParent(true);
 
-            Sprite lgBg = new Sprite(Core.Content.LoadTexture("Content/UI/Login/UI_Panel.png"));
+            Sprite lgBg = ContentLoader.LoadSprite(ContentPath.Instance.ui_Panel);
             
             Image img = new Image(lgBg);
             

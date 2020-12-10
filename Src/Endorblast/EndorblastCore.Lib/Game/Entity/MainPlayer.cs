@@ -59,9 +59,9 @@ namespace EndorblastCore.Lib
 
             parallax = Entity.AddComponent(new ParallaxBackground(new List<ParallaxBGSprite>()
             {
-                new ParallaxBGSprite("/Enviorment/Backgrounds/Forest/cloud.png", 0.1f),
-                new ParallaxBGSprite("/Enviorment/Backgrounds/Forest/mountain2.png", 0.5f),
-                new ParallaxBGSprite("/Enviorment/Backgrounds/Forest/sky.png", 0.9f)
+                new ParallaxBGSprite("/Sprites/Enviorment/Backgrounds/Forest/cloud.png", 0.1f),
+                new ParallaxBGSprite("/Sprites/Enviorment/Backgrounds/Forest/mountain2.png", 0.5f),
+                new ParallaxBGSprite("/Sprites/Enviorment/Backgrounds/Forest/sky.png", 0.9f)
             }));
 
             currentSkill = new Skill();
@@ -94,7 +94,7 @@ namespace EndorblastCore.Lib
             {
                 if (OldMoveState != moveState)
                 {
-                    new CharacterSendInputCommand().Send(moveState);
+                    new CharacterSendInputCommand().Send(moveState); // need how monogame do deltatime
                     SendPositionTimer = 0;
                 }
 

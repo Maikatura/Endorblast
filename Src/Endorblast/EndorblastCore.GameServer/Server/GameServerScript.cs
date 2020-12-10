@@ -51,11 +51,10 @@ namespace EndorblastCore.GameServer
         public void Start()
         {
             Console.WriteLine("### Starting Game Server.");
+            
+            GameLogic.Instnace.Init();
 
-            isRunning = true;
-
-            Thread threadConsole = new Thread(new ThreadStart(ConsoleThread));
-            threadConsole.Start();
+            
             
             context = new SynchronizationContext();
             var c = new NetPeerConfiguration("endorblast");
@@ -106,30 +105,6 @@ namespace EndorblastCore.GameServer
             }
         }
 
-        private void ConsoleThread()
-        {
-            DateTime now = DateTime.Now;
-            
-            while (isRunning)
-            {
-                while (now < DateTime.Now)
-                {
-                    GameLogic.Update();
-
-                    now = now.AddMilliseconds(ServerSettings.MSPERTICK());
-
-                    if (now > DateTime.Now)
-                    {
-                        try
-                        {
-                            Thread.Sleep(now - DateTime.Now);
-                        }
-                        catch { }
-                    }
-                }
-            }
-
-
-        }
+        
     }
 }

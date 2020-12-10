@@ -5,12 +5,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EndorblastCore.Lib.Game;
 
 namespace EndorblastCore.Lib
 {
     class HairObject
     {
-
+        public int Id;
+        public string path = $"{ContentPath.Instance.hairPath}";
+        
         public SpriteAnimation frontHairIdle;
         public SpriteAnimation frontHairRunning;
 

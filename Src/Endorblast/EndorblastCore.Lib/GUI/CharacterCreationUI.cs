@@ -35,8 +35,8 @@ namespace EndorblastCore.Lib.GUI
             table = canvas.Stage.AddElement(new Table());
             table.SetFillParent(true);
 
-            Sprite leftButton = ContentLoader.LoadSprite("/UI/Creation/ArrowButtonLeft.png");
-            Sprite rightButton = ContentLoader.LoadSprite("/UI/Creation/ArrowButtonRight.png");
+            Sprite leftButton = ContentLoader.LoadSprite("/Sprites/UI/Creation/ArrowButtonLeft.png");
+            Sprite rightButton = ContentLoader.LoadSprite("/Sprites/UI/Creation/ArrowButtonRight.png");
 
 
             table.Right();

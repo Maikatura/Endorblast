@@ -2,6 +2,7 @@
 using EndorblastCore.Lib;
 using EndorblastCore.Lib.Enums;
 using Lidgren.Network;
+using Microsoft.Xna.Framework;
 
 namespace EndorblastCore.GameServer.Server
 {
@@ -25,7 +26,7 @@ namespace EndorblastCore.GameServer.Server
             }
         }
         
-        public void Update()
+        public void Update(GameTime dt)
         {
             var removeList = new List<Map>();
             foreach (var map in worlds)
