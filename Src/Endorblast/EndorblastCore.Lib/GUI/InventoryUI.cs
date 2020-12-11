@@ -44,10 +44,10 @@ namespace EndorblastCore.Lib.GUI
 
         public void InitInventory(Scene scene)
         {
-            Sprite panelSprite = ContentLoader.LoadSprite(ContentPath.Instance.uiInventory);
-            slotIcon = new Sprite(Core.Content.LoadTexture("Content/UI/Login/UI_Panel.png"));
-            Sprite silverSprite = new Sprite(Core.Content.LoadTexture("Content/Icons/Currency/Currency.png"));
-            Sprite premiumSprite = new Sprite(Core.Content.LoadTexture("Content/Icons/Currency/CurrencyPremium.png"));
+            Sprite panelSprite = ContentLoader.LoadSprite(ContentPath.Instance.ui_Inventory);
+            slotIcon = ContentLoader.LoadSprite(ContentPath.Instance.ui_Panel);
+            Sprite silverSprite = new Sprite(Core.Content.LoadTexture("Content/Sprites/Icons/Currency/Currency.png"));
+            Sprite premiumSprite = new Sprite(Core.Content.LoadTexture("Content/Sprites/Icons/Currency/CurrencyPremium.png"));
 
             Entity UI = new Entity("Inventory");
             canvas = UI.AddComponent(new UICanvas());

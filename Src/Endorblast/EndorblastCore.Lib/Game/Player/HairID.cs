@@ -14,7 +14,7 @@ namespace EndorblastCore.Lib
 
         public static bool Init()
         {
-            hairID.Add(1, new HairNormal());
+            hairID.Add(1, new HairNormal(1));
 
 
             return true;

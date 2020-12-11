@@ -10,17 +10,20 @@ namespace EndorblastCore.Lib
     class NakedOutfit : ClothObject
     {
 
-        public NakedOutfit()
+        
+        
+        public NakedOutfit(int id)
         {
-            hatIdle = new SpriteAnimation(LoadSpriteAtlas("/Player/nothing.png"), 10);
-            clothIdle = new SpriteAnimation(LoadSpriteAtlas("/Player/nothing.png"), 10);
-            shoeIdle = new SpriteAnimation(LoadSpriteAtlas("/Player/nothing.png"), 10);
+            hatIdle = new SpriteAnimation(LoadSpriteAtlas($"{path}/nothing/nothing.png"), 10);
+            clothIdle = new SpriteAnimation(LoadSpriteAtlas($"{path}/nothing/nothing.png"), 10);
+            shoeIdle = new SpriteAnimation(LoadSpriteAtlas($"{path}/nothing/nothing.png"), 10);
 
-            hatRunning = new SpriteAnimation(LoadSpriteAtlas("/Player/nothing.png"), 10);
-            clothRunning = new SpriteAnimation(LoadSpriteAtlas("/Player/nothing.png"), 10);
-            shoeRunning = new SpriteAnimation(LoadSpriteAtlas("/Player/nothing.png"), 10);
+            hatRunning = new SpriteAnimation(LoadSpriteAtlas($"{path}/nothing/nothing.png"), 10);
+            clothRunning = new SpriteAnimation(LoadSpriteAtlas($"{path}/nothing/nothing.png"), 10);
+            shoeRunning = new SpriteAnimation(LoadSpriteAtlas($"{path}/nothing/nothing.png"), 10);
 
-            Console.WriteLine("Loaded ID:1");
+            Id = id;
+            Console.WriteLine($"Loaded ID:{id}");
         }
     }
 }

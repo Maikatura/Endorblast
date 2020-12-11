@@ -15,7 +15,7 @@ namespace EndorblastCore.Lib.Scenes
             
             var image = CreateEntity("SplashScreen");
             var sprite = image.AddComponent(new SpriteRenderer());
-            sprite.SetSprite(ContentLoader.LoadSprite(("/Logos/Splashscreen1.png")));
+            sprite.SetSprite(ContentLoader.LoadSprite(("/Sprites/Logos/Splashscreen1.png")));
             sprite.SetRenderLayer(RenderLayers.FrontObjectLayer);
 
             float time = 4;

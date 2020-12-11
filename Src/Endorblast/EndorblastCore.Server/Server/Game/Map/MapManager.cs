@@ -54,7 +54,7 @@ namespace EndorblastCore.Server
                     
 
                     var testEntity = Core.Scene.CreateEntity("TestTiledMap-Town");
-                    map.tiledMap = Core.Content.LoadTiledMap("Content/Tilesets/GameArea/GameStart.tmx");
+                    map.tiledMap = Core.Content.LoadTiledMap("Content/Sprites/Tilesets/GameArea/GameStart.tmx");
                     map.ground = map.tiledMap.GetLayer<TmxLayer>("Ground");
                     testEntity.AddComponent(new TiledMapRenderer(map.tiledMap)).SetRenderLayer(10);
 
@@ -75,7 +75,7 @@ namespace EndorblastCore.Server
                 case MapType.Snowlands:
                     
                     var testEntity2 = Core.Scene.CreateEntity("TestTiledMap-Town");
-                    map.tiledMap = Core.Content.LoadTiledMap("Content/Tilesets/GameArea/Snowlands.tmx");
+                    map.tiledMap = Core.Content.LoadTiledMap("Content/Sprites/Tilesets/GameArea/Snowlands.tmx");
                     map.ground = map.tiledMap.GetLayer<TmxLayer>("Ground");
                     testEntity2.AddComponent(new TiledMapRenderer(map.tiledMap)).SetRenderLayer(10);
 

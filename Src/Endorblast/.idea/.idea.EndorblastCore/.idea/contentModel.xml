@@ -45,6 +45,7 @@
         <e p="Program.cs" t="Include" />
         <e p="Server" t="Include">
           <e p="CharacterManager.cs" t="Include" />
+          <e p="CheatValidation.cs" t="Include" />
           <e p="Commands" t="Include">
             <e p="Player" t="Include">
               <e p="PlayerDataCmd.cs" t="Include" />
@@ -61,9 +62,9 @@
           </e>
           <e p="GameLogic.cs" t="Include" />
           <e p="GameServerScript.cs" t="Include" />
-          <e p="GameTime.cs" t="Include" />
           <e p="Map.cs" t="Include" />
           <e p="MapManager.cs" t="Include" />
+          <e p="ServerSnapshot.cs" t="Include" />
         </e>
         <e p="ServerSettings.cs" t="Include" />
       </e>
@@ -71,18 +72,8 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="Class1.cs" t="Include" />
         <e p="Content" t="Include">
-          <e p="Content.mgcb" t="Include" />
+          <e p="Addons" t="Include" />
           <e p="Effects" t="Include">
-            <e p="Fire" t="Include">
-              <e p="Fire1.png" t="Include" />
-              <e p="Fire2.png" t="Include" />
-              <e p="FirePole1.png" t="Include" />
-              <e p="King.ppd" t="Include" />
-              <e p="result3.gif" t="Include" />
-            </e>
-            <e p="Portal" t="Include">
-              <e p="Portal1.png" t="Include" />
-            </e>
             <e p="Test" t="Include">
               <e p="Fire Pole.ase" t="Include" />
             </e>
@@ -91,43 +82,6 @@
               <e p="TextureWipe.fx" t="Include" />
               <e p="Wind.fx" t="Include" />
             </e>
-          </e>
-          <e p="Enemies" t="Include">
-            <e p="Testing" t="Include">
-              <e p="Enemy1.aseprite" t="Include" />
-              <e p="Enemy1.png" t="Include" />
-              <e p="Enemy1_Damage.png" t="Include" />
-            </e>
-          </e>
-          <e p="Enviorment" t="Include">
-            <e p="Backgrounds" t="Include">
-              <e p="Forest" t="Include">
-                <e p="cloud.png" t="Include" />
-                <e p="mountain2.png" t="Include" />
-                <e p="pine1.png" t="Include" />
-                <e p="pine2.png" t="Include" />
-                <e p="sky.png" t="Include" />
-                <e p="sky_cloud.png" t="Include" />
-              </e>
-            </e>
-            <e p="Portals" t="Include">
-              <e p="Portal1.png" t="Include" />
-            </e>
-          </e>
-          <e p="Icons" t="Include">
-            <e p="Currency" t="Include">
-              <e p="Currency.png" t="Include" />
-              <e p="CurrencyPremium.png" t="Include" />
-            </e>
-          </e>
-          <e p="Itch" t="Include">
-            <e p="BannerThingProfile.ase" t="Include" />
-            <e p="BannerThingProfile.png" t="Include" />
-            <e p="BG.aseprite" t="Include" />
-            <e p="Thing.aseprite" t="Include" />
-          </e>
-          <e p="Logos" t="Include">
-            <e p="Splashscreen1.png" t="Include" />
           </e>
           <e p="Nez" t="Include">
             <e p="Effects" t="Include">
@@ -209,84 +163,138 @@
             </e>
           </e>
           <e p="NezDefaultBMFont.xnb" t="Include" />
-          <e p="Player" t="Include">
-            <e p="Base" t="Include">
-              <e p="Chara_BasicAttack.png" t="Include" />
-              <e p="Chara_Idle.png" t="Include" />
-              <e p="Chara_Running.png" t="Include" />
-            </e>
-            <e p="Clothes" t="Include">
-              <e p="Maid" t="Include">
-                <e p="Maid_Body.png" t="Include" />
-                <e p="Maid_Body_Running.png" t="Include" />
-                <e p="Maid_Headband.png" t="Include" />
-                <e p="Maid_Headband_Running.png" t="Include" />
-                <e p="Maid_Stockings.png" t="Include" />
-                <e p="Maid_Stockings_Running.png" t="Include" />
+          <e p="player.png" t="Include" />
+          <e p="README.txt" t="Include" />
+          <e p="Sounds" t="Include" />
+          <e p="Sprites" t="Include">
+            <e p="Effects" t="Include" />
+            <e p="Enemies" t="Include">
+              <e p="Testing" t="Include">
+                <e p="Enemy1.aseprite" t="Include" />
+                <e p="Enemy1.png" t="Include" />
+                <e p="Enemy1_Damage.png" t="Include" />
               </e>
             </e>
-            <e p="Hair" t="Include">
-              <e p="Chara_Idle_BackHair_V1.png" t="Include" />
-              <e p="Chara_Idle_FrontHair_V1.png" t="Include" />
-              <e p="Chara_Running_BackHair_v1.png" t="Include" />
-              <e p="Chara_Running_FrontHair_v1.png" t="Include" />
-              <e p="Pink" t="Include">
+            <e p="Enviorment" t="Include">
+              <e p="Backgrounds" t="Include">
+                <e p="Forest" t="Include">
+                  <e p="cloud.png" t="Include" />
+                  <e p="mountain2.png" t="Include" />
+                  <e p="pine1.png" t="Include" />
+                  <e p="pine2.png" t="Include" />
+                  <e p="sky.png" t="Include" />
+                  <e p="sky_cloud.png" t="Include" />
+                </e>
+              </e>
+              <e p="Portals" t="Include">
+                <e p="Portal1.png" t="Include" />
+              </e>
+            </e>
+            <e p="GameObjects" t="Include">
+              <e p="Fire" t="Include">
+                <e p="Fire1.png" t="Include" />
+                <e p="Fire2.png" t="Include" />
+                <e p="FirePole1.png" t="Include" />
+                <e p="result3.gif" t="Include" />
+              </e>
+              <e p="Portal" t="Include">
+                <e p="Portal1.png" t="Include" />
+              </e>
+            </e>
+            <e p="Icons" t="Include">
+              <e p="Currency" t="Include">
+                <e p="Currency.png" t="Include" />
+                <e p="CurrencyPremium.png" t="Include" />
+              </e>
+            </e>
+            <e p="Itch" t="Include">
+              <e p="BannerThingProfile.ase" t="Include" />
+              <e p="BannerThingProfile.png" t="Include" />
+              <e p="BG.aseprite" t="Include" />
+              <e p="Thing.aseprite" t="Include" />
+            </e>
+            <e p="Logos" t="Include">
+              <e p="Splashscreen1.png" t="Include" />
+            </e>
+            <e p="Player" t="Include">
+              <e p="Base" t="Include">
+                <e p="Chara_BasicAttack.png" t="Include" />
+                <e p="Chara_Idle.png" t="Include" />
+                <e p="Chara_Running.png" t="Include" />
+              </e>
+              <e p="Clothes" t="Include">
+                <e p="Maid" t="Include">
+                  <e p="Maid_Body.png" t="Include" />
+                  <e p="Maid_Body_Running.png" t="Include" />
+                  <e p="Maid_Headband.png" t="Include" />
+                  <e p="Maid_Headband_Running.png" t="Include" />
+                  <e p="Maid_Stockings.png" t="Include" />
+                  <e p="Maid_Stockings_Running.png" t="Include" />
+                </e>
+                <e p="nothing" t="Include">
+                  <e p="nothing.png" t="Include" />
+                </e>
+              </e>
+              <e p="Hair" t="Include">
                 <e p="Chara_Idle_BackHair_V1.png" t="Include" />
                 <e p="Chara_Idle_FrontHair_V1.png" t="Include" />
                 <e p="Chara_Running_BackHair_v1.png" t="Include" />
                 <e p="Chara_Running_FrontHair_v1.png" t="Include" />
+                <e p="Pink" t="Include">
+                  <e p="Chara_Idle_BackHair_V1.png" t="Include" />
+                  <e p="Chara_Idle_FrontHair_V1.png" t="Include" />
+                  <e p="Chara_Running_BackHair_v1.png" t="Include" />
+                  <e p="Chara_Running_FrontHair_v1.png" t="Include" />
+                </e>
               </e>
             </e>
-            <e p="nothing.png" t="Include" />
-          </e>
-          <e p="player.png" t="Include" />
-          <e p="README.txt" t="Include" />
-          <e p="Src" t="Include">
-            <e p="Effects" t="Include">
-              <e p="Rain.ppd" t="Include" />
+            <e p="Src" t="Include">
+              <e p="Effects" t="Include">
+                <e p="Rain.ppd" t="Include" />
+              </e>
             </e>
-          </e>
-          <e p="Tilesets" t="Include">
-            <e p="GameArea" t="Include">
-              <e p="Bush1.png" t="Include" />
-              <e p="Bush2.png" t="Include" />
-              <e p="Enviorment.png" t="Include" />
-              <e p="Enviorment.tsx" t="Include" />
-              <e p="Enviorment2.png" t="Include" />
-              <e p="Enviorment2.tsx" t="Include" />
-              <e p="EnviormentTest.png" t="Include" />
-              <e p="GameStart.tmx" t="Include" />
-              <e p="Grass1.aseprite" t="Include" />
-              <e p="GrassAndBushes.aseprite" t="Include" />
-              <e p="House1.png" t="Include" />
-              <e p="IndoorObjects.tsx" t="Include" />
-              <e p="obj_indoors.png" t="Include" />
-              <e p="SmallBush1.png" t="Include" />
-              <e p="SmallBush2.png" t="Include" />
-              <e p="Snowlands.tmx" t="Include" />
-              <e p="Tileset.png" t="Include" />
-              <e p="Tileset.tsx" t="Include" />
-              <e p="Tree1.png" t="Include" />
-              <e p="Tree2.png" t="Include" />
+            <e p="Tilesets" t="Include">
+              <e p="GameArea" t="Include">
+                <e p="Bush1.png" t="Include" />
+                <e p="Bush2.png" t="Include" />
+                <e p="Enviorment.png" t="Include" />
+                <e p="Enviorment.tsx" t="Include" />
+                <e p="Enviorment2.png" t="Include" />
+                <e p="Enviorment2.tsx" t="Include" />
+                <e p="EnviormentTest.png" t="Include" />
+                <e p="GameStart.tmx" t="Include" />
+                <e p="Grass1.aseprite" t="Include" />
+                <e p="GrassAndBushes.aseprite" t="Include" />
+                <e p="House1.png" t="Include" />
+                <e p="IndoorObjects.tsx" t="Include" />
+                <e p="obj_indoors.png" t="Include" />
+                <e p="SmallBush1.png" t="Include" />
+                <e p="SmallBush2.png" t="Include" />
+                <e p="Snowlands.tmx" t="Include" />
+                <e p="Tileset.png" t="Include" />
+                <e p="Tileset.tsx" t="Include" />
+                <e p="Tree1.png" t="Include" />
+                <e p="Tree2.png" t="Include" />
+              </e>
+              <e p="MainMenu" t="Include">
+                <e p="MainMenu.tmx" t="Include" />
+                <e p="Tileset.png" t="Include" />
+                <e p="Tileset.tsx" t="Include" />
+              </e>
+              <e p="README BEFORE CHANGING HERE.txt" t="Include" />
             </e>
-            <e p="MainMenu" t="Include">
-              <e p="MainMenu.tmx" t="Include" />
-              <e p="Tileset.png" t="Include" />
-              <e p="Tileset.tsx" t="Include" />
-            </e>
-            <e p="README BEFORE CHANGING HERE.txt" t="Include" />
-          </e>
-          <e p="UI" t="Include">
-            <e p="Creation" t="Include">
-              <e p="ArrowButtonLeft.png" t="Include" />
-              <e p="ArrowButtonRight.png" t="Include" />
-              <e p="Skrivbord.aseprite" t="Include" />
-              <e p="Skrivbord.png" t="Include" />
-            </e>
-            <e p="Login" t="Include">
-              <e p="UI_Inventory.png" t="Include" />
-              <e p="UI_Login2.png" t="Include" />
-              <e p="UI_Panel.png" t="Include" />
+            <e p="UI" t="Include">
+              <e p="Creation" t="Include">
+                <e p="ArrowButtonLeft.png" t="Include" />
+                <e p="ArrowButtonRight.png" t="Include" />
+                <e p="Skrivbord.aseprite" t="Include" />
+                <e p="Skrivbord.png" t="Include" />
+              </e>
+              <e p="Login" t="Include">
+                <e p="UI_Inventory.png" t="Include" />
+                <e p="UI_Login2.png" t="Include" />
+                <e p="UI_Panel.png" t="Include" />
+              </e>
             </e>
           </e>
         </e>
@@ -375,11 +383,11 @@
           </e>
           <e p="Player" t="Include">
             <e p="Clothes" t="Include">
+              <e p="ClothObject.cs" t="Include" />
               <e p="MaidOutfit.cs" t="Include" />
               <e p="NakedOutfit.cs" t="Include" />
             </e>
             <e p="ClothID.cs" t="Include" />
-            <e p="ClothObject.cs" t="Include" />
             <e p="Enemy.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
             <e p="Hair" t="Include">

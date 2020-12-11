@@ -21,6 +21,8 @@ namespace EndorblastCore.Lib
         public float Y;
         public PlayerMoveState State;
 
+        public float velocity;
+
         public void Update()
         {
             // Todo : Validate everything the player does!

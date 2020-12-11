@@ -69,10 +69,10 @@ namespace EndorblastCore.Lib
             dummyPlayer = new Entity("DummyPlayer");
 
 
-            nothing = ContentLoader.LoadSprite("/Player/nothing.png");
-            playerIdle = ContentLoader.LoadSprite("/Player/Base/Chara_Idle.png");
-            playerWalking = ContentLoader.LoadSprite("/Player/Base/Chara_Running.png");
-            playerBasicAttack = ContentLoader.LoadSprite("/Player/Base/Chara_BasicAttack.png");
+            nothing = ContentLoader.LoadSprite("/Sprites/Player/Clothes/nothing/nothing.png");
+            playerIdle = ContentLoader.LoadSprite("/Sprites/Player/Base/Chara_Idle.png");
+            playerWalking = ContentLoader.LoadSprite("/Sprites/Player/Base/Chara_Running.png");
+            playerBasicAttack = ContentLoader.LoadSprite("/Sprites/Player/Base/Chara_BasicAttack.png");
         }
     }
 
@@ -83,7 +83,7 @@ namespace EndorblastCore.Lib
 
         public static void Init()
         {
-            slotIcon = ContentLoader.LoadSprite("/UI/Login/UI_Login2.png");
+            slotIcon = ContentLoader.LoadSprite("/Sprites/UI/Login/UI_Login2.png");
         }
     }
 
@@ -95,8 +95,8 @@ namespace EndorblastCore.Lib
 
         public static void Init()
         {
-            mainMenuTiledmap = ContentLoader.LoadTiledMap("/Tilesets/MainMenu/MainMenu.tmx");
-            gameTiledmap = ContentLoader.LoadTiledMap("/Tilesets/GameArea/GameStart.tmx");
+            mainMenuTiledmap = ContentLoader.LoadTiledMap("/Sprites/Tilesets/MainMenu/MainMenu.tmx");
+            gameTiledmap = ContentLoader.LoadTiledMap("/Sprites/Tilesets/GameArea/GameStart.tmx");
         }
     }
 
