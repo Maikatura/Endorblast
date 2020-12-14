@@ -8,7 +8,7 @@
     <a href="https://www.twitch.tv/zyrobit"><img src="media/social/Twitch.png" width="50" /></a>
 </div>
 
-<h3 align="center"><b>Build Status</b>: Error<br><h3>
+<h3 align="center"><b>Build Status</b>: Error<br></h3>
 
 ## Setup
 I dont give assistance with setting it up.\
