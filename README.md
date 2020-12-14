@@ -10,6 +10,9 @@
 
 <h3 align="center"><b>Build Status</b>: Error<br></h3>
 
+**Note that this branch will become the new master branch soon when its done**\
+https://github.com/ZyroLUL/Endorblast/tree/New-Server
+
 ## Setup
 I dont give assistance with setting it up.\
 Program will not compile since its missing every sprite\
