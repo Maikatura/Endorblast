@@ -8,10 +8,7 @@
     <a href="https://www.twitch.tv/zyrobit"><img src="media/social/Twitch.png" width="50" /></a>
 </div>
 
-<h3 align="center"><b>Build Status</b>: Error<br></h3>
-
-**Note that this branch will become the new master branch soon when its done**\
-https://github.com/ZyroLUL/Endorblast/tree/New-Server
+<h3 align="center"><b>Build Status</b>: Error<br><h3>
 
 ## Setup
 I dont give assistance with setting it up.\
@@ -33,11 +30,11 @@ Join the discord if you wanna play our game!\
 https://discord.gg/5U5uaft
 
 ## Libraries
-[EndorblastCore.Lib](https://github.com/ZyroLUL/Endorblast) (My own library)\
+[Endorblast.Lib](https://github.com/ZyroLUL/Endorblast) (My own library with nez)\
 [Monogame](https://www.monogame.net/)\
-[Nez](https://github.com/prime31/Nez)\
+[Nez](https://github.com/prime31/Nez) (with some tweaks by me)\
 [Lidgren](https://github.com/lidgren/lidgren-network-gen3/)
 
-## Current state (Can be outdated (Is outdated))
+## Current state (Outdated)
 ![](media/Gameplay1.gif)
 
