@@ -19,22 +19,18 @@ You need to remake all sprites and add them to the project
 [Click here](/FAQ.md)
 
 ## License
-You are allowed to use the game engine but give credits.\
-I am allowed to change the license at anytime you need to be updated on what is relevant.\
-Copying over our sprites to this source is not allowed! and will get you in trouble.
-
-***Make your own sprites!***
+[Click here](/LICENSE)
 
 ## Discord
 Join the discord if you wanna play our game!\
 https://discord.gg/5U5uaft
 
 ## Libraries
-[EndorblastCore.Lib](https://github.com/ZyroLUL/Endorblast) (My own library)\
+[Endorblast.Lib](https://github.com/ZyroLUL/Endorblast) (My own library with nez)\
 [Monogame](https://www.monogame.net/)\
-[Nez](https://github.com/prime31/Nez)\
+[Nez](https://github.com/prime31/Nez) (with some tweaks by me)\
 [Lidgren](https://github.com/lidgren/lidgren-network-gen3/)
 
-## Current state (Can be outdated (Is outdated))
+## Current state (Outdated)
 ![](media/Gameplay1.gif)
 
