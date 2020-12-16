@@ -22,9 +22,7 @@ You need to remake all sprites and add them to the project
 [Click here](/FAQ.md)
 
 ## License
-You are allowed to use the game engine but give credits.\
-I am allowed to change the license at anytime you need to be updated on what is relevant.\
-Copying over our sprites to this source is not allowed! and will get you in trouble.
+[Click here](/LICENSE)
 
 ***Make your own sprites!***
 
