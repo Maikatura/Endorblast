@@ -35,8 +35,8 @@ namespace Nez.Textures
 		/// the origin that a RenderableComponent should use when using this Sprite. Defaults to the center.
 		/// </summary>
 		public Vector2 Origin;
-
-
+		
+		
 		public Sprite(Texture2D texture, Rectangle sourceRect, Vector2 origin)
 		{
 			Texture2D = texture;

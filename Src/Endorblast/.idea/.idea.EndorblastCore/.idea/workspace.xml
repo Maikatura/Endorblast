@@ -6,6 +6,10 @@
     <projectFile>EndorblastCore.MasterServer/EndorblastCore.MasterServer.csproj</projectFile>
     <projectFile>EndorblastCore.GameServer/EndorblastCore.GameServer.csproj</projectFile>
     <projectFile>EndorblastCore.LoginServer/EndorblastCore.LoginServer.csproj</projectFile>
+    <projectFile>Endorblast.Server/Endorblast.Server.csproj</projectFile>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="BranchesTreeState">
     <expand>
@@ -33,54 +37,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f77a6e4-ba13-4e38-b9ea-204d6ad38fcf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/EndorblastCore.GameServer/Server/CheatValidation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EndorblastCore.GameServer/Server/ServerSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.EndorblastCore/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EndorblastCore/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EndorblastCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EndorblastCore/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.GameServer/Server/Commands/World/WorldDataCmd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.GameServer/Server/Commands/World/WorldDataCmd.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.GameServer/Server/GameLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.GameServer/Server/GameLogic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.GameServer/Server/GameServerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.GameServer/Server/GameServerScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.GameServer/Server/GameTime.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.GameServer/Server/MapManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.GameServer/Server/MapManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.GameServer/obj/Debug/netcoreapp3.1/EndorblastCore.GameServer.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.GameServer/obj/Debug/netcoreapp3.1/EndorblastCore.GameServer.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Lib/Content/Sprites/Effects/Fire/Fire1.png" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Lib/Content/Sprites/GameObjects/Fire/Fire1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Lib/Content/Sprites/Effects/Fire/Fire2.png" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Lib/Content/Sprites/GameObjects/Fire/Fire2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Lib/Content/Sprites/Effects/Fire/FirePole1.png" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Lib/Content/Sprites/GameObjects/Fire/FirePole1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Lib/Content/Sprites/Effects/Fire/result3.gif" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Lib/Content/Sprites/GameObjects/Fire/result3.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Lib/Content/Sprites/Effects/Portal/Portal1.png" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Lib/Content/Sprites/GameObjects/Portal/Portal1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Lib/ContentPath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Lib/ContentPath.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Lib/EndorblastCore.Lib.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Lib/EndorblastCore.Lib.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Lib/GUI/GearUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Lib/GUI/GearUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Lib/GUI/InventoryUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Lib/GUI/InventoryUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Lib/GUI/LoginUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Lib/GUI/LoginUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Lib/Game/Enemies/Skeleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Lib/Game/Enemies/Skeleton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Lib/Game/Entity/MainPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Lib/Game/Entity/MainPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Lib/Game/GameObjects/Enviorment/FirePole.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Lib/Game/GameObjects/Enviorment/FirePole.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Lib/Game/GameObjects/Enviorment/Portal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Lib/Game/GameObjects/Enviorment/Portal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Lib/Game/Player/ClothObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Lib/Game/Player/Clothes/ClothObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Lib/Game/Player/Hair/HairObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Lib/Game/Player/Hair/HairObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Lib/Scenes/SplashScreenScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Lib/Scenes/SplashScreenScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Lib/Server/Player/ServerCharacter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Lib/Server/Player/ServerCharacter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Lib/bin/Debug/netcoreapp3.1/EndorblastCore.Lib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Lib/bin/Debug/netcoreapp3.1/EndorblastCore.Lib.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Lib/bin/Debug/netcoreapp3.1/EndorblastCore.Lib.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Lib/bin/Debug/netcoreapp3.1/EndorblastCore.Lib.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Lib/obj/Debug/netcoreapp3.1/EndorblastCore.Lib.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Lib/obj/Debug/netcoreapp3.1/EndorblastCore.Lib.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Lib/obj/Debug/netcoreapp3.1/EndorblastCore.Lib.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Lib/obj/Debug/netcoreapp3.1/EndorblastCore.Lib.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Lib/obj/Debug/netcoreapp3.1/EndorblastCore.Lib.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Lib/obj/Debug/netcoreapp3.1/EndorblastCore.Lib.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Lib/obj/Debug/netcoreapp3.1/EndorblastCore.Lib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Lib/obj/Debug/netcoreapp3.1/EndorblastCore.Lib.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Lib/obj/Debug/netcoreapp3.1/EndorblastCore.Lib.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Lib/obj/Debug/netcoreapp3.1/EndorblastCore.Lib.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Server/Game1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Server/Game1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Server/bin/Debug/netcoreapp3.1/EndorblastCore.Lib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Server/bin/Debug/netcoreapp3.1/EndorblastCore.Lib.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Server/bin/Debug/netcoreapp3.1/EndorblastCore.Lib.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Server/bin/Debug/netcoreapp3.1/EndorblastCore.Lib.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Server/bin/Debug/netcoreapp3.1/EndorblastCore.Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Server/bin/Debug/netcoreapp3.1/EndorblastCore.Server.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Server/bin/Debug/netcoreapp3.1/EndorblastCore.Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Server/bin/Debug/netcoreapp3.1/EndorblastCore.Server.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Server/obj/Debug/netcoreapp3.1/EndorblastCore.Server.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Server/obj/Debug/netcoreapp3.1/EndorblastCore.Server.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Server/obj/Debug/netcoreapp3.1/EndorblastCore.Server.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Server/obj/Debug/netcoreapp3.1/EndorblastCore.Server.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Server/obj/Debug/netcoreapp3.1/EndorblastCore.Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Server/obj/Debug/netcoreapp3.1/EndorblastCore.Server.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore.Server/obj/Debug/netcoreapp3.1/EndorblastCore.Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore.Server/obj/Debug/netcoreapp3.1/EndorblastCore.Server.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore/bin/Debug/netcoreapp3.1/EndorblastCore.Lib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore/bin/Debug/netcoreapp3.1/EndorblastCore.Lib.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore/bin/Debug/netcoreapp3.1/EndorblastCore.Lib.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore/bin/Debug/netcoreapp3.1/EndorblastCore.Lib.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore/obj/Debug/netcoreapp3.1/EndorblastCore.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore/obj/Debug/netcoreapp3.1/EndorblastCore.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndorblastCore/obj/Debug/netcoreapp3.1/EndorblastCore.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastCore/obj/Debug/netcoreapp3.1/EndorblastCore.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Lib/Network/NetworkCmd/CharacterComs/CharacterSendInputCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Lib/Network/NetworkCmd/CharacterComs/CharacterSendInputCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Lib/Network/NetworkCmd/Login/LoginUserCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Lib/Network/NetworkCmd/Login/LoginUserCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Lib/Network/NetworkManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Lib/Network/NetworkManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Lib/bin/Debug/netcoreapp3.1/Endorblast.Lib.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Lib/bin/Debug/netcoreapp3.1/Endorblast.Lib.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Lib/bin/Debug/netcoreapp3.1/Endorblast.Lib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Lib/bin/Debug/netcoreapp3.1/Endorblast.Lib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Lib/bin/Debug/netcoreapp3.1/Endorblast.Lib.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Lib/bin/Debug/netcoreapp3.1/Endorblast.Lib.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Lib/obj/Debug/netcoreapp3.1/Endorblast.Lib.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Lib/obj/Debug/netcoreapp3.1/Endorblast.Lib.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Lib/obj/Debug/netcoreapp3.1/Endorblast.Lib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Lib/obj/Debug/netcoreapp3.1/Endorblast.Lib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Lib/obj/Debug/netcoreapp3.1/Endorblast.Lib.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Lib/obj/Debug/netcoreapp3.1/Endorblast.Lib.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Server/Server/NetCommands/Login/LoginUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Server/Server/NetCommands/Login/LoginUser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Server/bin/Debug/netcoreapp3.1/Endorblast.Lib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Server/bin/Debug/netcoreapp3.1/Endorblast.Lib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Server/bin/Debug/netcoreapp3.1/Endorblast.Lib.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Server/bin/Debug/netcoreapp3.1/Endorblast.Lib.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Server/bin/Debug/netcoreapp3.1/Endorblast.Server.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Server/bin/Debug/netcoreapp3.1/Endorblast.Server.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Server/bin/Debug/netcoreapp3.1/Endorblast.Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Server/bin/Debug/netcoreapp3.1/Endorblast.Server.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Server/bin/Debug/netcoreapp3.1/Endorblast.Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Server/bin/Debug/netcoreapp3.1/Endorblast.Server.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Server/bin/Debug/netcoreapp3.1/Nez.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Server/bin/Debug/netcoreapp3.1/Nez.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Server/bin/Debug/netcoreapp3.1/Nez.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Server/bin/Debug/netcoreapp3.1/Nez.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Server/obj/Debug/netcoreapp3.1/Endorblast.Server.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Server/obj/Debug/netcoreapp3.1/Endorblast.Server.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Server/obj/Debug/netcoreapp3.1/Endorblast.Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Server/obj/Debug/netcoreapp3.1/Endorblast.Server.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Server/obj/Debug/netcoreapp3.1/Endorblast.Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Server/obj/Debug/netcoreapp3.1/Endorblast.Server.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast/Game1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast/Game1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast/bin/Debug/netcoreapp3.1/Endorblast.Lib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast/bin/Debug/netcoreapp3.1/Endorblast.Lib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast/bin/Debug/netcoreapp3.1/Endorblast.Lib.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast/bin/Debug/netcoreapp3.1/Endorblast.Lib.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast/bin/Debug/netcoreapp3.1/Endorblast.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast/bin/Debug/netcoreapp3.1/Endorblast.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast/bin/Debug/netcoreapp3.1/Endorblast.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast/bin/Debug/netcoreapp3.1/Endorblast.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast/bin/Debug/netcoreapp3.1/EndorblastCore.Lib.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast/bin/Debug/netcoreapp3.1/EndorblastCore.Lib.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast/bin/Debug/netcoreapp3.1/EndorblastCore.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast/bin/Debug/netcoreapp3.1/EndorblastCore.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast/bin/Debug/netcoreapp3.1/EndorblastCore.runtimeconfig.dev.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast/bin/Debug/netcoreapp3.1/EndorblastCore.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast/obj/Debug/netcoreapp3.1/Endorblast.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast/obj/Debug/netcoreapp3.1/Endorblast.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast/obj/Debug/netcoreapp3.1/Endorblast.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast/obj/Debug/netcoreapp3.1/Endorblast.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast/obj/Debug/netcoreapp3.1/Endorblast.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast/obj/Debug/netcoreapp3.1/Endorblast.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,60 +81,80 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Endorblast.GameServer/Server/GameLogic.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Endorblast.Server/Network/ServerManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Endorblast.Server/Server/Game/LobbyManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF0F4F57-5D6C-4C21-BFC7-10DB8F2F75C6/fd/dcb7ca77/Texture2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Endorblast.GameServer/Server/GameServerScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Endorblast.Server/Server/Game/Map/MapManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Endorblast.Lib/Server/Player/ServerCharacter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Endorblast.Server/Server/NetCommands/World/WorldCharacterChangeMapCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Endorblast.Server/Server/NetCommands/World/WorldDataCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF0F4F57-5D6C-4C21-BFC7-10DB8F2F75C6/55/80a0fb53/Game.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Endorblast.GameServer/Server/Game/CharacterManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Endorblast.GameServer/Server/ConsoleHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Endorblast.Server/Server/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Endorblast.GameServer/Server/Game/Map.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Endorblast.Server/Server/Game/CharacterManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Endorblast.Server/Server/Game/Lobby.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF0F4F57-5D6C-4C21-BFC7-10DB8F2F75C6/4b/5cf6bd51/Texture.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Endorblast.Server/Server/Game/PlayerStats.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/EndorblastCore.Lib/Game/Enums/Packets.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/Commands/World/WorldChangeCmd.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/Commands/World/WorldExitCommand.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.MasterServer/MasterServerSettings.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.MasterServer/MasterServerScript.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.MasterServer/DataCmd/ConnectionDataCmd.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.Lib/Game/Enums/MasterTypes.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/Commands/Player/SkillCmd.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/ServerCharacter.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.Server/Server/Game/CharacterManager.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/Commands/MapManager.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.Lib/Game/Entity/StaticCharacter.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.Lib/Game/Enums/ServerType.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/Commands/Player/PlayerDataCmd.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.Lib/Game/Network/Commands/WorldComs/WorldCharacterChangeCommand.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/Commands/ServerDataCmd.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/CharacterManager.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/Map.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/Commands/Player/PositionCmd.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.Lib/Game/Player/ClothID.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.Lib/Game/Player/Clothes/NakedOutfit.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.Lib/Game/Player/HairID.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.Lib/ContentLoader.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.Lib/EndorblastCore.Lib.csproj" />
-        <option value="$PROJECT_DIR$/EndorblastCore.Lib/Game/Player/Clothes/MaidOutfit.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.Lib/Game/Player/Hair/HairNormal.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.Lib/Game/SceneManager.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.Server/Server/Game/Map/MapManager.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.Lib/Scenes/SplashscreenScene.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.Lib/GUI/CharacterCreationUI.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.Lib/GUI/GearUI.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.Lib/GUI/InventoryUI.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.Lib/GUI/LoginUI.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.Lib/Game/Player/ClothObject.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.Lib/Game/ContentPath.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.Lib/Game/Player/Hair/HairObject.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.Server/Game1.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore/Game1.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.Lib/Game/Player/Clothes/ClothObject.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.Lib/Game/GameObjects/Enviorment/FirePole.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.Lib/Game/GameObjects/Enviorment/Portal.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.Lib/Game/Enemies/Skeleton.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.Lib/ContentPath.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/ServerSnapshot.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.Lib/Server/Player/ServerCharacter.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/CheatValidation.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/Commands/World/WorldDataCmd.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.Lib/Game/Entity/MainPlayer.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/MapManager.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/GameServerScript.cs" />
-        <option value="$PROJECT_DIR$/EndorblastCore.GameServer/Server/GameLogic.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.GameServer/Server/Network/Commands/Player/SkillCmd.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.Lib/Server/Player/ServerCharacter.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.Lib/Game/Entities/StaticCharacter.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.GameServer/Server/Network/Commands/World/WorldExitCmd.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.GameServer/Server/Network/Commands/World/WorldEnterCmd.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.GameServer/Server/Network/Commands/World/WorldDataCmd.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.GameServer/Server/Network/Commands/Player/PlayerDataCmd.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.GameServer/Server/GameLogic.cs" />
+        <option value="$PROJECT_DIR$/Nez.Portable/Core.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.GameServer/Server/GameServerScript.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.GameServer/Server/Game/MapManager.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.LoginServer/Login/Database.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.LoginServer/Login/NetCmd/LoginFailedCmd.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.LoginServer/Login/NetCmd/LoginSuccessCmd.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.Lib/Game/Components/Grass.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.Lib/Game/SceneManager.cs" />
+        <option value="$PROJECT_DIR$/Nez.Portable/ECS/Components/Physics/ITriggerListener.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.Lib/Game/Entities/BasePlayer.cs" />
+        <option value="$PROJECT_DIR$/Nez.Portable/Physics/ColliderTriggerHelper.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.Lib/Game/GameObjects/Enviorment/Grass.cs" />
+        <option value="$PROJECT_DIR$/Nez.Portable/ECS/Entity.cs" />
+        <option value="$PROJECT_DIR$/Nez.Portable/Graphics/PostProcessing/PostProcessors/Grass.cs" />
+        <option value="$PROJECT_DIR$/Nez.Portable/Graphics/PostProcessing/PostProcessors/GrassPost.cs" />
+        <option value="$PROJECT_DIR$/Nez.Portable/Graphics/Effects/EffectResource.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.Lib/ContentLoader.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.MasterServer/DataCmd/ConnectionDataCmd.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.Lib/Game/Enums/MasterPacket.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.Lib/Game/Enums/Packets.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.Lib/Network/NetworkCmd/Master/MasterData.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.MasterServer/Program.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.MasterServer/MasterServerScript.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.Lib/Network/NetworkCmd/Master/ToLoginServerCmd.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.Lib/Network/NetworkCmd/Master/MasterDataCmd.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.LoginServer/Program.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.MasterServer/DataCmd/SendToLoginCmd.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.Lib/Network/NetworkCmd/CharacterComs/CharacterDataCommand.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.Lib/Network/NetworkCmd/CharacterComs/CharacterSkillCastCommand.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.Lib/Network/NetworkCmd/Login/LoginDataCmd.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.Lib/Game/GameState.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.LoginServer/Login/LoginServerScript.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.LoginServer/Login/NetCmd/LoginCmd.cs" />
+        <option value="$PROJECT_DIR$/Nez.Portable/Math/RectangleF.cs" />
+        <option value="$PROJECT_DIR$/Nez.Portable/ECS/Components/Renderables/Sprites/SpriteRenderer.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.Lib/Scenes/BaseScene.cs" />
+        <option value="$PROJECT_DIR$/Nez.Portable/Graphics/Textures/Sprite.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.Lib/Game/Components/GrassComp.cs" />
+        <option value="$PROJECT_DIR$/Endorblast/Game1.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.Server/Server/NetCommands/Login/LoginUser.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.Lib/Network/NetworkManager.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.Lib/Network/NetworkCmd/Login/LoginUserCommand.cs" />
+        <option value="$PROJECT_DIR$/Endorblast.Lib/Network/NetworkCmd/CharacterComs/CharacterSendInputCommand.cs" />
       </list>
     </option>
   </component>
@@ -154,21 +165,25 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3497758" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.2998879" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Compound.Client and Game Server">
+  <component name="RunManager" selected="Compound.Client &amp; Old Server">
     <configuration name="Client &amp; New Server" type="CompoundRunConfigurationType">
-      <toRun name="EndorblastCore" type="DotNetProject" />
-      <toRun name="EndorblastCore.LoginServer" type="DotNetProject" />
-      <toRun name="EndorblastCore.MasterServer" type="DotNetProject" />
-      <toRun name="EndorblastCore.GameServer" type="DotNetProject" />
+      <toRun name="Endorblast.MasterServer" type="DotNetProject" />
+      <toRun name="Endorblast.LoginServer" type="DotNetProject" />
+      <toRun name="Endorblast" type="DotNetProject" />
       <method v="2" />
     </configuration>
     <configuration name="Client &amp; Old Server" type="CompoundRunConfigurationType">
-      <toRun name="EndorblastCore" type="DotNetProject" />
-      <toRun name="EndorblastCore.Server" type="DotNetProject" />
+      <toRun name="Endorblast" type="DotNetProject" />
+      <toRun name="Endorblast.Server" type="DotNetProject" />
       <method v="2" />
     </configuration>
     <configuration name="Client and Game Server" type="CompoundRunConfigurationType">
@@ -181,15 +196,15 @@
       <toRun name="EndorblastCore" type="DotNetProject" />
       <method v="2" />
     </configuration>
-    <configuration name="EndorblastCore" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/EndorblastCore/bin/Debug/netcoreapp3.1/EndorblastCore.dll" />
+    <configuration name="Endorblast" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Endorblast/bin/Debug/netcoreapp3.1/Endorblast.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EndorblastCore/bin/Debug/netcoreapp3.1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Endorblast/bin/Debug/netcoreapp3.1" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/EndorblastCore/EndorblastCore.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Endorblast/Endorblast.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -199,43 +214,43 @@
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="EndorblastCore.GameServer" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
+    <configuration name="Endorblast.GameServer" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Endorblast.GameServer/bin/Debug/netcoreapp3.1/Endorblast.GameServer.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Endorblast.GameServer/bin/Debug/netcoreapp3.1" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/EndorblastCore.GameServer/EndorblastCore.GameServer.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Endorblast.GameServer/Endorblast.GameServer.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="DotNetCore" />
-      <option name="PROJECT_TFM" value="" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v3.1" />
       <method v="2">
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="EndorblastCore.LoginServer" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
+    <configuration name="Endorblast.LoginServer" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/EndorblastCore.LoginServer/bin/Debug/netcoreapp3.1/EndorblastCore.LoginServer.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EndorblastCore.LoginServer/bin/Debug/netcoreapp3.1" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/EndorblastCore.LoginServer/EndorblastCore.LoginServer.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Endorblast.LoginServer/Endorblast.LoginServer.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="DotNetCore" />
-      <option name="PROJECT_TFM" value="" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v3.1" />
       <method v="2">
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="EndorblastCore.MasterServer" type="DotNetProject" factoryName=".NET Project">
+    <configuration name="Endorblast.MasterServer" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/EndorblastCore.MasterServer/bin/Debug/netcoreapp3.1/EndorblastCore.MasterServer.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EndorblastCore.MasterServer/bin/Debug/netcoreapp3.1" />
@@ -243,7 +258,7 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/EndorblastCore.MasterServer/EndorblastCore.MasterServer.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Endorblast.MasterServer/Endorblast.MasterServer.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -253,30 +268,46 @@
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="EndorblastCore.Server" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
+    <configuration name="Endorblast.Server" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/EndorblastCore.Server/bin/Debug/netcoreapp3.1/EndorblastCore.Server.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EndorblastCore.Server/bin/Debug/netcoreapp3.1" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/EndorblastCore.Server/EndorblastCore.Server.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Endorblast.Server/Endorblast.Server.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="DotNetCore" />
-      <option name="PROJECT_TFM" value="" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v3.1" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Endorblast.Server: EndorblastCore.Server" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Endorblast.Server/Endorblast.Server.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="EndorblastCore.Server" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
       <method v="2">
         <option name="Build" />
       </method>
     </configuration>
     <list>
-      <item itemvalue=".NET Project.EndorblastCore" />
-      <item itemvalue=".NET Project.EndorblastCore.Server" />
-      <item itemvalue=".NET Project.EndorblastCore.MasterServer" />
-      <item itemvalue=".NET Project.EndorblastCore.GameServer" />
-      <item itemvalue=".NET Project.EndorblastCore.LoginServer" />
+      <item itemvalue=".NET Launch Settings Profile.Endorblast.Server: EndorblastCore.Server" />
+      <item itemvalue=".NET Project.Endorblast" />
+      <item itemvalue=".NET Project.Endorblast.Server" />
+      <item itemvalue=".NET Project.Endorblast.MasterServer" />
+      <item itemvalue=".NET Project.Endorblast.GameServer" />
+      <item itemvalue=".NET Project.Endorblast.LoginServer" />
       <item itemvalue="Compound.Client &amp; Old Server" />
       <item itemvalue="Compound.Client and Game Server" />
       <item itemvalue="Compound.Client &amp; New Server" />
@@ -300,7 +331,20 @@
       <workItem from="1606829429832" duration="928000" />
       <workItem from="1606924114925" duration="1172000" />
       <workItem from="1607342149406" duration="13702000" />
-      <workItem from="1607599516240" duration="13658000" />
+      <workItem from="1607599516240" duration="18325000" />
+      <workItem from="1607627058664" duration="5836000" />
+      <workItem from="1607678967205" duration="10364000" />
+      <workItem from="1607699776884" duration="3595000" />
+      <workItem from="1607941276864" duration="5614000" />
+      <workItem from="1607951128677" duration="1900000" />
+      <workItem from="1607953058221" duration="2912000" />
+      <workItem from="1607963371886" duration="4677000" />
+      <workItem from="1607969036519" duration="77000" />
+      <workItem from="1607969132206" duration="91000" />
+      <workItem from="1608105720906" duration="10249000" />
+      <workItem from="1608121704753" duration="3988000" />
+      <workItem from="1608127142740" duration="5981000" />
+      <workItem from="1608135927414" duration="5068000" />
     </task>
     <task id="LOCAL−00001" summary="Edit some stuff">
       <created>1606827689904</created>
@@ -332,7 +376,73 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1607369668199</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="Make so GameLogic works and only need to have things to update :)">
+      <created>1607613911272</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1607613911272</updated>
+    </task>
+    <task id="LOCAL−00007" summary="I don't know..... GameTime Hard">
+      <created>1607618232539</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1607618232539</updated>
+    </task>
+    <task id="LOCAL−00008" summary="Edited Server Loop to work as monogame update Game Loop works">
+      <created>1607628378037</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1607628378037</updated>
+    </task>
+    <task id="LOCAL−00009" summary="Started working on Login Server and did some work on the game server also :D">
+      <created>1607954935268</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1607954935268</updated>
+    </task>
+    <task id="LOCAL−00010" summary="Worked on Grass.cs and GrassComp.cs">
+      <created>1607968788039</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1607968788039</updated>
+    </task>
+    <task id="LOCAL−00011" summary="Updated ITriggerListener.cs &amp; ColliderTriggerHelper.cs to work with `OnTriggerStay` since that didn't exist before.">
+      <created>1608067100785</created>
+      <option name="number" value="LOCAL−00011" />
+      <option name="presentableId" value="LOCAL−00011" />
+      <updated>1608067100785</updated>
+    </task>
+    <task id="LOCAL−00012" summary="Worked on GrassComp.cs">
+      <created>1608114376407</created>
+      <option name="number" value="LOCAL−00012" />
+      <option name="presentableId" value="LOCAL−00012" />
+      <updated>1608114376407</updated>
+    </task>
+    <task id="LOCAL−00013" summary="Testing Grass :(">
+      <created>1608123363801</created>
+      <option name="number" value="LOCAL−00013" />
+      <option name="presentableId" value="LOCAL−00013" />
+      <updated>1608123363801</updated>
+    </task>
+    <task id="LOCAL−00014" summary="Testing Grass :(">
+      <created>1608123375951</created>
+      <option name="number" value="LOCAL−00014" />
+      <option name="presentableId" value="LOCAL−00014" />
+      <updated>1608123375951</updated>
+    </task>
+    <task id="LOCAL−00015" summary="Testing Grass :(">
+      <created>1608125669509</created>
+      <option name="number" value="LOCAL−00015" />
+      <option name="presentableId" value="LOCAL−00015" />
+      <updated>1608125669509</updated>
+    </task>
+    <task id="LOCAL−00016" summary="Worked on the Master Server to Login Server. It works but you are not able to connect back to Master Server to login to game server yet.">
+      <created>1608131051175</created>
+      <option name="number" value="LOCAL−00016" />
+      <option name="presentableId" value="LOCAL−00016" />
+      <updated>1608131051175</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,50 +480,155 @@
     <MESSAGE value="Started to add world support" />
     <MESSAGE value="Stated to work on new game server!&#10;&#10;Currently working on a rewrite of the whole system with multiple world support and that doesn't require a monogame window to work!" />
     <MESSAGE value="Moved everything to new folder for content" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved everything to new folder for content" />
+    <MESSAGE value="Make so GameLogic works and only need to have things to update :)" />
+    <MESSAGE value="I don't know..... GameTime Hard" />
+    <MESSAGE value="Edited Server Loop to work as monogame update Game Loop works" />
+    <MESSAGE value="Started working on Login Server and did some work on the game server also :D" />
+    <MESSAGE value="Worked on Grass.cs and GrassComp.cs" />
+    <MESSAGE value="Updated ITriggerListener.cs &amp; ColliderTriggerHelper.cs to work with `OnTriggerStay` since that didn't exist before." />
+    <MESSAGE value="Worked on GrassComp.cs" />
+    <MESSAGE value="Testing Grass :(" />
+    <MESSAGE value="Worked on the Master Server to Login Server. It works but you are not able to connect back to Master Server to login to game server yet." />
+    <option name="LAST_COMMIT_MESSAGE" value="Worked on the Master Server to Login Server. It works but you are not able to connect back to Master Server to login to game server yet." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="401" y="182" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607611021193">
+    <state x="401" y="182" width="1092" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608197819745">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="401" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1607611021193" />
+    <state x="401" y="182" width="1092" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1608197819745" />
     <state x="414" y="175" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606811077490" />
-    <state width="1815" height="295" key="GridCell.Tab.0.bottom" timestamp="1607613570410">
+    <state width="1815" height="198" key="GridCell.Tab.0.bottom" timestamp="1608199619332">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.0.bottom/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1607613570410" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606827698281" />
-    <state width="1815" height="295" key="GridCell.Tab.0.center" timestamp="1607613570410">
+    <state width="1813" height="285" key="GridCell.Tab.0.bottom/0.0.1858.1080/-1856.0.1856.1080@-1856.0.1856.1080" timestamp="1608124741184" />
+    <state width="1815" height="198" key="GridCell.Tab.0.bottom/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1608199619332" />
+    <state width="914" height="166" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608019446631" />
+    <state width="1815" height="198" key="GridCell.Tab.0.center" timestamp="1608199619332">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.0.center/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1607613570410" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606827698281" />
-    <state width="1815" height="295" key="GridCell.Tab.0.left" timestamp="1607613570410">
+    <state width="1813" height="285" key="GridCell.Tab.0.center/0.0.1858.1080/-1856.0.1856.1080@-1856.0.1856.1080" timestamp="1608124741184" />
+    <state width="1815" height="198" key="GridCell.Tab.0.center/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1608199619332" />
+    <state width="914" height="166" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608019446630" />
+    <state width="1815" height="198" key="GridCell.Tab.0.left" timestamp="1608199619332">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.0.left/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1607613570410" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606827698281" />
-    <state width="1815" height="295" key="GridCell.Tab.0.right" timestamp="1607613570410">
+    <state width="1813" height="285" key="GridCell.Tab.0.left/0.0.1858.1080/-1856.0.1856.1080@-1856.0.1856.1080" timestamp="1608124741184" />
+    <state width="1815" height="198" key="GridCell.Tab.0.left/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1608199619332" />
+    <state width="914" height="166" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608019446630" />
+    <state width="1815" height="198" key="GridCell.Tab.0.right" timestamp="1608199619332">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="295" key="GridCell.Tab.0.right/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1607613570410" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606827698281" />
-    <state x="683" y="63" width="1356" height="994" key="dock-window-1" timestamp="1607345236413">
+    <state width="1813" height="285" key="GridCell.Tab.0.right/0.0.1858.1080/-1856.0.1856.1080@-1856.0.1856.1080" timestamp="1608124741184" />
+    <state width="1815" height="198" key="GridCell.Tab.0.right/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1608199619332" />
+    <state width="914" height="166" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608019446631" />
+    <state width="1815" height="364" key="GridCell.Tab.1.bottom" timestamp="1608103578479">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="683" y="63" width="1356" height="994" key="dock-window-1/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1607345236413" />
+    <state width="1815" height="364" key="GridCell.Tab.1.bottom/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1608103578479" />
+    <state width="1815" height="364" key="GridCell.Tab.1.center" timestamp="1608103578479">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="364" key="GridCell.Tab.1.center/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1608103578479" />
+    <state width="1815" height="364" key="GridCell.Tab.1.left" timestamp="1608103578479">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="364" key="GridCell.Tab.1.left/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1608103578479" />
+    <state width="1815" height="364" key="GridCell.Tab.1.right" timestamp="1608103578479">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="364" key="GridCell.Tab.1.right/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1608103578479" />
+    <state width="1815" height="364" key="GridCell.Tab.2.bottom" timestamp="1608103578479">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="364" key="GridCell.Tab.2.bottom/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1608103578479" />
+    <state width="1815" height="364" key="GridCell.Tab.2.center" timestamp="1608103578479">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="364" key="GridCell.Tab.2.center/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1608103578479" />
+    <state width="1815" height="364" key="GridCell.Tab.2.left" timestamp="1608103578479">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="364" key="GridCell.Tab.2.left/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1608103578479" />
+    <state width="1815" height="364" key="GridCell.Tab.2.right" timestamp="1608103578479">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="364" key="GridCell.Tab.2.right/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1608103578479" />
+    <state width="1815" height="364" key="GridCell.Tab.3.bottom" timestamp="1608103578479">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="364" key="GridCell.Tab.3.bottom/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1608103578479" />
+    <state width="1815" height="364" key="GridCell.Tab.3.center" timestamp="1608103578479">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="364" key="GridCell.Tab.3.center/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1608103578479" />
+    <state width="1815" height="364" key="GridCell.Tab.3.left" timestamp="1608103578479">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="364" key="GridCell.Tab.3.left/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1608103578479" />
+    <state width="1815" height="364" key="GridCell.Tab.3.right" timestamp="1608103578479">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="364" key="GridCell.Tab.3.right/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1608103578479" />
+    <state width="1815" height="364" key="GridCell.Tab.4.bottom" timestamp="1608103578480">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="364" key="GridCell.Tab.4.bottom/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1608103578480" />
+    <state width="1815" height="364" key="GridCell.Tab.4.center" timestamp="1608103578480">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="364" key="GridCell.Tab.4.center/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1608103578480" />
+    <state width="1815" height="364" key="GridCell.Tab.4.left" timestamp="1608103578479">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="364" key="GridCell.Tab.4.left/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1608103578479" />
+    <state width="1815" height="364" key="GridCell.Tab.4.right" timestamp="1608103578480">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="364" key="GridCell.Tab.4.right/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1608103578480" />
+    <state x="759" y="256" key="RiderGenerateDialog" timestamp="1608121769018">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="759" y="256" key="RiderGenerateDialog/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1608121769018" />
+    <state x="661" y="261" key="RollbackChangesDialog" timestamp="1607627228376">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="661" y="261" key="RollbackChangesDialog/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1607627228376" />
+    <state x="258" y="163" key="SettingsEditor" timestamp="1607631500744">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="258" y="163" key="SettingsEditor/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1607631500744" />
+    <state x="92" y="92" width="1674" height="896" key="VCS.FileHistoryDialog" timestamp="1607943472207">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="92" y="92" width="1674" height="896" key="VCS.FileHistoryDialog/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1607943472207" />
+    <state x="746" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607627216500">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="746" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1607627216500" />
+    <state x="-1676" y="102" width="1500" height="754" key="dock-window-1" timestamp="1608129861024">
+      <screen x="-1856" y="0" width="1856" height="1080" />
+    </state>
+    <state x="-1676" y="102" width="1500" height="754" key="dock-window-1/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1608129861024" />
     <state x="645" y="81" width="923" height="1067" key="dock-window-2" timestamp="1607345236413">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="645" y="81" width="923" height="1067" key="dock-window-2/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1607345236413" />
-    <state x="585" y="250" key="run.anything.popup" timestamp="1607607693857">
+    <state x="593" y="139" width="671" height="801" key="find.popup" timestamp="1608143724738">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="585" y="250" key="run.anything.popup/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1607607693857" />
-    <state x="603" y="234" width="672" height="705" key="search.everywhere.popup" timestamp="1607613326239">
+    <state x="593" y="139" width="671" height="801" key="find.popup/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1608143724738" />
+    <state x="570" y="266" width="700" height="530" key="recent.locations.popup" timestamp="1607687898963">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="603" y="234" width="672" height="705" key="search.everywhere.popup/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1607613326239" />
+    <state x="570" y="266" width="700" height="530" key="recent.locations.popup/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1607687898963" />
+    <state x="585" y="250" key="run.anything.popup" timestamp="1607954529966">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="585" y="250" key="run.anything.popup/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1607954529966" />
+    <state x="603" y="234" width="672" height="705" key="search.everywhere.popup" timestamp="1608137495830">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="603" y="234" width="672" height="705" key="search.everywhere.popup/0.0.1858.1080/-1856.0.1856.1080@0.0.1858.1080" timestamp="1608137495830" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606830076921" />
   </component>
 </project>

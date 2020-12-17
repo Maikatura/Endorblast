@@ -229,6 +229,7 @@ namespace Nez
 			StartDebugUpdate();
 
 			// update all our systems and global managers
+			//System.Console.WriteLine(gameTime.ElapsedGameTime);
 			Time.Update((float) gameTime.ElapsedGameTime.TotalSeconds);
 			Input.Update();
 

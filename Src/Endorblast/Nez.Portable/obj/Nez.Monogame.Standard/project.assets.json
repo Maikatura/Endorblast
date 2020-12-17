@@ -325,6 +325,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "projectReferences": {}
         }
       },
@@ -336,6 +337,7 @@
     },
     "frameworks": {
       "netstandard2.0": {
+        "targetAlias": "netstandard2.0",
         "dependencies": {
           "MonoGame.Framework.DesktopGL": {
             "target": "Package",
@@ -362,7 +364,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

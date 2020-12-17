@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  
+
+  <ItemGroup>
+    <Content Include="Content\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Content\Addons" />
+    <Folder Include="Content\Sounds" />
+    <Folder Include="Content\Sprites\Effects" />
+    <Folder Include="Content\Sprites\GameObjects" />
+    <Folder Include="Game\Components\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DiscordRichPresence" Version="1.0.150" />
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.0.1641" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Nez.FarseerPhysics\Nez.FarseerPhysics.csproj" />
+    <ProjectReference Include="..\Nez.Portable\Nez.Monogame.Standard.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Lidgren.Network">
+      <HintPath>..\..\dlls\Lidgren.Network.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

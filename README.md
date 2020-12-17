@@ -8,11 +8,11 @@
     <a href="https://www.twitch.tv/zyrobit"><img src="media/social/Twitch.png" width="50" /></a>
 </div>
 
-<h3 align="center"><b>Build Status</b>: Error<br></h3>
+<h3 align="center"><b>Build Status</b>: Error<br><h3>
 
 
-<b>Note that this will soon be the new master:<br></b>
-https://github.com/ZyroLUL/Endorblast/tree/New-Server
+## How to run :)
+Open Endorblast.Server then also open Endorblast then boom done!
 
 ## Setup
 I dont give assistance with setting it up.\
@@ -23,11 +23,8 @@ You need to remake all sprites and add them to the project
 [Click here](/FAQ.md)
 
 ## License
-You are allowed to use the game engine but give credits.\
-I am allowed to change the license at anytime you need to be updated on what is relevant.\
-Copying over our sprites to this source is not allowed! and will get you in trouble.
-
-***Make your own sprites!***
+## License
+[Click here](/LICENSE)
 
 ## Discord
 Join the discord if you wanna play our game!\

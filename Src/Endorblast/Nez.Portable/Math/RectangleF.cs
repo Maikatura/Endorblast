@@ -61,6 +61,7 @@ namespace Nez
 		/// Returns the y coordinate of the top edge of this <see cref="RectangleF"/>.
 		/// </summary>
 		public float Top => Y;
+		
 
 		/// <summary>
 		/// Returns the y coordinate of the bottom edge of this <see cref="RectangleF"/>.
@@ -172,7 +173,7 @@ namespace Nez
 			return new RectangleF(min.X, min.Y, max.X - min.X, max.Y - min.Y);
 		}
 
-
+		
 		/// <summary>
 		/// creates a RectangleF given min/max points (top-left, bottom-right points)
 		/// </summary>

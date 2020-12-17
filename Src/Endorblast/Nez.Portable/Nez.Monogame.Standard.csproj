@@ -1,6 +1,7 @@
 ﻿<Project>	
 	<PropertyGroup>
 		<BaseIntermediateOutputPath>obj\$(MSBuildProjectName)</BaseIntermediateOutputPath>
+		<LangVersion>8</LangVersion>
 	</PropertyGroup>
 	<Import Sdk="Microsoft.NET.Sdk" Project="Sdk.props" />
 

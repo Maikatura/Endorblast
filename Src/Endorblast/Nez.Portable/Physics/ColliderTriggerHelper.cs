@@ -21,7 +21,8 @@ namespace Nez
 		HashSet<Pair<Collider>> _previousTriggerIntersections = new HashSet<Pair<Collider>>();
 
 		List<ITriggerListener> _tempTriggerList = new List<ITriggerListener>();
-
+		
+		List<Pair<Collider>> _previousColliders = new List<Pair<Collider>>();
 
 		public ColliderTriggerHelper(Entity entity)
 		{
@@ -51,33 +52,49 @@ namespace Nez
 
 					if (collider.Overlaps(neighbor))
 					{
+						
+						
 						var pair = new Pair<Collider>(collider, neighbor);
 
 						// if we already have this pair in one of our sets (the previous or current trigger intersections) dont call the enter event
 						var shouldReportTriggerEvent = !_activeTriggerIntersections.Contains(pair) &&
 						                               !_previousTriggerIntersections.Contains(pair);
 						if (shouldReportTriggerEvent)
+						{
 							NotifyTriggerListeners(pair, true);
-
+							_previousColliders.Add(pair);
+						}
+						
 						_activeTriggerIntersections.Add(pair);
+						CheckForStayColliders();
+						
 					} // overlaps
 				} // end foreach
 			}
+			
+			
 
 			ListPool<Collider>.Free(colliders);
-
+			
+			
+			
 			CheckForExitedColliders();
 		}
 
-
+		void CheckForStayColliders()
+		{
+			foreach (var collider in _activeTriggerIntersections)
+				NotifyTriggerListeners(collider, false, true);
+		}
+		
 		void CheckForExitedColliders()
 		{
 			// remove all the triggers that we did interact with this frame leaving us with the ones we exited
 			_previousTriggerIntersections.ExceptWith(_activeTriggerIntersections);
-
+			
 			foreach (var pair in _previousTriggerIntersections)
 				NotifyTriggerListeners(pair, false);
-
+			
 			// clear out the previous set cause we are done with it for now
 			_previousTriggerIntersections.Clear();
 
@@ -89,16 +106,20 @@ namespace Nez
 		}
 
 
-		void NotifyTriggerListeners(Pair<Collider> collisionPair, bool isEntering)
+		void NotifyTriggerListeners(Pair<Collider> collisionPair, bool isEntering, bool isStaying = false)
 		{
 			// call the onTriggerEnter method for any relevant components
 			collisionPair.First.Entity.GetComponents(_tempTriggerList);
 			for (var i = 0; i < _tempTriggerList.Count; i++)
 			{
-				if (isEntering)
+				if (isStaying && !isEntering)
+					_tempTriggerList[i].OnTriggerStay(collisionPair.Second, collisionPair.First);
+				else if (isEntering)
 					_tempTriggerList[i].OnTriggerEnter(collisionPair.Second, collisionPair.First);
 				else
 					_tempTriggerList[i].OnTriggerExit(collisionPair.Second, collisionPair.First);
+
+				
 			}
 
 			_tempTriggerList.Clear();
@@ -109,7 +130,9 @@ namespace Nez
 				collisionPair.Second.Entity.GetComponents(_tempTriggerList);
 				for (var i = 0; i < _tempTriggerList.Count; i++)
 				{
-					if (isEntering)
+					if (isStaying && !isEntering)
+						_tempTriggerList[i].OnTriggerStay(collisionPair.First, collisionPair.Second);
+					else if (isEntering)
 						_tempTriggerList[i].OnTriggerEnter(collisionPair.First, collisionPair.Second);
 					else
 						_tempTriggerList[i].OnTriggerExit(collisionPair.First, collisionPair.Second);

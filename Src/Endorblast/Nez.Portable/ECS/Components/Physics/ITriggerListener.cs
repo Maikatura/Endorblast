@@ -21,5 +21,12 @@
 		/// <param name="remote">Remote.</param>
 		/// <param name="local">Local.</param>
 		void OnTriggerExit(Collider other, Collider local);
+		
+		/// <summary>
+		/// called when another collider stays inside a trigger collider.
+		/// </summary>
+		/// <param name="other">Other.</param>
+		/// <param name="local">Local.</param>
+		void OnTriggerStay(Collider other, Collider local);
 	}
 }

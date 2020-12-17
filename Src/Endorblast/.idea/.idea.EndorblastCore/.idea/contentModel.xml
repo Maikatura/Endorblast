@@ -4,7 +4,7 @@
     <e p="C:\Users\Zyro\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Zyro\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_EndorblastCore.-2009494288.00" t="ExcludeRecursive" />
     <e p="D:\GitHub\AnimeEngine2D\Src\Endorblast" t="IncludeFlat">
-      <e p="EndorblastCore" t="IncludeRecursive">
+      <e p="Endorblast" t="IncludeRecursive">
         <e p="app.manifest" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Content" t="Include">
@@ -17,7 +17,7 @@
             </e>
           </e>
         </e>
-        <e p="EndorblastCore.csproj" t="IncludeRecursive" />
+        <e p="Endorblast.csproj" t="IncludeRecursive" />
         <e p="Game1.cs" t="Include" />
         <e p="Icon.bmp" t="Include" />
         <e p="Icon.ico" t="Include" />
@@ -25,50 +25,68 @@
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="EndorblastCore.AssemblyInfo.cs" t="Include" />
+              <e p="Endorblast.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
         <e p="Program.cs" t="Include" />
         <e p="Splashscreen.cs" t="Include" />
       </e>
-      <e p="EndorblastCore.GameServer" t="IncludeRecursive">
+      <e p="Endorblast.GameServer" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="EndorblastCore.GameServer.csproj" t="IncludeRecursive" />
+        <e p="Endorblast.GameServer.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="EndorblastCore.GameServer.AssemblyInfo.cs" t="Include" />
+              <e p="Endorblast.GameServer.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
         <e p="Program.cs" t="Include" />
         <e p="Server" t="Include">
-          <e p="CharacterManager.cs" t="Include" />
-          <e p="CheatValidation.cs" t="Include" />
-          <e p="Commands" t="Include">
-            <e p="Player" t="Include">
-              <e p="PlayerDataCmd.cs" t="Include" />
-              <e p="PositionCmd.cs" t="Include" />
-              <e p="SkillCmd.cs" t="Include" />
+          <e p="AntiCheat" t="Include">
+            <e p="CheatValidation.cs" t="Include" />
+            <e p="ServerSnapshot.cs" t="Include" />
+          </e>
+          <e p="ConsoleHelper.cs" t="Include" />
+          <e p="Game" t="Include">
+            <e p="CharacterManager.cs" t="Include" />
+            <e p="Entities" t="Include">
+              <e p="ServerNPC.cs" t="Include" />
             </e>
-            <e p="ServerDataCmd.cs" t="Include" />
-            <e p="World" t="Include">
-              <e p="WorldChangeCmd.cs" t="Include" />
-              <e p="WorldDataCmd.cs" t="Include" />
-              <e p="WorldEnterCmd.cs" t="Include" />
-              <e p="WorldExitCmd.cs" t="Include" />
-            </e>
+            <e p="Map.cs" t="Include" />
+            <e p="MapManager.cs" t="Include" />
+            <e p="NPCManager.cs" t="Include" />
           </e>
           <e p="GameLogic.cs" t="Include" />
           <e p="GameServerScript.cs" t="Include" />
-          <e p="Map.cs" t="Include" />
-          <e p="MapManager.cs" t="Include" />
-          <e p="ServerSnapshot.cs" t="Include" />
+          <e p="Network" t="Include">
+            <e p="Commands" t="Include">
+              <e p="Login" t="Include">
+                <e p="LoginDataCmd.cs" t="Include" />
+                <e p="LoginInfoCmd.cs" t="Include" />
+              </e>
+              <e p="NetCmd.cs" t="Include" />
+              <e p="Player" t="Include">
+                <e p="PlayerDataCmd.cs" t="Include" />
+                <e p="PositionCmd.cs" t="Include" />
+                <e p="SkillCmd.cs" t="Include" />
+              </e>
+              <e p="ServerDataCmd.cs" t="Include" />
+              <e p="World" t="Include">
+                <e p="WorldChangeCmd.cs" t="Include" />
+                <e p="WorldDataCmd.cs" t="Include" />
+                <e p="WorldEnterCmd.cs" t="Include" />
+                <e p="WorldExitCmd.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="TimeLogic.cs" t="Include" />
         </e>
         <e p="ServerSettings.cs" t="Include" />
+        <e p="Testing" t="Include" />
       </e>
-      <e p="EndorblastCore.Lib" t="IncludeRecursive">
+      <e p="Endorblast.Lib" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="Class1.cs" t="Include" />
         <e p="Content" t="Include">
@@ -190,6 +208,10 @@
                 <e p="Portal1.png" t="Include" />
               </e>
             </e>
+            <e p="foilage" t="Include">
+              <e p="Grass1.png" t="Include" />
+              <e p="Grass2.png" t="Include" />
+            </e>
             <e p="GameObjects" t="Include">
               <e p="Fire" t="Include">
                 <e p="Fire1.png" t="Include" />
@@ -303,11 +325,12 @@
         <e p="Data" t="Include">
           <e p="Skills.json" t="Include" />
         </e>
-        <e p="EndorblastCore.Lib.csproj" t="IncludeRecursive" />
+        <e p="Endorblast.Lib.csproj" t="IncludeRecursive" />
         <e p="Game" t="Include">
           <e p="CharacterManager.cs" t="Include" />
           <e p="ClientSettings.cs" t="Include" />
           <e p="Components" t="Include">
+            <e p="GrassComp.cs" t="Include" />
             <e p="PortalScript.cs" t="Include" />
           </e>
           <e p="Discord" t="Include">
@@ -317,7 +340,7 @@
             <e p="Skeleton.cs" t="Include" />
           </e>
           <e p="EnemyManager.cs" t="Include" />
-          <e p="Entity" t="Include">
+          <e p="Entities" t="Include">
             <e p="BasePlayer.cs" t="Include" />
             <e p="Enemy.cs" t="Include" />
             <e p="MainPlayer.cs" t="Include" />
@@ -327,6 +350,7 @@
           <e p="Enums" t="Include">
             <e p="AccountType.cs" t="Include" />
             <e p="CharacterPacket.cs" t="Include" />
+            <e p="MasterPacket.cs" t="Include" />
             <e p="NetworkState.cs" t="Include" />
             <e p="Packets.cs" t="Include" />
             <e p="ServerType.cs" t="Include" />
@@ -338,6 +362,7 @@
           <e p="GameObjects" t="Include">
             <e p="Enviorment" t="Include">
               <e p="FirePole.cs" t="Include" />
+              <e p="Grass.cs" t="Include" />
               <e p="Portal.cs" t="Include" />
             </e>
           </e>
@@ -350,37 +375,6 @@
             <e p="SkillItem.cs" t="Include" />
             <e p="Usable.cs" t="Include" />
           </e>
-          <e p="Network" t="Include">
-            <e p="Commands" t="Include">
-              <e p="CharacterComs" t="Include">
-                <e p="CharacterDataCommand.cs" t="Include" />
-                <e p="CharacterListCommand.cs" t="Include" />
-                <e p="CharacterSendInputCommand.cs" t="Include" />
-                <e p="CharacterSkillCastCommand.cs" t="Include" />
-              </e>
-              <e p="DatabaseCharacter.cs" t="Include" />
-              <e p="EnemyComs" t="Include">
-                <e p="EnemyDataCommand.cs" t="Include" />
-                <e p="EnemyListCommand.cs" t="Include" />
-                <e p="EnemySpawnCommand.cs" t="Include" />
-              </e>
-              <e p="Login" t="Include">
-                <e p="LoginStateCommand.cs" t="Include" />
-                <e p="LoginUserCommand.cs" t="Include" />
-              </e>
-              <e p="NetCommand.cs" t="Include" />
-              <e p="UtilsComs" t="Include">
-                <e p="SendPingCommand.cs" t="Include" />
-              </e>
-              <e p="WorldComs" t="Include">
-                <e p="WorldCharacterChangeCommand.cs" t="Include" />
-                <e p="WorldCharacterEnterCommand.cs" t="Include" />
-                <e p="WorldCharacterExitCommand.cs" t="Include" />
-              </e>
-            </e>
-            <e p="Database.cs" t="Include" />
-            <e p="NetworkManager.cs" t="Include" />
-          </e>
           <e p="Player" t="Include">
             <e p="Clothes" t="Include">
               <e p="ClothObject.cs" t="Include" />
@@ -388,7 +382,6 @@
               <e p="NakedOutfit.cs" t="Include" />
             </e>
             <e p="ClothID.cs" t="Include" />
-            <e p="Enemy.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
             <e p="Hair" t="Include">
               <e p="HairNormal.cs" t="Include" />
@@ -400,6 +393,7 @@
             <e p="Player.cs" t="Include" />
             <e p="PlayerAnimations.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
+            <e p="PlayerSettings.cs" t="Include" />
           </e>
           <e p="PlayerManager.cs" t="Include" />
           <e p="RenderLayers.cs" t="Include" />
@@ -428,10 +422,46 @@
           <e p="LoginUI.cs" t="Include" />
           <e p="Slot.cs" t="Include" />
         </e>
+        <e p="Network" t="Include">
+          <e p="Database.cs" t="Include" />
+          <e p="NetworkCmd" t="Include">
+            <e p="CharacterComs" t="Include">
+              <e p="CharacterDataCommand.cs" t="Include" />
+              <e p="CharacterListCommand.cs" t="Include" />
+              <e p="CharacterSendInputCommand.cs" t="Include" />
+              <e p="CharacterSkillCastCommand.cs" t="Include" />
+            </e>
+            <e p="DatabaseCharacter.cs" t="Include" />
+            <e p="EnemyComs" t="Include">
+              <e p="EnemyDataCommand.cs" t="Include" />
+              <e p="EnemyListCommand.cs" t="Include" />
+              <e p="EnemySpawnCommand.cs" t="Include" />
+            </e>
+            <e p="Login" t="Include">
+              <e p="LoginDataCmd.cs" t="Include" />
+              <e p="LoginStateCommand.cs" t="Include" />
+              <e p="LoginUserCommand.cs" t="Include" />
+            </e>
+            <e p="Master" t="Include">
+              <e p="MasterDataCmd.cs" t="Include" />
+              <e p="ToLoginServerCmd.cs" t="Include" />
+            </e>
+            <e p="NetCommand.cs" t="Include" />
+            <e p="UtilsComs" t="Include">
+              <e p="SendPingCommand.cs" t="Include" />
+            </e>
+            <e p="WorldComs" t="Include">
+              <e p="WorldCharacterChangeCommand.cs" t="Include" />
+              <e p="WorldCharacterEnterCommand.cs" t="Include" />
+              <e p="WorldCharacterExitCommand.cs" t="Include" />
+            </e>
+          </e>
+          <e p="NetworkManager.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="EndorblastCore.Lib.AssemblyInfo.cs" t="Include" />
+              <e p="Endorblast.Lib.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
@@ -451,36 +481,46 @@
           </e>
         </e>
       </e>
-      <e p="EndorblastCore.LoginServer" t="IncludeRecursive">
+      <e p="Endorblast.LoginServer" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="EndorblastCore.LoginServer.csproj" t="IncludeRecursive" />
+        <e p="Endorblast.LoginServer.csproj" t="IncludeRecursive" />
+        <e p="Login" t="Include">
+          <e p="Database.cs" t="Include" />
+          <e p="LoginServerScript.cs" t="Include" />
+          <e p="NetCmd" t="Include">
+            <e p="LoginCmd.cs" t="Include" />
+            <e p="LoginFailedCmd.cs" t="Include" />
+            <e p="LoginSuccessCmd.cs" t="Include" />
+          </e>
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="EndorblastCore.LoginServer.AssemblyInfo.cs" t="Include" />
+              <e p="Endorblast.LoginServer.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
         <e p="Program.cs" t="Include" />
       </e>
-      <e p="EndorblastCore.MasterServer" t="IncludeRecursive">
+      <e p="Endorblast.MasterServer" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="DataCmd" t="Include">
           <e p="ConnectionDataCmd.cs" t="Include" />
+          <e p="SendToLoginCmd.cs" t="Include" />
         </e>
-        <e p="EndorblastCore.MasterServer.csproj" t="IncludeRecursive" />
+        <e p="Endorblast.MasterServer.csproj" t="IncludeRecursive" />
         <e p="MasterServerScript.cs" t="Include" />
         <e p="MasterServerSettings.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="EndorblastCore.MasterServer.AssemblyInfo.cs" t="Include" />
+              <e p="Endorblast.MasterServer.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
         <e p="Program.cs" t="Include" />
       </e>
-      <e p="EndorblastCore.Server" t="IncludeRecursive">
+      <e p="Endorblast.Server" t="IncludeRecursive">
         <e p="app.manifest" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Content" t="Include">
@@ -493,7 +533,7 @@
             </e>
           </e>
         </e>
-        <e p="EndorblastCore.Server.csproj" t="IncludeRecursive" />
+        <e p="Endorblast.Server.csproj" t="IncludeRecursive" />
         <e p="Game1.cs" t="Include" />
         <e p="Icon.bmp" t="Include" />
         <e p="Icon.ico" t="Include" />
@@ -505,7 +545,7 @@
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="EndorblastCore.Server.AssemblyInfo.cs" t="Include" />
+              <e p="Endorblast.Server.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
@@ -528,7 +568,6 @@
             </e>
             <e p="PlayerManager.cs" t="Include" />
             <e p="PlayerStats.cs" t="Include" />
-            <e p="StaticCharacter.cs" t="Include" />
           </e>
           <e p="GameManager.cs" t="Include" />
           <e p="NetCommands" t="Include">
