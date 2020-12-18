@@ -12,7 +12,7 @@
 
 
 ## How to run :)
-Open Endorblast.Server then also open Endorblast then boom done! Skills is broken and I don't know why......
+Open Endorblast.Server then also open Endorblast then boom done! Skills are broken and I don't know why......
 
 ## Setup
 I dont give assistance with setting it up.\
