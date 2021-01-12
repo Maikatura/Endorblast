@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "EoZS3lvrv3rPJTOM0UzIreEUEdyoRqHrwzx/wdEpK4nCIubPU1NMYFXGxNf3pCWtB8Z4nac7bcIlMfTPA22wEQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\AnimeEngine2D\\Src\\Endorblast\\Endorblast\\Endorblast.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\simon.igelstrom\\.nuget\\packages\\discordrichpresence\\1.0.150\\discordrichpresence.1.0.150.nupkg.sha512",
+    "C:\\Users\\simon.igelstrom\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\simon.igelstrom\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
+    "C:\\Users\\simon.igelstrom\\.nuget\\packages\\microsoft.win32.systemevents\\4.5.0\\microsoft.win32.systemevents.4.5.0.nupkg.sha512",
+    "C:\\Users\\simon.igelstrom\\.nuget\\packages\\monogame.content.builder.task\\3.8.0.1641\\monogame.content.builder.task.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\simon.igelstrom\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\simon.igelstrom\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\simon.igelstrom\\.nuget\\packages\\system.drawing.common\\4.5.1\\system.drawing.common.4.5.1.nupkg.sha512",
+    "C:\\Users\\simon.igelstrom\\.nuget\\packages\\system.security.accesscontrol\\4.5.0\\system.security.accesscontrol.4.5.0.nupkg.sha512",
+    "C:\\Users\\simon.igelstrom\\.nuget\\packages\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -27,6 +27,10 @@ namespace Nez.Sprites
 			}
 		}
 
+
+
+		
+
 		/// <summary>
 		/// the origin of the Sprite. This is set automatically when setting a Sprite.
 		/// </summary>

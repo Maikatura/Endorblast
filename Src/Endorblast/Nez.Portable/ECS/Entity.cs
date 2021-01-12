@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
 
 namespace Nez
@@ -36,6 +37,8 @@ namespace Nez
 		/// list of all the components currently attached to this entity
 		/// </summary>
 		public readonly ComponentList Components;
+
+		public Effect effect;
 
 		/// <summary>
 		/// use this however you want to. It can later be used to query the scene for all Entities with a specific tag
@@ -187,7 +190,11 @@ namespace Nez
 
 		#endregion
 
-
+		public void SetEffect(Effect effect)
+		{
+			this.effect = effect;
+		}
+		
 		public Entity(string name)
 		{
 			Components = new ComponentList(this);
