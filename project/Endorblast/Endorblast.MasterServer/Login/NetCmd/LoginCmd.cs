@@ -1,5 +1,6 @@
 ﻿using System;
 using Endorblast.Lib.Enums;
+using Endorblast.LoginServer.Login.DataCmd;
 using Lidgren.Network;
 
 namespace Endorblast.LoginServer.Login.NetCmd
@@ -29,7 +30,7 @@ namespace Endorblast.LoginServer.Login.NetCmd
             string password = inc.ReadString(); // TODO : hash password on client.
 
 
-            Tuple<bool, int> store = Database.Instance.GetLoginAccount(username, password);
+            Tuple<bool, int> store = new LoginDBCmd().GetLoginAccount(username, password);
 
             bool rightLogin = store.Item1;
             int userId = store.Item2;

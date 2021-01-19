@@ -83,15 +83,18 @@ namespace Endorblast.MasterServer
                 {
                     case NetIncomingMessageType.Data:
                         // handle custom messages
-                        
+                        ServerPacket type = (ServerPacket)message.ReadByte();
+                        switch (type)
+                        {
+                            case ServerPacket.Master:
+                                new ConnectionDataCmd().Receive(message);
+                                break;
+                        }
                         break;
-
                     case NetIncomingMessageType.StatusChanged:
-
                         switch (message.SenderConnection.Status)
                         {
                             case NetConnectionStatus.Connected:
-                                //new SendToLoginCmd().Send(message.SenderConnection);
                                 break;
                             case NetConnectionStatus.Disconnecting:
                                 break;
@@ -99,7 +102,6 @@ namespace Endorblast.MasterServer
                                 break;
                         }
                         break;
-
                     case NetIncomingMessageType.DebugMessage:
                         // handle debug messages
                         // (only received when compiled in DEBUG mode)
@@ -113,7 +115,10 @@ namespace Endorblast.MasterServer
             }
         }
 
-        
+        private void DataSwitch(NetIncomingMessage msg)
+        {
+            
+        }
 
     }
 }

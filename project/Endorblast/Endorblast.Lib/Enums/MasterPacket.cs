@@ -2,13 +2,14 @@
 {
     public enum MasterPacket
     {
-        RequestLoginServer,
+        RequestLoginAttempt,
         SendToGameServer,
         GetFromLoginServer,
         GetFromGameServer,
         RequestHostList,
         RegisterHost,
         RequestIntroduction,
+        Login,
         
     }
 }

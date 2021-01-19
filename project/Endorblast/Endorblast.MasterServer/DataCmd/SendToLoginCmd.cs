@@ -16,8 +16,8 @@ namespace Endorblast.MasterServer.DataCmd
             
             // Send Login Server Info
             // TODO : Read Servers from database
-            outmsg.Write((byte)MasterPacket.RequestLoginServer);
-            outmsg.Write(ServerSettings.loginServerPort);
+            //outmsg.Write((byte)MasterPacket.RequestLoginServer);
+            //outmsg.Write(ServerSettings.loginServerPort);
             
             MasterServerScript.Instance.Server.SendMessage(outmsg, con, NetDeliveryMethod.ReliableOrdered);
         }

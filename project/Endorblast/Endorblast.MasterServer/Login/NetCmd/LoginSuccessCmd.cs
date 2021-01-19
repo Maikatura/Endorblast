@@ -1,5 +1,6 @@
 ﻿using System;
 using Endorblast.Lib.Enums;
+using Endorblast.MasterServer;
 using Lidgren.Network;
 
 namespace Endorblast.LoginServer.Login.NetCmd
@@ -8,8 +9,8 @@ namespace Endorblast.LoginServer.Login.NetCmd
     {
         public void Send(NetConnection con, string username, int userID)
         {
-            var outmsg = LoginServerScript.Instance.LoginMessage();
-            
+            var outmsg = MasterServerScript.Instance.MASTERMSG();
+            outmsg.Write((byte)MasterPacket.Login);
             outmsg.Write((byte)LoginPacket.LoginSuccess);
             outmsg.Write(username);
             
@@ -32,8 +33,7 @@ namespace Endorblast.LoginServer.Login.NetCmd
                 Console.WriteLine(character.Name);
             }
             
-            
-            LoginServerScript.Instance.Server.SendMessage(outmsg, con, NetDeliveryMethod.ReliableOrdered);
+            MasterServerScript.Instance.Server.SendMessage(outmsg, con, NetDeliveryMethod.ReliableOrdered);
         }
     }
 }

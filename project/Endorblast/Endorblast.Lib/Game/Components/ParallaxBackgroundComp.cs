@@ -26,10 +26,8 @@ namespace Endorblast.Lib.Game.Player
 
         public ParallaxBackgroundComp(List<ParallaxBGSprite> lists)
         {
-
             currentBG = 0;
-           
-
+            
             foreach (var item in lists)
             {
                 backgrounds.Add(item);
@@ -37,10 +35,6 @@ namespace Endorblast.Lib.Game.Player
 
                 currentBG++;
             }
-
-
-
-
         }
 
         public void Update()

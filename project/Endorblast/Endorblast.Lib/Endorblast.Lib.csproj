@@ -17,7 +17,7 @@
     <Folder Include="Content\Sprites\Effects" />
     <Folder Include="Content\Sprites\GameObjects" />
     <Folder Include="Content\Sprites\Player\Races\Human" />
-    <Folder Include="Content\Sprites\Player\Races\Werewolf" />
+    <Folder Include="Content\Sprites\Player\Races\Werewolf\Male" />
     <Folder Include="Game\Components\" />
     <Folder Include="Game\Components\Scene" />
     <Folder Include="Game\Entities" />

@@ -18,7 +18,8 @@ namespace Endorblast.Lib.Network
 
         public static void Send(string username, string password)
         {
-            NetOutgoingMessage outmsg = NetworkManager.Instance.CreateLoginMessage();
+            NetOutgoingMessage outmsg = NetworkManager.Instance.CreateMasterMessage();
+            outmsg.Write((byte)MasterPacket.RequestLoginAttempt);
             outmsg.Write((byte)LoginPacket.LoginRequest);
             
             outmsg.Write(username);

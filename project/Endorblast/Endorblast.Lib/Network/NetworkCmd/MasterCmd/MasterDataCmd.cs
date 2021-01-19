@@ -14,8 +14,12 @@ namespace Endorblast.Lib.Network.Master
 
             switch (dataType)
             {
-                case MasterPacket.RequestLoginServer:
-                    new ToLoginServerCmd().Read(msg);
+                case MasterPacket.RequestLoginAttempt:
+                    
+                    break;
+                case MasterPacket.Login:
+                    new LoginDataCmd().Read(msg);
+                    
                     break;
                 default:
                     Console.WriteLine("THE DATA THAT GOT HERE DOESN'T EXIST!");

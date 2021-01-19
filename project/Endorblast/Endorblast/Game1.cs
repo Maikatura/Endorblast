@@ -33,7 +33,7 @@ namespace Endorblast
 
             // Init Important Stuff
             DiscordRpc.NewInstance();
-            NetworkManager.NewInstance();
+            NetworkManager.Instance.Connect();
             Endorblast.Lib.ContentLoader.Init(Core.Content);
             DiscordRpc.Instance.Init();
             

@@ -23,52 +23,52 @@ namespace Endorblast.Lib
 
     public class NetworkManager
     {
-        private static NetworkManager instance;
-        public static NetworkManager Instance
-        {
-            get { return instance; }
-            private set { return; }
-        }
-
-        public static void NewInstance(string configStr = "endorblast-master", int port = 5555)
-        {
-            instance = new NetworkManager(configStr, port);
-        }
-
-        public string HostIP = "localhost";
-        public int Port = 5555;
-        private IPEndPoint masterServer;
         
-
+        
+        public string HostIP = "127.0.0.1";
+        public int Port = 5555;
+        
         public static string AccountName;
         public static string CharacterName;
         public int WorldID;
 
         public DateTime LoginTime;
         public DateTime LogoutTime;
-
         TimeSpan AutoDisconnectTime = new TimeSpan(0, 0, 5);
 
         public bool isLoggingIn = false;
-
-
-        //bool cyrptNetwork = true;
+        
         public NetClient client;
         SynchronizationContext context;
-
-        //float timeoutTimer;
-
         public List<Player> players;
-
-        //public event EventHandler<UpdatePlayerListEvent> UpdatePlayerListEvent;
-
         public NetworkState State = NetworkState.None;
-
+        
         public int ping = 0;
         public int oldPing = 0;
-
-        public NetworkManager(string configStr, int port = 5555)
+        
+        
+        private static NetworkManager instance = new NetworkManager();
+        public static NetworkManager Instance
         {
+            get { return instance; }
+            private set { return; }
+        }
+
+        public void NewInstance()
+        {
+            if (Instance.client.ConnectionStatus == NetConnectionStatus.Connected)
+                Instance.client.Disconnect("Bye");
+            
+            instance = new NetworkManager();
+        }
+        
+        public void Connect(string ip = "", int port = 5555, string configStr = "endorblast-master")
+        {
+            if (string.IsNullOrEmpty(ip))
+                ip = HostIP;
+
+            Console.WriteLine(ip);
+            
             context = new SynchronizationContext();
             var c = new NetPeerConfiguration(configStr);
             c.ResendHandshakeInterval = 4.75f;
@@ -78,7 +78,13 @@ namespace Endorblast.Lib
             client.RegisterReceivedCallback(NetworkLoop, context);
             client.Start();
             
-            GetServerList("localhost");
+            Connect(ip, port);
+            
+        }
+
+        public NetworkManager()
+        {
+            
         }
 
         public void Connect(string IPAddress, int port)
@@ -93,11 +99,11 @@ namespace Endorblast.Lib
 
         public int UpdateOrder => throw new NotImplementedException();
 
-        public NetOutgoingMessage CreateLoginMessage() => CLM();
+        public NetOutgoingMessage CreateMasterMessage() => CLM();
         NetOutgoingMessage CLM()
         {
             var msg = client.CreateMessage();
-            msg.Write((byte)ServerPacket.Login);
+            msg.Write((byte)ServerPacket.Master);
             return msg;
         }
 
@@ -146,19 +152,7 @@ namespace Endorblast.Lib
                         Console.WriteLine("Debug");
                         Console.WriteLine(message.ReadString());
                         break;
-                    case NetIncomingMessageType.UnconnectedData:
-                        if (message.SenderEndPoint.Equals(masterServer))
-                        {
-                            var hostExternal = message.ReadString();
-
-                            Connect(hostExternal, ServerSettings.loginServerPort);
-
-                        }
-                        break;
-                    case NetIncomingMessageType.NatIntroductionSuccess:
-                        string token = message.ReadString();
-                        Console.WriteLine("Nat introduction success to " + message.SenderEndPoint + " token is: " + token);
-                        break;
+                    
                     default:
                         Console.WriteLine("unhandled message with type: " + message.MessageType);
                         break;
@@ -238,14 +232,7 @@ namespace Endorblast.Lib
             }
         }
 
-        private void GetServerList(string masterServerAddress)
-        {
-            masterServer = new IPEndPoint(NetUtility.Resolve(masterServerAddress), ServerSettings.masterServerPort);
-            
-            NetOutgoingMessage listRequest = client.CreateMessage();
-            listRequest.Write((byte)MasterPacket.RequestHostList);
-            client.SendUnconnectedMessage(listRequest, masterServer);
-        }
+        
         
 
         public void ShutdownConnection()

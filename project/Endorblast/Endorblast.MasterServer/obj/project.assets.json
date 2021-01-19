@@ -5879,19 +5879,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\simon.igelstrom\\.nuget\\packages\\": {}
+    "C:\\Users\\zyro\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\AnimeEngine2D\\Src\\Endorblast\\Endorblast.MasterServer\\Endorblast.MasterServer.csproj",
+      "projectUniqueName": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.MasterServer\\Endorblast.MasterServer.csproj",
       "projectName": "Endorblast.MasterServer",
-      "projectPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\AnimeEngine2D\\Src\\Endorblast\\Endorblast.MasterServer\\Endorblast.MasterServer.csproj",
-      "packagesPath": "C:\\Users\\simon.igelstrom\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\AnimeEngine2D\\Src\\Endorblast\\Endorblast.MasterServer\\obj\\",
+      "projectPath": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.MasterServer\\Endorblast.MasterServer.csproj",
+      "packagesPath": "C:\\Users\\zyro\\.nuget\\packages\\",
+      "outputPath": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.MasterServer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\simon.igelstrom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\zyro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5905,8 +5905,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\AnimeEngine2D\\Src\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj": {
-              "projectPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\AnimeEngine2D\\Src\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj"
+            "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj": {
+              "projectPath": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj"
             }
           }
         }
@@ -5945,7 +5945,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

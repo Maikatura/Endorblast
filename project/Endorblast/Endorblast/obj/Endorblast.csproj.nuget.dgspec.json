@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\AnimeEngine2D\\Src\\Endorblast\\Endorblast\\Endorblast.csproj": {}
+    "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast\\Endorblast.csproj": {}
   },
   "projects": {
-    "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\AnimeEngine2D\\Src\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj": {
+    "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\AnimeEngine2D\\Src\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj",
+        "projectUniqueName": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj",
         "projectName": "Endorblast.Lib",
-        "projectPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\AnimeEngine2D\\Src\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj",
-        "packagesPath": "C:\\Users\\simon.igelstrom\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\AnimeEngine2D\\Src\\Endorblast\\Endorblast.Lib\\obj\\",
+        "projectPath": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj",
+        "packagesPath": "C:\\Users\\zyro\\.nuget\\packages\\",
+        "outputPath": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.Lib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\simon.igelstrom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\zyro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\AnimeEngine2D\\Src\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj": {
-                "projectPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\AnimeEngine2D\\Src\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj"
+              "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj": {
+                "projectPath": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj"
               }
             }
           }
@@ -68,21 +68,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\AnimeEngine2D\\Src\\Endorblast\\Endorblast\\Endorblast.csproj": {
+    "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast\\Endorblast.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\AnimeEngine2D\\Src\\Endorblast\\Endorblast\\Endorblast.csproj",
+        "projectUniqueName": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast\\Endorblast.csproj",
         "projectName": "Endorblast",
-        "projectPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\AnimeEngine2D\\Src\\Endorblast\\Endorblast\\Endorblast.csproj",
-        "packagesPath": "C:\\Users\\simon.igelstrom\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\AnimeEngine2D\\Src\\Endorblast\\Endorblast\\obj\\",
+        "projectPath": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast\\Endorblast.csproj",
+        "packagesPath": "C:\\Users\\zyro\\.nuget\\packages\\",
+        "outputPath": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\simon.igelstrom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\zyro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -96,11 +96,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\AnimeEngine2D\\Src\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj": {
-                "projectPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\AnimeEngine2D\\Src\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj"
+              "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj": {
+                "projectPath": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj"
               },
-              "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\AnimeEngine2D\\Src\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj": {
-                "projectPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\AnimeEngine2D\\Src\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj"
+              "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj": {
+                "projectPath": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj"
               }
             }
           }
@@ -139,21 +139,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\AnimeEngine2D\\Src\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj": {
+    "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\AnimeEngine2D\\Src\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj",
+        "projectUniqueName": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj",
         "projectName": "Nez",
-        "projectPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\AnimeEngine2D\\Src\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj",
-        "packagesPath": "C:\\Users\\simon.igelstrom\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\AnimeEngine2D\\Src\\Endorblast\\Nez.Portable\\obj\\Nez.Monogame.Standard\\",
+        "projectPath": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj",
+        "packagesPath": "C:\\Users\\zyro\\.nuget\\packages\\",
+        "outputPath": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Nez.Portable\\obj\\Nez.Monogame.Standard\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\simon.igelstrom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\zyro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -203,7 +203,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -13,7 +13,7 @@ namespace Endorblast.Lib.Network.Master
             
             
             NetworkManager.Instance.ShutdownConnection();
-            NetworkManager.NewInstance("endorblast-login", port);
+            //NetworkManager.NewInstance("endorblast-login", port);
 
         }
     }
