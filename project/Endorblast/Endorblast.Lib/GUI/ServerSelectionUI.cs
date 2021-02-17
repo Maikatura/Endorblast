@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Net;
 using Endorblast.LoginServer.Data;
 using Microsoft.Xna.Framework;
 using Nez;
@@ -19,7 +20,7 @@ namespace Endorblast.Lib.GUI
         Table insideBox;
         UICanvas canvas;
 
-        public void LoadUI(List<GameServerInfo> data)
+        public void LoadUI(Dictionary<long, IPEndPoint[]> servers)
         {
             
             
@@ -51,10 +52,10 @@ namespace Endorblast.Lib.GUI
             insideBox.Add(lbl).SetExpandX();
             insideBox.Row();
 
-            foreach (var server in data)
+            foreach (var server in servers)
             {
-                var button = new TextButton(server.serverName, TextButtonStyle.Create(Color.Black, Color.Gray, Color.DarkGray));
-                button.OnClicked += button => JoinServer(server.ipAddress);
+                var button = new TextButton(server.Value[1].ToString(), TextButtonStyle.Create(Color.Black, Color.Gray, Color.DarkGray));
+                button.OnClicked += button => JoinServer(server.Value[1].ToString());
 
                 button.GetLabel().SetFontScale(2, 2);
                 insideBox.Add(button).Width(200).Height(30).SetPadTop(20);

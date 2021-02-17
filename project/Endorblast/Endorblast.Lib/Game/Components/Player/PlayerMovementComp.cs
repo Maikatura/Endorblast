@@ -13,6 +13,8 @@ namespace Endorblast.Lib
         Running,
         IdlePause,
         BasicAttack,
+        Slide,
+        WallSlide,
     }
 
     
@@ -25,7 +27,7 @@ namespace Endorblast.Lib
         float gravity = 1000;
         float jumpHeight = 16 * 7;
 
-        Player player;
+        
         public PlayerState state;
 
         TiledMapMover mover;
@@ -48,7 +50,7 @@ namespace Endorblast.Lib
             mover = this.GetComponent<TiledMapMover>();
             boxCollider = this.GetComponent<BoxCollider>();
             keys = this.GetComponent<KeyboardInputComp>();
-            player = this.GetComponent<Player>();
+            
 
             InitAnim();
         }
@@ -61,106 +63,16 @@ namespace Endorblast.Lib
         public void Update()
         {
 
-            if (player.isMyPlayer)
-            {
+           
 
 
-                if (cam == null)
-                {
-                    cam = this.GetComponent<FollowCamera>();
-                    cam.Follow(this.Entity, FollowCamera.CameraStyle.LockOn);
-                    cam.Transform.Position = this.Entity.Position;
-                }
-
-                if (keys != null)
-                {
-                    if (keys.isSprinting)
-                    {
-                        moveSpeed = sprintSpeed;
-                    }
-                    else
-                    {
-                        moveSpeed = defaultSpeed;
-                    }
-
-                    if (keys.inputs[0] && keys.inputs[1])
-                    {
-                        state = PlayerState.Idle;
-                        velocity.X = 0;
-                    }
-                    else if (keys.inputs[0] && !keys.inputs[1])
-                    {
-                        state = PlayerState.Running;
-                        facingDir = false;
-                        velocity.X = moveSpeed;
-                    }
-                    else if (keys.inputs[1] && !keys.inputs[0])
-                    {
-                        state = PlayerState.Running;
-                        facingDir = true;
-                        velocity.X = -moveSpeed;
-                    }
-                    else
-                    {
-                        state = PlayerState.Idle;
-                        velocity.X = 0;
-                    }
-
-                    if (collisionState.Below && keys.inputs[2])
-                    {
-                        velocity.Y = -Mathf.Sqrt(2 * jumpHeight * gravity);
-                    }
-
-                    velocity.Y += gravity * Time.DeltaTime;
-
-
-                    mover.Move(velocity * Time.DeltaTime, boxCollider, collisionState);
-                    wantCameraPos = this.Entity.Transform.Position;
-                    //subpixelV2.Update(ref wantCameraPos);
-                    cam.Camera.Transform.Position = wantCameraPos;
-
-
-                    if (collisionState.Right || collisionState.Left)
-                    {
-                        velocity.X = 0;
-                    }
-
-                    if (collisionState.Below || collisionState.Above)
-                    {
-                        velocity.Y = 0;
-                    }
-
-                    CheckInputs(facingDir);
-
-                    //NetworkSend.SendPlayerPos(Transform.Position);
-                }
-            }
+                
+            
         }
 
         public void CheckPlayer(Vector2 pos, bool isWalking, bool facingDir)
         {
-            if (this.GetComponent<Player>().isMyPlayer)
-            {
-                if (Vector2.Distance(this.Transform.Position, pos) > 75f)
-                {
-                    this.Transform.Position = pos;
-                }
-            }
-            else
-            {
-                if (isWalking)
-                {
-                    state = PlayerState.Running;
-                }
-                if (!isWalking)
-                {
-                    state = PlayerState.Idle;
-                }
-
-                this.Transform.Position = pos;
-
-                CheckInputs(facingDir);
-            }
+            
         }
 
         void CheckInputs(bool facingDir)

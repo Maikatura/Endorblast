@@ -4,6 +4,7 @@ using Nez.DeferredLighting;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Endorblast.Lib.Game.Components;
 
 namespace Endorblast.Lib.Scenes
 {
@@ -51,6 +52,12 @@ namespace Endorblast.Lib.Scenes
                 ));
 
             
+        }
+
+        public virtual void GameSetup()
+        {
+            // Setup Logic for Scene here: Like Camera Effects and Post Process effects.
+            AddSceneComponent(new Zoom(Camera));
         }
 
 

@@ -1,9 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Endorblast.GameServer.Entities;
 using Endorblast.Lib;
 using Endorblast.Lib.Enums;
 using Lidgren.Network;
 using Microsoft.Xna.Framework;
+using Nez.Tiled;
 
 namespace Endorblast.GameServer.Server
 {
@@ -21,14 +23,19 @@ namespace Endorblast.GameServer.Server
 
         public MapManager()
         {
+            
+
+            
+            
+            
             worlds.Add(new Map(0, MapType.Town));
+            
         }
         
-        public void Update(GameTime gameTime)
+        public void Update()
         {
             foreach (var map in worlds)
-                map.Update(gameTime);
-
+                map.Update();
         }
 
         public void AddWorld(MapType type)
@@ -58,9 +65,9 @@ namespace Endorblast.GameServer.Server
         }
 
 
-        public ServerCharacter GetPlayer(NetConnection con)
+        public Player GetPlayer(NetConnection con)
         {
-            ServerCharacter player;
+            Player player;
             foreach (var world in worlds)
             {
                 player = world.characterManager.GetConnection(con);
@@ -76,9 +83,9 @@ namespace Endorblast.GameServer.Server
             
         }
 
-        public List<ServerCharacter> GetPlayers(int worldId)
+        public List<Player> GetPlayers(int worldId)
         {
-            var list = new List<ServerCharacter>();
+            var list = new List<Player>();
             
             foreach (var map in worlds)
                 if (map.worldId == worldId)
@@ -101,13 +108,13 @@ namespace Endorblast.GameServer.Server
             
         }
 
-        public Map AddPlayer(ServerCharacter player, int worldID)
+        public Map AddPlayer(Player player, int worldID)
         {
             foreach (var map in worlds)
             {
                 if (map.worldId == worldID)
                 {
-                    map.characterManager.Characters.Add(player);
+                    map.characterManager.AddPlayer(player);
                     return map;
                 }
             }

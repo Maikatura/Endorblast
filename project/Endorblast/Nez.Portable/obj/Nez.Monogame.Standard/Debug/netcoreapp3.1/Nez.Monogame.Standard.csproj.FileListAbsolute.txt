@@ -17,12 +17,12 @@ D:\Github\AnimeEngine2D\project\Endorblast\Nez.Portable\bin\Debug\netcoreapp3.1\
 D:\Github\AnimeEngine2D\project\Endorblast\Nez.Portable\bin\Debug\netcoreapp3.1\Content\nez\effects\transitions\Squares.mgfxo
 D:\Github\AnimeEngine2D\project\Endorblast\Nez.Portable\bin\Debug\netcoreapp3.1\Content\nez\effects\transitions\TextureWipe.mgfxo
 D:\Github\AnimeEngine2D\project\Endorblast\Nez.Portable\bin\Debug\netcoreapp3.1\Content\nez\effects\transitions\Wind.mgfxo
-D:\Github\AnimeEngine2D\project\Endorblast\Nez.Portable\bin\Debug\netcoreapp3.1\Nez.deps.json
-D:\Github\AnimeEngine2D\project\Endorblast\Nez.Portable\bin\Debug\netcoreapp3.1\Nez.dll
-D:\Github\AnimeEngine2D\project\Endorblast\Nez.Portable\bin\Debug\netcoreapp3.1\Nez.pdb
-D:\Github\AnimeEngine2D\project\Endorblast\Nez.Portable\obj\Nez.Monogame.Standard\Debug\netcoreapp3.1\Nez.Monogame.Standard.csprojAssemblyReference.cache
 D:\Github\AnimeEngine2D\project\Endorblast\Nez.Portable\obj\Nez.Monogame.Standard\Debug\netcoreapp3.1\Nez.Monogame.Standard.AssemblyInfoInputs.cache
 D:\Github\AnimeEngine2D\project\Endorblast\Nez.Portable\obj\Nez.Monogame.Standard\Debug\netcoreapp3.1\Nez.Monogame.Standard.AssemblyInfo.cs
 D:\Github\AnimeEngine2D\project\Endorblast\Nez.Portable\obj\Nez.Monogame.Standard\Debug\netcoreapp3.1\Nez.Monogame.Standard.csproj.CoreCompileInputs.cache
+D:\Github\AnimeEngine2D\project\Endorblast\Nez.Portable\obj\Nez.Monogame.Standard\Debug\netcoreapp3.1\Nez.Monogame.Standard.csprojAssemblyReference.cache
+D:\Github\AnimeEngine2D\project\Endorblast\Nez.Portable\bin\Debug\netcoreapp3.1\Nez.deps.json
+D:\Github\AnimeEngine2D\project\Endorblast\Nez.Portable\bin\Debug\netcoreapp3.1\Nez.dll
+D:\Github\AnimeEngine2D\project\Endorblast\Nez.Portable\bin\Debug\netcoreapp3.1\Nez.pdb
 D:\Github\AnimeEngine2D\project\Endorblast\Nez.Portable\obj\Nez.Monogame.Standard\Debug\netcoreapp3.1\Nez.dll
 D:\Github\AnimeEngine2D\project\Endorblast\Nez.Portable\obj\Nez.Monogame.Standard\Debug\netcoreapp3.1\Nez.pdb

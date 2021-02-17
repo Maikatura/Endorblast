@@ -537,8 +537,6 @@ D:\Github\AnimeEngine2D\project\Endorblast\Endorblast.MasterServer\bin\Debug\net
 D:\Github\AnimeEngine2D\project\Endorblast\Endorblast.MasterServer\bin\Debug\netcoreapp3.1\Content\Sprites\Tilesets\GameArea\Enviorment2.tsx
 D:\Github\AnimeEngine2D\project\Endorblast\Endorblast.MasterServer\bin\Debug\netcoreapp3.1\Content\Sprites\Tilesets\GameArea\EnviormentTest.png
 D:\Github\AnimeEngine2D\project\Endorblast\Endorblast.MasterServer\bin\Debug\netcoreapp3.1\Content\Sprites\Tilesets\GameArea\GameStart.tmx
-D:\Github\AnimeEngine2D\project\Endorblast\Endorblast.MasterServer\bin\Debug\netcoreapp3.1\Content\Sprites\Tilesets\GameArea\Grass1.aseprite
-D:\Github\AnimeEngine2D\project\Endorblast\Endorblast.MasterServer\bin\Debug\netcoreapp3.1\Content\Sprites\Tilesets\GameArea\GrassAndBushes.aseprite
 D:\Github\AnimeEngine2D\project\Endorblast\Endorblast.MasterServer\bin\Debug\netcoreapp3.1\Content\Sprites\Tilesets\GameArea\House1.png
 D:\Github\AnimeEngine2D\project\Endorblast\Endorblast.MasterServer\bin\Debug\netcoreapp3.1\Content\Sprites\Tilesets\GameArea\IndoorObjects.tsx
 D:\Github\AnimeEngine2D\project\Endorblast\Endorblast.MasterServer\bin\Debug\netcoreapp3.1\Content\Sprites\Tilesets\GameArea\obj_indoors.png
@@ -614,3 +612,10 @@ D:\Github\AnimeEngine2D\project\Endorblast\Endorblast.MasterServer\obj\Debug\net
 D:\Github\AnimeEngine2D\project\Endorblast\Endorblast.MasterServer\obj\Debug\netcoreapp3.1\Endorblast.MasterServer.pdb
 D:\Github\AnimeEngine2D\project\Endorblast\Endorblast.MasterServer\obj\Debug\netcoreapp3.1\Endorblast.MasterServer.genruntimeconfig.cache
 D:\Github\AnimeEngine2D\project\Endorblast\Endorblast.MasterServer\bin\Debug\netcoreapp3.1\Content\Sprites\Player\Races\Werewolf\Female\Idle.png
+D:\Github\AnimeEngine2D\project\Endorblast\Endorblast.MasterServer\bin\Debug\netcoreapp3.1\Content\Data\Maps\GameStart.tmx
+D:\Github\AnimeEngine2D\project\Endorblast\Endorblast.MasterServer\bin\Debug\netcoreapp3.1\Content\Data\Maps\Snowlands.tmx
+D:\Github\AnimeEngine2D\project\Endorblast\Endorblast.MasterServer\bin\Debug\netcoreapp3.1\Content\Data\Maps\StartMenu.ldtk
+D:\Github\AnimeEngine2D\project\Endorblast\Endorblast.MasterServer\bin\Debug\netcoreapp3.1\Content\Data\Maps\StartMenu\tiled\Level.tmx
+D:\Github\AnimeEngine2D\project\Endorblast\Endorblast.MasterServer\bin\Debug\netcoreapp3.1\Content\Data\Maps\StartMenu\tiled\StartMenu.world
+D:\Github\AnimeEngine2D\project\Endorblast\Endorblast.MasterServer\bin\Debug\netcoreapp3.1\Content\Sprites\Player\Races\Human\Female\Old_Idle.png
+D:\Github\AnimeEngine2D\project\Endorblast\Endorblast.MasterServer\bin\Debug\netcoreapp3.1\Content\Sprites\Player\Races\Human\Female\Slide.png

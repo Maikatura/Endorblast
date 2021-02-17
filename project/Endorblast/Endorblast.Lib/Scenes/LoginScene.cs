@@ -18,7 +18,7 @@ namespace Endorblast.Lib.Scenes
             base.OnStart();
 
             SceneManager.LoadLoginBG(this);
-            LoginUI.Init(this);
+            LoginUI.StartMenu(this);
         }
 
         public override void Unload()

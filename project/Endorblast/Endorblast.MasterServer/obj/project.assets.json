@@ -5884,11 +5884,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.MasterServer\\Endorblast.MasterServer.csproj",
+      "projectUniqueName": "D:\\Github\\EndorblastDevlogs\\Endorblast\\project\\Endorblast\\Endorblast.MasterServer\\Endorblast.MasterServer.csproj",
       "projectName": "Endorblast.MasterServer",
-      "projectPath": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.MasterServer\\Endorblast.MasterServer.csproj",
+      "projectPath": "D:\\Github\\EndorblastDevlogs\\Endorblast\\project\\Endorblast\\Endorblast.MasterServer\\Endorblast.MasterServer.csproj",
       "packagesPath": "C:\\Users\\zyro\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.MasterServer\\obj\\",
+      "outputPath": "D:\\Github\\EndorblastDevlogs\\Endorblast\\project\\Endorblast\\Endorblast.MasterServer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\zyro\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5905,8 +5905,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj": {
-              "projectPath": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj"
+            "D:\\Github\\EndorblastDevlogs\\Endorblast\\project\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj": {
+              "projectPath": "D:\\Github\\EndorblastDevlogs\\Endorblast\\project\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj"
             }
           }
         }

@@ -52,10 +52,26 @@
             <e p="CheatValidation.cs" t="Include" />
             <e p="ServerSnapshot.cs" t="Include" />
           </e>
-          <e p="ConsoleHelper.cs" t="Include" />
+          <e p="Database" t="Include">
+            <e p="Database.cs" t="Include" />
+            <e p="DatabaseSettings.cs" t="Include" />
+            <e p="DataCmd" t="Include">
+              <e p="Login" t="Include">
+                <e p="AccountLoginCmd.cs" t="Include" />
+                <e p="AccountPasswordCheckCmd.cs" t="Include" />
+                <e p="LoadAccountInfoCmd.cs" t="Include" />
+                <e p="LoadCharactersDBCmd.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="DataCmd" t="Include">
+            <e p="ConnectionDataCmd.cs" t="Include" />
+            <e p="SendToLoginCmd.cs" t="Include" />
+          </e>
           <e p="Game" t="Include">
             <e p="CharacterManager.cs" t="Include" />
             <e p="Entities" t="Include">
+              <e p="Player.cs" t="Include" />
               <e p="ServerNPC.cs" t="Include" />
             </e>
             <e p="Map.cs" t="Include" />
@@ -64,6 +80,14 @@
           </e>
           <e p="GameLogic.cs" t="Include" />
           <e p="GameServerScript.cs" t="Include" />
+          <e p="Login" t="Include">
+            <e p="NetCmd" t="Include">
+              <e p="LoginCmd.cs" t="Include" />
+              <e p="LoginFailedCmd.cs" t="Include" />
+              <e p="LoginGameServerCmd.cs" t="Include" />
+              <e p="LoginSuccessCmd.cs" t="Include" />
+            </e>
+          </e>
           <e p="Network" t="Include">
             <e p="Commands" t="Include">
               <e p="Login" t="Include">
@@ -91,9 +115,24 @@
       </e>
       <e p="Endorblast.Lib" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="BoxHelper.cs" t="Include" />
         <e p="Class1.cs" t="Include" />
+        <e p="ConsoleHelper.cs" t="Include" />
         <e p="Content" t="Include">
           <e p="Addons" t="Include" />
+          <e p="Data" t="Include">
+            <e p="Maps" t="Include">
+              <e p="GameStart.tmx" t="Include" />
+              <e p="Snowlands.tmx" t="Include" />
+              <e p="StartMenu" t="Include">
+                <e p="Tiled" t="Include">
+                  <e p="Level.tmx" t="Include" />
+                  <e p="StartMenu.world" t="Include" />
+                </e>
+              </e>
+              <e p="StartMenu.ldtk" t="Include" />
+            </e>
+          </e>
           <e p="Effects" t="Include">
             <e p="Test" t="Include">
               <e p="Fire Pole.ase" t="Include" />
@@ -278,7 +317,9 @@
                   <e p="Female" t="Include">
                     <e p="BasicAttack.png" t="Include" />
                     <e p="Idle.png" t="Include" />
+                    <e p="Old_Idle.png" t="Include" />
                     <e p="Running.png" t="Include" />
+                    <e p="Slide.png" t="Include" />
                   </e>
                   <e p="Male" t="Include">
                     <e p="BasicAttack.png" t="Include" />
@@ -312,8 +353,6 @@
                 <e p="Enviorment2.tsx" t="Include" />
                 <e p="EnviormentTest.png" t="Include" />
                 <e p="GameStart.tmx" t="Include" />
-                <e p="Grass1.aseprite" t="Include" />
-                <e p="GrassAndBushes.aseprite" t="Include" />
                 <e p="House1.png" t="Include" />
                 <e p="IndoorObjects.tsx" t="Include" />
                 <e p="obj_indoors.png" t="Include" />
@@ -350,6 +389,8 @@
         <e p="ContentLoader.cs" t="Include" />
         <e p="ContentPath.cs" t="Include" />
         <e p="Data" t="Include">
+          <e p="AccountInfo.cs" t="Include" />
+          <e p="CharacterSelectionData.cs" t="Include" />
           <e p="GameServerInfo.cs" t="Include" />
           <e p="Skills.json" t="Include" />
         </e>
@@ -363,6 +404,7 @@
           <e p="MasterPacket.cs" t="Include" />
           <e p="NetworkState.cs" t="Include" />
           <e p="Packets.cs" t="Include" />
+          <e p="PlayerEnums.cs" t="Include" />
           <e p="ServerType.cs" t="Include" />
           <e p="SkillTypes.cs" t="Include" />
         </e>
@@ -392,6 +434,7 @@
             </e>
             <e p="PortalScript.cs" t="Include" />
             <e p="Scene" t="Include" />
+            <e p="Zoom.cs" t="Include" />
           </e>
           <e p="Entities" t="Include">
             <e p="Enemies" t="Include">
@@ -458,6 +501,7 @@
           <e p="InventoryUI.cs" t="Include" />
           <e p="LoginUI.cs" t="Include" />
           <e p="ServerSelectionUI.cs" t="Include" />
+          <e p="SettingsUI.cs" t="Include" />
           <e p="Slot.cs" t="Include" />
         </e>
         <e p="Network" t="Include">
@@ -506,7 +550,6 @@
           </e>
         </e>
         <e p="OLD" t="Include">
-          <e p="Player.cs" t="Include" />
           <e p="PlayerSettings.cs" t="Include" />
         </e>
         <e p="Scenes" t="Include">
@@ -524,27 +567,7 @@
       </e>
       <e p="Endorblast.MasterServer" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Database" t="Include">
-          <e p="Database.cs" t="Include" />
-          <e p="DatabaseSettings.cs" t="Include" />
-          <e p="DataCmd" t="Include">
-            <e p="LoginDBCmd.cs" t="Include" />
-          </e>
-        </e>
-        <e p="DataCmd" t="Include">
-          <e p="ConnectionDataCmd.cs" t="Include" />
-          <e p="SendToLoginCmd.cs" t="Include" />
-        </e>
         <e p="Endorblast.MasterServer.csproj" t="IncludeRecursive" />
-        <e p="Login" t="Include">
-          <e p="LoginServerScript.cs" t="Include" />
-          <e p="NetCmd" t="Include">
-            <e p="LoginCmd.cs" t="Include" />
-            <e p="LoginFailedCmd.cs" t="Include" />
-            <e p="LoginGameServerCmd.cs" t="Include" />
-            <e p="LoginSuccessCmd.cs" t="Include" />
-          </e>
-        </e>
         <e p="MasterServerScript.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -836,6 +859,7 @@
           </e>
           <e p="Scene.cs" t="Include" />
           <e p="SceneComponent.cs" t="Include" />
+          <e p="SceneHeadless.cs" t="Include" />
           <e p="ScreenSpaceCamera.cs" t="Include" />
           <e p="Transform.cs" t="Include" />
         </e>

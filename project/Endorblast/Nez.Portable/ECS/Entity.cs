@@ -17,6 +17,9 @@ namespace Nez
 		/// the scene this entity belongs to
 		/// </summary>
 		public Scene Scene;
+		
+
+		public SceneHeadless SceneHeadless;
 
 		/// <summary>
 		/// entity name. useful for doing scene-wide searches for an entity
@@ -231,6 +234,12 @@ namespace Nez
 				_tag = tag;
 				if (Scene != null)
 					Scene.Entities.AddToTagList(this);
+				
+				if (SceneHeadless != null)
+					SceneHeadless.Entities.RemoveFromTagList(this);
+				_tag = tag;
+				if (SceneHeadless != null)
+					SceneHeadless.Entities.AddToTagList(this);
 			}
 
 			return this;
@@ -271,6 +280,12 @@ namespace Nez
 					Scene.Entities.MarkEntityListUnsorted();
 					Scene.Entities.MarkTagUnsorted(Tag);
 				}
+
+				if (SceneHeadless != null)
+				{
+					SceneHeadless.Entities.MarkEntityListUnsorted();
+					SceneHeadless.Entities.MarkTagUnsorted(Tag);
+				}
 			}
 
 			return this;
@@ -285,7 +300,16 @@ namespace Nez
 		public void Destroy()
 		{
 			_isDestroyed = true;
-			Scene.Entities.Remove(this);
+			if (Scene != null)
+			{
+				Scene.Entities.Remove(this);
+			}
+			
+			if (SceneHeadless != null)
+			{
+				SceneHeadless.Entities.Remove(this);
+			}
+			
 			Transform.Parent = null;
 
 			// destroy any children we have
@@ -303,7 +327,16 @@ namespace Nez
 		/// </summary>
 		public void DetachFromScene()
 		{
-			Scene.Entities.Remove(this);
+			if (Scene != null)
+			{
+				Scene.Entities.Remove(this);
+			}
+			
+			if (SceneHeadless != null)
+			{
+				SceneHeadless.Entities.Remove(this);
+			}
+			
 			Components.DeregisterAllComponents();
 
 			for (var i = 0; i < Transform.ChildCount; i++)
@@ -317,6 +350,16 @@ namespace Nez
 		public void AttachToScene(Scene newScene)
 		{
 			Scene = newScene;
+			newScene.Entities.Add(this);
+			Components.RegisterAllComponents();
+
+			for (var i = 0; i < Transform.ChildCount; i++)
+				Transform.GetChild(i).Entity.AttachToScene(newScene);
+		}
+		
+		public void AttachToScene(SceneHeadless newScene)
+		{
+			SceneHeadless = newScene;
 			newScene.Entities.Add(this);
 			Components.RegisterAllComponents();
 
@@ -394,7 +437,7 @@ namespace Nez
 		/// called each frame as long as the Entity is enabled
 		/// </summary>
 		public virtual void Update() => Components.Update();
-
+		
 		/// <summary>
 		/// called if Core.debugRenderEnabled is true by the default renderers. Custom renderers can choose to call it or not.
 		/// </summary>

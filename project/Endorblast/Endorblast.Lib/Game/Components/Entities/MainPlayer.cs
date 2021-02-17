@@ -173,6 +173,8 @@ namespace Endorblast.Lib.Entities
 
         }
 
+        
+
         void SkillInputs()
         {
             if (currentSkill != null)
@@ -190,11 +192,6 @@ namespace Endorblast.Lib.Entities
                     if (Input.IsKeyDown(Keys.D2))
                     {
                         DoSkill(SkillType.Dash, this, rotation);
-                    }
-
-                    if (Input.IsKeyDown(Keys.Space) && collisionState.Below)
-                    {
-                        DoSkill(SkillType.Jump, this, rotation);
                     }
 
                     if (Mouse.GetState().LeftButton == ButtonState.Pressed)

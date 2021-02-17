@@ -42,6 +42,11 @@ namespace Nez
 		public static bool DebugRenderEnabled = false;
 
 		/// <summary>
+		/// enables/disables running without window
+		/// </summary>
+		public static bool Headless = false;
+
+		/// <summary>
 		/// global access to the graphicsDevice
 		/// </summary>
 		public new static GraphicsDevice GraphicsDevice;
@@ -50,6 +55,8 @@ namespace Nez
 		/// global content manager for loading any assets that should stick around between scenes
 		/// </summary>
 		public new static NezContentManager Content;
+		
+		
 
 		/// <summary>
 		/// default SamplerState used by Materials. Note that this must be set at launch! Changing it after that time will result in only
@@ -106,7 +113,7 @@ namespace Nez
 		CoroutineManager _coroutineManager = new CoroutineManager();
 		TimerManager _timerManager = new TimerManager();
 
-
+		
 		/// <summary>
 		/// The currently active Scene. Note that if set, the Scene will not actually change until the end of the Update
 		/// </summary>

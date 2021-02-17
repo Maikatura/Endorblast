@@ -13,6 +13,7 @@ namespace Endorblast.Lib.Game.Player.Races
         public Sprite[] idle;
         public Sprite[] walking;
         public Sprite[] basicAttack;
+        public Sprite[] slide;
         
         // Customization // Does nothing right now.
         public Color hairColor;

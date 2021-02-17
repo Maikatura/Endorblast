@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Net;
 using System.Threading;
+using Endorblast.GameServer.Entities;
 using Endorblast.GameServer.NetworkCmd;
+using Endorblast.GameServer.Server;
 using Endorblast.Lib.Enums;
 using Lidgren.Network;
 
@@ -9,9 +11,6 @@ namespace Endorblast.GameServer
 {
     class GameServerScript
     {
-        
-        
-        
         private static GameServerScript instance = new GameServerScript();
         public static GameServerScript Instance
         {
@@ -60,13 +59,20 @@ namespace Endorblast.GameServer
             return msg;
         }
 
-
-
         public NetOutgoingMessage CreateWorldMessage() => CWM();
         NetOutgoingMessage CWM()
         {
             var msg = server.CreateMessage();
             msg.Write((byte)PacketType.World);
+            return msg;
+        }
+
+        public NetOutgoingMessage CreateLoginMessage() => CLM();
+
+        NetOutgoingMessage CLM()
+        {
+            var msg = server.CreateMessage();
+            msg.Write((byte)PacketType.Login);
             return msg;
         }
 
@@ -79,37 +85,36 @@ namespace Endorblast.GameServer
         public void Start()
         {
             masterServerEndpoint =
-                NetUtility.Resolve("localhost", Lib.Network.ServerSettings.masterServerPort);
+                NetUtility.Resolve("127.0.0.1", Lib.Network.ServerSettings.masterServerPort);
             
             NetPeerConfiguration config = new NetPeerConfiguration("game");
             config.SetMessageTypeEnabled(NetIncomingMessageType.NatIntroductionSuccess, true);
             config.Port = 5558;
             
-            System.Threading.Thread.Sleep(5000);
-            Console.WriteLine("### Starting Game Server in 5 seconds");
             
+            
+            
+            var lastRegistered = -60.0f;
+
             
             
             TimeLogic.Instance.Init();
             
             
-
+            
             context = new SynchronizationContext();
             server = new NetServer(config);
+            
+            
             
             server.RegisterReceivedCallback(NetworkLoop, context);
             server.Start();
             
-            
-            
-        }
-
-        private void NetworkLoop(object o)
-        {
+            Console.WriteLine("### Starting Game Server in 5 seconds");
+            System.Threading.Thread.Sleep(5000);
             
             while(Console.KeyAvailable == false || Console.ReadKey().Key != ConsoleKey.Escape)
             {
-                // (re-)register periodically with master server
                 if (NetTime.Now > lastRegistered + 60)
                 {
                     // register with master server
@@ -118,28 +123,19 @@ namespace Endorblast.GameServer
                     IPAddress mask;
                     IPAddress adr = NetUtility.GetMyAddress(out mask);
                     regMsg.Write(server.UniqueIdentifier);
-                    regMsg.Write(new IPEndPoint(adr, 14242));
+                    regMsg.Write(new IPEndPoint(adr, 5558));
                     Console.WriteLine("Sending registration to master server");
                     server.SendUnconnectedMessage(regMsg, masterServerEndpoint);
                     lastRegistered = (float)NetTime.Now;
                 }
-
-                NetIncomingMessage inc;
-                while ((inc = server.ReadMessage()) != null)
-                {
-                    switch (inc.MessageType)
-                    {
-                        case NetIncomingMessageType.VerboseDebugMessage:
-                        case NetIncomingMessageType.DebugMessage:
-                        case NetIncomingMessageType.WarningMessage:
-                        case NetIncomingMessageType.ErrorMessage:
-                            Console.WriteLine(inc.ReadString());
-                            break;
-                    }
-                }
-
-                System.Threading.Thread.Sleep(1);
+                
             }
+        }
+
+        private void NetworkLoop(object o)
+        {
+            
+            
             
             NetIncomingMessage message;
             while ((message = server.ReadMessage()) != null)
@@ -148,11 +144,9 @@ namespace Endorblast.GameServer
                 {
                     case NetIncomingMessageType.Data:
                         // handle custom messages
-                        new ServerDataCmd().Receive(message);
+                        
                         break;
-
                     case NetIncomingMessageType.StatusChanged:
-
                         switch (message.SenderConnection.Status)
                         {
                             case NetConnectionStatus.Connected:
@@ -164,10 +158,13 @@ namespace Endorblast.GameServer
                                 break;
                         }
                         break;
-
                     case NetIncomingMessageType.DebugMessage:
                         // handle debug messages
                         // (only received when compiled in DEBUG mode)
+                        Console.WriteLine(message.ReadString());
+                        break;
+                    case NetIncomingMessageType.ErrorMessage:
+                        // print diagnostics message
                         Console.WriteLine(message.ReadString());
                         break;
                     /* .. */

@@ -487,11 +487,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj",
+      "projectUniqueName": "D:\\Github\\EndorblastDevlogs\\Endorblast\\project\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj",
       "projectName": "Endorblast.Lib",
-      "projectPath": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj",
+      "projectPath": "D:\\Github\\EndorblastDevlogs\\Endorblast\\project\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj",
       "packagesPath": "C:\\Users\\zyro\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.Lib\\obj\\",
+      "outputPath": "D:\\Github\\EndorblastDevlogs\\Endorblast\\project\\Endorblast\\Endorblast.Lib\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\zyro\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -508,8 +508,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj": {
-              "projectPath": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj"
+            "D:\\Github\\EndorblastDevlogs\\Endorblast\\project\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj": {
+              "projectPath": "D:\\Github\\EndorblastDevlogs\\Endorblast\\project\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj"
             }
           }
         }

@@ -1,4 +1,6 @@
-﻿using Endorblast.Lib.Network;
+﻿using System;
+using System.Net.Mime;
+using Endorblast.Lib.Network;
 using Microsoft.Xna.Framework;
 using Nez;
 using Nez.Textures;
@@ -17,6 +19,46 @@ namespace Endorblast.Lib.GUI
 
         static TextButton button;
 
+
+        public static void StartMenu(Scene scene)
+        {
+            Entity UI = scene.CreateEntity("StartMenu");
+            canvas = UI.AddComponent(new UICanvas());
+            canvas.SetRenderLayer(RenderLayers.UILayer1);
+
+            table = canvas.Stage.AddElement(new Table());
+            insideBox = canvas.Stage.AddElement(new Table());
+
+            table.SetFillParent(true);
+            insideBox.SetFillParent(true);
+            
+            button = new TextButton("Start", TextButtonStyle.Create(Color.Black, Color.Gray, Color.DarkGray));
+            var settingsButton = new TextButton("Settings", TextButtonStyle.Create(Color.Black, Color.Gray, Color.DarkGray));
+            var exitButton = new TextButton("Exit", TextButtonStyle.Create(Color.Black, Color.Gray, Color.DarkGray));
+            
+            button.OnClicked += button => StartGameLogin();
+            settingsButton.OnClicked += settingBitton => SettingsUI.Init(insideBox);
+            exitButton.OnClicked += exitBitton => Core.Exit();
+            
+            button.GetLabel().SetFontScale(2, 2);
+            settingsButton.GetLabel().SetFontScale(2, 2);
+            exitButton.GetLabel().SetFontScale(2, 2);
+            
+            insideBox.Add(button).Width(200).Height(30);
+            insideBox.Row();
+            insideBox.Add(settingsButton).Width(200).Height(30).SetPadTop(3);
+            insideBox.Row();
+            insideBox.Add(exitButton).Width(200).Height(30).SetPadTop(3);
+            table.AddElement(insideBox);
+            
+        }
+
+
+        private static void StartGameLogin()
+        {
+            NetworkManager.Instance.GetServerList(ServerSettings.host);
+        }
+        
         public static void Init(Scene scene)
         {
             Entity UI = scene.CreateEntity("LoginMenu");

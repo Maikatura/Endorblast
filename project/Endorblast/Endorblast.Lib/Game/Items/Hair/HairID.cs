@@ -14,8 +14,8 @@ namespace Endorblast.Lib
 
         public static bool Init()
         {
-            hairID.Add(0, new BaldHair(  0, "Bald"));
-            hairID.Add(1, new HairNormal(1, "Pink Horns"));
+            hairID.Add(1, new BaldHair(  0, "Bald"));
+            hairID.Add(2, new HairNormal(1, "Pink Horns"));
 
 
             return true;

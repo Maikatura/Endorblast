@@ -13,6 +13,6 @@ namespace Endorblast
         public static EnemyManager Instance => instance;
 
 
-        public List<Player> List = new List<Player>();
+        //public List<Player> List = new List<Player>();
     }
 }

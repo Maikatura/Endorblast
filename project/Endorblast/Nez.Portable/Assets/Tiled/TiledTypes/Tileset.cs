@@ -27,6 +27,9 @@ namespace Nez.Tiled
 
 		public void Update()
 		{
+			if (Map.Headless)
+				return;
+			
 			foreach (var kvPair in Tiles)
 				kvPair.Value.UpdateAnimatedTiles();
 		}

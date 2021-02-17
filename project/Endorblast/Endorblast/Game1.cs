@@ -1,5 +1,4 @@
 ﻿using Endorblast.Lib;
-using Microsoft.Xna.Framework.Graphics;
 using Nez;
 using System;
 using Endorblast.Lib.Discord;
@@ -17,6 +16,8 @@ namespace Endorblast
             IsFixedTimeStep = true;
             PauseOnFocusLost = false;
             DebugRenderEnabled = false;
+            
+           
 
             manager = new GameManager();
             Console.ForegroundColor = System.ConsoleColor.DarkYellow;
@@ -29,11 +30,10 @@ namespace Endorblast
             // Init Window stuff
             base.Initialize();
             Screen.SetSize(1280, 720);
-            DefaultSamplerState = SamplerState.PointClamp;
-
+            
             // Init Important Stuff
             DiscordRpc.NewInstance();
-            NetworkManager.Instance.Connect();
+            NetworkManager.Instance.Start();
             Endorblast.Lib.ContentLoader.Init(Core.Content);
             DiscordRpc.Instance.Init();
             

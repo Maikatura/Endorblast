@@ -38,7 +38,7 @@ namespace Endorblast.Lib.Network
         {
             var list = new List<StaticCharacter>();
             NetworkManager.Instance.WorldID = msg.ReadInt32();
-            PlayerManager.Instance.Player.WorldID = NetworkManager.Instance.WorldID;
+            //PlayerManager.Instance.Player.WorldID = NetworkManager.Instance.WorldID;
 
             int count = msg.ReadInt32();
             for (int i = 0; i < count; i++)

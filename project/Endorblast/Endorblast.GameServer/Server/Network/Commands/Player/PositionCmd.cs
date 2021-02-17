@@ -1,5 +1,6 @@
 ﻿using System;
 using Endorblast.GameServer.Server;
+using Endorblast.Lib;
 using Endorblast.Lib.Entities;
 using Lidgren.Network;
 using Endorblast.Lib.Enums;
@@ -13,7 +14,7 @@ namespace Endorblast.GameServer.NetworkCmd
         {
             float x = inc.ReadFloat();
             float y = inc.ReadFloat();
-            PlayerMoveState state = (PlayerMoveState)inc.ReadByte();
+            MoveState state = (MoveState)inc.ReadByte();
 
             var player = MapManager.Instance.GetPlayer(inc.SenderConnection);
 
@@ -25,7 +26,7 @@ namespace Endorblast.GameServer.NetworkCmd
         }
         
 
-        private void Send(int worldId, float x, float y, PlayerMoveState state)
+        private void Send(int worldId, float x, float y, MoveState state)
         {
             var list = MapManager.Instance.GetConnections(worldId);
 

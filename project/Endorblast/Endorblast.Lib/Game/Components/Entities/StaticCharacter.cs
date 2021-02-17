@@ -48,18 +48,20 @@ namespace Endorblast.Lib.Entities
             return bp;
         }
 
-        public ServerCharacter ToServerPlayer()
-        {
-            var sc = new ServerCharacter();
-
-            sc.connection = connection;
-            sc.AccountName = AccountName;
-            sc.CharacterName = CharacterName;
-            sc.playerID = PlayerID;
-            sc.WorldID = WorldID;
-
-            return sc;
-        }
+        // public Player ToServerPlayer()
+        // {
+        //     var sc = new Player();
+        //
+        //     
+        //     sc.AccountName = AccountName;
+        //     sc.CharacterName = CharacterName;
+        //     sc.playerID = PlayerID;
+        //     sc.WorldID = WorldID;
+        //
+        //     return sc;
+        // }
 
     }
+
+    
 }

@@ -26,7 +26,7 @@ namespace Endorblast.Lib.Game.Network
                 return;
 
             int worldID = msg.ReadInt32();
-            PlayerMoveState state = (PlayerMoveState)msg.ReadByte();
+            MoveState state = (MoveState)msg.ReadByte();
             float time = msg.ReadFloat();
             float x = msg.ReadFloat();
             float y = msg.ReadFloat();
@@ -49,7 +49,7 @@ namespace Endorblast.Lib.Game.Network
         }
 
 
-        public void Send(PlayerMoveState state)
+        public void Send(MoveState state)
         {
             // NetOutgoingMessage outmsg = NetworkManager.Instance.CreateCharacterMessage();
             // outmsg.Write((byte)CharacterPacket.Data);

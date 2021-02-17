@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TfLRSkIB1nesq6XpfmFTK4kzkwSgFakJ2Ile8tYooBuaB9B7LhVBmL1VUpr1MaxGOZbfFHHnQ0C11Skk+EYkIg==",
+  "dgSpecHash": "r3dobyIojtJ4RAqA/hc5IfySpHpv3/bGU7lH1Z+Xi+fpdJSJlJmmJEcc1HEkpvA2GYNQou5LFKqN72BxAyMbIA==",
   "success": true,
-  "projectFilePath": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj",
+  "projectFilePath": "D:\\Github\\EndorblastDevlogs\\Endorblast\\project\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zyro\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\zyro\\.nuget\\packages\\microsoft.win32.systemevents\\4.5.0\\microsoft.win32.systemevents.4.5.0.nupkg.sha512",

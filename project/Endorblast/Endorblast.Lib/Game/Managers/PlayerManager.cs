@@ -20,7 +20,7 @@ namespace Endorblast.Lib
 
 
         public List<BasePlayer> Players = new List<BasePlayer>();
-        public Player Player;
+        //public Player Player;
 
         //double activityTimer = 20;
         public bool TimedOut;

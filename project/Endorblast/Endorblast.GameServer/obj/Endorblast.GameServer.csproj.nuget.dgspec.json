@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.GameServer\\Endorblast.GameServer.csproj": {}
+    "D:\\Github\\EndorblastDevlogs\\Endorblast\\project\\Endorblast\\Endorblast.GameServer\\Endorblast.GameServer.csproj": {}
   },
   "projects": {
-    "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.GameServer\\Endorblast.GameServer.csproj": {
+    "D:\\Github\\EndorblastDevlogs\\Endorblast\\project\\Endorblast\\Endorblast.GameServer\\Endorblast.GameServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.GameServer\\Endorblast.GameServer.csproj",
+        "projectUniqueName": "D:\\Github\\EndorblastDevlogs\\Endorblast\\project\\Endorblast\\Endorblast.GameServer\\Endorblast.GameServer.csproj",
         "projectName": "Endorblast.GameServer",
-        "projectPath": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.GameServer\\Endorblast.GameServer.csproj",
+        "projectPath": "D:\\Github\\EndorblastDevlogs\\Endorblast\\project\\Endorblast\\Endorblast.GameServer\\Endorblast.GameServer.csproj",
         "packagesPath": "C:\\Users\\zyro\\.nuget\\packages\\",
-        "outputPath": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.GameServer\\obj\\",
+        "outputPath": "D:\\Github\\EndorblastDevlogs\\Endorblast\\project\\Endorblast\\Endorblast.GameServer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\zyro\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj": {
-                "projectPath": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj"
+              "D:\\Github\\EndorblastDevlogs\\Endorblast\\project\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj": {
+                "projectPath": "D:\\Github\\EndorblastDevlogs\\Endorblast\\project\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj"
               }
             }
           }
@@ -43,6 +43,20 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.2, )"
+            },
+            "MonoGame.Framework.DesktopGL": {
+              "target": "Package",
+              "version": "[3.8.0.1641, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.23, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -62,14 +76,14 @@
         }
       }
     },
-    "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj": {
+    "D:\\Github\\EndorblastDevlogs\\Endorblast\\project\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj",
+        "projectUniqueName": "D:\\Github\\EndorblastDevlogs\\Endorblast\\project\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj",
         "projectName": "Endorblast.Lib",
-        "projectPath": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj",
+        "projectPath": "D:\\Github\\EndorblastDevlogs\\Endorblast\\project\\Endorblast\\Endorblast.Lib\\Endorblast.Lib.csproj",
         "packagesPath": "C:\\Users\\zyro\\.nuget\\packages\\",
-        "outputPath": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.Lib\\obj\\",
+        "outputPath": "D:\\Github\\EndorblastDevlogs\\Endorblast\\project\\Endorblast\\Endorblast.Lib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\zyro\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -86,8 +100,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj": {
-                "projectPath": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj"
+              "D:\\Github\\EndorblastDevlogs\\Endorblast\\project\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj": {
+                "projectPath": "D:\\Github\\EndorblastDevlogs\\Endorblast\\project\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj"
               }
             }
           }
@@ -130,14 +144,14 @@
         }
       }
     },
-    "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj": {
+    "D:\\Github\\EndorblastDevlogs\\Endorblast\\project\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj",
+        "projectUniqueName": "D:\\Github\\EndorblastDevlogs\\Endorblast\\project\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj",
         "projectName": "Nez",
-        "projectPath": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj",
+        "projectPath": "D:\\Github\\EndorblastDevlogs\\Endorblast\\project\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj",
         "packagesPath": "C:\\Users\\zyro\\.nuget\\packages\\",
-        "outputPath": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Nez.Portable\\obj\\Nez.Monogame.Standard\\",
+        "outputPath": "D:\\Github\\EndorblastDevlogs\\Endorblast\\project\\Endorblast\\Nez.Portable\\obj\\Nez.Monogame.Standard\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\zyro\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Net;
 using Endorblast.Lib.GUI;
 using Endorblast.LoginServer.Data;
 using Endorblast.Lib.Discord;
@@ -7,9 +8,9 @@ namespace Endorblast.Lib.Scenes
 {
     class ServerScene : BaseScene
     {
-        private List<GameServerInfo> data;
+        private Dictionary<long, IPEndPoint[]> data;
 
-        public ServerScene(List<GameServerInfo> data)
+        public ServerScene( Dictionary<long, IPEndPoint[]> data)
         {
             this.data = data;
         }

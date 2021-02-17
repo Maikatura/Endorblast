@@ -3,34 +3,40 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Endorblast.Lib.Enums;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 using Nez;
 using Nez.Sprites;
 using Endorblast.Lib.Game.Network;
 using Lidgren.Network;
+using Nez.Tiled;
 
 namespace Endorblast.Lib
 {
+    
+    
+
+
     public class KeyboardInputComp : Component, IUpdatable
     {
+        public MoveState moveState;
+        public MovementActionState actionState;
+        public InputAction inputAction;
 
-
-        Keys dKey = Keys.D;
-        Keys aKey = Keys.A;
-        Keys space = Keys.Space;
-
-        public bool[] inputs;
-        public bool MoveLeft = false;
-        public bool MoveRight = false;
-        public bool isSprinting = false;
-        public bool isClient = true;
-        public bool isServer = true;
-        public bool isJumping = false;
-
+        Keys moveRightKey = Keys.D;
+        Keys moveLeftKey = Keys.A;
+        Keys jumpKey = Keys.Space;
+        Keys slideKey = Keys.LeftShift;
 
 
         Vector2 OldPosition;
+
+        private TiledMapMover.CollisionState collisionState;
+        
+        public bool IsMoving => 
+            moveState == MoveState.MoveLeft || 
+            moveState == MoveState.MoveRight;
 
         public bool OldPosIsPos =>
             Transform.Position.X == OldPosition.X &&
@@ -38,92 +44,80 @@ namespace Endorblast.Lib
 
         public KeyboardInputComp(bool isClient = true, bool isServer = false)
         {
-            this.isClient = isClient;
-            this.isServer = isServer;
-            isSprinting = false;
             Initialize();
         }
 
+        public void SetCollisionState(TiledMapMover.CollisionState coll)
+        {
+            collisionState = coll;
+        }
+
+        public void SetPlayerAction(MovementActionState state)
+        {
+            actionState = state;
+        }
+
+        public void SetInputAction(InputAction input)
+        {
+            inputAction = input;
+        }
+        
         public override void Initialize()
         {
-            inputs = new bool[]
-            {
-                Keyboard.GetState().IsKeyDown(dKey),
-                Keyboard.GetState().IsKeyDown(aKey),
-                Keyboard.GetState().IsKeyDown(space),
-            };
+            
         }
 
         public void Update()
         {
+            moveState = MoveState.None;
+
+            #region Movement Start
+            
+            if (Input.IsKeyDown(moveRightKey))
+                moveState = MoveState.MoveRight;
+            
+            if (Input.IsKeyDown(moveLeftKey))
+                moveState = MoveState.MoveLeft;
+
+            if (Input.IsKeyDown(moveLeftKey) && Input.IsKeyDown(moveRightKey))
+                moveState = MoveState.None;
+            
+            #endregion Movement End
+
+            #region Action Movement Start
+            
+            if (Input.IsKeyPressed(slideKey) && collisionState.Below && actionState == MovementActionState.None)
+                actionState = MovementActionState.Slide;
+
+            if ((collisionState.Right || collisionState.Left) && !collisionState.Below && actionState == MovementActionState.None)
+                actionState = MovementActionState.WallSlide; 
+            
+            
+            if ((collisionState.Right || collisionState.Left) && collisionState.Below && actionState == MovementActionState.WallSlide || 
+                (!collisionState.Right || !collisionState.Left) && collisionState.Below && actionState == MovementActionState.WallSlide)
+                actionState = MovementActionState.None;
+            
+            
+
+            #endregion Action Movement End
 
 
+            #region Input Actions - Stuff the require other stuff from: MovementActionState or MoveState
 
-            if (isClient)
-            {
+            
 
 
-                if (Keyboard.GetState().IsKeyDown(dKey))
-                {
-                    MoveRight = true;
-                }
-                else
-                {
-                    MoveRight = false;
-                }
+            if (Input.IsKeyDown(jumpKey) && collisionState.Below)
+                inputAction = InputAction.Jump;
+            
+            if (Input.IsKeyPressed(jumpKey) && (collisionState.Right || collisionState.Left) &&
+                !collisionState.Below && actionState == MovementActionState.WallSlide)
+                inputAction = InputAction.WallJump;
 
-                if (Keyboard.GetState().IsKeyDown(aKey))
-                {
-                    MoveLeft = true;
-                }
-                else
-                {
-                    MoveLeft = false;
-                }
 
-                if (Keyboard.GetState().IsKeyDown(Keys.LeftShift))
-                {
-                    isSprinting = true;
-                }
-                else
-                {
-                    isSprinting = false;
-                }
-
-                if (Keyboard.GetState().IsKeyDown(space))
-                {
-                    isJumping = true;
-                }
-                else
-                {
-                    isJumping = false;
-                }
-
-                
-                
-
-                
-                OldPosition = Transform.Position;
-            }
+            #endregion
 
 
         }
-
-        
-
-        public void SetInputs(KeyboardInputComp inputsComp)
-        {
-            if (!isClient || isServer)
-            {
-                this.MoveLeft = inputsComp.MoveLeft;
-                this.MoveRight = inputsComp.MoveRight;
-                this.isSprinting = inputsComp.isSprinting;
-                this.isJumping = inputsComp.isJumping;
-            }
-            
-            
-        }
-
     }
 }
-

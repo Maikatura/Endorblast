@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 using System.Threading;
+using Nez;
 
 namespace Endorblast.GameServer
 {
@@ -13,14 +14,15 @@ namespace Endorblast.GameServer
         /*
          * OWNER OF THIS CODE IS 'MONOGAME' ITS JUST HERE TO HAVE EXACT GAME TIME LOOP AS IN MONOGAME
          */
-        
+
+        public static float deltaTime;
         
         private static TimeLogic instance = new TimeLogic();
         public static TimeLogic Instance => instance;
 
         private bool _isFixedTimeStep = true;
 
-        private TimeSpan _targetElapsedTime = TimeSpan.FromTicks(1000000); // 60fps - 166667 : 10fps - 1000000
+        private TimeSpan _targetElapsedTime = TimeSpan.FromTicks(166667); // 60fps - 166667 : 10fps - 1000000
         private TimeSpan _inactiveSleepTime = TimeSpan.FromSeconds(0.02);
 
         private TimeSpan _maxElapsedTime = TimeSpan.FromMilliseconds(500);
@@ -65,8 +67,6 @@ namespace Endorblast.GameServer
             {
                 // Give GamePlatform implementations an opportunity to override
                 // the new value.
-
-
                 if (value <= TimeSpan.Zero)
                     throw new ArgumentOutOfRangeException(
                         "The time must be positive and non-zero.", default(Exception));
@@ -200,9 +200,11 @@ namespace Endorblast.GameServer
 
         void DoUpdate(GameTime gameTime)
         {
-            GameLogic.Instance.Update(gameTime);
+            deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
+            Time.ServerUpdate(deltaTime);
+            GameLogic.Instance.Update();
         }
-
-
     }
+    
+    
 }

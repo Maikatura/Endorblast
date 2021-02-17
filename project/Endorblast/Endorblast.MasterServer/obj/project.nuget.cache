@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WZ5aze+Et0IdTrNGbBSquoMtqp1dPG+ISKgBga83gJ7N4HIF/vc7b/DUuRCHW/+s8YgV1xUUpDFcodzBp4c+tg==",
+  "dgSpecHash": "QYinBdEXuvxEPhjzCJUeeF6TzQzCwJui/imsvWy6pYtMNswiK2DpQzuQjWkIh3dm+li6OqVED+HrmWRqp4y8Lw==",
   "success": true,
-  "projectFilePath": "D:\\Github\\AnimeEngine2D\\project\\Endorblast\\Endorblast.MasterServer\\Endorblast.MasterServer.csproj",
+  "projectFilePath": "D:\\Github\\EndorblastDevlogs\\Endorblast\\project\\Endorblast\\Endorblast.MasterServer\\Endorblast.MasterServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zyro\\.nuget\\packages\\bcrypt.net-next\\4.0.2\\bcrypt.net-next.4.0.2.nupkg.sha512",
     "C:\\Users\\zyro\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",

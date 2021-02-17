@@ -5,8 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Endorblast.Lib.Entities;
+using Endorblast.Lib.Enums;
 using Endorblast.Lib.GameObjects;
 using Microsoft.Xna.Framework;
+using Nez;
+using Nez.Tiled;
 
 namespace Endorblast.Lib
 {
@@ -21,27 +24,39 @@ namespace Endorblast.Lib
 
         public float X;
         public float Y;
-        public PlayerMoveState State;
+        public MoveState State;
+        
+        public TiledMapMover mover;
+        public TiledMapMover.CollisionState collisionState = new TiledMapMover.CollisionState();
+        public BoxCollider boxCollider;
 
-        public float velocity;
+        public Vector2 velocity;
 
-        public void Update(GameTime gameTime)
+        public void Update()
         {
             // Todo : Validate everything the player does!
             Console.WriteLine("LOL");
             
             
             
+            
+            
+            
         }
 
 
-        public void SetPosition(float x, float y, PlayerMoveState state)
+        public void SetPosition(float x, float y, MoveState state)
         {
             X = x;
             Y = y;
             State = state;
         }
-        
+
+
+        public void SetMap()
+        {
+            
+        }
         
         public StaticCharacter ToStaticCharacter()
         {

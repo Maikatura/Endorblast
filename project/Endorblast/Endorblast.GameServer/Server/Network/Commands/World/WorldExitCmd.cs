@@ -12,15 +12,15 @@ namespace Endorblast.GameServer.NetworkCmd
 
         public void Receive(NetIncomingMessage inc)
         {
-            StaticCharacter player = new StaticCharacter();
-            inc.ReadAllFields(player);
-            var sc = player.ToServerPlayer();
-
-            
-            MapManager.Instance.RemovePlayer(sc.connection);
-            
-            
-            Send(sc.WorldID, sc.playerID);
+            // StaticCharacter player = new StaticCharacter();
+            // inc.ReadAllFields(player);
+            // var sc = player.ToServerPlayer();
+            //
+            //
+            // MapManager.Instance.RemovePlayer(sc.connection);
+            //
+            //
+            // Send(sc.WorldID, sc.playerID);
         }
         
 

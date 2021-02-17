@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net;
 using Endorblast.Lib.Network;
 using Nez;
 using Endorblast.Lib.Scenes;
@@ -47,12 +48,13 @@ namespace Endorblast.Lib
         }
 
 
-        public void SetGameState(List<GameServerInfo> data)
+        public void SetGameState(CurrentGameState wantedGameState, Dictionary<long, IPEndPoint[]> data)
         {
-            LoadGameState(CurrentGameState.ServerMenu, null, data);
+            gameState = wantedGameState;
+            LoadGameState(gameState, null, data);
         }
 
-        private void LoadGameState(CurrentGameState gameStateToSet, List<DatabaseCharacter> charaSelect = null, List<GameServerInfo> data = null)
+        private void LoadGameState(CurrentGameState gameStateToSet, List<DatabaseCharacter> charaSelect = null, Dictionary<long, IPEndPoint[]> serverData = null)
         {
             if (Core.Scene == null)
             {
@@ -85,6 +87,7 @@ namespace Endorblast.Lib
                     LoadGameState();
                     break;
                 case CurrentGameState.ServerMenu:
+                    LoadServerMenu(serverData);
                     break;
                 default:
                     break;
@@ -122,9 +125,9 @@ namespace Endorblast.Lib
             //Core.Scene = new TownScene();
         }
 
-        private void LoadServerMenu(List<GameServerInfo> data)
+        private void LoadServerMenu(Dictionary<long, IPEndPoint[]> serverData)
         {
-            SceneTransist(new ServerScene(data));
+            SceneTransist(new ServerScene(serverData));
         }
 
         private void SceneTransist(Scene scene)

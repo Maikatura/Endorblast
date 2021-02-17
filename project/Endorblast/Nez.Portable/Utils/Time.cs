@@ -59,6 +59,16 @@ namespace Nez
 			FrameCount++;
 		}
 
+		public static void ServerUpdate(float dt)
+		{
+			TotalTime += dt;
+			DeltaTime = dt * TimeScale;
+			AltDeltaTime = dt * AltTimeScale;
+			UnscaledDeltaTime = dt;
+			TimeSinceSceneLoad += dt;
+			FrameCount++;
+		}
+
 
 		internal static void SceneChanged()
 		{

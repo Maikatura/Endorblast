@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Threading;
 using Endorblast.Lib.Network.Master;
+using Endorblast.Lib.Scenes;
 
 
 namespace Endorblast.Lib
@@ -40,11 +41,26 @@ namespace Endorblast.Lib
         
         public NetClient client;
         SynchronizationContext context;
-        public List<Player> players;
+        //public List<Player> players;
         public NetworkState State = NetworkState.None;
         
         public int ping = 0;
         public int oldPing = 0;
+        
+        private static IPEndPoint m_masterServer;
+        private static Dictionary<long, IPEndPoint[]> hostList;
+
+        public static Dictionary<long, IPEndPoint[]> HostList
+        {
+            get
+            {
+                return hostList;
+            }
+            private set
+            {
+                
+            }
+        }
         
         
         private static NetworkManager instance = new NetworkManager();
@@ -54,11 +70,8 @@ namespace Endorblast.Lib
             private set { return; }
         }
 
-        public void NewInstance()
+        public static void NewInstance()
         {
-            if (Instance.client.ConnectionStatus == NetConnectionStatus.Connected)
-                Instance.client.Disconnect("Bye");
-            
             instance = new NetworkManager();
         }
         
@@ -69,28 +82,69 @@ namespace Endorblast.Lib
 
             Console.WriteLine(ip);
             
-            context = new SynchronizationContext();
-            var c = new NetPeerConfiguration(configStr);
-            c.ResendHandshakeInterval = 4.75f;
-            c.MaximumHandshakeAttempts = 10;
             
-            client = new NetClient(c);
-            client.RegisterReceivedCallback(NetworkLoop, context);
-            client.Start();
             
             Connect(ip, port);
             
         }
 
-        public NetworkManager()
+        public void Start()
         {
+            hostList = new Dictionary<long, IPEndPoint[]>();
             
+            context = new SynchronizationContext();
+            var c = new NetPeerConfiguration("game");
+            c.EnableMessageType(NetIncomingMessageType.UnconnectedData);
+            c.EnableMessageType(NetIncomingMessageType.NatIntroductionSuccess);
+            
+            client = new NetClient(c);
+            client.RegisterReceivedCallback(NetworkLoop, context);
+            client.Start();
         }
 
         public void Connect(string IPAddress, int port)
         {
             NetOutgoingMessage hailMessage = client.CreateMessage("Yo wassup!");
             client.Connect(IPAddress, port, hailMessage);
+        }
+        
+        public void GetServerList(string masterServerAddress)
+        {
+            //
+            // Send request for server list to master server
+            //
+            m_masterServer = new IPEndPoint(NetUtility.Resolve(masterServerAddress), ServerSettings.masterServerPort);
+
+            NetOutgoingMessage listRequest = client.CreateMessage();
+            listRequest.Write((byte)MasterPacket.RequestHostList);
+            client.SendUnconnectedMessage(listRequest, m_masterServer);
+        }
+
+        public void RequestNATIntroduction(long hostid)
+        {
+            if (hostid == 0)
+            {
+                Console.WriteLine("Select a host in the list first");
+                return;
+            }
+
+            if (m_masterServer == null)
+                throw new Exception("Must connect to master server first!");
+
+            NetOutgoingMessage om = client.CreateMessage();
+            om.Write((byte)MasterPacket.RequestIntroduction);
+
+            // write my internal ipendpoint
+            IPAddress mask;
+            om.Write(new IPEndPoint(NetUtility.GetMyAddress(out mask), client.Port));
+
+            // write requested host id
+            om.Write(hostid);
+
+            // write token
+            om.Write("mytoken");
+
+            client.SendUnconnectedMessage(om, m_masterServer);
         }
 
         public NetOutgoingMessage CreateMessage => client.CreateMessage();
@@ -131,30 +185,35 @@ namespace Endorblast.Lib
             {
                 switch (message.MessageType)
                 {
-                    case NetIncomingMessageType.Data:
-                        ServerPacket packet = (ServerPacket) message.ReadByte();
-                        switch (packet)
-                        {
-                            case ServerPacket.Master:
-                                new MasterDataCmd().Read(message);
-                                break;
-                            case ServerPacket.Login:
-                                new LoginDataCmd().Read(message);
-                                break;
-                        }
-                        break;
-
-                    case NetIncomingMessageType.StatusChanged:
-                        Console.WriteLine("King");
-                        break;
-
+                    case NetIncomingMessageType.VerboseDebugMessage:
                     case NetIncomingMessageType.DebugMessage:
-                        Console.WriteLine("Debug");
                         Console.WriteLine(message.ReadString());
                         break;
-                    
-                    default:
-                        Console.WriteLine("unhandled message with type: " + message.MessageType);
+                    case NetIncomingMessageType.WarningMessage:
+                    case NetIncomingMessageType.ErrorMessage:
+                        //NativeMethods.AppendText(m_mainForm.richTextBox1, inc.ReadString());
+                        break;
+                    case NetIncomingMessageType.UnconnectedData:
+                        if (message.SenderEndPoint.Equals(m_masterServer))
+                        {
+                            // it's from the master server - must be a host
+                            var id = message.ReadInt64();
+                            var hostInternal = message.ReadIPEndPoint();
+                            var hostExternal = message.ReadIPEndPoint();
+		
+                            hostList[id] = new IPEndPoint[] { hostInternal, hostExternal };
+
+                            // update combo box
+                            StateManager.Instance.SetGameState(CurrentGameState.ServerMenu, hostList);
+                            
+                            foreach (var kvp in hostList)
+                                Console.WriteLine(kvp.Key.ToString() + " (" + kvp.Value[1] + ")");
+                            
+                        }
+                        break;
+                    case NetIncomingMessageType.NatIntroductionSuccess:
+                        string token = message.ReadString();
+                        Console.WriteLine("Nat introduction success to " + message.SenderEndPoint + " token is: " + token);
                         break;
                 }
             }

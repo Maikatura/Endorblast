@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
+using Microsoft.Xna.Framework;
 using Nez;
 using System.Collections.Generic;
 using Endorblast.Lib.Skills;
@@ -12,32 +13,32 @@ using Endorblast.Lib.Game;
 
 namespace Endorblast.Lib.Entities
 {
-    public enum PlayerMoveState
-    {
-        None,
-        MoveLeft,
-        MoveRight
-    }
-
     public class MoveBuffer
     {
-        public float time;                  // Server Time sent.
-        public float X;                     // Servers X Position of player
-        public float Y;                     // Servers Y Position of player
-        public PlayerMoveState state;       // What state the player should be in.
+        public float time; // Server Time sent.
+        public float X; // Servers X Position of player
+        public float Y; // Servers Y Position of player
+        public MoveState state; // What state the player should be in.
+        public MovementActionState MovementActionState;
     }
 
     public class BasePlayer : Component, IUpdatable
     {
-
-        public PlayerMoveState OldMoveState = PlayerMoveState.None;
-        public PlayerMoveState moveState = PlayerMoveState.None;
+        public MoveState OldMoveState = MoveState.None;
+        public MoveState moveState = MoveState.None;
+        public InputAction inputAction = InputAction.None;
+        private MovementActionState actionState = MovementActionState.None;
 
         public float moveSpeed = 100;
         public float defaultSpeed = 100;
         public float sprintSpeed = 250;
         public float gravity = 1000;
         public float jumpHeight = 16 * 7;
+        private float slideTimer = 0.3f;
+        private float slideTime = 0.3f;
+        private float slideForce;
+        private float slideDuration = 0.3f;
+
 
         public int currentLobbyId;
         public int WorldID;
@@ -47,13 +48,12 @@ namespace Endorblast.Lib.Entities
 
         public bool isMainPlayer = false;
         public bool skillButtonUp = true;
-        public bool currentDirection = true;
+        public FacingDirection currentDirection = FacingDirection.Right;
 
         public Vector2 OldPosition;
         public Vector2 latestDirection;
         public Vector2 direction;
         public Vector2 velocity;
-
 
 
         public NetConnection connection;
@@ -77,8 +77,7 @@ namespace Endorblast.Lib.Entities
         public MoveBuffer currentBuffer;
         public Skill skillBuffer = new Skill();
 
-
-        bool IsMoving => Key.MoveLeft || Key.MoveRight;
+        private float gravityScale = 1;
 
         public bool OldPosIsPos =>
             Transform.Position.X == OldPosition.X &&
@@ -94,8 +93,6 @@ namespace Endorblast.Lib.Entities
             Movement();
             SkillBuffer();
             currentSkill?.Update();
-            
-            
         }
 
         public void DoSkill(SkillType type, BasePlayer player, float rotation)
@@ -115,7 +112,6 @@ namespace Endorblast.Lib.Entities
         }
 
 
-
         public override void OnAddedToEntity()
         {
             InitComponents();
@@ -129,40 +125,28 @@ namespace Endorblast.Lib.Entities
             boxCollider.IsTrigger = true;
 
             Entity.Name = "Player";
-            
+
             AnimationsComp = Entity.AddComponent(new PlayerAnimationsComp());
             AnimationsComp.LoadSet(1);
             AnimationsComp.LoadHair(1);
-
-            
-            
         }
 
+        public void Jump()
+        {
+        }
 
         void KeyInput()
         {
             if (isMainPlayer)
             {
-                if (IsMoving)
-                {
-                    if (Key.MoveLeft)
-                    {
-                        moveState = PlayerMoveState.MoveRight;
-                    }
+                Key.SetCollisionState(collisionState);
+                moveState = Key.moveState;
+                actionState = Key.actionState;
+                inputAction = Key.inputAction;
+                
 
-                    if (Key.MoveRight)
-                    {
-                        moveState = PlayerMoveState.MoveLeft;
-                    }
-                }
-                else
+                if (Key.IsMoving)
                 {
-                    moveState = PlayerMoveState.None;
-                }
-
-                if (!OldPosIsPos)
-                {
-
                 }
             }
 
@@ -170,47 +154,86 @@ namespace Endorblast.Lib.Entities
             OldPosition = Transform.Position;
 
 
-            if (moveState == PlayerMoveState.MoveLeft)
+            switch (moveState)
             {
-                velocity.X = moveSpeed;
-                currentDirection = false;
-                AnimationsComp.AnimationHandler(PlayerState.Running, currentDirection);
+                case MoveState.MoveLeft:
+                    velocity.X = moveSpeed;
+                    currentDirection = FacingDirection.Left;
+                    AnimationsComp.AnimationHandler(PlayerState.Running, currentDirection);
+                    break;
+                case MoveState.MoveRight:
+                    velocity.X = moveSpeed;
+                    currentDirection = FacingDirection.Right;
+                    AnimationsComp.AnimationHandler(PlayerState.Running, currentDirection);
+                    break;
+                case MoveState.None:
+                    velocity.X = 0;
+                    AnimationsComp.AnimationHandler(PlayerState.Idle, currentDirection);
+                    break;
             }
-            else if (moveState == PlayerMoveState.MoveRight)
+
+            
+
+            
+
+            switch (inputAction)
             {
-                velocity.X = -moveSpeed;
-                currentDirection = true;
-                AnimationsComp.AnimationHandler(PlayerState.Running, currentDirection);
+                case InputAction.Jump:
+                    velocity.Y = -Mathf.Sqrt((2 * PlayerSettings.jumpHeight * PlayerSettings.gravity) / gravityScale);
+                    Key.SetInputAction(InputAction.None);
+                    break;
+                case InputAction.WallJump:
+                    Key.SetInputAction(InputAction.None);
+                    break;
             }
-            else if (moveState == PlayerMoveState.None)
+            
+            switch (actionState)
             {
-                velocity.X = 0;
-                AnimationsComp.AnimationHandler(PlayerState.Idle, currentDirection);
+                case MovementActionState.Slide:
+                    if (moveState == MoveState.None)
+                    {
+                        Key.SetPlayerAction(MovementActionState.None);
+                    }
+                    else
+                    {
+                        if (slideTimer >= 0)
+                        {
+                            AnimationsComp.AnimationHandler(PlayerState.Slide, currentDirection);
+                            slideTimer -= Time.DeltaTime;
+                            MoveCharacter(new Vector2(slideForce, 0));
+                            slideForce = Mathf.Lerp(0, PlayerSettings.SlideForce, slideTimer);
+                        }
+                        else
+                        {
+                            Key.SetPlayerAction(MovementActionState.None);
+                            slideTimer = slideTime;
+                        }
+                    }
+
+                    break;
             }
         }
+
+
 
         public void Movement()
         {
             velocity.Y += gravity * Time.DeltaTime;
-            mover.Move(velocity * Time.DeltaTime, boxCollider, collisionState);
+            MoveCharacter(velocity);
 
             if (collisionState.Right || collisionState.Left)
-            {
                 velocity.X = 0;
-            }
 
             if (collisionState.Below || collisionState.Above)
-            {
                 velocity.Y = 0;
-            }
         }
 
         public void MoveCharacter(Vector2 velocity)
         {
-            if (this.GetComponent<SpriteAnimator>().FlipX)
-                mover.Move(-velocity * Time.DeltaTime, boxCollider, collisionState);
+            if (currentDirection == FacingDirection.Left)
+                mover.Move(new Vector2(-velocity.X, velocity.Y) * Time.DeltaTime, boxCollider, collisionState);
             else
-                mover.Move(velocity * Time.DeltaTime, boxCollider, collisionState);
+                mover.Move(new Vector2(velocity.X, velocity.Y) * Time.DeltaTime, boxCollider, collisionState);
         }
 
 
@@ -226,7 +249,8 @@ namespace Endorblast.Lib.Entities
                 return;
 
 
-            if (Vector2.Distance(Transform.Position, new Vector2(currentBuffer.X, currentBuffer.Y)) > correctionThreashold)
+            if (Vector2.Distance(Transform.Position, new Vector2(currentBuffer.X, currentBuffer.Y)) >
+                correctionThreashold)
                 Transform.Position = new Vector2(currentBuffer.X, currentBuffer.Y);
 
             moveState = currentBuffer.state;
@@ -251,9 +275,6 @@ namespace Endorblast.Lib.Entities
             }
         }
 
-        
-
-
         public StaticCharacter ToStaticCharacter()
         {
             var lc = new StaticCharacter();
@@ -266,9 +287,9 @@ namespace Endorblast.Lib.Entities
 
             return lc;
         }
-
-        public BasePlayer() { }
-
+        public BasePlayer()
+        {
+        }
         public BasePlayer(string name, NetConnection con)
         {
             this.Name = name;

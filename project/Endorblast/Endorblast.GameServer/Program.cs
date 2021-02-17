@@ -1,4 +1,5 @@
 ﻿using System;
+using Nez.Tiled;
 
 namespace Endorblast.GameServer
 {
@@ -6,9 +7,14 @@ namespace Endorblast.GameServer
     {
         static void Main(string[] args)
         {
+        
+        
+            
+            
             GameServerScript.Instance.Start();
+            
+            
+            
         }
-
-
     }
 }

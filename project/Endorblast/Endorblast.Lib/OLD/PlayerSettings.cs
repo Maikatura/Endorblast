@@ -9,7 +9,11 @@
         public static float jumpForce = 3f;
         
         public static float gravity = 1000;
-        public static float jumpHeight = 16 * 7;
+        public static float jumpHeight = 16 * 5;
 
+
+        private static float slideForce = 25f;
+        
+        public static float SlideForce => slideForce * 30;
     }
 }

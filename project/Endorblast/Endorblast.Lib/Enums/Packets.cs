@@ -16,7 +16,7 @@ namespace Endorblast.Lib.Enums
         Character,
         Account,
         World,
-        
+        Login,
 
     }
 

@@ -22,6 +22,8 @@ namespace Nez.Tiled
         public Color BackgroundColor;
         public int? NextObjectID;
 
+        public bool Headless = false;
+
 		/// <summary>
 		/// contains all of the ITmxLayers, regardless of their specific type. Note that layers in a TmxGroup will not
 		/// be in this list. TmxGroup manages its own layers list.
@@ -56,8 +58,15 @@ namespace Nez.Tiled
         /// </summary>
         public void Update()
         {
-            foreach (var tileset in Tilesets)
-                tileset.Update();
+	        if (!Headless)
+				foreach (var tileset in Tilesets)
+					tileset.Update();
+        }
+
+
+        public void SetHeadless(bool trueorfalse)
+        {
+	        Headless = trueorfalse;
         }
 
 		#region IDisposable Support
@@ -85,6 +94,8 @@ namespace Nez.Tiled
 
 		#endregion
 	}
+	
+	
 
     public enum OrientationType
     {

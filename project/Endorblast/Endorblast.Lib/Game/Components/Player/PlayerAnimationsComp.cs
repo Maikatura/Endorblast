@@ -9,6 +9,7 @@ using Endorblast.Lib;
 using Nez.Textures;
 using Endorblast;
 using Endorblast.Lib.Entities;
+using Endorblast.Lib.Enums;
 using Endorblast.Lib.Game.Player.Races;
 
 namespace Endorblast.Lib
@@ -46,15 +47,17 @@ namespace Endorblast.Lib
             backHair = this.AddComponent(new SpriteAnimator());
 
             // What decides what race sprites.
-            sprites = new HumanMale();
+            sprites = new HumanFemale();
             
             SpriteAnimation walkAnim = new SpriteAnimation(sprites.walking, 10);
             SpriteAnimation idleAnim = new SpriteAnimation(sprites.idle, 10);
             SpriteAnimation basicAttackAnim = new SpriteAnimation(sprites.basicAttack, 10);
+            SpriteAnimation slideAnim = new SpriteAnimation(sprites.slide, 10);
 
             bodyRenderer.AddAnimation("Idle", idleAnim);
             bodyRenderer.AddAnimation("Walking", walkAnim);
             bodyRenderer.AddAnimation("BasicAttack", basicAttackAnim);
+            bodyRenderer.AddAnimation("Slide", slideAnim);
 
             int layer = RenderLayers.OtherPlayersLayer;
             if (this.HasComponent<MainPlayer>())
@@ -165,6 +168,11 @@ namespace Endorblast.Lib
                 case PlayerState.BasicAttack:
                     bodyRenderer.Play("BasicAttack", SpriteAnimator.LoopMode.Once);
                     break;
+                
+                case PlayerState.Slide:
+                    bodyRenderer.Play("Slide", SpriteAnimator.LoopMode.Loop);
+                    
+                    break;
 
                 default:
                     Console.WriteLine("### ERROR: Can't find animation type");
@@ -181,13 +189,13 @@ namespace Endorblast.Lib
             }
         }
 
-        public void AnimationHandler(PlayerState state, bool facingDir)
+        public void AnimationHandler(PlayerState state, FacingDirection facingDirection)
         {
             if (this.GetComponent<PlayerAnimationsComp>() != null)
             {
-                if (!facingDir && state == PlayerState.Running)
+                if (facingDirection == FacingDirection.Left && state == PlayerState.Running)
                 {
-                    ChangeAllRenderers(facingDir);
+                    ChangeAllRenderers(facingDirection);
 
                     if (this.GetComponent<PlayerAnimationsComp>().bodyRenderer.CurrentAnimationName != "Walking"
                         && this.GetComponent<PlayerAnimationsComp>().bodyRenderer.CurrentAnimationName != "BasicAttack")
@@ -198,9 +206,9 @@ namespace Endorblast.Lib
                     }
                 }
 
-                if (state == PlayerState.Running && facingDir)
+                if (facingDirection == FacingDirection.Right && state == PlayerState.Running)
                 {
-                    ChangeAllRenderers(facingDir);
+                    ChangeAllRenderers(facingDirection);
 
                     if (this.GetComponent<PlayerAnimationsComp>().bodyRenderer.CurrentAnimationName != "Walking"
                         && this.GetComponent<PlayerAnimationsComp>().bodyRenderer.CurrentAnimationName != "BasicAttack")
@@ -217,16 +225,28 @@ namespace Endorblast.Lib
                         this.GetComponent<PlayerAnimationsComp>().CheckAnimations(state);
                     }
                 }
+
+                if (state == PlayerState.Slide)
+                {
+                    this.GetComponent<PlayerAnimationsComp>().CheckAnimations(state);
+                }
             }
         }
 
-        void ChangeAllRenderers(bool facing)
+        void ChangeAllRenderers(FacingDirection facing)
         {
             SpriteAnimator[] renderers = this.GetComponents<SpriteAnimator>().ToArray();
 
             for (int i = 0; i < renderers.Length; i++)
             {
-                renderers[i].FlipX = facing;
+                if (facing == FacingDirection.Left)
+                {
+                    renderers[i].FlipX = true;
+                }
+                else
+                {
+                    renderers[i].FlipX = false;
+                }
             }
         }
     }

@@ -7,6 +7,8 @@ namespace Nez
 	public class EntityList
 	{
 		public Scene Scene;
+		
+		public SceneHeadless sceneHeadless;
 
 		/// <summary>
 		/// list of entities added to the scene
@@ -43,6 +45,13 @@ namespace Nez
 		{
 			Scene = scene;
 		}
+		
+		public EntityList(SceneHeadless scene)
+		{
+			sceneHeadless = scene;
+		}
+		
+		
 
 		#region array access
 
@@ -158,13 +167,16 @@ namespace Nez
 		}
 
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
-		internal void Update()
+		public void Update()
 		{
 			for (var i = 0; i < _entities.Length; i++)
 			{
+				
 				var entity = _entities.Buffer[i];
 				if (entity.Enabled && (entity.UpdateInterval == 1 || Time.FrameCount % entity.UpdateInterval == 0))
 					entity.Update();
+				
+					
 			}
 		}
 
@@ -183,6 +195,7 @@ namespace Nez
 					_entities.Remove(entity);
 					entity.OnRemovedFromScene();
 					entity.Scene = null;
+					entity.SceneHeadless = null;
 				}
 
 				_tempEntityList.Clear();
@@ -195,7 +208,18 @@ namespace Nez
 				foreach (var entity in _tempEntityList)
 				{
 					_entities.Add(entity);
-					entity.Scene = Scene;
+					if (Scene != null)
+					{
+						entity.Scene = Scene;
+					}
+					
+					if (sceneHeadless != null)
+					{
+						entity.SceneHeadless = sceneHeadless;
+					}
+					
+					
+					
 
 					// handle the tagList
 					AddToTagList(entity);

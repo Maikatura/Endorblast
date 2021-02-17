@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Endorblast.GameServer.Entities;
 using Endorblast.Lib;
 using Endorblast.Lib.Network;
 using Lidgren.Network;
@@ -13,7 +14,7 @@ namespace Endorblast.GameServer.Server
 
         public int currentPlayerId = 0;
         
-        public List<ServerCharacter> Characters = new List<ServerCharacter>();
+        public List<Player> Characters = new List<Player>();
 
         public CharacterManager()
         {
@@ -23,11 +24,11 @@ namespace Endorblast.GameServer.Server
             ConsoleHelper.WriteLine("## CharacterManager - Initialized", ServerErrors.Error);
         }
         
-        public void Update(GameTime gameTime)
+        public void Update()
         {
             foreach (var player in Characters)
             {
-                player.Update(gameTime);
+                player.Update();
             }
         }
         
@@ -43,7 +44,7 @@ namespace Endorblast.GameServer.Server
             return list;
         }
 
-        public ServerCharacter GetConnection(NetConnection con)
+        public Player GetConnection(NetConnection con)
         {
             foreach (var p in Characters)
                 if (con == p.connection)
@@ -75,15 +76,21 @@ namespace Endorblast.GameServer.Server
             return list;
         }
         
-        public List<ServerCharacter> GetPlayers()
+        public List<Player> GetPlayers()
         {
-            var list = new List<ServerCharacter>();
+            var list = new List<Player>();
 
             foreach (var p in Characters)
                 list.Add(p);
 
 
             return list;
+        }
+
+        public Player AddPlayer(Player player)
+        {
+            Characters.Add(player);
+            return player;
         }
         
     }

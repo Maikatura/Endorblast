@@ -11,11 +11,11 @@ namespace Endorblast.GameServer.Server.Game
         private List<ServerNPC> npcs = new List<ServerNPC>();
         public List<ServerNPC> Npcs => npcs;
         
-        public void Update(GameTime gameTime)
+        public void Update()
         {
             foreach (var npc in Npcs)
             {
-                npc.Update(gameTime);
+                npc.Update();
             }
         }
 

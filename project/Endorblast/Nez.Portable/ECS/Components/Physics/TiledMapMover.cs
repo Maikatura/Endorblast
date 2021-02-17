@@ -151,6 +151,20 @@ namespace Nez.Tiled
 			boxCollider.RegisterColliderWithPhysicsSystem();
 		}
 
+		public void ServerMove( Vector2 motion, BoxCollider boxCollider, CollisionState collisionState)
+		{
+			if (TiledMap == null)
+				return;
+			
+			TestCollisions(ref motion, boxCollider.Bounds, collisionState);
+			
+			boxCollider.UnregisterColliderWithPhysicsSystem();
+			boxCollider.Entity.Transform.Position += motion;
+			boxCollider.RegisterColliderWithPhysicsSystem();
+			
+
+		}
+
 		public void TestCollisions(ref Vector2 motion, Rectangle boxColliderBounds, CollisionState collisionState)
 		{
 			_boxColliderBounds = boxColliderBounds;

@@ -12,6 +12,7 @@ namespace Endorblast.Lib.Scenes
         public override void OnStart()
         {
             base.OnStart();
+            GameSetup();
 
             SceneManager.InitGameMap(this, MapType.Snowlands);
         }

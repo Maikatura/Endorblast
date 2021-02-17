@@ -14,7 +14,7 @@ namespace Endorblast.GameServer.Server.Game
             Id = id;
         }
         
-        public void Update(GameTime gameTime)
+        public void Update()
         {
             Console.WriteLine("NPC Updated");
         }
