@@ -1,0 +1,10 @@
+/*------------- #THEME FONT --------------*/
+/* quicksand-300 - latin-ext_latin */
+@font-face {
+  font-family: 'Quicksand';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+  src: local("Retro Gaming"), local("Retro Gaming"), url("../fonts/retro-gaming.ttf") format("woff2"), url("../fonts/retro-gaming.ttf") format("ttf");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+}

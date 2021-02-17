@@ -1,0 +1,166 @@
+﻿.main-content-wrapper a {
+    color: #e62117;
+}
+
+
+body {
+    background-color: #000000;
+    color: #fff;
+}
+
+    a:hover, .navigation-hosting-item:hover {
+        color: var(--orange-themes);
+    }
+
+/*abilities*/
+.tabs--style6 .nav-tabs .nav-link {
+    color: rgb(0, 0, 0);
+}
+
+.accordion--style2 .card.active .btn-link, .accordion--style2 .card:hover .btn-link {
+    color: #e62117;
+}
+
+    .accordion--style2 .card.active .btn-link .crumina-icon, .accordion--style2 .card:hover .btn-link .crumina-icon {
+        fill: #e62117;
+    }
+
+    .details-button {
+        background: url(../img/UI/default-primary-details-btn.png);
+        background-repeat: no-repeat;
+        width: 82px;
+        height: 30px;
+        border-radius: 0;
+    }
+
+.details-button:hover {
+    background: url(../img/UI/default-primary-details-over-btn.png);
+}
+
+.details-button:active {
+    background: url("../img/UI/default-primary-details-down-btn.png");
+}
+
+.header-icon-left {
+    margin-right: 20px;
+}
+
+.headerIcon{
+    padding-right: 3px;
+    width: 30px;
+    image-rendering: crisp-edges;
+}
+
+
+
+.navigation-link, .slides-item .slides-item-text {
+    opacity: 1;
+}
+
+
+.tabs--style3 .nav-tabs .nav-link {
+    background-color: #2c3235;
+    color: rgb(0, 0, 0);
+}
+    .tabs--style3 .nav-tabs .nav-link:after {
+        border-color: transparent transparent transparent #2c3235;
+    }
+
+    .footer-content {
+        padding: 80px 0 60px;
+    }
+
+.cloud {
+    background-image: url('../img/cloud.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 96px;
+    width: 192px;
+    position: absolute;
+}
+
+    .cloud:before,
+    .cloud:after {
+        content: '';
+        /*background: #fff;*/
+        /*width: 100px; height: 80px;*/
+        position: absolute;
+        top: -15px;
+        left: 10px;
+        border-radius: 100px;
+        -moz-border-radius: 100px;
+        -webkit-border-radius: 100px;
+        -webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+    }
+
+
+
+
+
+.bg-default-header {
+    background-color: #80CBE0;
+    background-repeat: no-repeat;
+    background-position-y: -600px;
+    background-position-x: -450px;
+}
+
+
+
+#abilityTabs {
+    min-height: 420px;
+}
+
+.swiper-btn-next .crumina-icon, .swiper-btn-prev .crumina-icon {
+    fill: rgb(0, 0, 0);
+}
+
+
+.flex-container {
+  display: flex;
+  align-items: stretch;
+}
+
+.item1 {
+	color: rgb(0, 0, 0);
+	background-color: #000000;
+	text-align: center;
+	line-height: 75px;
+	font-size: 30px;
+	flex-basis: 50%;
+}
+
+.item2 {
+    color: white;
+	background-color: rgb(0, 0, 0);
+	text-align: center;
+	line-height: 75px;
+	font-size: 30px;
+    flex-basis: 50%;
+    
+}
+
+.item2 .text, .item1 .text 
+{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.text > h1, .text > h2, 
+.text > h3, .text > h4, 
+.text > h5, .text > h6 
+{
+    color: white;
+}
+
+.faqtitle
+{
+	padding-left: 10px;
+	text-align: left;
+}
