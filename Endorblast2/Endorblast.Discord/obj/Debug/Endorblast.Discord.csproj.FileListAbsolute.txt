@@ -1,0 +1,6 @@
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.Discord\bin\Debug\Endorblast.Discord.exe
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.Discord\bin\Debug\Endorblast.Discord.pdb
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.Discord\obj\Debug\Endorblast.Discord.csprojAssemblyReference.cache
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.Discord\obj\Debug\Endorblast.Discord.csproj.CoreCompileInputs.cache
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.Discord\obj\Debug\Endorblast.Discord.exe
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.Discord\obj\Debug\Endorblast.Discord.pdb

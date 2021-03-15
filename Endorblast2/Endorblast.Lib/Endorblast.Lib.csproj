@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{4634AD28-963C-42F9-88AA-8A73B568B8B2}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>Endorblast.Lib</RootNamespace>
+        <AssemblyName>Endorblast.Lib</AssemblyName>
+        <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="Aether.Physics2D, Version=1.5.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\packages\Aether.Physics2D.1.5.0\lib\net40\Aether.Physics2D.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="Lidgren.Network, Version=2012.1.7.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\packages\Lidgren.Network.1.0.2\lib\net451\Lidgren.Network.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="MonoGame.Extended, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\packages\MonoGame.Extended.3.8.0\lib\netstandard2.0\MonoGame.Extended.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="MonoGame.Framework, Version=3.8.0.1641, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\packages\MonoGame.Framework.DesktopGL.3.8.0.1641\lib\net452\MonoGame.Framework.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
+          <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Data" />
+        <Reference Include="System.Xml" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Class1.cs" />
+        <Compile Include="Game\Camera.cs" />
+        <Compile Include="Game\Data\AccountInfo.cs" />
+        <Compile Include="Game\Data\CharacterInformation.cs" />
+        <Compile Include="Game\Data\CharacterSelectionData.cs" />
+        <Compile Include="Game\Data\Currency.cs" />
+        <Compile Include="Game\Data\GameServerInfo.cs" />
+        <Compile Include="Game\Data\Role.cs" />
+        <Compile Include="Game\Data\ServerPlayer.cs" />
+        <Compile Include="Game\Data\Stats.cs" />
+        <Compile Include="Game\Data\WorldInfo.cs" />
+        <Compile Include="Game\JsonConvertor\RectangleJsonConverter.cs" />
+        <Compile Include="Game\TileMap\CollisionLayer.cs" />
+        <Compile Include="Game\TileMap\Map.cs" />
+        <Compile Include="Game\TileMap\MapLoader.cs" />
+        <Compile Include="Game\TileMap\Tile.cs" />
+        <Compile Include="Game\TileMap\TileLayer.cs" />
+        <Compile Include="Game\TileMap\Tileset.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Include="packages.config" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="CppNet.dll" />
+      <Content Include="libmojoshader_64.dll" />
+      <Content Include="mgfxc.deps.json" />
+      <Content Include="mgfxc.dll" />
+      <Content Include="mgfxc.exe" />
+      <Content Include="mgfxc.pdb" />
+      <Content Include="mgfxc.runtimeconfig.dev.json" />
+      <Content Include="mgfxc.runtimeconfig.json" />
+      <Content Include="SharpDX.D3DCompiler.dll" />
+      <Content Include="SharpDX.D3DCompiler.xml" />
+      <Content Include="SharpDX.dll" />
+      <Content Include="SharpDX.xml" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Content\Tilemaps" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+    <Import Project="..\packages\MonoGame.Framework.DesktopGL.3.8.0.1641\build\MonoGame.Framework.DesktopGL.targets" Condition="Exists('..\packages\MonoGame.Framework.DesktopGL.3.8.0.1641\build\MonoGame.Framework.DesktopGL.targets')" />
+    <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+      <PropertyGroup>
+        <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105.The missing file is {0}.</ErrorText>
+      </PropertyGroup>
+      <Error Condition="!Exists('..\packages\MonoGame.Framework.DesktopGL.3.8.0.1641\build\MonoGame.Framework.DesktopGL.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MonoGame.Framework.DesktopGL.3.8.0.1641\build\MonoGame.Framework.DesktopGL.targets'))" />
+    </Target>
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>

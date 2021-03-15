@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "sI1zdjgOSJN0DNvB+t8uS48eDfx3dDS/Hcjy4VPOrWucfRNcOKd2gsoZDksPgo72apJWPNIedWYyvIRrHkrhPg==",
+  "success": true,
+  "projectFilePath": "D:\\Github\\EndorblastDevlogs\\Endorblastv2\\Endorblast2\\EndorblastEngine.Server\\EndorblastEngine.Server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\zyro\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.12\\microsoft.netcore.app.host.win-x64.3.1.12.nupkg.sha512"
+  ],
+  "logs": []
+}
