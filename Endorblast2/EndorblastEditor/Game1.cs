@@ -1,5 +1,9 @@
-﻿using Endorblast.DB.ImGui;
+﻿using System.Collections.Generic;
+using Endorblast.DB.ImGui;
+using Endorblast.DB.Lib;
 using Endorblast.DB.Lib.Game.TileMap.Tilesets.Fuctions;
+using Endorblast.DB.Lib.TileMap;
+using Endorblast.Lib;
 using EndorblastEditor.Editor.UI;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -13,6 +17,9 @@ namespace EndorblastEditor
         private GraphicsDeviceManager graphics;
         private SpriteBatch spriteBatch;
         public static ImguiComponent ImGui;
+        private TilemapHelper tmHelper;
+
+        private EditorImGui editor;
         
         public Game1()
         {
@@ -32,12 +39,18 @@ namespace EndorblastEditor
             ImGui.Initialize();
             ImGui.LoadContent();
             base.Initialize();
+
+            Globals.gd = GraphicsDevice;
+            Globals.sb = spriteBatch;
         }
+
 
         protected override void LoadContent()
         {
-            spriteBatch = new SpriteBatch(GraphicsDevice); 
-            ImGui.Elements.Add(new EditorImGui().Main);
+            
+            spriteBatch = new SpriteBatch(GraphicsDevice);
+            editor = new EditorImGui();
+            ImGui.Elements.Add(editor.Main);
             // TODO: use this.Content to load your game content here
         }
 
@@ -49,6 +62,9 @@ namespace EndorblastEditor
             // TODO: Add your update logic here
 
             base.Update(gameTime);
+            
+           
+            editor.Update(gameTime);
         }
 
         protected override void Draw(GameTime gameTime)
@@ -56,9 +72,12 @@ namespace EndorblastEditor
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             
-            // TODO: Add your drawing code here
+            
+            editor.Draw(spriteBatch, gameTime);
+            
+            
             spriteBatch.Begin();
-            //Your regular Game draw calls
+            
             spriteBatch.End();
 
             ImGui.Draw(gameTime);

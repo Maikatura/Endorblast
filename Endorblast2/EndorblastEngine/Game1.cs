@@ -39,6 +39,8 @@ namespace EndorblastEngine
             // TODO: Add your update logic here
 
             base.Update(gameTime);
+            
+            
         }
 
         protected override void Draw(GameTime gameTime)

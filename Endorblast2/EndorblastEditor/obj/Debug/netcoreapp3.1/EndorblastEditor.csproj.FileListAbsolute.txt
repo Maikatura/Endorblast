@@ -87,3 +87,4 @@ D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\EndorblastEditor\bin\Debug\
 D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\EndorblastEditor\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\EndorblastEditor\bin\Debug\netcoreapp3.1\Endorblast.DB.dll
 D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\EndorblastEditor\bin\Debug\netcoreapp3.1\Endorblast.DB.pdb
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\EndorblastEditor\bin\Debug\netcoreapp3.1\MonoGame.Extended.Input.dll

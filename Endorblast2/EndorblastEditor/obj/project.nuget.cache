@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "opZi/VUGFaJs/gzmiiBqbmNkNPIHroe7yCCpIQrQ1c6qpRqVUb5UHc+xfQOpifk4boQ9kpEIUwZYl3MaEBrq8w==",
+  "dgSpecHash": "vd9HuKSm7+WC4PBoWhcDBmIPM7czw+QBoOKUogY5/FutmpAipzpeQvjw/Ng2S7a5uJHatDhuX4OrqwBxl6Oy+w==",
   "success": true,
   "projectFilePath": "D:\\Github\\EndorblastDevlogs\\Endorblastv2\\Endorblast2\\EndorblastEditor\\EndorblastEditor.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,8 @@
     "C:\\Users\\zyro\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\zyro\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\zyro\\.nuget\\packages\\monogame.content.builder.task\\3.8.0.1641\\monogame.content.builder.task.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\zyro\\.nuget\\packages\\monogame.extended\\3.8.0\\monogame.extended.3.8.0.nupkg.sha512",
+    "C:\\Users\\zyro\\.nuget\\packages\\monogame.extended.input\\3.8.0\\monogame.extended.input.3.8.0.nupkg.sha512",
     "C:\\Users\\zyro\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512",
     "C:\\Users\\zyro\\.nuget\\packages\\mysql.data\\8.0.23\\mysql.data.8.0.23.nupkg.sha512",
     "C:\\Users\\zyro\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",

@@ -58,7 +58,7 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Class1.cs" />
+        <Compile Include="Globals.cs" />
         <Compile Include="Game\Camera.cs" />
         <Compile Include="Game\Data\AccountInfo.cs" />
         <Compile Include="Game\Data\CharacterInformation.cs" />
@@ -75,6 +75,7 @@
         <Compile Include="Game\TileMap\MapLoader.cs" />
         <Compile Include="Game\TileMap\Tile.cs" />
         <Compile Include="Game\TileMap\TileLayer.cs" />
+        <Compile Include="Game\TileMap\TilemapHelper.cs" />
         <Compile Include="Game\TileMap\Tileset.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>

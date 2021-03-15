@@ -1,6 +1,8 @@
 ﻿using Endorblast.DB.ImGui;
 using Endorblast.DB.Lib.Game.TileMap.Tilesets.Tools;
 using ImGuiNET;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using Num = System.Numerics;
 
 
@@ -56,12 +58,42 @@ namespace EndorblastEditor.Editor.UI
                     if (ImGuiNET.ImGui.Button("Go Back")) state = EditorState.Selector;
                     ImGuiNET.ImGui.NewLine();
                     charaEditor.Main();
+                    
                     break;
             }
             
             ImGui.End();
         }
 
+        public void Update(GameTime gt)
+        {
+            switch (state)
+            {
+                case EditorState.Selector:
+                    break;
+                case EditorState.MapEditor:
+                    mapEditor.Update(gt);
+                    break;
+                case EditorState.PlayerEditor:
+                    charaEditor.Update(gt);
+                    break;
+            }
+        }
+
+        public void Draw(SpriteBatch sb, GameTime gt)
+        {
+            switch (state)
+            {
+                case EditorState.Selector:
+                    break;
+                case EditorState.MapEditor:
+                    mapEditor.Draw(sb, gt);
+                    break;
+                case EditorState.PlayerEditor:
+                    charaEditor.Draw(sb, gt);
+                    break;
+            }
+        }
 
         public void SetTile(string windowTitle = "Editor")
         {

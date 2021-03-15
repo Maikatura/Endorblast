@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using Endorblast.DB.Lib.TileMap;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MonoGame.Extended;
 
-namespace Endorblast.DB.Lib.TileMap
+namespace Endorblast.Lib
 {
     public class Map
     {
@@ -58,8 +59,6 @@ namespace Endorblast.DB.Lib.TileMap
         public void Draw(SpriteBatch pSpriteBatch, Camera<Vector2> camera, List<Tileset> tilesets)
         {
             pSpriteBatch.Begin(transformMatrix: camera.GetViewMatrix());
-
-            pSpriteBatch.FillRectangle(Vector2.Zero, new Size2(tileWidth * width, tileHeight * height), Color.Gray);
 
             for (int i = 0; i < Layers.Count; i++)
             {
