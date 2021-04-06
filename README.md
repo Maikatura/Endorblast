@@ -1,13 +1,14 @@
 # Hi
 
-Note that this only has my engine and not my editor so you need to change this code to work with the editor you want.... or make your own :)
 
+Note Server, Database, Discord bot and my Editor will not be here since I need to have private stuff in them since well mods and game clones is not what I want :)
 
-
-
+But Client will be available to everyone.
 
 
 ### Libraries
-MonoGame
-MonoGameExtended (For tilemap)
+[MonoGame](https://github.com/MonoGame/MonoGame)\
+[MonoGame.Extended](https://github.com/craftworkgames/MonoGame.Extended) (For tilemap & Input)\
+[ImMonoGame](https://github.com/shanedroid32/ImMonoGame)
+
 
