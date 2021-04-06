@@ -4,8 +4,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EndorblastEngine", "Endorbl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EndorblastEditor", "EndorblastEditor\EndorblastEditor.csproj", "{66D552DD-17AC-49D0-8274-F98CAF3AC6F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Endorblast.Lib", "Endorblast.Lib\Endorblast.Lib.csproj", "{4634AD28-963C-42F9-88AA-8A73B568B8B2}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Endorblast.Discord", "Endorblast.Discord\Endorblast.Discord.csproj", "{94E2D89D-FDAE-4C3D-AC5A-044AD2F8F356}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Endorblast.ImGui", "Endorblast.ImGui\Endorblast.ImGui.csproj", "{2268084E-CEDB-4879-B751-E978BB80D803}"
@@ -13,6 +11,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EndorblastEngine.Server", "EndorblastEngine.Server\EndorblastEngine.Server.csproj", "{BC416103-27AF-4E2B-AB16-E7F890F8B2E8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Endorblast.DB", "Endorblast.DB\Endorblast.DB.csproj", "{C901695C-F87D-4765-9A83-138295552902}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Endorblast.Library", "Endorblast.Library\Endorblast.Library.csproj", "{25A4E538-D5C8-4174-AACA-8A1A4870E7A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,10 +28,6 @@ Global
 		{66D552DD-17AC-49D0-8274-F98CAF3AC6F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66D552DD-17AC-49D0-8274-F98CAF3AC6F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66D552DD-17AC-49D0-8274-F98CAF3AC6F0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4634AD28-963C-42F9-88AA-8A73B568B8B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4634AD28-963C-42F9-88AA-8A73B568B8B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4634AD28-963C-42F9-88AA-8A73B568B8B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4634AD28-963C-42F9-88AA-8A73B568B8B2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{94E2D89D-FDAE-4C3D-AC5A-044AD2F8F356}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{94E2D89D-FDAE-4C3D-AC5A-044AD2F8F356}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94E2D89D-FDAE-4C3D-AC5A-044AD2F8F356}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -48,5 +44,9 @@ Global
 		{C901695C-F87D-4765-9A83-138295552902}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C901695C-F87D-4765-9A83-138295552902}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C901695C-F87D-4765-9A83-138295552902}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25A4E538-D5C8-4174-AACA-8A1A4870E7A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25A4E538-D5C8-4174-AACA-8A1A4870E7A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25A4E538-D5C8-4174-AACA-8A1A4870E7A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25A4E538-D5C8-4174-AACA-8A1A4870E7A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

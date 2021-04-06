@@ -1,0 +1,30 @@
+
+#----------------------------- Global Properties ----------------------------#
+
+/outputDir:bin/$(Platform)
+/intermediateDir:obj/$(Platform)
+/platform:DesktopGL
+/config:
+/profile:Reach
+/compress:False
+
+#-------------------------------- References --------------------------------#
+
+
+#---------------------------------- Content ---------------------------------#
+
+#begin Fonts/gameFont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:Fonts/gameFont.spritefont
+
+#begin Fonts/gameFont.ttf
+/importer:
+/processor:
+/build:Fonts/gameFont.ttf
+
+#begin Fonts/gameFont.ttf
+/copy:Fonts/gameFont.ttf
+

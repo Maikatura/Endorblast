@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "YkSQ5vQjzi1Qo3fJrB/OE4uJyflZAQ3FnoAvu3uFAmjA2HVv/ZhfyWAXuF7k9XzeUzVyAFJVwM1UZG6uQmJh/A==",
+  "success": true,
+  "projectFilePath": "D:\\Github\\EndorblastDevlogs\\Endorblastv2\\Endorblast2\\Endorblast.Library\\Endorblast.Library.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\zyro\\.nuget\\packages\\lidgren.network\\1.0.2\\lidgren.network.1.0.2.nupkg.sha512",
+    "C:\\Users\\zyro\\.nuget\\packages\\monogame.extended\\3.8.0\\monogame.extended.3.8.0.nupkg.sha512",
+    "C:\\Users\\zyro\\.nuget\\packages\\monogame.extended.input\\3.8.0\\monogame.extended.input.3.8.0.nupkg.sha512",
+    "C:\\Users\\zyro\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\zyro\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Lidgren.Network 1.0.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Lidgren.Network",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+D:\Github\EndorblastDevlogs\Endorblastv2\Builds\v0.0.1\EndorblastEngine.exe
+D:\Github\EndorblastDevlogs\Endorblastv2\Builds\v0.0.1\EndorblastEngine.dll
+D:\Github\EndorblastDevlogs\Endorblastv2\Builds\v0.0.1\EndorblastEngine.deps.json
+D:\Github\EndorblastDevlogs\Endorblastv2\Builds\v0.0.1\EndorblastEngine.runtimeconfig.json
+D:\Github\EndorblastDevlogs\Endorblastv2\Builds\v0.0.1\EndorblastEngine.pdb
+D:\Github\EndorblastDevlogs\Endorblastv2\Builds\v0.0.1\MonoGame.Framework.dll
+D:\Github\EndorblastDevlogs\Endorblastv2\Builds\v0.0.1\MonoGame.ImGui.dll
+D:\Github\EndorblastDevlogs\Endorblastv2\Builds\v0.0.1\runtimes\linux-x64\native\libSDL2-2.0.so.0
+D:\Github\EndorblastDevlogs\Endorblastv2\Builds\v0.0.1\runtimes\linux-x64\native\libopenal.so.1
+D:\Github\EndorblastDevlogs\Endorblastv2\Builds\v0.0.1\runtimes\osx\native\libSDL2-2.0.0.dylib
+D:\Github\EndorblastDevlogs\Endorblastv2\Builds\v0.0.1\runtimes\osx\native\libopenal.1.dylib
+D:\Github\EndorblastDevlogs\Endorblastv2\Builds\v0.0.1\runtimes\win-x64\native\SDL2.dll
+D:\Github\EndorblastDevlogs\Endorblastv2\Builds\v0.0.1\runtimes\win-x64\native\soft_oal.dll
+D:\Github\EndorblastDevlogs\Endorblastv2\Builds\v0.0.1\runtimes\win-x86\native\SDL2.dll
+D:\Github\EndorblastDevlogs\Endorblastv2\Builds\v0.0.1\runtimes\win-x86\native\soft_oal.dll

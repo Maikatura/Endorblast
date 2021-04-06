@@ -1,0 +1,9 @@
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.ImGui\bin\Release\netcoreapp3.1\Endorblast.ImGui.deps.json
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.ImGui\bin\Release\netcoreapp3.1\Endorblast.ImGui.dll
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.ImGui\bin\Release\netcoreapp3.1\Endorblast.ImGui.pdb
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.ImGui\obj\Release\netcoreapp3.1\Endorblast.ImGui.csprojAssemblyReference.cache
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.ImGui\obj\Release\netcoreapp3.1\Endorblast.ImGui.AssemblyInfoInputs.cache
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.ImGui\obj\Release\netcoreapp3.1\Endorblast.ImGui.AssemblyInfo.cs
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.ImGui\obj\Release\netcoreapp3.1\Endorblast.ImGui.csproj.CoreCompileInputs.cache
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.ImGui\obj\Release\netcoreapp3.1\Endorblast.ImGui.dll
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.ImGui\obj\Release\netcoreapp3.1\Endorblast.ImGui.pdb

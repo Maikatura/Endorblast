@@ -24,8 +24,25 @@
         <TrimmerRootAssembly Include="Microsoft.Xna.Framework.Content.ContentTypeReader" Visible="false" />
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.0.1641" />
         <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.0.1641" />
+        <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.0.1641" />
         <PackageReference Include="Monogame.ImGui" Version="1.0.0" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\Endorblast.Library\Endorblast.Library.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Remove="Data\Maps\Forest.map" />
+      <Content Include="Data\Maps\Forest.map">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Data\Maps\None.map" />
+      <Content Include="Data\Maps\None.map">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Data\Maps\Town.map" />
+      <Content Include="Data\Maps\Town.map">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
 </Project>

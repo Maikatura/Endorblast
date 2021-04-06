@@ -1,0 +1,371 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Lidgren.Network/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net451/Lidgren.Network.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Lidgren.Network.dll": {}
+        }
+      },
+      "MonoGame.Extended/3.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/MonoGame.Extended.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MonoGame.Extended.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/netstandard2.0/CppNet.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/netstandard2.0/SharpDX.D3DCompiler.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/netstandard2.0/SharpDX.D3DCompiler.xml": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/netstandard2.0/SharpDX.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/netstandard2.0/SharpDX.xml": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/netstandard2.0/libmojoshader_64.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/netstandard2.0/mgfxc.deps.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/netstandard2.0/mgfxc.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/netstandard2.0/mgfxc.exe": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/netstandard2.0/mgfxc.pdb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/netstandard2.0/mgfxc.runtimeconfig.dev.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/netstandard2.0/mgfxc.runtimeconfig.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
+      "MonoGame.Extended.Input/3.8.0": {
+        "type": "package",
+        "dependencies": {
+          "MonoGame.Extended": "3.8.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MonoGame.Extended.Input.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MonoGame.Extended.Input.dll": {}
+        }
+      },
+      "MonoGame.Framework.DesktopGL/3.8.0.1641": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/MonoGame.Framework.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MonoGame.Framework.dll": {}
+        },
+        "build": {
+          "build/MonoGame.Framework.DesktopGL.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libSDL2-2.0.so.0": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libopenal.so.1": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx/native/libSDL2-2.0.0.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          },
+          "runtimes/osx/native/libopenal.1.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          },
+          "runtimes/win-x64/native/SDL2.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/soft_oal.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/SDL2.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/soft_oal.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Lidgren.Network/1.0.2": {
+      "sha512": "yXg3ccH3OYFGnsXxzcrUo2FXsXHaZzTUjRCg84NCPGnZyjw6MhwJFHe6MdEVIzejXsE86Kto/sgeV29HSRc8xQ==",
+      "type": "package",
+      "path": "lidgren.network/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net451/Lidgren.Network.dll",
+        "lib/net451/Lidgren.Network.pdb",
+        "lidgren.network.1.0.2.nupkg.sha512",
+        "lidgren.network.nuspec"
+      ]
+    },
+    "MonoGame.Extended/3.8.0": {
+      "sha512": "FDPoUOFtslGNHCWSqjKD0C67RYN6Stb6NWnn+rkCmtkPBZlE6LvwuGyQBkHUkAMANO3LzO/Wsz9etMhwZLInqg==",
+      "type": "package",
+      "path": "monogame.extended/3.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/CppNet.dll",
+        "content/SharpDX.D3DCompiler.dll",
+        "content/SharpDX.D3DCompiler.xml",
+        "content/SharpDX.dll",
+        "content/SharpDX.xml",
+        "content/libmojoshader_64.dll",
+        "content/mgfxc.deps.json",
+        "content/mgfxc.dll",
+        "content/mgfxc.exe",
+        "content/mgfxc.pdb",
+        "content/mgfxc.runtimeconfig.dev.json",
+        "content/mgfxc.runtimeconfig.json",
+        "contentFiles/any/netstandard2.0/CppNet.dll",
+        "contentFiles/any/netstandard2.0/SharpDX.D3DCompiler.dll",
+        "contentFiles/any/netstandard2.0/SharpDX.D3DCompiler.xml",
+        "contentFiles/any/netstandard2.0/SharpDX.dll",
+        "contentFiles/any/netstandard2.0/SharpDX.xml",
+        "contentFiles/any/netstandard2.0/libmojoshader_64.dll",
+        "contentFiles/any/netstandard2.0/mgfxc.deps.json",
+        "contentFiles/any/netstandard2.0/mgfxc.dll",
+        "contentFiles/any/netstandard2.0/mgfxc.exe",
+        "contentFiles/any/netstandard2.0/mgfxc.pdb",
+        "contentFiles/any/netstandard2.0/mgfxc.runtimeconfig.dev.json",
+        "contentFiles/any/netstandard2.0/mgfxc.runtimeconfig.json",
+        "lib/netstandard2.0/MonoGame.Extended.dll",
+        "monogame.extended.3.8.0.nupkg.sha512",
+        "monogame.extended.nuspec"
+      ]
+    },
+    "MonoGame.Extended.Input/3.8.0": {
+      "sha512": "90RtzI6N+RCGHolI/yTwGT47vqSyr+IEe+yKxzm4/euc8rDVnbAwz4lRifkAEdHx29X3apD0Ui5ve0C/7yO7wQ==",
+      "type": "package",
+      "path": "monogame.extended.input/3.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/MonoGame.Extended.Input.dll",
+        "monogame.extended.input.3.8.0.nupkg.sha512",
+        "monogame.extended.input.nuspec"
+      ]
+    },
+    "MonoGame.Framework.DesktopGL/3.8.0.1641": {
+      "sha512": "rJQlrlHQbnOECYV6EcQ8GlGRQ2lzPTroXQcyyOZ0ki+BQRSJEN2zVBm9skqLiXya348aGAfTSSGTaSKjAy9NaA==",
+      "type": "package",
+      "path": "monogame.framework.desktopgl/3.8.0.1641",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/MonoGame.Framework.DesktopGL.targets",
+        "lib/net452/MonoGame.Framework.dll",
+        "lib/net452/MonoGame.Framework.xml",
+        "lib/netstandard2.0/MonoGame.Framework.dll",
+        "lib/netstandard2.0/MonoGame.Framework.xml",
+        "monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512",
+        "monogame.framework.desktopgl.nuspec",
+        "runtimes/linux-x64/native/libSDL2-2.0.so.0",
+        "runtimes/linux-x64/native/libopenal.so.1",
+        "runtimes/osx/native/libSDL2-2.0.0.dylib",
+        "runtimes/osx/native/libopenal.1.dylib",
+        "runtimes/win-x64/native/SDL2.dll",
+        "runtimes/win-x64/native/soft_oal.dll",
+        "runtimes/win-x86/native/SDL2.dll",
+        "runtimes/win-x86/native/soft_oal.dll"
+      ]
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Lidgren.Network >= 1.0.2",
+      "MonoGame.Extended >= 3.8.0",
+      "MonoGame.Extended.Input >= 3.8.0",
+      "MonoGame.Framework.DesktopGL >= 3.8.0.1641"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\zyro\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Github\\EndorblastDevlogs\\Endorblastv2\\Endorblast2\\Endorblast.Library\\Endorblast.Library.csproj",
+      "projectName": "Endorblast.Library",
+      "projectPath": "D:\\Github\\EndorblastDevlogs\\Endorblastv2\\Endorblast2\\Endorblast.Library\\Endorblast.Library.csproj",
+      "packagesPath": "C:\\Users\\zyro\\.nuget\\packages\\",
+      "outputPath": "D:\\Github\\EndorblastDevlogs\\Endorblastv2\\Endorblast2\\Endorblast.Library\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\zyro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "dependencies": {
+          "Lidgren.Network": {
+            "target": "Package",
+            "version": "[1.0.2, )"
+          },
+          "MonoGame.Extended": {
+            "target": "Package",
+            "version": "[3.8.0, )"
+          },
+          "MonoGame.Extended.Input": {
+            "target": "Package",
+            "version": "[3.8.0, )"
+          },
+          "MonoGame.Framework.DesktopGL": {
+            "target": "Package",
+            "version": "[3.8.0.1641, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Lidgren.Network 1.0.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Lidgren.Network",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}

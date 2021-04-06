@@ -1,4 +1,7 @@
-﻿using Microsoft.Xna.Framework;
+﻿using Endorblast.Lib;
+using Endorblast.Lib.Game.Data;
+using EndorblastEngine.GameEngine.States;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
@@ -6,14 +9,29 @@ namespace EndorblastEngine
 {
     public class Game1 : Game
     {
-        private GraphicsDeviceManager _graphics;
-        private SpriteBatch _spriteBatch;
+        private GraphicsDeviceManager graphics;
+        private SpriteBatch spriteBatch;
+
+        private State currentState;
+        private State nextState;
+
+        private FrameCounter counter = new FrameCounter();
+        
 
         public Game1()
         {
-            _graphics = new GraphicsDeviceManager(this);
+            graphics = new GraphicsDeviceManager(this)
+            {
+                SynchronizeWithVerticalRetrace = false,
+                
+            };
+
+            Window.AllowUserResizing = true;
+            
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
+            IsFixedTimeStep = false;
+            
         }
 
         protected override void Initialize()
@@ -21,13 +39,21 @@ namespace EndorblastEngine
             // TODO: Add your initialization logic here
 
             base.Initialize();
+            
+            Globals.gd = GraphicsDevice;
+            Globals.sb = spriteBatch;
+            Globals.cm = Content;
         }
 
         protected override void LoadContent()
         {
-            _spriteBatch = new SpriteBatch(GraphicsDevice);
+            spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
+
+            currentState = new GameState(this, Content, GraphicsDevice);
+            currentState.LoadContent();
+            nextState = null;
         }
 
         protected override void Update(GameTime gameTime)
@@ -36,18 +62,39 @@ namespace EndorblastEngine
                 Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            // TODO: Add your update logic here
+            var deltaTime = (float) gameTime.ElapsedGameTime.TotalSeconds;
+            
+            
+            counter.Update(deltaTime);
+            Window.Title = $"Endorblast Game Engine [{counter.FPS_STRING}]";
 
+            {
+                if (nextState != null)
+                {
+                    currentState = nextState;
+                    currentState.LoadContent();
+
+                    nextState = null;
+                }
+
+                currentState.Update(deltaTime);
+            }
+            
             base.Update(gameTime);
-            
-            
+        }
+
+        public void ChangeState(State state)
+        {
+            nextState = state;
         }
 
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
+            
+            var deltaTime = (float) gameTime.ElapsedGameTime.TotalSeconds;
 
-            // TODO: Add your drawing code here
+            currentState.Draw(deltaTime, spriteBatch);
 
             base.Draw(gameTime);
         }

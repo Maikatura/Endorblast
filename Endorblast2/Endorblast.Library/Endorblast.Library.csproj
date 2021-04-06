@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Content Include="1Stream\Overlay.png" />
+      <Content Include="1Stream\Todo Stream.txt" />
+      <Content Include="1Stream\Todo.txt" />
+      <Content Include="Content\Player\chara.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Content\README.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Content\Tilesets\2.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Content\Tilesets\2.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Content\Tilesets\1.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Content\Tilesets\1.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Data\ItemData\Items.json" />
+      <Content Include="Data\Maps\DONT READ ME.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Data\README.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Objects\Grass.png" />
+      <Content Include="Content\Objects\Grass.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Objects\Grass.json" />
+      <Content Include="Content\Objects\Grass.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <MonoGameContentReference Include="Content\Content.mgcb" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Lidgren.Network" Version="1.0.2" />
+      <PackageReference Include="MonoGame.Extended" Version="3.8.0" />
+      <PackageReference Include="MonoGame.Extended.Input" Version="3.8.0" />
+      <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.0.1641" />
+    </ItemGroup>
+
+</Project>

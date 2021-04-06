@@ -1,0 +1,17 @@
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.Library\bin\Release\netcoreapp3.1\Content\Player\chara.png
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.Library\bin\Release\netcoreapp3.1\Content\README.txt
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.Library\bin\Release\netcoreapp3.1\Data\Maps\DONT READ ME.txt
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.Library\bin\Release\netcoreapp3.1\Data\README.txt
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.Library\bin\Release\netcoreapp3.1\Endorblast.Library.deps.json
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.Library\bin\Release\netcoreapp3.1\Endorblast.Library.dll
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.Library\bin\Release\netcoreapp3.1\Endorblast.Library.pdb
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.Library\obj\Release\netcoreapp3.1\Endorblast.Library.csprojAssemblyReference.cache
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.Library\obj\Release\netcoreapp3.1\Endorblast.Library.AssemblyInfoInputs.cache
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.Library\obj\Release\netcoreapp3.1\Endorblast.Library.AssemblyInfo.cs
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.Library\obj\Release\netcoreapp3.1\Endorblast.Library.csproj.CoreCompileInputs.cache
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.Library\obj\Release\netcoreapp3.1\Endorblast.Library.dll
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.Library\obj\Release\netcoreapp3.1\Endorblast.Library.pdb
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.Library\bin\Release\netcoreapp3.1\Content\Tilesets\2.json
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.Library\bin\Release\netcoreapp3.1\Content\Tilesets\2.png
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.Library\bin\Release\netcoreapp3.1\Content\Tilesets\1.json
+D:\Github\EndorblastDevlogs\Endorblastv2\Endorblast2\Endorblast.Library\bin\Release\netcoreapp3.1\Content\Tilesets\1.png

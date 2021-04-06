@@ -1,0 +1,150 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Endorblast.ImGui/1.0.0": {
+        "dependencies": {
+          "ImGui.NET": "1.78.0",
+          "MonoGame.Framework.DesktopGL": "3.8.0.1641"
+        },
+        "runtime": {
+          "Endorblast.ImGui.dll": {}
+        }
+      },
+      "ImGui.NET/1.78.0": {
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Numerics.Vectors": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.4.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/ImGui.NET.dll": {
+            "assemblyVersion": "1.78.0.0",
+            "fileVersion": "1.78.0.0"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libcimgui.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libcimgui.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/cimgui.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/cimgui.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "MonoGame.Framework.DesktopGL/3.8.0.1641": {
+        "runtime": {
+          "lib/netstandard2.0/MonoGame.Framework.dll": {
+            "assemblyVersion": "3.8.0.1641",
+            "fileVersion": "3.8.0.1641"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libSDL2-2.0.so.0": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libopenal.so.1": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx/native/libSDL2-2.0.0.dylib": {
+            "rid": "osx",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx/native/libopenal.1.dylib": {
+            "rid": "osx",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/SDL2.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "2.0.12.0"
+          },
+          "runtimes/win-x64/native/soft_oal.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/SDL2.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "2.0.12.0"
+          },
+          "runtimes/win-x86/native/soft_oal.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "System.Buffers/4.4.0": {},
+      "System.Numerics.Vectors/4.4.0": {},
+      "System.Runtime.CompilerServices.Unsafe/4.4.0": {}
+    }
+  },
+  "libraries": {
+    "Endorblast.ImGui/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ImGui.NET/1.78.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ArYtGX3VcVh7+K6DfO4p6lY2r+NMZ5TArfMD8TSYEmF/UcWIZC/yM1SC7L6bsjQ+9brdv2aXGTexz8z0ZvvTxw==",
+      "path": "imgui.net/1.78.0",
+      "hashPath": "imgui.net.1.78.0.nupkg.sha512"
+    },
+    "MonoGame.Framework.DesktopGL/3.8.0.1641": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rJQlrlHQbnOECYV6EcQ8GlGRQ2lzPTroXQcyyOZ0ki+BQRSJEN2zVBm9skqLiXya348aGAfTSSGTaSKjAy9NaA==",
+      "path": "monogame.framework.desktopgl/3.8.0.1641",
+      "hashPath": "monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512"
+    },
+    "System.Buffers/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AwarXzzoDwX6BgrhjoJsk6tUezZEozOT5Y9QKF94Gl4JK91I4PIIBkBco9068Y9/Dra8Dkbie99kXB8+1BaYKw==",
+      "path": "system.buffers/4.4.0",
+      "hashPath": "system.buffers.4.4.0.nupkg.sha512"
+    },
+    "System.Numerics.Vectors/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UiLzLW+Lw6HLed1Hcg+8jSRttrbuXv7DANVj0DkL9g6EnnzbL75EB7EWsw5uRbhxd/4YdG8li5XizGWepmG3PQ==",
+      "path": "system.numerics.vectors/4.4.0",
+      "hashPath": "system.numerics.vectors.4.4.0.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9dLLuBxr5GNmOfl2jSMcsHuteEg32BEfUotmmUkmZjpR3RpVHE8YQwt0ow3p6prwA1ME8WqDVZqrr8z6H8G+Kw==",
+      "path": "system.runtime.compilerservices.unsafe/4.4.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.4.0.nupkg.sha512"
+    }
+  }
+}

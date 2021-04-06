@@ -1,0 +1,9 @@
+D:\Github\EndorblastDevlogs\Endorblastv2\Builds\v0.0.1\EndorblastEngine.exe
+D:\Github\EndorblastDevlogs\Endorblastv2\Builds\v0.0.1\EndorblastEngine.dll
+D:\Github\EndorblastDevlogs\Endorblastv2\Builds\v0.0.1\EndorblastEngine.deps.json
+D:\Github\EndorblastDevlogs\Endorblastv2\Builds\v0.0.1\EndorblastEngine.runtimeconfig.json
+D:\Github\EndorblastDevlogs\Endorblastv2\Builds\v0.0.1\EndorblastEngine.pdb
+D:\Github\EndorblastDevlogs\Endorblastv2\Builds\v0.0.1\MonoGame.Framework.dll
+D:\Github\EndorblastDevlogs\Endorblastv2\Builds\v0.0.1\MonoGame.ImGui.dll
+D:\Github\EndorblastDevlogs\Endorblastv2\Builds\v0.0.1\SDL2.dll
+D:\Github\EndorblastDevlogs\Endorblastv2\Builds\v0.0.1\soft_oal.dll
