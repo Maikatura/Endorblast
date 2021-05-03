@@ -1,0 +1,228 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\Endorblastv2\\Endorblast2\\Endorblast.DB\\Endorblast.DB.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\Endorblastv2\\Endorblast2\\Endorblast.DB\\Endorblast.DB.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\Endorblastv2\\Endorblast2\\Endorblast.DB\\Endorblast.DB.csproj",
+        "projectName": "Endorblast.DB",
+        "projectPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\Endorblastv2\\Endorblast2\\Endorblast.DB\\Endorblast.DB.csproj",
+        "packagesPath": "C:\\Users\\simon.igelstrom\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\Endorblastv2\\Endorblast2\\Endorblast.DB\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\simon.igelstrom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\Endorblastv2\\Endorblast2\\Endorblast.Library\\Endorblast.Library.csproj": {
+                "projectPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\Endorblastv2\\Endorblast2\\Endorblast.Library\\Endorblast.Library.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.2, )"
+            },
+            "Lidgren.Network": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            },
+            "MonoGame.Framework.DesktopGL": {
+              "target": "Package",
+              "version": "[3.8.0.1641, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.23, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\Endorblastv2\\Endorblast2\\Endorblast.Library\\Endorblast.Library.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\Endorblastv2\\Endorblast2\\Endorblast.Library\\Endorblast.Library.csproj",
+        "projectName": "Endorblast.Library",
+        "projectPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\Endorblastv2\\Endorblast2\\Endorblast.Library\\Endorblast.Library.csproj",
+        "packagesPath": "C:\\Users\\simon.igelstrom\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\Endorblastv2\\Endorblast2\\Endorblast.Library\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\simon.igelstrom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\Endorblastv2\\Endorblast2\\VelcroPhysics\\VelcroPhysics.MonoGame.csproj": {
+                "projectPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\Endorblastv2\\Endorblast2\\VelcroPhysics\\VelcroPhysics.MonoGame.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Lidgren.Network": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            },
+            "MonoGame.Extended": {
+              "target": "Package",
+              "version": "[3.8.0, )"
+            },
+            "MonoGame.Extended.Input": {
+              "target": "Package",
+              "version": "[3.8.0, )"
+            },
+            "MonoGame.Framework.DesktopGL": {
+              "target": "Package",
+              "version": "[3.8.0.1641, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\Endorblastv2\\Endorblast2\\VelcroPhysics\\VelcroPhysics.MonoGame.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\Endorblastv2\\Endorblast2\\VelcroPhysics\\VelcroPhysics.MonoGame.csproj",
+        "projectName": "VelcroPhysics.MonoGame",
+        "projectPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\Endorblastv2\\Endorblast2\\VelcroPhysics\\VelcroPhysics.MonoGame.csproj",
+        "packagesPath": "C:\\Users\\simon.igelstrom\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\simon.igelstrom\\Documents\\GitHub\\Endorblastv2\\Endorblast2\\VelcroPhysics\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\simon.igelstrom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "MonoGame.Extended": {
+              "target": "Package",
+              "version": "[3.8.0, )"
+            },
+            "MonoGame.Framework.DesktopGL": {
+              "target": "Package",
+              "version": "[3.8.0.1641, )"
+            },
+            "MonoGame.Framework.Portable": {
+              "target": "Package",
+              "version": "[3.6.0.1625, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

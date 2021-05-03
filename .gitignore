@@ -1,8 +1,8 @@
-**/project/Endorblast/Endorblast/Endorblast/bin
-**/project/Endorblast/Endorblast.Lib/bin
-**/project/Endorblast/Endorblast.MasterServer/bin
-**/project/Endorblast/Endorblast.GameServer/bin
-**/project/Endorblast/Endorblast.Lib/Content
-**/project/Sprite Source
-**/project/Important
-
+/Endorblast/Endorblast.DBase/bin/*
+/Endorblast/Endorblast.Discord/bin/*
+/Endorblast/Endorblast.Library/bin/*
+/Endorblast/EndorblastEngine/bin/*
+/Endorblast/EndorblastEngine.GameServer/bin/*
+/Endorblast/EndorblastEngine.MasterServer/bin/*
+/Endorblast/Endorblast/Endorblast.Library/Content/*
+/Endorblast/sprites/*

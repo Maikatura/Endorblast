@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "1g2MBxp3gMYWIw8eQHI3XIITKoSknKp3uiADk9EMYcKQI/2Bbqa5MzuzWnH08dxQdIJ21wMbLjatOauG4HiIyA==",
+  "success": true,
+  "projectFilePath": "D:\\Github\\AnimeEngine2D\\Src\\Endorblast\\Nez.Portable\\Nez.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Zyro\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\Zyro\\.nuget\\packages\\system.drawing.common\\5.0.0\\system.drawing.common.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

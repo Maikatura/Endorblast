@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "+7u0MVhDLsEeW0H7Fhk1W+lzY3uWJZEZ5+lwk6LTXe0Muu5baHvjCMJY1Qned/msqMiUwoSP7Wup8aAvrtFcUQ==",
+  "success": true,
+  "projectFilePath": "D:\\Github\\AnimeEngine2D\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\zyro\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\zyro\\.nuget\\packages\\microsoft.win32.systemevents\\4.5.0\\microsoft.win32.systemevents.4.5.0.nupkg.sha512",
+    "C:\\Users\\zyro\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\zyro\\.nuget\\packages\\system.drawing.common\\4.5.1\\system.drawing.common.4.5.1.nupkg.sha512"
+  ],
+  "logs": []
+}
