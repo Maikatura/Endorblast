@@ -1,13 +1,16 @@
 ﻿using Endorblast.Library.Enums;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Nez;
 
 namespace Endorblast.Library.Movement
 {
-    public class BaseInput
+    public class BaseInput : Component
     {
         private BaseMovement movement;
+        public Vector2 mousePosition = new Vector2(0, 0);
+        
         public BaseInput(BaseMovement movement)
         {
            this.movement = movement;
@@ -49,6 +52,12 @@ namespace Endorblast.Library.Movement
                 movement.CurrentActionType = ActionType.Jump;
                 movement.CurrentMoveType = MovementType.Jump;
                 
+            }
+
+            // Head Movement
+            {
+                
+                mousePosition = Input.MousePosition;
             }
         }
     }

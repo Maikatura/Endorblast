@@ -121,8 +121,6 @@ namespace Nez.Textures
 				Origin = Origin
 			};
 		}
-		
-		
 
 		/// <summary>
 		/// provides a List of Sprites given an atlas with equally spaced rows/columns of sprites

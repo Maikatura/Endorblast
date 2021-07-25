@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Endorblast.Library.Entities;
+using Endorblast.Library.Entities.Player;
 
 namespace Endorblast.Library.Skills
 {
@@ -16,10 +17,10 @@ namespace Endorblast.Library.Skills
         float force;
         float forceMulti = 25;
 
-        BasePlayer movement;
+        BasePlayerEntity movement;
 
 
-        public DashSkill(BasePlayer p) : base(p)
+        public DashSkill(BasePlayerEntity p) : base(p)
         {
             // Animation (If you want animation)
             movement = p;
@@ -35,7 +36,7 @@ namespace Endorblast.Library.Skills
         public override void Update()
         {
             duration -= Time.DeltaTime;
-            movement.MoveCharacter(new Vector2(force, 0));
+            //movement.MoveCharacter(new Vector2(force, 0));
             force = Mathf.Lerp(0, force, duration);
             
 

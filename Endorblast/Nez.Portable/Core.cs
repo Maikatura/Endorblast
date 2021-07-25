@@ -55,8 +55,6 @@ namespace Nez
 		/// global content manager for loading any assets that should stick around between scenes
 		/// </summary>
 		public new static NezContentManager Content;
-
-		public static GraphicsDeviceManager graphicsManager;
 		
 		
 
@@ -150,7 +148,7 @@ namespace Nez
 			_instance = this;
 			Emitter = new Emitter<CoreEvents>(new CoreEventsComparer());
 
-			graphicsManager = new GraphicsDeviceManager(this)
+			var graphicsManager = new GraphicsDeviceManager(this)
 			{
 				PreferredBackBufferWidth = width,
 				PreferredBackBufferHeight = height,
@@ -234,8 +232,6 @@ namespace Nez
 				SuppressDraw();
 				return;
 			}
-
-			StartDebugUpdate();
 
 			// update all our systems and global managers
 			//System.Console.WriteLine(gameTime.ElapsedGameTime);
@@ -344,19 +340,9 @@ namespace Nez
 		#region Debug Injection
 
 		[Conditional("DEBUG")]
-		void StartDebugUpdate()
-		{
-#if DEBUG
-			TimeRuler.Instance.StartFrame();
-			TimeRuler.Instance.BeginMark("update", Color.Green);
-#endif
-		}
-
-		[Conditional("DEBUG")]
 		void EndDebugUpdate()
 		{
 #if DEBUG
-			TimeRuler.Instance.EndMark("update");
 			DebugConsole.Instance.Update();
 			drawCalls = 0;
 #endif
@@ -365,33 +351,25 @@ namespace Nez
 		[Conditional("DEBUG")]
 		void StartDebugDraw(TimeSpan elapsedGameTime)
 		{
-#if DEBUG
-			TimeRuler.Instance.BeginMark("draw", Color.Gold);
-
-			// fps counter
-			//_frameCounter++;
-			//_frameCounterElapsedTime += elapsedGameTime;
-			//if (_frameCounterElapsedTime >= TimeSpan.FromSeconds(1))
-			//{
-			//	var totalMemory = (GC.GetTotalMemory(false) / 1048576f).ToString("F");
-			//	Window.Title = string.Format("{0} {1} fps - {2} MB", _windowTitle, _frameCounter, totalMemory);
-			//	_frameCounter = 0;
-			//	_frameCounterElapsedTime -= TimeSpan.FromSeconds(1);
-			//}
-#endif
+// #if DEBUG
+// 			// fps counter
+// 			_frameCounter++;
+// 			_frameCounterElapsedTime += elapsedGameTime;
+// 			if (_frameCounterElapsedTime >= TimeSpan.FromSeconds(1))
+// 			{
+// 				var totalMemory = (GC.GetTotalMemory(false) / 1048576f).ToString("F");
+// 				Window.Title = string.Format("{0} {1} fps - {2} MB", _windowTitle, _frameCounter, totalMemory);
+// 				_frameCounter = 0;
+// 				_frameCounterElapsedTime -= TimeSpan.FromSeconds(1);
+// 			}
+// #endif
 		}
 
 		[Conditional("DEBUG")]
 		void EndDebugDraw()
 		{
 #if DEBUG
-			TimeRuler.Instance.EndMark("draw");
 			DebugConsole.Instance.Render();
-
-			// the TimeRuler only needs to render when the DebugConsole is not open
-			if (!DebugConsole.Instance.IsOpen)
-				TimeRuler.Instance.Render();
-
 #if !FNA
 			drawCalls = GraphicsDevice.Metrics.DrawCount;
 #endif

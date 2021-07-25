@@ -32,19 +32,16 @@ namespace Endorblast.Library
 
         public static Sprite LoadSprite(string path)
         {
-            Sprite sprite = new Sprite(conManager.LoadTexture(startDir + path));
+            Sprite sprite = new Sprite(conManager.LoadTexture(path));
             return sprite;
         }
 
         public static Sprite[] LoadSprites(string path, int width, int height)
         {
-
             Sprite[] sprite = Sprite.SpritesFromAtlas(LoadSprite(path), width, height).ToArray();
             return sprite;
         }
         
-        
-
         public static TmxMap LoadTiledMap(string path)
         {
             TmxMap map = conManager.LoadTiledMap(startDir + path);
@@ -78,7 +75,7 @@ namespace Endorblast.Library
         {
             dummyPlayer = new Entity("DummyPlayer");
 
-            nothing = ContentLoader.LoadSprite("/Textures/Spritesheets/Player/Clothes/nothing/nothing.png");
+            
 
 
         }

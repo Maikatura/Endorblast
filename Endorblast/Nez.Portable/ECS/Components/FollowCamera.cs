@@ -188,6 +188,9 @@ namespace Nez
 
 		public void Follow(Entity targetEntity, CameraStyle cameraStyle = CameraStyle.CameraWindow)
 		{
+			var currentZoom = Camera.Zoom;
+			Camera.SetZoom(0);
+			
 			_targetEntity = targetEntity;
 			_cameraStyle = cameraStyle;
 			var cameraBounds = Camera.Bounds;
@@ -203,6 +206,8 @@ namespace Nez
 					Deadzone = new RectangleF(cameraBounds.Width / 2, cameraBounds.Height / 2, 10, 10);
 					break;
 			}
+			
+			Camera.SetZoom(currentZoom);
 		}
 
 		/// <summary>

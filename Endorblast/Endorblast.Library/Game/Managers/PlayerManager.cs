@@ -8,6 +8,7 @@ using Endorblast.Game;
 using Endorblast.Library.Skills;
 using Endorblast.Library;
 using Endorblast.Library.Entities;
+using Endorblast.Library.Entities.Player;
 using Endorblast.Library.Network;
 
 namespace Endorblast.Library
@@ -19,14 +20,14 @@ namespace Endorblast.Library
         public static PlayerManager Instance => instance;
 
 
-        public List<BasePlayer> Players = new List<BasePlayer>();
+        public List<BasePlayerEntity> Players = new List<BasePlayerEntity>();
         //public Player Player;
 
         //double activityTimer = 20;
         public bool TimedOut;
 
-        public BasePlayer GetPlayer(int pid) => Players.FirstOrDefault(x => x.WorldID == pid);
-        public BasePlayer GetPlayer(string name) => Players.FirstOrDefault(x => x.CharacterName == name);
+        public BasePlayerEntity GetPlayer(int pid) => Players.FirstOrDefault(x => x.WorldID == pid);
+        public BasePlayerEntity GetPlayer(string name) => Players.FirstOrDefault(x => x.CharacterName == name);
 
         PlayerManager()
         {
@@ -41,7 +42,7 @@ namespace Endorblast.Library
 
         public void Load()
         {
-            Players = new List<BasePlayer>();
+            Players = new List<BasePlayerEntity>();
 
             Console.WriteLine("# PLAYERMANAGER LOADED");
         }
@@ -51,19 +52,19 @@ namespace Endorblast.Library
         //    activityTimer = 5;
         //}
 
-        private void CharacterSkillCastCommand_CharacterSkillCastEvent(object sender, CharacterSkillCastEvent e)
-        {
-            var player = GetPlayer(e.pid);
-
-            if (player == null)
-            {
-                Console.WriteLine("Player was null when doing skill - - pid:" + e.pid);
-                return;
-            }
-
-            //player.currentSkill = Skill.DoSkill(e.skillType, player, e.direction);
-            Console.WriteLine($"{player.CharacterName} did skill {e.ActionType.ToString()}");
-        }
+        // private void CharacterSkillCastCommand_CharacterSkillCastEvent(object sender, CharacterSkillCastEvent e)
+        // {
+        //     var player = GetPlayer(e.pid);
+        //
+        //     if (player == null)
+        //     {
+        //         Console.WriteLine("Player was null when doing skill - - pid:" + e.pid);
+        //         return;
+        //     }
+        //
+        //     player.currentSkill = Skill.DoSkill(e.skillType, player, e.direction);
+        //     Console.WriteLine($"{player.CharacterName} did skill {e.ActionType.ToString()}");
+        // }
 
 
         //private void WorldRemoveCharacterCommand_Event(object sender, WorldRemoveCharacterEvent e)
@@ -71,28 +72,28 @@ namespace Endorblast.Library
 
         //}
 
-        private void CharacterListCommand_CharacterListEvent(object sender, CharacterListEvent e)
-        {
-            Console.WriteLine("DID EVENT");
+        // private void CharacterListCommand_CharacterListEvent(object sender, CharacterListEvent e)
+        // {
+        //     Console.WriteLine("DID EVENT");
+        //
+        //     foreach (var bp in e.Characters)
+        //     {
+        //         //AddPlayer(bp);
+        //     }
+        // }
 
-            foreach (var bp in e.Characters)
-            {
-                //AddPlayer(bp);
-            }
-        }
-
-        private void CharacterDataCommand_PositionEvent(object sender, CharacterDataPositionEvent e)
-        {
-            var p = Players.FirstOrDefault(x => x.WorldID == e.worldid);
-
-            if (p == null)
-            {
-                Console.WriteLine("[ERROR] Update player position - player was null, worldID -- " + e.worldid);
-                return;
-            }
-
-            p.Transform.Position = new Vector2(e.x, e.y);
-        }
+        // private void CharacterDataCommand_PositionEvent(object sender, CharacterDataPositionEvent e)
+        // {
+        //     var p = Players.FirstOrDefault(x => x.WorldID == e.worldid);
+        //
+        //     if (p == null)
+        //     {
+        //         Console.WriteLine("[ERROR] Update player position - player was null, worldID -- " + e.worldid);
+        //         return;
+        //     }
+        //
+        //     p.Transform.Position = new Vector2(e.x, e.y);
+        // }
 
     }
 }

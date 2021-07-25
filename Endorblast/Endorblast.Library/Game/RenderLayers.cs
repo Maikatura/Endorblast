@@ -7,17 +7,26 @@ namespace Endorblast.Library
     public class RenderLayers
     {
 
-        public static int UILayer1 = 20;
-        public static int UILayer2 = 25;
 
+        public enum Layer
+        {
+            FrontObjectLayer = 5,
+            MainPlayer = 10,
+            OtherPlayerMin = 11,
+            OtherPlayerMax = 15,
+            ObjectLayer = 20,
+            BackgroundLayer = 25,
+            
+            
+            LightLayer = 30,
+            
+            
+            UILayerMin = 100,
+            UILayerMax = 110,
+        }
+       
 
-        public static int FrontObjectLayer = 7;
-        public static int MainPlayerLayer = 8;
-        public static int OtherPlayersLayer = 9;
-        public static int ObjectLayer = 10;
-        public static int BackgroundLayer = 11;
-
-        public static int LightLayer = 15;
+        
        
 
         

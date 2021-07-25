@@ -1,13 +1,11 @@
 ﻿using System;
+using System.Numerics;
 using Endorblast.Library.Entities;
-using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Nez;
-using Nez.PhysicsShapes;
-using Nez.Sprites;
 using Nez.Textures;
 using Nez.Tweens;
-
+using Vector2 = Microsoft.Xna.Framework.Vector2;
 
 
 namespace Endorblast.Library.Components
@@ -17,6 +15,8 @@ namespace Endorblast.Library.Components
         private BoxCollider boxCollider;
         private PolygonMesh polyMesh;
         ColliderTriggerHelper _triggerHelper;
+
+        private TransformSpringTween spring;
 
         private bool isBending = false;
         private bool isRebounding = false;
@@ -34,6 +34,10 @@ namespace Endorblast.Library.Components
         private float enterOffset;
         private float posTesting;
 
+        private float lerpValue = 0f;
+        private float lerpValueCache = 0f;
+        private float lerpTime = 1f;
+
         public GrassComp(int boxWidth, int boxHeight, Sprite sprite)
         {
             this.boxWidth = boxWidth;
@@ -50,6 +54,9 @@ namespace Endorblast.Library.Components
                 this.Entity.AddComponent(new BoxCollider(sprite.Texture2D.Width, sprite.Texture2D.Height * 2));
             boxCollider.IsTrigger = true;
 
+            
+            
+
             _triggerHelper = new ColliderTriggerHelper(Entity);
             
             var width = sprite.Texture2D.Width;
@@ -57,7 +64,7 @@ namespace Endorblast.Library.Components
             
             
             var halfWidth = sprite.Texture2D.Width / 2;
-            var halfheight = sprite.Texture2D.Height / 2;
+            var halfHeight = sprite.Texture2D.Height / 2;
             
             // Offset of vertex so it look good (Top is most offset Middle is half of the top offset)
             var leftMiddle = -halfWidth;
@@ -68,34 +75,28 @@ namespace Endorblast.Library.Components
             // Points to set on grass so its sways back and forward (Its doesn't rotate)
             var points = new Vector2[6];
             points[0] = new Vector2(-halfWidth, 0);
-            points[1] = new Vector2(leftMiddle, -halfheight);
+            points[1] = new Vector2(leftMiddle, -halfHeight);
             points[2] = new Vector2(leftTop, -height);
             points[3] = new Vector2(rightTop, -height);
-            points[4] = new Vector2(rightMiddle, -halfheight);
+            points[4] = new Vector2(rightMiddle, -halfHeight);
             points[5] = new Vector2(halfWidth, 0);
             
             polyMesh = new PolygonMesh(points);
             polyMesh.SetTexture(sprite.Texture2D);
-            polyMesh.SetRenderLayer(RenderLayers.ObjectLayer);
+            polyMesh.SetRenderLayer((int)RenderLayers.Layer.ObjectLayer);
 
             this.Entity.AddComponent(polyMesh);
+            
         }
 
 
         public void Update()
         {
-            if (isWindEnabled)
-            {
-                var windForce = 1f + Mathf.Pow(Mathf.Sin(Time.DeltaTime * 3f + 0.3f) * 0.7f + 0.05f, 4 ) * 0.05f * 10f;
-            }
             
-            if (isRebounding)
-            {
-                var lerp = Mathf.LerpAngle(exitOffset, 0, Time.DeltaTime);
-                exitOffset = SetVertHorizontalOffset(lerp);
-            }
 
+            
             _triggerHelper.Update();
+            
         }
 
         private float SetVertHorizontalOffset(float offset)
@@ -129,42 +130,17 @@ namespace Endorblast.Library.Components
         
         public void OnTriggerEnter(Collider other, Collider local)
         {
-            if (other.HasComponent<BasePlayer>() || local.HasComponent<BasePlayer>())
-            {
-                enterOffset = other.Transform.Position.X - local.Transform.Position.X;
-            }
+            
         }
 
         public void OnTriggerStay(Collider other, Collider local)
         {
-            if (other.HasComponent<BasePlayer>() || local.HasComponent<BasePlayer>())
-            {
-                var offset = other.Transform.Position.X - local.Transform.Position.X;
             
-                if (isBending || Math.Sign(enterOffset) != Math.Sign(offset))
-                {
-                    isRebounding = false;
-                    isBending = true;
-                    
-                    var radius = boxCollider.Width / 2 + boxCollider.Bounds.Size.X * 0.5f;
-                    exitOffset = Mathf.Map(offset, -radius, radius, -1f, 1f);
-                    SetVertHorizontalOffset(exitOffset);
-                }
-            }
         }
 
         public void OnTriggerExit(Collider other, Collider local)
         {
-            if (other.HasComponent<BasePlayer>() || local.HasComponent<BasePlayer>())
-            {
-                if (isBending)
-                {
-                    // apply a force in the opposite direction that we are currently bending
-                }
             
-                isBending = false;
-                isRebounding = true;
-            }
         }
     }
 }

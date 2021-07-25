@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Sivy8eSDRjDzy61s9mLX36w+XjFfC91QgeDe46SKfWCA5jSOOkRVMp19rxwP9SoWt+dr3pZyUuRQJycTjCxclw==",
+  "dgSpecHash": "ZY204TQieWAf2PV39MVG5LQtj98aHdJ/8w8ABr56nj5rHokrNgPRNPfClU+qeNA2d4PRP6bUxTUlRYxFO3gEVQ==",
   "success": true,
-  "projectFilePath": "D:\\Github\\AnimeEngine2D\\Endorblast\\Endorblast.DBase\\Endorblast.DBase.csproj",
+  "projectFilePath": "G:\\Endorblast\\EndorblastPrivate\\Endorblast\\Endorblast.DBase\\Endorblast.DBase.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zyro\\.nuget\\packages\\bcrypt.net-next\\4.0.2\\bcrypt.net-next.4.0.2.nupkg.sha512",
     "C:\\Users\\zyro\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
@@ -11,7 +11,6 @@
     "C:\\Users\\zyro\\.nuget\\packages\\k4os.compression.lz4\\1.1.11\\k4os.compression.lz4.1.1.11.nupkg.sha512",
     "C:\\Users\\zyro\\.nuget\\packages\\k4os.compression.lz4.streams\\1.1.11\\k4os.compression.lz4.streams.1.1.11.nupkg.sha512",
     "C:\\Users\\zyro\\.nuget\\packages\\k4os.hash.xxhash\\1.0.6\\k4os.hash.xxhash.1.0.6.nupkg.sha512",
-    "C:\\Users\\zyro\\.nuget\\packages\\lidgren.network\\1.0.2\\lidgren.network.1.0.2.nupkg.sha512",
     "C:\\Users\\zyro\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\zyro\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\zyro\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
@@ -31,16 +30,5 @@
     "C:\\Users\\zyro\\.nuget\\packages\\system.text.encoding.codepages\\4.4.0\\system.text.encoding.codepages.4.4.0.nupkg.sha512",
     "C:\\Users\\zyro\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Lidgren.Network 1.0.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Lidgren.Network",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  "logs": []
 }

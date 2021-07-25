@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+TTONECl7K5l9I29pOPpaYetTXONK1WTfniH0mMMTS9Q4ug2Oy4QoE1v3urgBXm8i51PQ6/uu0lTecbBywZPYg==",
+  "dgSpecHash": "DnuNRSZmyJkWYVLa8Fg9fT54+rP5Dfvmqwz6RA+IbxUTFfNa97Bb6CHuHtm7bizYrEHsxmSkSK6F8qw6DhrLpw==",
   "success": true,
-  "projectFilePath": "D:\\Github\\AnimeEngine2D\\Endorblast\\Endorblast.Discord\\Endorblast.Discord.csproj",
+  "projectFilePath": "G:\\Endorblast\\EndorblastPrivate\\Endorblast\\Endorblast.Discord\\Endorblast.Discord.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zyro\\.nuget\\packages\\bcrypt.net-next\\4.0.2\\bcrypt.net-next.4.0.2.nupkg.sha512",
     "C:\\Users\\zyro\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
@@ -14,7 +14,6 @@
     "C:\\Users\\zyro\\.nuget\\packages\\k4os.compression.lz4\\1.1.11\\k4os.compression.lz4.1.1.11.nupkg.sha512",
     "C:\\Users\\zyro\\.nuget\\packages\\k4os.compression.lz4.streams\\1.1.11\\k4os.compression.lz4.streams.1.1.11.nupkg.sha512",
     "C:\\Users\\zyro\\.nuget\\packages\\k4os.hash.xxhash\\1.0.6\\k4os.hash.xxhash.1.0.6.nupkg.sha512",
-    "C:\\Users\\zyro\\.nuget\\packages\\lidgren.network\\1.0.2\\lidgren.network.1.0.2.nupkg.sha512",
     "C:\\Users\\zyro\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.1\\microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
     "C:\\Users\\zyro\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\zyro\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
@@ -104,16 +103,5 @@
     "C:\\Users\\zyro\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
     "C:\\Users\\zyro\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.12\\microsoft.netcore.app.host.win-x64.3.1.12.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Lidgren.Network 1.0.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Lidgren.Network",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  "logs": []
 }

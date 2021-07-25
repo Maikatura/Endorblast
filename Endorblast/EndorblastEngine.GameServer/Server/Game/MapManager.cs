@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using Endorblast.DBase;
 using Endorblast.GameServer.Entities;
 using Endorblast.Library;
 using Endorblast.Library.Enums;
@@ -24,11 +26,7 @@ namespace Endorblast.GameServer.Server
         public MapManager()
         {
             
-
             
-            
-            
-            worlds.Add(new Map(0, MapType.Town));
             
         }
         
@@ -38,11 +36,14 @@ namespace Endorblast.GameServer.Server
                 map.Update();
         }
 
-        public void AddWorld(MapType type)
+        public Map AddWorld(MapType type)
         {
+            Console.WriteLine("Added a map with type: "+ type);
+            
             var map = new Map(worldId, type);
             worlds.Add(map);
             worldId++;
+            return map;
         }
         
         public void RemoveWorld(Map world)
@@ -65,9 +66,9 @@ namespace Endorblast.GameServer.Server
         }
 
 
-        public Player GetPlayer(NetConnection con)
+        public NetConnection GetPlayer(NetConnection con)
         {
-            Player player;
+            NetConnection player;
             foreach (var world in worlds)
             {
                 player = world.characterManager.GetConnection(con);
@@ -83,9 +84,9 @@ namespace Endorblast.GameServer.Server
             
         }
 
-        public List<Player> GetPlayers(int worldId)
+        public List<NetConnection> GetPlayers(int worldId)
         {
-            var list = new List<Player>();
+            var list = new List<NetConnection>();
             
             foreach (var map in worlds)
                 if (map.worldId == worldId)
@@ -102,50 +103,64 @@ namespace Endorblast.GameServer.Server
             foreach (var map in worlds)
                 if (map.worldId == worldId)
                     foreach (var player in map.characterManager.Characters)
-                        list.Add(player.connection);
+                        list.Add(player);
             
             return list;
             
         }
 
-        public Map AddPlayer(Player player, int worldID)
+        public Map AddPlayer(NetConnection con, int charaID)
         {
-            foreach (var map in worlds)
+            var playerLocation = new LoadCharacterLocationCmd().LoadLocation(charaID);
+
+            var firstMap = worlds.Find(x => playerLocation.mapType == x.mapType);
+
+            if (firstMap == null)
             {
-                if (map.worldId == worldID)
-                {
-                    map.characterManager.AddPlayer(player);
-                    return map;
-                }
+                var map = AddWorld(playerLocation.mapType);
+                map.AddPlayer(con);
+                return map;
             }
-
-            return null;
-
-        }
-
-        public Map RemovePlayer(int playerID)
-        {
-            foreach (var map in worlds)
+            else
             {
-                foreach (var player in map.characterManager.Characters)
+                foreach (var map in worlds)
                 {
-                    if (player.playerID == playerID)
+                    if (map.mapType == playerLocation.mapType)
                     {
-                        map.characterManager.Characters.Remove(player);
+                        map.AddPlayer(con);
                         return map;
                     }
                 }
             }
+            
 
             return null;
+
         }
+
+        // public Map RemovePlayer(int playerID)
+        // {
+        //     foreach (var map in worlds)
+        //     {
+        //         foreach (var player in map.characterManager.Characters)
+        //         {
+        //             if (player.playerID == playerID)
+        //             {
+        //                 map.characterManager.Characters.Remove(player);
+        //                 return map;
+        //             }
+        //         }
+        //     }
+        //
+        //     return null;
+        // }
         
         public Map RemovePlayer(NetConnection con)
         {
             foreach (var map in worlds)
                 if (map.worldId == worldId)
                     foreach (var player in map.characterManager.Characters)
-                        if (player.connection == con)
+                        if (player == con)
                             map.characterManager.Characters.Remove(player);
 
             return null;

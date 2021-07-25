@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "6hszMVqd6ABulfLHHhg8x1r1WxpAx4H0upfNAWVHrfwrsMMF28C5qkpEh5yB3iokK3OdeUdYlTIYnvsK4N6+nQ==",
+  "success": false,
+  "projectFilePath": "G:\\Endorblast\\EndorblastPrivate\\Endorblast\\Nez.FarseerPhysics\\Nez.FarseerPhysics.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\zyro\\.nuget\\packages\\monogame.framework.portable\\3.7.1.189\\monogame.framework.portable.3.7.1.189.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Unable to find project information for 'G:\\Endorblast\\EndorblastPrivate\\Endorblast\\Nez.Portable\\Nez.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
+      "libraryId": "G:\\Endorblast\\EndorblastPrivate\\Endorblast\\Nez.Portable\\Nez.csproj",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.1"
+      ]
+    }
+  ]
+}

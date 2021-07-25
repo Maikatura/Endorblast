@@ -1,5 +1,6 @@
 ﻿using Nez;
 using Endorblast.Library.Entities;
+using Endorblast.Library.Entities.Player;
 
 namespace Endorblast.Library.Skills
 {
@@ -11,7 +12,7 @@ namespace Endorblast.Library.Skills
         int damage;
 
 
-        public PunchSkill(BasePlayer p) : base(p)
+        public PunchSkill(BasePlayerEntity p) : base(p)
         {
             duration = .5f;
             damage = Nez.Random.RNG.Next(1, 5);

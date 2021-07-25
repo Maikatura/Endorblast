@@ -17,13 +17,13 @@ namespace Endorblast.Library.Enemies
             var coll = this.Entity.AddComponent(new BoxCollider(64, 64));
             coll.IsTrigger = true;
             var sprite = this.Entity.AddComponent(new SpriteRenderer(ContentLoader.LoadSprite("/Sprites/Enemies/Testing/Enemy1.png")));
-            sprite.RenderLayer = RenderLayers.ObjectLayer;
+            sprite.RenderLayer = (int)RenderLayers.Layer.ObjectLayer;
 
             var test1 = this.Entity.AddComponent(new SpriteAnimator());
             test1.AddAnimation("Fire", ContentLoader.LoadSprites("/Sprites/GameObjects/Fire/Fire1.png", 96, 96), 30);
             test1.LocalOffset = new Microsoft.Xna.Framework.Vector2(0, -16);
             test1.Play("Fire");
-            test1.RenderLayer = RenderLayers.ObjectLayer;
+            test1.RenderLayer = (int)RenderLayers.Layer.ObjectLayer;
         }
 
         public Skeleton()

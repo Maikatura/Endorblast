@@ -1,0 +1,101 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.1": {
+      "MonoGame.Framework.Portable/3.7.1.189": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win8+wpa81/MonoGame.Framework.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wpa81/MonoGame.Framework.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MonoGame.Framework.Portable/3.7.1.189": {
+      "sha512": "Q5ARWZtCtJa8aD5zeeMmEkAwnguEq6aZqeIh9RdAi9RhaYJxoGc0lYka4sZaq2hGQAP7KFsPe4U9uhK/6c37vg==",
+      "type": "package",
+      "path": "monogame.framework.portable/3.7.1.189",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/portable-net45+win8+wpa81/MonoGame.Framework.dll",
+        "lib/portable-net45+win8+wpa81/MonoGame.Framework.xml",
+        "monogame.framework.portable.3.7.1.189.nupkg.sha512",
+        "monogame.framework.portable.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.1": [
+      "G:\\Endorblast\\EndorblastPrivate\\Endorblast\\Nez.Portable\\Nez.csproj",
+      "MonoGame.Framework.Portable >= 3.7.1.189"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\zyro\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "G:\\Endorblast\\EndorblastPrivate\\Endorblast\\Nez.FarseerPhysics\\Nez.FarseerPhysics.csproj",
+      "projectName": "Nez.FarseerPhysics",
+      "projectPath": "G:\\Endorblast\\EndorblastPrivate\\Endorblast\\Nez.FarseerPhysics\\Nez.FarseerPhysics.csproj",
+      "packagesPath": "C:\\Users\\zyro\\.nuget\\packages\\",
+      "outputPath": "G:\\Endorblast\\EndorblastPrivate\\Endorblast\\Nez.FarseerPhysics\\obj\\Nez.FarseerPhysics\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\zyro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net471"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net471": {
+          "targetAlias": "net471",
+          "projectReferences": {
+            "G:\\Endorblast\\EndorblastPrivate\\Endorblast\\Nez.Portable\\Nez.csproj": {
+              "projectPath": "G:\\Endorblast\\EndorblastPrivate\\Endorblast\\Nez.Portable\\Nez.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net471": {
+        "targetAlias": "net471",
+        "dependencies": {
+          "MonoGame.Framework.Portable": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[3.7.1.189, )"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Unable to find project information for 'G:\\Endorblast\\EndorblastPrivate\\Endorblast\\Nez.Portable\\Nez.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
+      "libraryId": "G:\\Endorblast\\EndorblastPrivate\\Endorblast\\Nez.Portable\\Nez.csproj",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.1"
+      ]
+    }
+  ]
+}

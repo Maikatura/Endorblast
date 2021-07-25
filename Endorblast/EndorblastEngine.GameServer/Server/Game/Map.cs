@@ -4,6 +4,7 @@ using Endorblast.GameServer.Entities;
 using Endorblast.GameServer.Server.Game;
 using Endorblast.Library;
 using Endorblast.Library.Enums;
+using Lidgren.Network;
 using Microsoft.Xna.Framework;
 using Nez;
 using Nez.Sprites;
@@ -36,16 +37,14 @@ namespace Endorblast.GameServer.Server
             npcManager = new NPCManager();
 
 
-            switch (type)
-            {
-                case MapType.Town:
-                    map = new TmxMap().LoadTmxMap("Content/Sprites/Tilesets/GameArea/GameStart.tmx", true);
-                    ground = map.GetLayer<TmxLayer>("Ground");
-                    break;
-            }
-            
-            AddPlayer(ground);
-            
+            // switch (type)
+            // {
+            //     case MapType.Town:
+            //         map = new TmxMap().LoadTmxMap("Content/Sprites/Tilesets/GameArea/GameStart.tmx", true);
+            //         ground = map.GetLayer<TmxLayer>("Ground");
+            //         break;
+            // }
+
             worldId = worldID;
             mapType = type;
             
@@ -63,15 +62,14 @@ namespace Endorblast.GameServer.Server
             //npcManager.Update();
         }
 
-        public void AddPlayer(TmxLayer layer)
+        public void AddPlayer(NetConnection connection)
         {
-
-            var lol = sceneHeadless.CreateEntity("lol");
-            var player = lol.AddComponent(new Player());
-            player.AddComponent(new SpriteRenderer());
+            // var playerEntity = new Entity();
+            // var player = playerEntity.AddComponent(new Player(connection));
+            // sceneHeadless.AddEntity(playerEntity);
+            // Console.WriteLine("Added");
             
-            player.SetMap(ground);
-
+            characterManager.Characters.Add(connection);
         }
 
         public void RemovePlayer()

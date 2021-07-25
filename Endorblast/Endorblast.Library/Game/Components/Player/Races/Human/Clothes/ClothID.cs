@@ -17,8 +17,8 @@ namespace Endorblast.Library
 
         public static bool Init()
         {
-            clothes.Add(1, new NakedOutfit(1));
-            clothes.Add(2, new MaidOutfit(2));
+            //clothes.Add(1, new NakedOutfit(1));
+            //clothes.Add(2, new MaidOutfit(2));
 
             return true;
 

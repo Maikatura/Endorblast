@@ -1,7 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Endorblast.Library.Enums;
+using Endorblast.Library.Game.Player.Races;
+using Microsoft.Xna.Framework;
 using Nez.Sprites;
+using Nez.Textures;
 
 namespace Endorblast.Library.Classes
 {
@@ -10,10 +14,18 @@ namespace Endorblast.Library.Classes
         
         private Dictionary<ActionType, SpriteAnimation> baseSprites;
 
+        private Sprite headSprite;
+
+        public Vector2 headOffset;
+        public Vector2 headSpriteOffset;
 
         #region Get / Set
 
-        
+        public Sprite HeadSprite
+        {
+            get => headSprite;
+            set => headSprite = value;
+        }
 
         #endregion
         public Dictionary<ActionType, SpriteAnimation> BaseSprites
@@ -29,16 +41,56 @@ namespace Endorblast.Library.Classes
             
             return baseSprites.FirstOrDefault(x => x.Key == actionType).Value;
         }
+
+        public Sprite GetHead()
+        {
+            return HeadSprite;
+        }
         
         public BaseCharacterSprite()
         {
             baseSprites = new Dictionary<ActionType, SpriteAnimation>();
             LoadSprites();
+            LoadInfomation();
         }
 
         protected virtual void LoadSprites()
         {
             
+        }
+        
+        protected virtual void LoadInfomation()
+        {
+            
+        }
+        
+        
+        public void LoadClass(GenderTypes gender, PlayerRaceTypes race, PlayerClassTypes type)
+        {
+            
+        }
+
+        public BaseCharacterSprite SetSprites(GenderTypes gender, PlayerRaceTypes race)
+        {
+            BaseCharacterSprite returnValue = null;
+            
+            switch (gender, race)
+            {
+                ///////////////////////////
+                //       Human
+                ///////////////////////////
+                case (GenderTypes.Female, PlayerRaceTypes.Human):
+                    returnValue = new HumanFemaleSprite();
+                    break;
+                case (GenderTypes.Male, PlayerRaceTypes.Human):
+                    break;
+                
+                default:
+                    Console.WriteLine("That combination is not available");
+                    break;
+            }
+
+            return returnValue;
         }
         
     }

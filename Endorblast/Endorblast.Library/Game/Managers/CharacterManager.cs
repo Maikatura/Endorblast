@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Endorblast.Library;
 using Endorblast.Library.Entities;
+using Endorblast.Library.Entities.Player;
 using Microsoft.Xna.Framework;
 using Nez.BitmapFonts;
 
@@ -18,9 +19,9 @@ namespace Endorblast.Library
 
         public int CurrentWorldID = 0;
 
-        public List<BasePlayer> Characters = new List<BasePlayer>();
+        public List<BasePlayerEntity> Characters = new List<BasePlayerEntity>();
 
-        public BasePlayer GetConnection(int playerID)
+        public BasePlayerEntity GetConnection(int playerID)
         {
             foreach (var p in Characters)
                 if (p.WorldID == playerID)
@@ -33,18 +34,18 @@ namespace Endorblast.Library
             return null;
         }
 
-        public void AddPlayer(BasePlayer player, string username, float x, float y, int worldID)
+        public void AddPlayer(BasePlayerEntity player, string username, float x, float y, int worldID)
         {
             player.WorldID = worldID;
-            player.CharacterName = username;
-            player.Transform.Position = new Vector2(x, y);
-            Characters.Add(player);
-            Console.WriteLine(player.CharacterName + " joined wolrd with ID:" + CurrentWorldID);
+            // player.CharacterName = username;
+            // player.Transform.Position = new Vector2(x, y);
+            // Characters.Add(player);
+            // Console.WriteLine(player.CharacterName + " joined wolrd with ID:" + CurrentWorldID);
             CurrentWorldID++;
             
         }
 
-        public void RemovePlayer(BasePlayer player)
+        public void RemovePlayer(BasePlayerEntity player)
         {
 
         }
@@ -56,7 +57,7 @@ namespace Endorblast.Library
             if (ch.CharacterName != null)
             {
                 Characters.Remove(ch);
-                ch.Entity.Destroy();
+                ch.Destroy();
             }
 
             Console.WriteLine("Removed character: " + ch.CharacterName);

@@ -10,6 +10,7 @@ using System.Runtime;
 using Nez;
 using Nez.Textures;
 using Endorblast.Library.Entities;
+using Endorblast.Library.Entities.Player;
 using Endorblast.Library.Enums;
 using Endorblast.Library.Game.Utils;
 
@@ -20,7 +21,7 @@ namespace Endorblast.Library.Skills
 
     public class Skill
     {
-        public BasePlayer player;
+        public BasePlayerEntity player;
         public bool isExiting;
         public bool isLocal;
         public bool inited = false;
@@ -30,7 +31,7 @@ namespace Endorblast.Library.Skills
 
         public ActionType ActionType;
 
-        public static Skill DoSkill(ActionType type, BasePlayer caster, float dir)
+        public static Skill DoSkill(ActionType type, BasePlayerEntity caster, float dir)
         {
             if (type == ActionType.Idle)
                 return null;
@@ -49,18 +50,18 @@ namespace Endorblast.Library.Skills
 
         public Skill() { }
 
-        public Skill(BasePlayer playerCaster)
+        public Skill(BasePlayerEntity playerCaster)
         {
             player = playerCaster;
 
-            if (NetworkManager.Instance != null)
-            {
-                isLocal = NetworkManager.Instance.WorldID == playerCaster.WorldID ? true : false;
-            }
-            else
-            {
-                isLocal = false;
-            }
+            // if (NetworkManager.Instance != null)
+            // {
+            //     isLocal = NetworkManager.Instance.WorldID == playerCaster.WorldID ? true : false;
+            // }
+            // else
+            // {
+            //     isLocal = false;
+            // }
 
             // Set Sprite Effect!
             //SpriteEffects = playerCaster.SpriteEffects;
@@ -68,7 +69,7 @@ namespace Endorblast.Library.Skills
 
         }
 
-        public static Skill DoSkill(ActionType type, BasePlayer playerCaster, float dir, float offset)
+        public static Skill DoSkill(ActionType type, BasePlayerEntity playerCaster, float dir, float offset)
         {
             var skill = DoSkill(type, playerCaster, dir);
 
@@ -86,7 +87,7 @@ namespace Endorblast.Library.Skills
             ExitState();
         }
 
-        public void DoColliderCheck(BasePlayer player, int damage)
+        public void DoColliderCheck(BasePlayerEntity player, int damage)
         {
             // fetch anything that we might overlap with at our position excluding ourself. We don't care about ourself here.
             var neighborColliders = Physics.BoxcastBroadphaseExcludingSelf(player.GetComponent<Collider>());

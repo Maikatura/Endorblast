@@ -1,7 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using Endorblast.Library.Classes;
 using Endorblast.Library.Enums;
+using Endorblast.Library.Game.Player.Races;
 using Endorblast.Library.Movement;
 using Endorblast.Library.Skills;
 using Nez;
@@ -9,7 +12,7 @@ using Nez.Sprites;
 
 namespace Endorblast.Library
 {
-    public class BaseCharacterClass
+    public class BaseCharacterClass : Component
     {
 
         private string characterClassName;
@@ -21,17 +24,17 @@ namespace Endorblast.Library
         private int intellect;
         private int mana;
         private int stamina;
+
         
         protected BaseCharacterSprite sprites;
-        protected BaseMovement movement;
 
-        private Entity cacheEntity;
-
-        public BaseCharacterClass(Entity entity)
+        public BaseCharacterClass()
         {
-            cacheEntity = entity;
+            sprites = new BaseCharacterSprite();
+           
         }
-
+        
+        
         
         public string CharacterClassName
         {
@@ -75,14 +78,10 @@ namespace Endorblast.Library
             get => sprites;
         }
 
-        protected virtual void Init()
+        public void LoadSprites(GenderTypes gender, PlayerRaceTypes race)
         {
-            movement = new BaseMovement(cacheEntity, this);
+            sprites = sprites.SetSprites(gender, race);
         }
-
-        public virtual void Update()
-        {
-            movement.Update();
-        }
+        
     }
 }

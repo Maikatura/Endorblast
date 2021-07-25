@@ -1,0 +1,4 @@
+C:\Users\simon.igelstrom\Desktop\Build\EndorblastEngine.pdb
+C:\Users\simon.igelstrom\Desktop\Build\Endorblast.Library.pdb
+C:\Users\simon.igelstrom\Desktop\Build\Nez.pdb
+C:\Users\simon.igelstrom\Desktop\Build\EndorblastEngine.exe

@@ -1,5 +1,4 @@
-﻿using Endorblast.Library.Game.Network.Commands;
-using Endorblast.Library.Components;
+﻿using Endorblast.Library.Components;
 using Endorblast.Library.Network;
 using Nez;
 using Nez.Sprites;
@@ -20,7 +19,7 @@ namespace Endorblast.Library.GameObjects
         
         public void EnterPortal()
         {
-            new WorldCharacterChangeCommand().Send();
+            //new WorldCharacterChangeCommand().Send();
         }
         
         
@@ -30,7 +29,7 @@ namespace Endorblast.Library.GameObjects
             
             var spriteRenderer = this.AddComponent(new SpriteRenderer());
             spriteRenderer.SetSprite(ContentLoader.LoadSprite($"{ContentPath.Instance.goPath}/Portal/Portal1.png"));
-            spriteRenderer.SetRenderLayer(RenderLayers.ObjectLayer);
+            spriteRenderer.SetRenderLayer((int)RenderLayers.Layer.ObjectLayer);
 
             
             portalScript = this.AddComponent(new PortalScript(portalWorldId));

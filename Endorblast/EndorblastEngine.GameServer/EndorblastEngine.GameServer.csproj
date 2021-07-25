@@ -22,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Endorblast.Backend\Endorblast.Backend.csproj" />
     <ProjectReference Include="..\Endorblast.Library\Endorblast.Library.csproj" />
   </ItemGroup>
 

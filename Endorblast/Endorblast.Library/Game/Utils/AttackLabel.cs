@@ -27,7 +27,7 @@ namespace Endorblast.Library.Game.Utils
             label.SetScale(2, 2);
             label.SetHorizontalAlign(HorizontalAlign.Center);
             label.SetVerticalAlign(VerticalAlign.Center);
-            label.SetRenderLayer(RenderLayers.FrontObjectLayer);
+            label.SetRenderLayer((int)RenderLayers.Layer.FrontObjectLayer);
         }
 
 

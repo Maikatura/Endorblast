@@ -4,6 +4,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <AssemblyName>Endorblast.Library</AssemblyName>
     <RootNamespace>Endorblast.Library</RootNamespace>
+    <LangVersion>9</LangVersion>
   </PropertyGroup>
   
 
@@ -43,9 +44,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="Lidgren.Network">
+    <Reference Include="Lidgren.Network, Version=2012.1.7.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>..\..\dlls\Lidgren.Network.dll</HintPath>
     </Reference>
   </ItemGroup>
+  
 
 </Project>

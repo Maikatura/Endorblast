@@ -5,7 +5,11 @@ namespace Endorblast.GameServer.NetworkCmd
     public class NetCmd
     {
 
-        public virtual void Receive(NetIncomingMessage inc) { }
+        protected GameServerScript netmana = GameServerScript.Instance;
+
+        protected NetServer server = GameServerScript.Server;
+        
+        public virtual void Read(NetIncomingMessage inc) { }
 
         public virtual void Send() { }
         

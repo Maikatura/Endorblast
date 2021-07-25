@@ -6,7 +6,7 @@ namespace Endorblast.Library.Game.Components.Player.Classes
     public class BaseMageClass : BaseCharacterClass
     {
         
-        public BaseMageClass(Entity entity) : base(entity)
+        public BaseMageClass() : base()
         {
             CharacterClassName = "Mage";
             CharacterClassDescription = "I read between all line and cast what I learn.";
@@ -18,14 +18,8 @@ namespace Endorblast.Library.Game.Components.Player.Classes
             Stamina = 0;
             
             sprites = new HumanFemaleSprite();
-
-            Init();
         }
         
-        public override void Update()
-        {
-            base.Update();
-        }
         
     }
 }

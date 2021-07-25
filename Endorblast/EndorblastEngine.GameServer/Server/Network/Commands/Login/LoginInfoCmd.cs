@@ -4,7 +4,7 @@ namespace Endorblast.GameServer.NetworkCmd
 {
     public class LoginInfoCmd : NetCmd
     {
-        public override void Receive(NetIncomingMessage inc)
+        public override void Read(NetIncomingMessage inc)
         {
             
         }

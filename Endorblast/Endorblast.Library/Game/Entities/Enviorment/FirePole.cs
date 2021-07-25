@@ -16,13 +16,13 @@ namespace Endorblast.Library.GameObjects
         public override void OnAddedToScene()
         {
             var areaLight = this.AddComponent(new PointLight(Color.Yellow));
-            areaLight.SetRenderLayer(RenderLayers.LightLayer);
+            areaLight.SetRenderLayer((int)RenderLayers.Layer.LightLayer);
             areaLight.SetRadius(100f);
             
 
             var sani = this.AddComponent(new SpriteAnimator());
             sani.LocalOffset = new Microsoft.Xna.Framework.Vector2(0, 0);
-            sani.RenderLayer = RenderLayers.OtherPlayersLayer;
+            sani.RenderLayer = (int)RenderLayers.Layer.OtherPlayerMin;
 
             var sprites = ContentLoader.LoadSprites($"{ContentPath.Instance.goPath}/Fire/Fire1.png", 100, 100);
             sprites = CenterSprite.BottomOrigin(sprites);

@@ -50,10 +50,12 @@ namespace Nez
 		{
 			Entities = new EntityList(this);
 			
-			Initialize(); // Init Scene
+			Initialize();
+			
 			Physics.Reset();
+			
 			_didSceneBegin = true;
-			OnStart(); // Run Startup stuff
+			OnStart();
 		}
 
 
@@ -110,11 +112,20 @@ namespace Nez
 
 		public virtual void Update()
 		{
-			// update our lists in case they have any changes then update our Entities
+			// update our lists in case they have any changes
 			Entities.UpdateLists();
+
+			// update our Entities
 			Entities.Update();
 		}
+
+		internal void Render()
+		{
+			return;
+		}
+
 		
+
 		#endregion
 
 		

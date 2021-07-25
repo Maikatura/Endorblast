@@ -50,9 +50,8 @@ namespace Endorblast.Library
 
             
 
-            int layer = RenderLayers.OtherPlayersLayer;
-            if (this.HasComponent<MainPlayer>())
-                layer = RenderLayers.MainPlayerLayer;
+            int layer = (int)RenderLayers.Layer.OtherPlayerMin;
+            
 
             backHair.SetRenderLayer(layer);
             bodyRenderer.SetRenderLayer(layer);

@@ -34,11 +34,22 @@ namespace Endorblast.DBase
                 while (reader.Read())
                 {
                     var data = new CharacterSelectionData();
-                    data.ID = int.Parse(reader["id"].ToString());
-                    data.AccountID = int.Parse(reader["AccountID"].ToString());
-                    data.CharacterName = reader["CharacterName"].ToString();
+                    data.ID = reader.GetInt32(0);
+                    data.AccountID = reader.GetInt32(1);
+                    data.CharacterName = reader.GetString(2);
+
+                    
 
                     list.Add(data);
+                }
+
+                
+
+                for (int i = 0; i < list.Count; i++)
+                {
+                    int charaId = list[i].ID;
+                    list[i].Level = new LoadCharacterLevelCmd().GrabLevel(charaId);
+                    list[i] = new LoadCharacterGearCmd().LoadGear(charaId, list[i]);
                 }
             }
             catch (MySqlException err)

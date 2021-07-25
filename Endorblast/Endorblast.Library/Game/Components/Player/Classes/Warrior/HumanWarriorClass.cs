@@ -6,7 +6,7 @@ namespace Endorblast.Library.Classes
 {
     public class HumanWarriorClass : BaseWarriorClass
     {
-        public HumanWarriorClass(Entity entity) : base(entity)
+        public HumanWarriorClass() : base()
         {
             
         }

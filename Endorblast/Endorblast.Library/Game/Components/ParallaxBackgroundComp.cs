@@ -31,7 +31,7 @@ namespace Endorblast.Library.Game.Player
             foreach (var item in lists)
             {
                 backgrounds.Add(item);
-                item.renderer.SetRenderLayer(RenderLayers.BackgroundLayer);
+                item.renderer.SetRenderLayer((int)RenderLayers.Layer.BackgroundLayer);
 
                 currentBG++;
             }

@@ -77,7 +77,7 @@ namespace Endorblast.DBase
                                  "RankName='"+newRankName+"'," + 
                                  "RankTag='"+roleTag+"'," + 
                                  "Active='"+act+"' " + 
-                                 "WHERE RankName='"+ oldRankName +"'";
+                                 "WHERE RankName='"+ oldRankName +"';";
                 
 
                 // Unimportant

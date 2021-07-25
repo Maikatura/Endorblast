@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8D02c/QTBRfwBbLzQ5aPmPG5o2K5E/H9++HCd1R547isXkGBBOZguetmsHJl+3gIx6mZ8CjFYsF0gukdSVw9sw==",
+  "dgSpecHash": "MoLbsFINe+WgE5W4BNDWP7VqkE88xGxhgWWzjYDU0slf+Sy3K67idChhzZpaZCtPKCARgjBf8DWN+hP2MMHH0g==",
   "success": true,
-  "projectFilePath": "D:\\Github\\AnimeEngine2D\\Endorblast\\EndorblastEngine\\EndorblastEngine.csproj",
+  "projectFilePath": "G:\\Endorblast\\EndorblastPrivate\\Endorblast\\EndorblastEngine\\EndorblastEngine.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zyro\\.nuget\\packages\\discordrichpresence\\1.0.150\\discordrichpresence.1.0.150.nupkg.sha512",
     "C:\\Users\\zyro\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",

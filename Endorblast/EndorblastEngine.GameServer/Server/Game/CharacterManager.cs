@@ -14,7 +14,7 @@ namespace Endorblast.GameServer.Server
 
         public int currentPlayerId = 0;
         
-        public List<Player> Characters = new List<Player>();
+        public List<NetConnection> Characters = new List<NetConnection>();
 
         public CharacterManager()
         {
@@ -26,59 +26,59 @@ namespace Endorblast.GameServer.Server
         
         public void Update()
         {
-            foreach (var player in Characters)
-            {
-                player.Update();
-            }
+            // foreach (var player in Characters)
+            // {
+            //     player.Update();
+            // }
         }
         
         
-        public List<NetConnection> GetConnections(string chName)
+        // public List<NetConnection> GetConnections(string chName)
+        // {
+        //     var list = new List<NetConnection>();
+        //
+        //     foreach (var p in Characters)
+        //         if (p.AccountName != chName)
+        //             list.Add(p.connection);
+        //
+        //     return list;
+        // }
+
+        public NetConnection GetConnection(NetConnection con)
         {
-            var list = new List<NetConnection>();
-
             foreach (var p in Characters)
-                if (p.AccountName != chName)
-                    list.Add(p.connection);
-
-            return list;
-        }
-
-        public Player GetConnection(NetConnection con)
-        {
-            foreach (var p in Characters)
-                if (con == p.connection)
+                if (con == p)
                     return p;
 
             return null;
         }
         
-        public List<NetConnection> GetConnections(int worldId)
-        {
-            var list = new List<NetConnection>();
-
-            foreach (var p in Characters)
-                if (p.WorldID != worldId)
-                    list.Add(p.connection);
-
-
-            return list;
-        }
+        // public List<NetConnection> GetConnections(int worldId)
+        // {
+        //     var list = new List<NetConnection>();
+        //
+        //     foreach (var p in Characters)
+        //         if (p.WorldID != worldId)
+        //             list.Add(p.connection);
+        //
+        //
+        //     return list;
+        // }
         
         public List<NetConnection> GetConnections()
         {
             var list = new List<NetConnection>();
 
             foreach (var p in Characters)
-                list.Add(p.connection);
+                list.Add(p);
 
 
             return list;
         }
         
-        public List<Player> GetPlayers()
+        public List<NetConnection> GetPlayers()
         {
-            var list = new List<Player>();
+            var list = new List<NetConnection>();
 
             foreach (var p in Characters)
                 list.Add(p);
@@ -87,7 +87,7 @@ namespace Endorblast.GameServer.Server
             return list;
         }
 
-        public Player AddPlayer(Player player)
+        public NetConnection AddPlayer(NetConnection player)
         {
             Characters.Add(player);
             return player;

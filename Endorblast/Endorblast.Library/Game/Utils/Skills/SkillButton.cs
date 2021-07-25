@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Endorblast.Library.Entities;
+using Endorblast.Library.Entities.Player;
 using Endorblast.Library.Enums;
 
 namespace Endorblast.Library.Utils.Skills
@@ -16,13 +17,13 @@ namespace Endorblast.Library.Utils.Skills
         Image icon;
         public ActionType Action;
 
-        public void CallSkill(BasePlayer caster, float rotation)
+        public void CallSkill(BasePlayerEntity caster, float rotation)
         {
-            if (!caster.HasComponent<MainPlayer>())
-                return;
+            // if (!caster.HasComponent<MainPlayer>())
+            //     return;
 
 
-            caster.DoSkill(Action, caster, rotation);
+            //caster.DoSkill(Action, caster, rotation);
         }
 
 

@@ -1,0 +1,7 @@
+C:\Users\simon.igelstrom\Documents\GitHub\EndorblastPrivate\Endorblast\Nez.Persistence\bin\Release\Monogame\Nez.Persistence.deps.json
+C:\Users\simon.igelstrom\Documents\GitHub\EndorblastPrivate\Endorblast\Nez.Persistence\bin\Release\Monogame\Nez.Persistence.dll
+C:\Users\simon.igelstrom\Documents\GitHub\EndorblastPrivate\Endorblast\Nez.Persistence\bin\Release\Monogame\Nez.Persistence.pdb
+C:\Users\simon.igelstrom\Documents\GitHub\EndorblastPrivate\Endorblast\Nez.Persistence\obj\Nez.Monogame.Standard.Persistence\Any CPU\Release\Nez.Monogame.Standard.Persistence.csprojAssemblyReference.cache
+C:\Users\simon.igelstrom\Documents\GitHub\EndorblastPrivate\Endorblast\Nez.Persistence\obj\Nez.Monogame.Standard.Persistence\Any CPU\Release\Nez.Monogame.Standard.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\simon.igelstrom\Documents\GitHub\EndorblastPrivate\Endorblast\Nez.Persistence\obj\Nez.Monogame.Standard.Persistence\Any CPU\Release\Nez.Persistence.dll
+C:\Users\simon.igelstrom\Documents\GitHub\EndorblastPrivate\Endorblast\Nez.Persistence\obj\Nez.Monogame.Standard.Persistence\Any CPU\Release\Nez.Persistence.pdb

@@ -209,11 +209,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\AnimeEngine2D\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj",
+      "projectUniqueName": "G:\\Endorblast\\EndorblastPrivate\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj",
       "projectName": "Nez",
-      "projectPath": "D:\\Github\\AnimeEngine2D\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj",
+      "projectPath": "G:\\Endorblast\\EndorblastPrivate\\Endorblast\\Nez.Portable\\Nez.Monogame.Standard.csproj",
       "packagesPath": "C:\\Users\\zyro\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\AnimeEngine2D\\Endorblast\\Nez.Portable\\obj\\Nez.Monogame.Standard\\",
+      "outputPath": "G:\\Endorblast\\EndorblastPrivate\\Endorblast\\Nez.Portable\\obj\\Nez.Monogame.Standard\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\zyro\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -7,7 +7,7 @@ namespace Endorblast.GameServer.NetworkCmd
 {
     public class SkillCmd : NetCmd
     {
-        public override void Receive(NetIncomingMessage inc)
+        public override void Read(NetIncomingMessage inc)
         {
 
             ActionType actionType = (ActionType) inc.ReadByte();
@@ -18,7 +18,7 @@ namespace Endorblast.GameServer.NetworkCmd
             if (player == null)
                 return;
             
-            Send(player.WorldID, player.playerID, dir, actionType);
+            // Send(player.WorldID, player.playerID, dir, actionType);
         }
         
 
@@ -29,12 +29,12 @@ namespace Endorblast.GameServer.NetworkCmd
             if (list == null)
                 return;
             
-            var outmsg = GameServerScript.Instance.CreateCharacterMessage();
-            
-            outmsg.Write(worldId);
-            outmsg.Write(playerID);
-            outmsg.Write(dir);
-            outmsg.Write((byte)action);
+            // var outmsg = GameServerScript.Instance.CreateCharacterMessage();
+            //
+            // outmsg.Write(worldId);
+            // outmsg.Write(playerID);
+            // outmsg.Write(dir);
+            // outmsg.Write((byte)action);
 
         }
     }

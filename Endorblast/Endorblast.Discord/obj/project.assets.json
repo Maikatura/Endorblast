@@ -129,15 +129,6 @@
           "lib/netstandard2.0/K4os.Hash.xxHash.dll": {}
         }
       },
-      "Lidgren.Network/1.0.2": {
-        "type": "package",
-        "compile": {
-          "lib/net451/Lidgren.Network.dll": {}
-        },
-        "runtime": {
-          "lib/net451/Lidgren.Network.dll": {}
-        }
-      },
       "Microsoft.Extensions.DependencyInjection/5.0.1": {
         "type": "package",
         "dependencies": {
@@ -1550,7 +1541,6 @@
         "dependencies": {
           "BCrypt.Net-Next": "4.0.2",
           "Endorblast.Library": "1.0.0",
-          "Lidgren.Network": "1.0.2",
           "MonoGame.Framework.DesktopGL": "3.8.0.1641",
           "MySql.Data": "8.0.23"
         },
@@ -1786,19 +1776,6 @@
         "lib/netstandard1.6/K4os.Hash.xxHash.xml",
         "lib/netstandard2.0/K4os.Hash.xxHash.dll",
         "lib/netstandard2.0/K4os.Hash.xxHash.xml"
-      ]
-    },
-    "Lidgren.Network/1.0.2": {
-      "sha512": "yXg3ccH3OYFGnsXxzcrUo2FXsXHaZzTUjRCg84NCPGnZyjw6MhwJFHe6MdEVIzejXsE86Kto/sgeV29HSRc8xQ==",
-      "type": "package",
-      "path": "lidgren.network/1.0.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net451/Lidgren.Network.dll",
-        "lib/net451/Lidgren.Network.pdb",
-        "lidgren.network.1.0.2.nupkg.sha512",
-        "lidgren.network.nuspec"
       ]
     },
     "Microsoft.Extensions.DependencyInjection/5.0.1": {
@@ -5266,11 +5243,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\AnimeEngine2D\\Endorblast\\Endorblast.Discord\\Endorblast.Discord.csproj",
+      "projectUniqueName": "G:\\Endorblast\\EndorblastPrivate\\Endorblast\\Endorblast.Discord\\Endorblast.Discord.csproj",
       "projectName": "Endorblast.Discord",
-      "projectPath": "D:\\Github\\AnimeEngine2D\\Endorblast\\Endorblast.Discord\\Endorblast.Discord.csproj",
+      "projectPath": "G:\\Endorblast\\EndorblastPrivate\\Endorblast\\Endorblast.Discord\\Endorblast.Discord.csproj",
       "packagesPath": "C:\\Users\\zyro\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\AnimeEngine2D\\Endorblast\\Endorblast.Discord\\obj\\",
+      "outputPath": "G:\\Endorblast\\EndorblastPrivate\\Endorblast\\Endorblast.Discord\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\zyro\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5287,11 +5264,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Github\\AnimeEngine2D\\Endorblast\\Endorblast.DBase\\Endorblast.DBase.csproj": {
-              "projectPath": "D:\\Github\\AnimeEngine2D\\Endorblast\\Endorblast.DBase\\Endorblast.DBase.csproj"
+            "G:\\Endorblast\\EndorblastPrivate\\Endorblast\\Endorblast.DBase\\Endorblast.DBase.csproj": {
+              "projectPath": "G:\\Endorblast\\EndorblastPrivate\\Endorblast\\Endorblast.DBase\\Endorblast.DBase.csproj"
             },
-            "D:\\Github\\AnimeEngine2D\\Endorblast\\Endorblast.Library\\Endorblast.Library.csproj": {
-              "projectPath": "D:\\Github\\AnimeEngine2D\\Endorblast\\Endorblast.Library\\Endorblast.Library.csproj"
+            "G:\\Endorblast\\EndorblastPrivate\\Endorblast\\Endorblast.Library\\Endorblast.Library.csproj": {
+              "projectPath": "G:\\Endorblast\\EndorblastPrivate\\Endorblast\\Endorblast.Library\\Endorblast.Library.csproj"
             }
           }
         }
@@ -5339,17 +5316,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Lidgren.Network 1.0.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Lidgren.Network",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  }
 }

@@ -15,7 +15,7 @@ namespace Endorblast.DBase
             try
             {
                 
-                string cmdText = "SELECT id, AccountID, Password FROM accounts_password WHERE AccountID='" + accountID + "';";
+                string cmdText = "SELECT id, AccountID, Password FROM accounts_password WHERE id='"+ accountID +"';";
                 
                 con = new MySqlConnection(DBStr);
                 con.Open();

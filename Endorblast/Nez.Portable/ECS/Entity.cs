@@ -235,7 +235,7 @@ namespace Nez
 				if (Scene != null)
 					Scene.Entities.AddToTagList(this);
 				
-				if (SceneHeadless != null)
+				if (SceneHeadless!= null)
 					SceneHeadless.Entities.RemoveFromTagList(this);
 				_tag = tag;
 				if (SceneHeadless != null)

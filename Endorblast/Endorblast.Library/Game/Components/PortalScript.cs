@@ -29,7 +29,7 @@ namespace Endorblast.Library.Components
 
         public void EnterPortal()
         {
-            new WorldCharacterChangeCommand().Send();
+            //new WorldCharacterChangeCommand().Send();
         }
 
         public void EnterText()
@@ -38,7 +38,7 @@ namespace Endorblast.Library.Components
             text = Entity.AddComponent(new TextComponent());
             text.SetLocalOffset(new Vector2(0, -60f));
             text.SetText("Press 'E' to Enter\n123456789");
-            text.SetRenderLayer(RenderLayers.FrontObjectLayer);
+            text.SetRenderLayer((int)RenderLayers.Layer.FrontObjectLayer);
         }
 
         public void ExitText()

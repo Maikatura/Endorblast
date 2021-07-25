@@ -1,5 +1,6 @@
 ﻿using Nez;
 using Endorblast.Library.Entities;
+using Endorblast.Library.Entities.Player;
 
 namespace Endorblast.Library.Skills
 {
@@ -9,7 +10,7 @@ namespace Endorblast.Library.Skills
         int damage;
 
 
-        public HeavyAttackSkill(BasePlayer p) : base(p)
+        public HeavyAttackSkill(BasePlayerEntity p) : base(p)
         {
             duration = 2f;
             damage = Nez.Random.RNG.Next(10, 100);

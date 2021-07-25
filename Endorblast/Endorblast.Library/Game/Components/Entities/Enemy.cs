@@ -31,7 +31,7 @@ namespace Endorblast.Library.Entities
             healthIndicatior.SetLocalOffset(new Vector2(0, -35));
             healthIndicatior.Text = $"{enemyHealth}/{maxHealth}";
             healthIndicatior.SetColor(Color.Crimson);
-            healthIndicatior.RenderLayer = RenderLayers.FrontObjectLayer;
+            healthIndicatior.RenderLayer = (int)RenderLayers.Layer.FrontObjectLayer;
         }
 
 

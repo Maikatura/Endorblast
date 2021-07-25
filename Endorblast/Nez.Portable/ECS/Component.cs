@@ -20,6 +20,8 @@ namespace Nez
 		/// </summary>
 		public Entity Entity;
 
+		public float LocalRotation = 0;
+
 		/// <summary>
 		/// shortcut to entity.transform
 		/// </summary>

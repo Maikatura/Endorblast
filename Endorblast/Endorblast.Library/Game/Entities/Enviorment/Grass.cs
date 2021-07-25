@@ -35,11 +35,11 @@ namespace Endorblast.Library.GameObjects
             {
                 case GrassType.LongGrass:
                     Console.WriteLine("Long");
-                    path = "/Textures/Misc/GameObjects/Grass/Grass2.png";
+                    path = "Content/Textures/Misc/GameObjects/Grass/Grass2.png";
                     break;
                 case GrassType.ShortGrass:
                     Console.WriteLine("Short");
-                    path = "/Textures/Misc/GameObjects/Grass/Grass2.png";
+                    path = "Content/Textures/Misc/GameObjects/Grass/Grass2.png";
                     break;
             }
 

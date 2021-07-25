@@ -17,6 +17,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Endorblast.DBase", "Endorbl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Endorblast.Discord", "Endorblast.Discord\Endorblast.Discord.csproj", "{5B03F95C-156F-4A9A-8E82-8C594A0455EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EndorblastEngine.LoginServer", "EndorblastEngine.LoginServer\EndorblastEngine.LoginServer.csproj", "{258A89CB-ED99-492B-9588-A34FFC259728}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Endorblast.Backend", "Endorblast.Backend\Endorblast.Backend.csproj", "{498139AD-FEB7-41CB-BDB6-2D5F7C13A7F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nez.Monogame.Standard.ImGui", "Nez.ImGui\Nez.Monogame.Standard.ImGui.csproj", "{61F04D3A-3A2B-426B-B787-6BB1EF52DC06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nez.Monogame.Standard.Persistence", "Nez.Persistence\Nez.Monogame.Standard.Persistence.csproj", "{1A9D056E-FEC3-4CEA-AE22-A7B35952894A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EndorblastEditor", "EndorblastEditor\EndorblastEditor.csproj", "{A2585600-A74F-4AA3-B912-B17862791523}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +61,26 @@ Global
 		{5B03F95C-156F-4A9A-8E82-8C594A0455EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B03F95C-156F-4A9A-8E82-8C594A0455EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B03F95C-156F-4A9A-8E82-8C594A0455EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{258A89CB-ED99-492B-9588-A34FFC259728}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{258A89CB-ED99-492B-9588-A34FFC259728}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{258A89CB-ED99-492B-9588-A34FFC259728}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{258A89CB-ED99-492B-9588-A34FFC259728}.Release|Any CPU.Build.0 = Release|Any CPU
+		{498139AD-FEB7-41CB-BDB6-2D5F7C13A7F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{498139AD-FEB7-41CB-BDB6-2D5F7C13A7F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{498139AD-FEB7-41CB-BDB6-2D5F7C13A7F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{498139AD-FEB7-41CB-BDB6-2D5F7C13A7F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61F04D3A-3A2B-426B-B787-6BB1EF52DC06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61F04D3A-3A2B-426B-B787-6BB1EF52DC06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61F04D3A-3A2B-426B-B787-6BB1EF52DC06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61F04D3A-3A2B-426B-B787-6BB1EF52DC06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A9D056E-FEC3-4CEA-AE22-A7B35952894A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A9D056E-FEC3-4CEA-AE22-A7B35952894A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A9D056E-FEC3-4CEA-AE22-A7B35952894A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A9D056E-FEC3-4CEA-AE22-A7B35952894A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2585600-A74F-4AA3-B912-B17862791523}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2585600-A74F-4AA3-B912-B17862791523}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2585600-A74F-4AA3-B912-B17862791523}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2585600-A74F-4AA3-B912-B17862791523}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

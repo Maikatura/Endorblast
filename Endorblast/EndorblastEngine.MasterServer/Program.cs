@@ -1,4 +1,6 @@
 ﻿using System;
+using Endorblast.Backend;
+using Endorblast.Library;
 
 namespace Endorblast.MasterServer
 {
@@ -6,11 +8,12 @@ namespace Endorblast.MasterServer
     {
         static void Main(string[] args)
         {
-            MasterServerScript.Instance.Start();
-
+            MasterServerScript masterServer = new MasterServerScript();
+            masterServer.Start(MasterSettings.Port);
+            
             while (true)
             {
-                
+                System.Threading.Thread.Sleep(1);
             }
         }
     }

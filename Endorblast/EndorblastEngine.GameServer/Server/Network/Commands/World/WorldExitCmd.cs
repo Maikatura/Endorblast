@@ -26,13 +26,13 @@ namespace Endorblast.GameServer.NetworkCmd
 
         public void Send(int worldID, int playerID)
         {
-            var list = MapManager.Instance.GetConnections(worldID);
-            var outmsg = GameServerScript.Instance.CreateWorldMessage();
-            outmsg.Write((byte)WorldPacket.WorldExit);
-            
-            outmsg.Write(playerID);
-
-            GameServerScript.Instance.Server.SendMessage(outmsg, list, NetDeliveryMethod.ReliableOrdered, 0);
+            // var list = MapManager.Instance.GetConnections(worldID);
+            // var outmsg = GameServerScript.Instance.CreateWorldMessage();
+            // outmsg.Write((byte)WorldPacket.WorldExit);
+            //
+            // outmsg.Write(playerID);
+            //
+            // GameServerScript.Instance.Server.SendMessage(outmsg, list, NetDeliveryMethod.ReliableOrdered, 0);
 
 
         }

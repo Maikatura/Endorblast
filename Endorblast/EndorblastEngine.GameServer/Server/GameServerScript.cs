@@ -1,15 +1,17 @@
 ﻿using System;
 using System.Net;
 using System.Threading;
+using Endorblast.Backend;
 using Endorblast.GameServer.Entities;
 using Endorblast.GameServer.NetworkCmd;
 using Endorblast.GameServer.Server;
+using Endorblast.Library;
 using Endorblast.Library.Enums;
 using Lidgren.Network;
 
 namespace Endorblast.GameServer
 {
-    class GameServerScript
+    public class GameServerScript
     {
         
         
@@ -26,11 +28,9 @@ namespace Endorblast.GameServer
             return;
             }
         }
-
-        private bool isRunning = false;
-
-        private NetPeer server;
-        public NetPeer Server
+        
+        private static NetServer server;
+        public static NetServer Server
         {
             get
             {
@@ -42,66 +42,83 @@ namespace Endorblast.GameServer
             }
         }
         
-
         SynchronizationContext context;
+
+        IPEndPoint masterServerEndpoint;
+
+        private int serverPort;
         
-        #region Packets Types
-        public NetOutgoingMessage CreateCharacterMessage() => CCM();
-        NetOutgoingMessage CCM()
+        public NetOutgoingMessage GAMEMSG() => GameMessage();
+
+        private NetOutgoingMessage GameMessage()
         {
-            var msg = server.CreateMessage();
-            msg.Write((byte)PacketType.Character);
+            var msg = Server.CreateMessage();
+            msg.Write((byte) ServerTypes.Game);
+
             return msg;
         }
+        
+        public NetOutgoingMessage LOGINMSG() => LoginMessage();
 
-        public NetOutgoingMessage CreateAccountMessage() => CAM();
-        NetOutgoingMessage CAM()
+        private NetOutgoingMessage LoginMessage()
         {
-            var msg = server.CreateMessage();
-            msg.Write((byte)PacketType.Account);
+            var msg = Server.CreateMessage();
+            msg.Write((byte) ServerTypes.Login);
+
             return msg;
         }
-
-
-
-        public NetOutgoingMessage CreateWorldMessage() => CWM();
-        NetOutgoingMessage CWM()
-        {
-            var msg = server.CreateMessage();
-            msg.Write((byte)PacketType.World);
-            return msg;
-        }
+        
 
         
-        #endregion
-
-        private IPEndPoint masterServerEndpoint;
-        float lastRegistered = -60.0f;
-        
-        public void Start()
+        public void Start(int port)
         {
-            masterServerEndpoint =
-                NetUtility.Resolve("localhost", Library.Network.ServerSettings.masterServerPort);
-            
-            NetPeerConfiguration config = new NetPeerConfiguration("game");
-            config.SetMessageTypeEnabled(NetIncomingMessageType.NatIntroductionSuccess, true);
-            config.Port = 5558;
-            
-            System.Threading.Thread.Sleep(5000);
-            Console.WriteLine("### Starting Game Server in 5 seconds");
+            masterServerEndpoint = new IPEndPoint(IPAddress.Parse(MasterSettings.Address), MasterSettings.Port);
+            serverPort = port;
 
-            TimeLogic.Instance.Init();
-            
+            Console.WriteLine("### Starting Game Server.");
+
             context = new SynchronizationContext();
-            server = new NetServer(config);
+            var c = new NetPeerConfiguration("endorblast-game");
+            c.SetMessageTypeEnabled(NetIncomingMessageType.NatIntroductionSuccess, true);
+            c.SetMessageTypeEnabled(NetIncomingMessageType.DebugMessage, true);
             
-            server.RegisterReceivedCallback(NetworkLoop, context);
-            server.Start();
-        }
 
+            c.Port = serverPort;
+            
+            server = new NetServer(c);
+            server.Start();
+
+            server.RegisterReceivedCallback(NetworkLoop, context);
+            
+            var lastRegistered = -60.0f;
+
+            
+            // Send to master that this server is still active!
+            while (true)
+            {
+                // (re-)register periodically with master server
+                if (NetTime.Now > lastRegistered + 60)
+                {
+                    // register with master server
+                    NetOutgoingMessage regMsg = server.CreateMessage();
+                    regMsg.Write((byte)MasterServerMessageType.RegisterHost);
+                    IPAddress mask;
+                    IPAddress adr = NetUtility.GetMyAddress(out mask);
+                    
+                    regMsg.Write(server.UniqueIdentifier);
+                    regMsg.Write((byte)ServerTypes.Game);
+                    regMsg.Write(new IPEndPoint(adr, serverPort));
+                    Console.WriteLine("Sending registration to master server");
+                    server.SendUnconnectedMessage(regMsg, masterServerEndpoint);
+                    lastRegistered = (float)NetTime.Now;
+                }
+                Thread.Sleep(1);
+            }
+        }
+        
+        
         private void NetworkLoop(object o)
         {
-            
             NetIncomingMessage message;
             while ((message = server.ReadMessage()) != null)
             {
@@ -109,12 +126,17 @@ namespace Endorblast.GameServer
                 {
                     case NetIncomingMessageType.Data:
                         // handle custom messages
-                        new ServerDataCmd().Receive(message);
+
+                        new GameServerDataCmd().Read(message);
+                        
                         break;
                     case NetIncomingMessageType.StatusChanged:
+
                         switch (message.SenderConnection.Status)
                         {
                             case NetConnectionStatus.Connected:
+                                Console.WriteLine("Client Connected");
+                                new RequestToken().Send(message.SenderConnection);
                                 
                                 break;
                             case NetConnectionStatus.Disconnecting:
@@ -123,9 +145,10 @@ namespace Endorblast.GameServer
                                 break;
                         }
                         break;
-                    case NetIncomingMessageType.DebugMessage:
-                        // handle debug messages
-                        // (only received when compiled in DEBUG mode)
+                    case NetIncomingMessageType.NatIntroductionSuccess:
+                        Console.WriteLine("NAT Success");
+                        break;
+                    case NetIncomingMessageType.WarningMessage:
                         Console.WriteLine(message.ReadString());
                         break;
                     /* .. */
@@ -135,7 +158,6 @@ namespace Endorblast.GameServer
                 }
             }
         }
-
         
     }
 }

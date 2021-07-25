@@ -119,6 +119,15 @@ namespace Nez.Sprites
 		}
 
 		/// <summary>
+		/// sets the Texture by creating a new sprite. See SetSprite() for details.
+		/// </summary>
+		public SpriteRenderer SetTexture(Texture2D texture)
+		{
+			SetSprite(new Sprite(texture));
+			return this;
+		}
+
+		/// <summary>
 		/// sets the origin for the Renderable
 		/// </summary>
 		public SpriteRenderer SetOrigin(Vector2 origin)
@@ -183,7 +192,7 @@ namespace Nez.Sprites
 		public override void Render(Batcher batcher, Camera camera)
 		{
 			batcher.Draw(Sprite, Entity.Transform.Position + LocalOffset, Color,
-				Entity.Transform.Rotation, Origin, Entity.Transform.Scale, SpriteEffects, _layerDepth);
+				Entity.Transform.Rotation + LocalRotation, Origin, Entity.Transform.Scale, SpriteEffects, _layerDepth);
 		}
 	}
 }

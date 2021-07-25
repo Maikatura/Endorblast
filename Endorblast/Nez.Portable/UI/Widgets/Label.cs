@@ -44,6 +44,7 @@ namespace Nez.UI
 		string _text;
 		float _fontScaleX = 1;
 		float _fontScaleY = 1;
+		private Vector2 _offset = new Vector2(0, 0);
 
 		int labelAlign = AlignInternal.Left;
 
@@ -105,6 +106,13 @@ namespace Nez.UI
 		{
 			base.Invalidate();
 			_prefSizeInvalid = true;
+		}
+
+		public Label SetOffset(int x, int y)
+		{
+			var newVector = new Vector2((float) x, (float) y);
+			_offset = newVector;
+			return this;
 		}
 
 
@@ -358,7 +366,7 @@ namespace Nez.UI
 			var color = ColorExt.Create(this.color, (int)(this.color.A * parentAlpha));
 			_style.Background?.Draw(batcher, x, y, width == 0 ? _prefSize.X : width, height, color);
 
-			batcher.DrawString(_style.Font, _wrappedString, new Vector2(x, y) + _textPosition,
+			batcher.DrawString(_style.Font, _wrappedString, new Vector2(x, y) + _textPosition + _offset,
 				_style.FontColor, 0, Vector2.Zero, new Vector2(_fontScaleX, _fontScaleY), SpriteEffects.None, 0);
 		}
 	}

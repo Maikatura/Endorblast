@@ -2,50 +2,47 @@
 using Nez;
 using System;
 using Endorblast.Library.Discord;
+using Endorblast.Library.Enums;
+using EndorblastEngine.Network;
+using Microsoft.Xna.Framework;
 
-namespace Endorblast
+//using Nez.ImGuiTools;
+
+namespace EndorblastEngine
 {
     public class Game1 : Core
     {
-
-        public static NetworkManager network;
+        
         private GameManager manager;
+        private TitleManager statusManager;
 
+        //private ImGuiManager imGuiManager;
+        
         public Game1() : base()
         {
             IsFixedTimeStep = true;
             PauseOnFocusLost = false;
             DebugRenderEnabled = false;
+            Window.AllowUserResizing = true;
             
-           
-
+            
             manager = new GameManager();
-            Console.ForegroundColor = System.ConsoleColor.DarkYellow;
-            
+            statusManager = new TitleManager(Window);
         }
 
 
         protected override void Initialize()
         {
-            // Init Window stuff
             base.Initialize();
-            Screen.SetSize(1280, 720);
-            
-            // Init Important Stuff
-            DiscordRpc.NewInstance();
-            NetworkManager.Instance.Connect();
-            ContentLoader.Init(Core.Content);
-            DiscordRpc.Instance.Init();
-            
-            // Load Game State
-            StateManager.Instance.SetGameState(CurrentGameState.SplashScreen);
+            manager.Init();
         }
 
-
-        protected override void EndRun()
+        
+        
+        protected override void Update(GameTime gameTime)
         {
-            //NetworkManager.Instance.ShutdownConnection();
+            base.Update(gameTime);
+            statusManager.Update(gameTime);
         }
-
     }
 }

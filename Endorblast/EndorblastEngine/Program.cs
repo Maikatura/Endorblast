@@ -1,8 +1,6 @@
-﻿using Endorblast.Library;
-using Nez;
-using System;
+﻿using System;
 
-namespace Endorblast
+namespace EndorblastEngine
 {
     public static class Program
     {

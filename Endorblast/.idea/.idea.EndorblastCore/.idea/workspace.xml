@@ -12,6 +12,13 @@
     <projectFile>Endorblast/Endorblast.csproj</projectFile>
     <projectFile>../../../EndorblastPrivate/project/Endorblast/EndorblastEditor/EndorblastEditor.csproj</projectFile>
     <projectFile>../../../EndorblastPrivate/project/Endorblast/Endorblast.Discord/Endorblast.Discord.csproj</projectFile>
+    <projectFile>EndorblastEngine.LoginServer/EndorblastEngine.LoginServer.csproj</projectFile>
+    <projectFile>Endorblast.Backend/Endorblast.Backend.csproj</projectFile>
+    <projectFile>EndorblastEngine/EndorblastEngine.csproj</projectFile>
+    <projectFile>EndorblastEngine.MasterServer/EndorblastEngine.MasterServer.csproj</projectFile>
+    <projectFile>EndorblastEngine.GameServer/EndorblastEngine.GameServer.csproj</projectFile>
+    <projectFile>Endorblast.Discord/Endorblast.Discord.csproj</projectFile>
+    <projectFile>EndorblastEditor/EndorblastEditor.csproj</projectFile>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
@@ -41,7 +48,168 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f77a6e4-ba13-4e38-b9ea-204d6ad38fcf" name="Default Changelist" comment="" />
+    <list default="true" id="5f77a6e4-ba13-4e38-b9ea-204d6ad38fcf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Endorblast.DBase/Database/LoadDataCmd/Character/Information/LoadCharacterGearCmd.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Endorblast.DBase/Database/LoadDataCmd/Character/Information/LoadCharacterLocationCmd.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Endorblast.DBase/Database/LoadDataCmd/Login/AccountCharacterExistCmd.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Endorblast.Library/1Stream/Todo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Endorblast.Library/Data/CharacterInfoHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Endorblast.Library/Data/GearData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Endorblast.Library/Data/LocationData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Endorblast.Library/Enums/NetworkEnum.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Endorblast.Library/Game/Components/Entities/Player/PreviewPlayer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/CharacterSprites.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/UpdateSelectPosition.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Network/Commands/World/ServerEnterWorldCmd.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EndorblastEngine/Network/NetworkCmd/Data/ClientEnterWorldCmd.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EndorblastEngine/Network/NetworkCmd/Data/DataMessageCmd.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EndorblastEngine/Network/NetworkCmd/Game/Data/MapData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EndorblastEngine/Network/NetworkCmd/World/CharacterPositionCmd.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EndorblastCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EndorblastCore/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Backend/Data/ServerBackInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Backend/Data/ServerBackInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Backend/bin/Debug/netcoreapp3.1/Content/Data/Maps/Town.tmx" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Backend/bin/Debug/netcoreapp3.1/Content/Data/Maps/Town.tmx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Backend/bin/Debug/netcoreapp3.1/Endorblast.Backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Backend/bin/Debug/netcoreapp3.1/Endorblast.Backend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Backend/bin/Debug/netcoreapp3.1/Endorblast.Backend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Backend/bin/Debug/netcoreapp3.1/Endorblast.Backend.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Backend/bin/Debug/netcoreapp3.1/Endorblast.DBase.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Backend/bin/Debug/netcoreapp3.1/Endorblast.DBase.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Backend/bin/Debug/netcoreapp3.1/Endorblast.DBase.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Backend/bin/Debug/netcoreapp3.1/Endorblast.DBase.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Backend/bin/Debug/netcoreapp3.1/Endorblast.Library.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Backend/bin/Debug/netcoreapp3.1/Endorblast.Library.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Backend/bin/Debug/netcoreapp3.1/Endorblast.Library.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Backend/bin/Debug/netcoreapp3.1/Endorblast.Library.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Backend/bin/Debug/netcoreapp3.1/Nez.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Backend/bin/Debug/netcoreapp3.1/Nez.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Backend/bin/Debug/netcoreapp3.1/Nez.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Backend/bin/Debug/netcoreapp3.1/Nez.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Backend/obj/Debug/netcoreapp3.1/Endorblast.Backend.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Backend/obj/Debug/netcoreapp3.1/Endorblast.Backend.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Backend/obj/Debug/netcoreapp3.1/Endorblast.Backend.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Backend/obj/Debug/netcoreapp3.1/Endorblast.Backend.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Backend/obj/Debug/netcoreapp3.1/Endorblast.Backend.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Backend/obj/Debug/netcoreapp3.1/Endorblast.Backend.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Backend/obj/Debug/netcoreapp3.1/Endorblast.Backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Backend/obj/Debug/netcoreapp3.1/Endorblast.Backend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Backend/obj/Debug/netcoreapp3.1/Endorblast.Backend.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Backend/obj/Debug/netcoreapp3.1/Endorblast.Backend.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Backend/obj/Debug/netcoreapp3.1/Endorblast.Backend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Backend/obj/Debug/netcoreapp3.1/Endorblast.Backend.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Backend/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Backend/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.DBase/Database/LoadDataCmd/Login/AccountExistCmd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.DBase/Database/LoadDataCmd/Login/AccountExistCmd.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.DBase/Database/LoadDataCmd/Login/LoadCharactersDBCmd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.DBase/Database/LoadDataCmd/Login/LoadCharactersDBCmd.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.DBase/obj/Debug/netcoreapp3.1/Endorblast.DBase.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.DBase/obj/Debug/netcoreapp3.1/Endorblast.DBase.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.DBase/obj/Debug/netcoreapp3.1/Endorblast.DBase.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.DBase/obj/Debug/netcoreapp3.1/Endorblast.DBase.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.DBase/obj/Debug/netcoreapp3.1/Endorblast.DBase.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.DBase/obj/Debug/netcoreapp3.1/Endorblast.DBase.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.DBase/obj/Debug/netcoreapp3.1/Endorblast.DBase.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.DBase/obj/Debug/netcoreapp3.1/Endorblast.DBase.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.DBase/obj/Debug/netcoreapp3.1/Endorblast.DBase.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.DBase/obj/Debug/netcoreapp3.1/Endorblast.DBase.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.DBase/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.DBase/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Discord/obj/Debug/netcoreapp3.1/Endorblast.Discord.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Discord/obj/Debug/netcoreapp3.1/Endorblast.Discord.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Discord/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Discord/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Library/Content/Data/Maps/TownProto.tmx" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Library/Content/Data/Maps/TownProto.tmx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Library/Data/CharacterSelectionData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Library/Enums/GameEnum.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Library/Enums/GameEnum.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Library/Enums/MapEnum.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Library/Enums/MapEnum.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Library/Enums/Packets.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Library/Enums/ServerEnum.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Library/Enums/ServerEnum.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Library/Game/Components/GrassComp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Library/Game/Components/GrassComp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/BasePlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/BasePlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/Classes/Warrior/BaseWarriorClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/Classes/Warrior/BaseWarriorClass.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/Movement/BaseMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/Movement/BaseMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Library/Game/Data/Character/CharacterSelectionData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Library/Game/Data/Character/CharacterSelectionData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Library/Game/Managers/MapManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Library/Game/Managers/MapManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Library/Game/Player/BasePart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/BasePart.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Library/Game/Player/BodyPart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/BodyPart.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Library/Game/Player/ClothPart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/ClothPart.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Library/Game/Player/FeetPart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/FeetPart.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Library/Game/Player/HatPart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/HatPart.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Library/Game/Player/OutfitChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/OutfitChanger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Library/OLD/PlayerSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Library/obj/Debug/netcoreapp3.1/Endorblast.Library.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Library/obj/Debug/netcoreapp3.1/Endorblast.Library.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Library/obj/Debug/netcoreapp3.1/Endorblast.Library.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Library/obj/Debug/netcoreapp3.1/Endorblast.Library.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Library/obj/Debug/netcoreapp3.1/Endorblast.Library.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Library/obj/Debug/netcoreapp3.1/Endorblast.Library.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Library/obj/Debug/netcoreapp3.1/Endorblast.Library.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Library/obj/Debug/netcoreapp3.1/Endorblast.Library.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endorblast.Library/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Endorblast.Library/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEditor/obj/Debug/netcoreapp3.1/EndorblastEditor.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEditor/obj/Debug/netcoreapp3.1/EndorblastEditor.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Game/CharacterManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Game/CharacterManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Game/Entities/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Game/Entities/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Game/Map.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Game/Map.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Game/MapManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Game/MapManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Network/Commands/Data/GameDataCmd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Network/Commands/Data/GameDataCmd.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Network/Commands/Login/GameLoginDataCmd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Network/Commands/Login/GameLoginDataCmd.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Network/Commands/Login/SendCharaDataCmd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Network/Commands/Login/SendCharaDataCmd.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Network/Commands/Player/SkillCmd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Network/Commands/Player/SkillCmd.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Network/Commands/World/WorldDataCmd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Network/Commands/World/MapDataCmd.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Network/Commands/World/WorldEnterCmd.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.GameServer/obj/Debug/netcoreapp3.1/EndorblastEngine.GameServer.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.GameServer/obj/Debug/netcoreapp3.1/EndorblastEngine.GameServer.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.GameServer/obj/Debug/netcoreapp3.1/EndorblastEngine.GameServer.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.GameServer/obj/Debug/netcoreapp3.1/EndorblastEngine.GameServer.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.GameServer/obj/Debug/netcoreapp3.1/EndorblastEngine.GameServer.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.GameServer/obj/Debug/netcoreapp3.1/EndorblastEngine.GameServer.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.GameServer/obj/Debug/netcoreapp3.1/EndorblastEngine.GameServer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.GameServer/obj/Debug/netcoreapp3.1/EndorblastEngine.GameServer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.GameServer/obj/Debug/netcoreapp3.1/EndorblastEngine.GameServer.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.GameServer/obj/Debug/netcoreapp3.1/EndorblastEngine.GameServer.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.GameServer/obj/Debug/netcoreapp3.1/EndorblastEngine.GameServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.GameServer/obj/Debug/netcoreapp3.1/EndorblastEngine.GameServer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.GameServer/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.GameServer/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.LoginServer/EndorblastEngine.LoginServer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.LoginServer/EndorblastEngine.LoginServer.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.LoginServer/bin/Debug/netcoreapp3.1/Content/Data/Maps/Town.tmx" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.LoginServer/bin/Debug/netcoreapp3.1/Content/Data/Maps/Town.tmx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.LoginServer/bin/Debug/netcoreapp3.1/Endorblast.Backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.LoginServer/bin/Debug/netcoreapp3.1/Endorblast.Backend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.LoginServer/bin/Debug/netcoreapp3.1/Endorblast.Backend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.LoginServer/bin/Debug/netcoreapp3.1/Endorblast.Backend.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.LoginServer/bin/Debug/netcoreapp3.1/Endorblast.DBase.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.LoginServer/bin/Debug/netcoreapp3.1/Endorblast.DBase.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.LoginServer/bin/Debug/netcoreapp3.1/Endorblast.DBase.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.LoginServer/bin/Debug/netcoreapp3.1/Endorblast.DBase.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.LoginServer/bin/Debug/netcoreapp3.1/Endorblast.Library.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.LoginServer/bin/Debug/netcoreapp3.1/Endorblast.Library.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.LoginServer/bin/Debug/netcoreapp3.1/Endorblast.Library.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.LoginServer/bin/Debug/netcoreapp3.1/Endorblast.Library.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.LoginServer/bin/Debug/netcoreapp3.1/EndorblastEngine.LoginServer.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.LoginServer/bin/Debug/netcoreapp3.1/EndorblastEngine.LoginServer.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.LoginServer/bin/Debug/netcoreapp3.1/EndorblastEngine.LoginServer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.LoginServer/bin/Debug/netcoreapp3.1/EndorblastEngine.LoginServer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.LoginServer/bin/Debug/netcoreapp3.1/EndorblastEngine.LoginServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.LoginServer/bin/Debug/netcoreapp3.1/EndorblastEngine.LoginServer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.LoginServer/bin/Debug/netcoreapp3.1/Nez.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.LoginServer/bin/Debug/netcoreapp3.1/Nez.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.LoginServer/bin/Debug/netcoreapp3.1/Nez.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.LoginServer/bin/Debug/netcoreapp3.1/Nez.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.LoginServer/obj/Debug/netcoreapp3.1/EndorblastEngine.LoginServer.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.LoginServer/obj/Debug/netcoreapp3.1/EndorblastEngine.LoginServer.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.LoginServer/obj/Debug/netcoreapp3.1/EndorblastEngine.LoginServer.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.LoginServer/obj/Debug/netcoreapp3.1/EndorblastEngine.LoginServer.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.LoginServer/obj/Debug/netcoreapp3.1/EndorblastEngine.LoginServer.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.LoginServer/obj/Debug/netcoreapp3.1/EndorblastEngine.LoginServer.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.LoginServer/obj/Debug/netcoreapp3.1/EndorblastEngine.LoginServer.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.LoginServer/obj/Debug/netcoreapp3.1/EndorblastEngine.LoginServer.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.LoginServer/obj/Debug/netcoreapp3.1/EndorblastEngine.LoginServer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.LoginServer/obj/Debug/netcoreapp3.1/EndorblastEngine.LoginServer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.LoginServer/obj/Debug/netcoreapp3.1/EndorblastEngine.LoginServer.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.LoginServer/obj/Debug/netcoreapp3.1/EndorblastEngine.LoginServer.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.LoginServer/obj/Debug/netcoreapp3.1/EndorblastEngine.LoginServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.LoginServer/obj/Debug/netcoreapp3.1/EndorblastEngine.LoginServer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.LoginServer/obj/EndorblastEngine.LoginServer.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.LoginServer/obj/EndorblastEngine.LoginServer.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.LoginServer/obj/EndorblastEngine.LoginServer.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.LoginServer/obj/EndorblastEngine.LoginServer.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.LoginServer/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.LoginServer/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.LoginServer/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.LoginServer/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.LoginServer/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.LoginServer/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.LoginServer/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.LoginServer/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.MasterServer/EndorblastEngine.MasterServer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.MasterServer/EndorblastEngine.MasterServer.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.MasterServer/Server/Game/SendToGameServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.MasterServer/Server/Game/SendToGameServer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.MasterServer/Server/Login/NetCmd/LoginCmd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.MasterServer/Server/Login/NetCmd/LoginCmd.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.MasterServer/Server/Login/ToLoginServerQueue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.MasterServer/Server/Login/ToLoginServerQueue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.MasterServer/Server/Managers/ServerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.MasterServer/Server/Managers/ServerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.MasterServer/Server/MasterServerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.MasterServer/Server/MasterServerScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.MasterServer/obj/Debug/netcoreapp3.1/EndorblastEngine.MasterServer.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.MasterServer/obj/Debug/netcoreapp3.1/EndorblastEngine.MasterServer.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.MasterServer/obj/Debug/netcoreapp3.1/EndorblastEngine.MasterServer.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.MasterServer/obj/Debug/netcoreapp3.1/EndorblastEngine.MasterServer.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.MasterServer/obj/Debug/netcoreapp3.1/EndorblastEngine.MasterServer.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.MasterServer/obj/Debug/netcoreapp3.1/EndorblastEngine.MasterServer.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.MasterServer/obj/Debug/netcoreapp3.1/EndorblastEngine.MasterServer.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.MasterServer/obj/Debug/netcoreapp3.1/EndorblastEngine.MasterServer.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.MasterServer/obj/Debug/netcoreapp3.1/EndorblastEngine.MasterServer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.MasterServer/obj/Debug/netcoreapp3.1/EndorblastEngine.MasterServer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.MasterServer/obj/Debug/netcoreapp3.1/EndorblastEngine.MasterServer.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.MasterServer/obj/Debug/netcoreapp3.1/EndorblastEngine.MasterServer.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.MasterServer/obj/Debug/netcoreapp3.1/EndorblastEngine.MasterServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.MasterServer/obj/Debug/netcoreapp3.1/EndorblastEngine.MasterServer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.MasterServer/obj/EndorblastEngine.MasterServer.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.MasterServer/obj/EndorblastEngine.MasterServer.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.MasterServer/obj/EndorblastEngine.MasterServer.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.MasterServer/obj/EndorblastEngine.MasterServer.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.MasterServer/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.MasterServer/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.MasterServer/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.MasterServer/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.MasterServer/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.MasterServer/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine.MasterServer/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine.MasterServer/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine/EndorblastEngine.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine/EndorblastEngine.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine/Game/GUI/CharacterSelectionUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine/Game/GUI/CharacterSelectionUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine/Game/GUI/ErrorMessageTypes/ErrorOkUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine/Game/GUI/ErrorMessageTypes/ErrorOkUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine/Game/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine/Game/Managers/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine/Game/Managers/SceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine/Game/Managers/SceneManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine/Game/Scenes/BaseScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine/Game/Scenes/BaseScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine/Game/Scenes/DemoScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine/Game/Scenes/DemoScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine/Game/Scenes/LoginScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine/Game/Scenes/LoginScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine/Game/Scenes/TownScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine/Game/Scenes/TownScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine/Network/NetCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine/Network/NetCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine/Network/NetworkCmd/Data/RequestJoinWorld.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine/Network/NetworkCmd/Game/Data/ReceiveCharactersCmd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine/Network/NetworkCmd/Game/Data/ReceiveCharactersCmd.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine/Network/NetworkCmd/Game/GameDataCmd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine/Network/NetworkCmd/Game/GameDataCmd.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine/Network/NetworkCmd/MessageDataCmd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine/Network/NetworkCmd/MessageDataCmd.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine/obj/Debug/netcoreapp3.1/EndorblastEngine.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine/obj/Debug/netcoreapp3.1/EndorblastEngine.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine/obj/Debug/netcoreapp3.1/EndorblastEngine.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine/obj/Debug/netcoreapp3.1/EndorblastEngine.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine/obj/Debug/netcoreapp3.1/EndorblastEngine.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine/obj/Debug/netcoreapp3.1/EndorblastEngine.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine/obj/Debug/netcoreapp3.1/EndorblastEngine.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine/obj/Debug/netcoreapp3.1/EndorblastEngine.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndorblastEngine/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/EndorblastEngine/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nez.ImGui/obj/Nez.Monogame.Standard.ImGui/Debug/Nez.Monogame.Standard.ImGui.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Nez.ImGui/obj/Nez.Monogame.Standard.ImGui/Debug/Nez.Monogame.Standard.ImGui.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nez.ImGui/obj/Nez.Monogame.Standard.ImGui/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Nez.ImGui/obj/Nez.Monogame.Standard.ImGui/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nez.Persistence/obj/Nez.Monogame.Standard.Persistence/Debug/Nez.Monogame.Standard.Persistence.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Nez.Persistence/obj/Nez.Monogame.Standard.Persistence/Debug/Nez.Monogame.Standard.Persistence.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nez.Portable/Nez.Monogame.Standard.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Nez.Portable/Nez.Monogame.Standard.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nez.Portable/bin/Debug/netcoreapp3.1/Nez.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Nez.Portable/bin/Debug/netcoreapp3.1/Nez.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nez.Portable/bin/Debug/netcoreapp3.1/Nez.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Nez.Portable/bin/Debug/netcoreapp3.1/Nez.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nez.Portable/obj/Nez.Monogame.Standard/Debug/netcoreapp3.1/Nez.Monogame.Standard.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Nez.Portable/obj/Nez.Monogame.Standard/Debug/netcoreapp3.1/Nez.Monogame.Standard.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nez.Portable/obj/Nez.Monogame.Standard/Debug/netcoreapp3.1/Nez.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Nez.Portable/obj/Nez.Monogame.Standard/Debug/netcoreapp3.1/Nez.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nez.Portable/obj/Nez.Monogame.Standard/Debug/netcoreapp3.1/Nez.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Nez.Portable/obj/Nez.Monogame.Standard/Debug/netcoreapp3.1/Nez.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nez.Portable/obj/Nez.Monogame.Standard/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Nez.Portable/obj/Nez.Monogame.Standard/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,63 +239,74 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Nez.Portable/AI/BehaviorTree/Actions/BehaviorTreeReference.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/Races/RaceClass.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BC542A5C-3AD0-4C34-A080-02E941B52719/12/172ba06f/Void.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/415D42EB-478D-4F96-9101-D6296C3FAAC6/fc/757149c8/NetClient.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BC542A5C-3AD0-4C34-A080-02E941B52719/df/58a41961/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BC542A5C-3AD0-4C34-A080-02E941B52719/31/bfbe9970/IComparable`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Endorblast.Library/Game/Components/Entities/BasePlayerV2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EndorblastEngine/Game/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EndorblastEngine/Game/Scenes/LoginScene.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EndorblastEngine/Game1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EndorblastEngine/Game/GUI/ErrorMessageTypes/ErrorOkUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EndorblastEngine/Game/GUI/LoginUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1B2D86CA-965B-467F-81D5-8E555A4A50EE/1F/Socket.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/Races/RaceClass.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Nez.Portable/AI/BehaviorTree/Actions/BehaviorTreeReference.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF0F4F57-5D6C-4C21-BFC7-10DB8F2F75C6/97/9a6def3d/Game.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Endorblast.Library/Game/Components/Entities/BasePlayer.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.Library/ContentLoader.cs" />
-      <option value="$PROJECT_DIR$/Nez.Portable/Graphics/Textures/Sprite.cs" />
-      <option value="$PROJECT_DIR$/Nez.Portable/Assets/SpriteAtlases/SpriteAnimation.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.Library/Game/Skills/Skill.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.Library/Scenes/DemoScene.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/Classes/BaseWarriorClass.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/PlayerAnimationsComp.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/Races/Human/HumanFemale.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/Races/Human/HumanMale.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.DBase/Database/LoadDataCmd/Character/Information/LoadCharacterByNameCmd.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.DBase/Database/DatabaseCmd.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.DBase/Database/LoadDataCmd/Character/LoadCharacterCmd.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.DBase/Endorblast.DBase.csproj" />
-      <option value="$PROJECT_DIR$/Endorblast.Discord/Endorblast.Discord.csproj" />
-      <option value="$PROJECT_DIR$/Endorblast.Discord/Program.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.Discord/CharacterCommands.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.Discord/Commands/CharacterCommands.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.Discord/Bot.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.Discord/config.json" />
-      <option value="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/Races/DemonMale/DemonMaleSprites.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/Races/Demon/DemonMaleSprites.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/Races/Human/HumanFemaleSprites.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/Races/Human/HumanMaleSprite.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/Classes/Warrior/BaseCharacterSprite.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/Classes/Warrior/HumanWarriorClass.cs" />
+      <option value="$PROJECT_DIR$/Endorblast.Library/Game/Data/Character/CharacterSelectionData.cs" />
+      <option value="$PROJECT_DIR$/Endorblast.Library/Game/Components/Entities/PreviewPlayer.cs" />
+      <option value="$PROJECT_DIR$/Endorblast.Library/Game/Components/Entities/Player/PreviewPlayer.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine/Game/GUI/CharacterSelectionUI.cs" />
+      <option value="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/UpdateSelectPosition.cs" />
       <option value="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/Classes/Warrior/BaseWarriorClass.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/Classes/BaseMageClass.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.Library/Game/Components/Entities/BasePlayerV2.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.Library/Data/serverConfig.json" />
-      <option value="$PROJECT_DIR$/Endorblast.Library/Data/GameConfig.json" />
-      <option value="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/Classes/BaseCharacterClass.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.Library/1Stream/Info Text.txt" />
-      <option value="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/Races/Human/HumanFemaleSprite.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.Library/Enums/Enum.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/Movement/BaseInput.cs" />
       <option value="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/Movement/BaseMovement.cs" />
-      <option value="$PROJECT_DIR$/EndorblastEngine/Game1.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.Library/Scenes/SplashscreenScene.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.Library/GUI/LoginUI.cs" />
-      <option value="$PROJECT_DIR$/EndorblastEngine.MasterServer/Database/DataCmd/AccountLoginCmd.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.DBase/Database/LoadDataCmd/Login/LoadAllServerCmd.cs" />
-      <option value="$PROJECT_DIR$/EndorblastEngine.MasterServer/Login/LoginServerScript.cs" />
-      <option value="$PROJECT_DIR$/EndorblastEngine.MasterServer/Program.cs" />
-      <option value="$PROJECT_DIR$/EndorblastEngine.MasterServer/MasterServerScript.cs" />
-      <option value="$PROJECT_DIR$/EndorblastEngine.MasterServer/Login/NetCmd/LoginSuccessCmd.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.DBase/Database/LoadDataCmd/Login/AccountPasswordCheckCmd.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.DBase/Database/LoadDataCmd/Login/AccountLoginCmd.cs" />
-      <option value="$PROJECT_DIR$/EndorblastEngine.MasterServer/Login/NetCmd/LoginCmd.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.DBase/Database/LoadDataCmd/Login/LoadCharactersDBCmd.cs" />
-      <option value="$PROJECT_DIR$/Endorblast.Library/Network/NetworkCmd/LoginCmd/LoginSuccessfulCmd.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine/Network/NetworkCmd/World/CharacterPositionCmd.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine/Network/NetworkCmd/Game/JoinWorld.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine/Network/NetCommand.cs" />
+      <option value="$PROJECT_DIR$/Endorblast.Library/Enums/NetworkEnum.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Network/Commands/World/WorldDataCmd.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Network/Commands/Data/GameDataCmd.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine/Network/NetworkCmd/Game/JoinWorldCmd.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine/Network/NetworkCmd/Data/RequestJoinWorld.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Network/Commands/World/AcceptWorldEnterCmd.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Network/Commands/World/MapDataCmd.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Game/Entities/Player.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine/Network/NetworkCmd/Data/RequestEnterWorldCmd.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine/Network/NetworkCmd/Game/GameDataCmd.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine/Network/NetworkCmd/Data/EnterWorldCmd.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine/Network/NetworkCmd/Game/Data/MapData.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine/Game/Scenes/DemoScene.cs" />
+      <option value="$PROJECT_DIR$/Endorblast.Library/Game/Components/Player/BasePlayer.cs" />
+      <option value="$PROJECT_DIR$/Endorblast.DBase/Database/LoadDataCmd/Login/AccountExistCmd.cs" />
+      <option value="$PROJECT_DIR$/Endorblast.DBase/Database/LoadDataCmd/Login/AccountCharacterExistCmd.cs" />
+      <option value="$PROJECT_DIR$/Endorblast.Library/Enums/ServerEnum.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine/Network/NetworkCmd/Data/DataMessageCmd.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine/Network/NetworkCmd/MessageDataCmd.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Network/Commands/World/WorldEnterCmd.cs" />
+      <option value="$PROJECT_DIR$/Endorblast.Library/Data/LocationData.cs" />
+      <option value="$PROJECT_DIR$/Endorblast.DBase/Database/LoadDataCmd/Character/Information/LoadCharacterLocationCmd.cs" />
+      <option value="$PROJECT_DIR$/Endorblast.Library/Enums/MapEnum.cs" />
+      <option value="$PROJECT_DIR$/Endorblast.Library/Game/Managers/MapManager.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine/Game/Scenes/LoginScene.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Network/Commands/World/ServerEnterWorldCmd.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Game/CharacterManager.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Game/MapManager.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Network/Commands/Player/SkillCmd.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine.GameServer/Server/Game/Map.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine/Game/Managers/GameManager.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine/Network/NetworkCmd/Data/ClientEnterWorldCmd.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine/Game/Scenes/BaseScene.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine/Game/Scenes/TownScene.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine/Game/Managers/SceneManager.cs" />
+      <option value="$PROJECT_DIR$/Endorblast.Backend/Data/ServerBackInfo.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine.MasterServer/Server/Login/NetCmd/LoginCmd.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine.MasterServer/Server/Game/SendToGameServer.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine.MasterServer/Server/Login/ToLoginServerQueue.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine.MasterServer/Server/Managers/ServerManager.cs" />
+      <option value="$PROJECT_DIR$/EndorblastEngine.MasterServer/Server/MasterServerScript.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1l312UlyjQu6OCGOv4GNevqeFRk" />
@@ -145,22 +324,25 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="RiderCSharpLiveTemplatesSettingsId" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\JetBrains Rider 2020.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Compound.Client &amp; New Server">
     <configuration name="Client &amp; New Server" type="CompoundRunConfigurationType">
-      <toRun name="Endorblast.GameServer" type="DotNetProject" />
-      <toRun name="Endorblast" type="DotNetProject" />
-      <toRun name="Endorblast.MasterServer" type="DotNetProject" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Client &amp; Old Server" type="CompoundRunConfigurationType">
-      <toRun name="Endorblast.Server" type="DotNetProject" />
-      <toRun name="Endorblast" type="DotNetProject" />
+      <toRun name="EndorblastEngine.MasterServer" type="DotNetProject" />
+      <toRun name="EndorblastEngine.GameServer" type="DotNetProject" />
+      <toRun name="EndorblastEngine.LoginServer" type="DotNetProject" />
+      <toRun name="EndorblastEngine" type="DotNetProject" />
       <method v="2" />
     </configuration>
     <configuration name="Client and Game Server" type="CompoundRunConfigurationType">
+      <method v="2" />
+    </configuration>
+    <configuration name="Just Server" type="CompoundRunConfigurationType">
+      <toRun name="EndorblastEngine.MasterServer" type="DotNetProject" />
+      <toRun name="EndorblastEngine.GameServer" type="DotNetProject" />
+      <toRun name="EndorblastEngine.LoginServer" type="DotNetProject" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="CompoundRunConfigurationType">
@@ -168,23 +350,9 @@
       <toRun name="EndorblastCore" type="DotNetProject" />
       <method v="2" />
     </configuration>
-    <configuration name="Endorblast" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/EndorblastEngine/bin/Debug/netcoreapp3.1/EndorblastEngine.exe" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EndorblastEngine/bin/Debug/netcoreapp3.1" />
-      <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/EndorblastEngine/EndorblastEngine.csproj" />
-      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
-      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
-      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
-      <option name="PROJECT_KIND" value="DotNetCore" />
-      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v3.1" />
-      <method v="2">
-        <option name="Build" />
-      </method>
+    <configuration name="Unnamed" type="DotNetFolderPublish" factoryName="Publish to folder">
+      <riderPublish configuration="Release" platform="Any CPU" produce_single_file="true" runtime="win-x64" target_folder="$USER_HOME$/Desktop/Build" target_framework="netcoreapp3.1" uuid_high="4628280594682563289" uuid_low="-5123291642165067632" />
+      <method v="2" />
     </configuration>
     <configuration name="EndorblastEditor" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -204,15 +372,15 @@
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="Endorblast.Discord" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/Endorblast.Discord/bin/Debug/netcoreapp3.1/Endorblast.Discord.exe" />
+    <configuration name="EndorblastEngine" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/EndorblastEngine/bin/Debug/netcoreapp3.1/EndorblastEngine.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Endorblast.Discord/bin/Debug/netcoreapp3.1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EndorblastEngine/bin/Debug/netcoreapp3.1" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Endorblast.Discord/Endorblast.Discord.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/EndorblastEngine/EndorblastEngine.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -222,7 +390,7 @@
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="Endorblast.GameServer" type="DotNetProject" factoryName=".NET Project">
+    <configuration name="EndorblastEngine.GameServer" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/EndorblastEngine.GameServer/bin/Debug/netcoreapp3.1/EndorblastEngine.GameServer.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EndorblastEngine.GameServer/bin/Debug/netcoreapp3.1" />
@@ -240,7 +408,25 @@
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="Endorblast.MasterServer" type="DotNetProject" factoryName=".NET Project">
+    <configuration name="EndorblastEngine.LoginServer" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/EndorblastEngine.LoginServer/bin/Debug/netcoreapp3.1/EndorblastEngine.LoginServer.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EndorblastEngine.LoginServer/bin/Debug/netcoreapp3.1" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/EndorblastEngine.LoginServer/EndorblastEngine.LoginServer.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v3.1" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="EndorblastEngine.MasterServer" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/EndorblastEngine.MasterServer/bin/Debug/netcoreapp3.1/EndorblastEngine.MasterServer.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EndorblastEngine.MasterServer/bin/Debug/netcoreapp3.1" />
@@ -249,6 +435,42 @@
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/EndorblastEngine.MasterServer/EndorblastEngine.MasterServer.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v3.1" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Endorblast.Backend" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Endorblast.Backend/bin/Debug/netcoreapp3.1/Endorblast.Backend.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Endorblast.Backend/bin/Debug/netcoreapp3.1" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Endorblast.Backend/Endorblast.Backend.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v3.1" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Endorblast.Discord" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Endorblast.Discord/bin/Debug/netcoreapp3.1/Endorblast.Discord.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Endorblast.Discord/bin/Debug/netcoreapp3.1" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Endorblast.Discord/Endorblast.Discord.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -293,15 +515,18 @@
     </configuration>
     <list>
       <item itemvalue=".NET Launch Settings Profile.Endorblast.Server: EndorblastCore.Server" />
-      <item itemvalue=".NET Project.Endorblast" />
+      <item itemvalue=".NET Project.EndorblastEngine" />
       <item itemvalue=".NET Project.Game" />
-      <item itemvalue=".NET Project.Endorblast.MasterServer" />
-      <item itemvalue=".NET Project.Endorblast.GameServer" />
+      <item itemvalue=".NET Project.EndorblastEngine.MasterServer" />
+      <item itemvalue=".NET Project.EndorblastEngine.LoginServer" />
+      <item itemvalue=".NET Project.EndorblastEngine.GameServer" />
       <item itemvalue=".NET Project.EndorblastEditor" />
       <item itemvalue=".NET Project.Endorblast.Discord" />
-      <item itemvalue="Compound.Client &amp; Old Server" />
+      <item itemvalue=".NET Project.Endorblast.Backend" />
+      <item itemvalue="Compound.Just Server" />
       <item itemvalue="Compound.Client and Game Server" />
       <item itemvalue="Compound.Client &amp; New Server" />
+      <item itemvalue="Publish to folder.Unnamed" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -403,7 +628,61 @@
       <workItem from="1619686689686" duration="2527000" />
       <workItem from="1619702636310" duration="1483000" />
       <workItem from="1620045700963" duration="8430000" />
-      <workItem from="1620055666407" duration="4250000" />
+      <workItem from="1620055666407" duration="7281000" />
+      <workItem from="1620122987108" duration="10472000" />
+      <workItem from="1620138614171" duration="1620000" />
+      <workItem from="1620204669607" duration="10121000" />
+      <workItem from="1620369622995" duration="827000" />
+      <workItem from="1620383260022" duration="5675000" />
+      <workItem from="1620392845234" duration="2278000" />
+      <workItem from="1620395273094" duration="9984000" />
+      <workItem from="1620647346976" duration="2369000" />
+      <workItem from="1620659838644" duration="2410000" />
+      <workItem from="1620663340321" duration="1093000" />
+      <workItem from="1620718622926" duration="153000" />
+      <workItem from="1620719456226" duration="11000" />
+      <workItem from="1620733735319" duration="3484000" />
+      <workItem from="1620737405158" duration="1043000" />
+      <workItem from="1621236330748" duration="1700000" />
+      <workItem from="1621253153282" duration="3403000" />
+      <workItem from="1621263567617" duration="5823000" />
+      <workItem from="1621409492527" duration="700000" />
+      <workItem from="1621410921918" duration="76000" />
+      <workItem from="1621413505788" duration="25418000" />
+      <workItem from="1621530926455" duration="1217000" />
+      <workItem from="1621607602928" duration="1983000" />
+      <workItem from="1621951982168" duration="8031000" />
+      <workItem from="1622018185811" duration="14321000" />
+      <workItem from="1622194775108" duration="18927000" />
+      <workItem from="1622287840045" duration="5451000" />
+      <workItem from="1622375392133" duration="1690000" />
+      <workItem from="1623069005561" duration="4716000" />
+      <workItem from="1623154398373" duration="13042000" />
+      <workItem from="1623248183288" duration="21179000" />
+      <workItem from="1623516299401" duration="10120000" />
+      <workItem from="1623760853100" duration="968000" />
+      <workItem from="1623789224818" duration="1471000" />
+      <workItem from="1623843606055" duration="10976000" />
+      <workItem from="1624026257835" duration="444000" />
+      <workItem from="1624287293265" duration="21163000" />
+      <workItem from="1624374761066" duration="3996000" />
+      <workItem from="1624440430188" duration="2708000" />
+      <workItem from="1624444749458" duration="2440000" />
+      <workItem from="1624448308649" duration="5902000" />
+      <workItem from="1624709130430" duration="3380000" />
+      <workItem from="1625038426634" duration="347000" />
+      <workItem from="1625062301634" duration="736000" />
+      <workItem from="1625149187472" duration="1142000" />
+      <workItem from="1625151465522" duration="2489000" />
+      <workItem from="1625493953510" duration="1319000" />
+      <workItem from="1625574227961" duration="6630000" />
+      <workItem from="1625590668914" duration="2441000" />
+      <workItem from="1625642065202" duration="17000" />
+      <workItem from="1625663833922" duration="2917000" />
+      <workItem from="1626705277203" duration="1514000" />
+      <workItem from="1626868146829" duration="14271000" />
+      <workItem from="1626955000144" duration="9705000" />
+      <workItem from="1627218994857" duration="803000" />
     </task>
     <task id="LOCAL−00001" summary="Edit some stuff">
       <created>1606827689904</created>
@@ -627,5 +906,28 @@
     <MESSAGE value="Removed Login Server and Old Server" />
     <MESSAGE value="Login on Master Now works" />
     <option name="LAST_COMMIT_MESSAGE" value="Login on Master Now works" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/415D42EB-478D-4F96-9101-D6296C3FAAC6/fc/757149c8/NetClient.cs</url>
+          <line>81</line>
+          <properties documentPath="C:\Users\zyro\AppData\Roaming\JetBrains\Rider2021.1\resharper-host\DecompilerCache\decompiler\415D42EB-478D-4F96-9101-D6296C3FAAC6\fc\757149c8\NetClient.cs" initialLine="81" containingFunctionPresentation="method 'Disconnect'">
+            <startOffsets>
+              <option value="2151" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2254" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

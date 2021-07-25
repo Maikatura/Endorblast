@@ -6,7 +6,6 @@
 
     <ItemGroup>
       <PackageReference Include="BCrypt.Net-Next" Version="4.0.2" />
-      <PackageReference Include="Lidgren.Network" Version="1.0.2" />
       <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.0.1641" />
       <PackageReference Include="MySql.Data" Version="8.0.23" />
     </ItemGroup>
@@ -17,6 +16,12 @@
 
     <ItemGroup>
       <Folder Include="Database\SaveDataCmd\Login" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Lidgren.Network, Version=2012.1.7.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\dlls\Lidgren.Network.dll</HintPath>
+      </Reference>
     </ItemGroup>
 
 </Project>

@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Endorblast.Library;
 using Endorblast.Library.Entities;
+using Endorblast.Library.Entities.Player;
 
 namespace Endorblast.Library.Skills
 {
@@ -22,7 +23,7 @@ namespace Endorblast.Library.Skills
 
         int damage;
 
-        public BasicSkill(BasePlayer p) : base(p)
+        public BasicSkill(BasePlayerEntity p) : base(p)
         {
             anims = p.GetComponent<PlayerAnimationsComp>();
             move = p.GetComponent<PlayerMovementComp>();

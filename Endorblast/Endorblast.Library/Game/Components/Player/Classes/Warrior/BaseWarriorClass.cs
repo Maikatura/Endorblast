@@ -9,7 +9,7 @@ namespace Endorblast.Library.Classes
     public class BaseWarriorClass : BaseCharacterClass
     {
 
-        public BaseWarriorClass(Entity entity) : base(entity)
+        public BaseWarriorClass()
         {
             CharacterClassName = "Warrior";
             CharacterClassDescription = "I like sword. Me swing sword, Me hurt you with sword.";
@@ -19,19 +19,12 @@ namespace Endorblast.Library.Classes
             Intellect = 0;
             Mana = 0;
             Stamina = 100;
-            
-            sprites = new HumanFemaleSprite();
-
-            Init();
         }
-        
-        
-        public override void Update()
+
+        public override void OnAddedToEntity()
         {
-            base.Update();
-            
-            // Do update logic here.
-            
+            base.OnAddedToEntity();
+            sprites = new HumanFemaleSprite();
         }
     }
 }

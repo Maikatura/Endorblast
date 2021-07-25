@@ -41,12 +41,7 @@ namespace Endorblast.Library.Entities
             PlayerID = playerID;
         }
 
-        public BasePlayer ToBasePlayer()
-        {
-            var bp = new BasePlayer();
-
-            return bp;
-        }
+        
 
         // public Player ToServerPlayer()
         // {
