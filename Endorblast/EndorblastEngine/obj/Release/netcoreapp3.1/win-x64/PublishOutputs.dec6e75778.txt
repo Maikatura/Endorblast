@@ -1,4 +1,0 @@
-C:\Users\zyro\Desktop\Build\EndorblastEngine.pdb
-C:\Users\zyro\Desktop\Build\Endorblast.Library.pdb
-C:\Users\zyro\Desktop\Build\Nez.pdb
-C:\Users\zyro\Desktop\Build\EndorblastEngine.exe

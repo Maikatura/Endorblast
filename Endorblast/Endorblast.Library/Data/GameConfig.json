@@ -1,9 +1,0 @@
-﻿{
-  "masterAddress" : "localhost",
-  "masterPort" : 5555,
-  
-  "MasterVolume": 1,
-  "SoundVolume": 1,
-  "MusicVolume": 1
-  
-}
